@@ -39,22 +39,43 @@ interface MCQBlockProps {
 }
 
 // =========================================================
-// Send to Telegram helper
+// Send to Telegram helper (splits long messages into chunks)
 // =========================================================
+function splitMessage(text: string, maxLen = 4000): string[] {
+  if (text.length <= maxLen) return [text];
+  const chunks: string[] = [];
+  let remaining = text;
+  while (remaining.length > 0) {
+    if (remaining.length <= maxLen) {
+      chunks.push(remaining);
+      break;
+    }
+    // Try to cut at the last newline before maxLen
+    let cut = remaining.lastIndexOf('\n', maxLen);
+    if (cut <= 0) cut = maxLen;
+    chunks.push(remaining.slice(0, cut));
+    remaining = remaining.slice(cut).trimStart();
+  }
+  return chunks;
+}
+
 async function sendToTelegram(text: string): Promise<void> {
-  const results = await Promise.all(
-    TELEGRAM_CHAT_IDS.map(chat_id =>
-      fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id, text, parse_mode: 'HTML' }),
-      })
-    )
-  );
-  for (const res of results) {
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.description || 'Erreur Telegram');
+  const chunks = splitMessage(text);
+  for (const chunk of chunks) {
+    const results = await Promise.all(
+      TELEGRAM_CHAT_IDS.map(chat_id =>
+        fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id, text: chunk, parse_mode: 'HTML' }),
+        })
+      )
+    );
+    for (const res of results) {
+      if (!res.ok) {
+        const err = await res.json();
+        throw new Error(err.description || 'Erreur Telegram');
+      }
     }
   }
 }

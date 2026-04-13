@@ -229,6 +229,50 @@ const MCQ_BY_LESSON: Record<string, typeof LECON1_MCQ> = {
 };
 
 // =========================================================
+// PersistentInput — controlled input that saves to localStorage
+// =========================================================
+const PersistentInput = ({ storageKey, isFirst }: { storageKey: string; isFirst: boolean }) => {
+  const [value, setValue] = useState<string>(() => {
+    try { return localStorage.getItem(storageKey) || ''; } catch { return ''; }
+  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const v = e.target.value;
+    setValue(v);
+    try { localStorage.setItem(storageKey, v); } catch {}
+  };
+  return (
+    <input
+      type="text"
+      className="input-field"
+      placeholder={isFirst ? "Votre réponse ici..." : ""}
+      value={value}
+      onChange={handleChange}
+    />
+  );
+};
+
+// =========================================================
+// PrintButton — prints the lesson page as PDF
+// =========================================================
+const PrintButton = ({ lessonTitle }: { lessonTitle: string }) => {
+  const handlePrint = () => {
+    const original = document.title;
+    document.title = lessonTitle;
+    window.print();
+    document.title = original;
+  };
+  return (
+    <button
+      onClick={handlePrint}
+      className="print-btn"
+      title="Imprimer / Télécharger en PDF"
+    >
+      🖨️ Imprimer / PDF
+    </button>
+  );
+};
+
+// =========================================================
 // Block Renderer
 // =========================================================
 type BlockRendererProps = {
@@ -283,18 +327,7 @@ const BlockRenderer = ({
     case 'input': {
       const isFirstInput = idx === 0 || allBlocks[idx - 1].type !== 'input';
       const storageKey = `livret_input_${lessonId}_${idx}`;
-      const savedValue = typeof window !== 'undefined' ? (localStorage.getItem(storageKey) || '') : '';
-      return (
-        <input
-          type="text"
-          className="input-field"
-          placeholder={isFirstInput ? "Votre réponse ici..." : ""}
-          defaultValue={savedValue}
-          onChange={(e) => {
-            localStorage.setItem(storageKey, e.target.value);
-          }}
-        />
-      );
+      return <PersistentInput key={storageKey} storageKey={storageKey} isFirst={isFirstInput} />;
     }
     case 'link': {
       const isLocal = block.url && block.url.startsWith('/');
@@ -545,6 +578,8 @@ function App() {
             studentName={studentName!}
             lessonTitle={lesson.title}
           />
+          {/* Print Button */}
+          <PrintButton lessonTitle={lesson.title} />
         </div>
       );
     }

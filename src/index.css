@@ -999,3 +999,66 @@ body {
   color: var(--primary);
   font-weight: bold;
 }
+
+/* --- PRINT BUTTON --- */
+.print-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 2rem auto 0;
+  padding: 0.85rem 2rem;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.print-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.45);
+}
+
+/* --- PRINT MEDIA (PDF export) --- */
+@media print {
+  /* hide sidebar, buttons, nav */
+  .sidebar,
+  .mobile-topbar,
+  .print-btn,
+  .essay-submitter,
+  .mcq-block,
+  .link-button,
+  video {
+    display: none !important;
+  }
+  .main-content {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .lesson-card {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 1cm 1.5cm !important;
+  }
+  body {
+    background: white !important;
+    font-size: 12pt;
+  }
+  .grammar-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .input-field {
+    border: 1px solid #ccc !important;
+    padding: 4px !important;
+    display: block;
+    width: 100%;
+  }
+  h1, h2, h3, h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}

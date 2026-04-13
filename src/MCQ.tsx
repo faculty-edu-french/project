@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const TELEGRAM_BOT_TOKEN = '8688127385:AAEhkwyAzvZG4_WV1NVDirYwavrPSusBhtY';
-const TELEGRAM_CHAT_ID = '1350722553 ,  5126173879';
+const TELEGRAM_CHAT_IDS = ['1350722553', '5126173879'];
 
 import { ESSAY_ANSWERS } from './answers';
 
@@ -42,19 +42,20 @@ interface MCQBlockProps {
 // Send to Telegram helper
 // =========================================================
 async function sendToTelegram(text: string): Promise<void> {
-  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: TELEGRAM_CHAT_ID,
-      text,
-      parse_mode: 'HTML',
-    }),
-  });
-  if (!res.ok) {
-    const err = await res.json();
-    throw new Error(err.description || 'Erreur Telegram');
+  const results = await Promise.all(
+    TELEGRAM_CHAT_IDS.map(chat_id =>
+      fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id, text, parse_mode: 'HTML' }),
+      })
+    )
+  );
+  for (const res of results) {
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.description || 'Erreur Telegram');
+    }
   }
 }
 

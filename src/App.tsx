@@ -296,13 +296,27 @@ const BlockRenderer = ({
           <span>🔗</span> {block.content.replace(block.url, '').trim() || 'Lien externe'}
         </a>
       );
-    case 'info_box':
+    case 'info_box': {
+      const content = block.content || '';
+      let icon = '📚';
+      let title = 'Des informations enrichissantes';
+      if (content.toLowerCase().startsWith('aide lexicale')) {
+        icon = '📝'; title = 'Aide lexicale';
+      } else if (content.toLowerCase().startsWith('remarque')) {
+        icon = '⚠️'; title = 'Remarque';
+      } else if (content.toLowerCase().startsWith('présentation')) {
+        icon = '✨'; title = 'Des informations enrichissantes';
+      }
       return (
         <div className="info-box">
-          <div className="info-box-header">📚 Informations complémentaires</div>
-          <div className="info-box-content">{block.content}</div>
+          <div className="info-box-header">
+            <span>{icon}</span>
+            <span>{title}</span>
+          </div>
+          <div className="info-box-content">{content}</div>
         </div>
       );
+    }
     case 'objective': {
       const isGeneral = block.content.includes('Objectif général :');
       const text = isGeneral ? block.content.replace('Objectif général :', '').trim() : block.content;
@@ -356,7 +370,7 @@ const BlockRenderer = ({
       return (
         <div style={{ display: 'flex', gap: '1rem', overflowX: 'auto', paddingBottom: '1rem', margin: '2rem 0', WebkitOverflowScrolling: 'touch' }}>
           {block.images.map((imgSrc: string, i: number) => (
-             <img key={i} src={imgSrc} alt="Illustration group" style={{ height: '220px', borderRadius: '12px', flexShrink: 0, boxShadow: 'var(--shadow-md)', objectFit: 'cover' }} />
+             <img key={i} src={import.meta.env.BASE_URL + imgSrc.replace(/^\//, '')} alt="Illustration group" style={{ height: '220px', borderRadius: '12px', flexShrink: 0, boxShadow: 'var(--shadow-md)', objectFit: 'cover' }} />
           ))}
         </div>
       );
@@ -364,7 +378,7 @@ const BlockRenderer = ({
       return (
         <div style={{ margin: '2rem 0', textAlign: 'center' }}>
           <img
-            src={block.content}
+            src={import.meta.env.BASE_URL + block.content.replace(/^\//, '')}
             alt="Illustration de la leçon"
             style={{ maxWidth: '100%', maxHeight: '400px', borderRadius: '12px', boxShadow: 'var(--shadow-md)' }}
           />
@@ -391,7 +405,7 @@ const BlockRenderer = ({
       return (
         <div className="video-container">
           <video controls preload="metadata" className="lesson-video">
-            <source src={block.content} type="video/mp4" />
+            <source src={import.meta.env.BASE_URL + block.content.replace(/^\//, '')} type="video/mp4" />
             Votre navigateur ne supporte pas la lecture de vidéos.
           </video>
         </div>
@@ -400,7 +414,7 @@ const BlockRenderer = ({
       return (
         <div className="iframe-container">
           <iframe
-            src={block.content}
+            src={import.meta.env.BASE_URL + block.content.replace(/^\//, '')}
             className="lesson-iframe"
             title="External Content"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -537,9 +551,19 @@ function App() {
 
       <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
-          <div className="logo">Livret de l'étudiant</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <img 
+              src={import.meta.env.BASE_URL + 'minia_logo.png'} 
+              alt="Minia University" 
+              style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} 
+            />
+            <div>
+              <div className="logo" style={{ fontSize: '0.9rem', lineHeight: '1.3' }}>Faculty of Education</div>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.1rem' }}>French Department</div>
+            </div>
+          </div>
           {studentName && (
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
               👤 {studentName}
             </div>
           )}
@@ -558,28 +582,35 @@ function App() {
           {refinedData1.lessons.map((l: any) => (
             <div
               key={l.id}
-              className={`nav-link ${activeTab === l.id ? 'active' : ''}`}
-              onClick={() => handleNavClick('module1', l.id)}
-              style={{ paddingLeft: '2.5rem', borderLeft: activeTab === l.id ? '4px solid var(--primary)' : 'none' }}
+              className="nav-link"
+              style={{ paddingLeft: '2.5rem', opacity: 0.45, cursor: 'not-allowed', pointerEvents: 'none' }}
             >
-              📖 {l.title.split(':').pop()?.trim() || l.title}
+              🔒 {l.title.split(':').pop()?.trim() || l.title}
             </div>
           ))}
 
           <div className="nav-group-title">{refinedData2.moduleTitle}</div>
-          {refinedData2.lessons.map((l: any) => (
-            <div
-              key={l.id}
-              className={`nav-link ${activeTab === l.id ? 'active' : ''}`}
-              onClick={() => handleNavClick('module2', l.id)}
-              style={{ paddingLeft: '2.5rem', borderLeft: activeTab === l.id ? '4px solid var(--primary)' : 'none' }}
-            >
-              📖 {l.title.split(':').pop()?.trim() || l.title}
-            </div>
-          ))}
+          {refinedData2.lessons.map((l: any) => {
+            const isUnlocked = l.id === 'm2_lecon1';
+            return (
+              <div
+                key={l.id}
+                className={`nav-link ${activeTab === l.id && isUnlocked ? 'active' : ''}`}
+                onClick={() => isUnlocked && handleNavClick('module2', l.id)}
+                style={{
+                  paddingLeft: '2.5rem',
+                  borderLeft: activeTab === l.id && isUnlocked ? '4px solid var(--primary)' : 'none',
+                  opacity: isUnlocked ? 1 : 0.45,
+                  cursor: isUnlocked ? 'pointer' : 'not-allowed'
+                }}
+              >
+                {isUnlocked ? '📖' : '🔒'} {l.title.split(':').pop()?.trim() || l.title}
+              </div>
+            );
+          })}
 
           <div className="nav-group-title">Séquences suivantes</div>
-          <div className="nav-link" style={{ opacity: 0.5, cursor: 'not-allowed' }}>🔒 Module 3</div>
+          <div className="nav-link" style={{ opacity: 0.45, cursor: 'not-allowed' }}>🔒 Module 3</div>
         </div>
       </aside>
 

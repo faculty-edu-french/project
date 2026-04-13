@@ -1024,41 +1024,95 @@ body {
 
 /* --- PRINT MEDIA (PDF export) --- */
 @media print {
-  /* hide sidebar, buttons, nav */
+  /* --- Reset layout so content can flow across pages --- */
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+    background: white !important;
+    font-size: 11pt;
+    color: #000 !important;
+  }
+
+  /* Kill the fixed height + overflow on app shell */
+  .app-layout {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Hide sidebar, nav, interactive elements */
   .sidebar,
   .mobile-topbar,
   .print-btn,
   .essay-submitter,
+  .essay-success-container,
   .mcq-block,
+  .mcq-group,
   .link-button,
-  video {
+  video,
+  .student-gate,
+  [style*="position: fixed"] {
     display: none !important;
   }
+
+  /* Main content: full width, no overflow clipping */
   .main-content {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  /* Lesson card: clean white print-ready */
   .lesson-card {
     box-shadow: none !important;
     border: none !important;
+    border-radius: 0 !important;
     padding: 1cm 1.5cm !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
   }
-  body {
-    background: white !important;
-    font-size: 12pt;
-  }
+
+  /* Grammar cards should not break mid-card */
   .grammar-card {
     break-inside: avoid;
     page-break-inside: avoid;
-  }
-  .input-field {
+    box-shadow: none !important;
     border: 1px solid #ccc !important;
-    padding: 4px !important;
+  }
+
+  /* Input fields: show as writable lines */
+  .input-field {
+    border: none !important;
+    border-bottom: 1px solid #444 !important;
+    border-radius: 0 !important;
+    padding: 2px 4px !important;
     display: block;
     width: 100%;
+    background: transparent !important;
+    box-shadow: none !important;
   }
+
+  /* Headings should not be orphaned */
   h1, h2, h3, h4 {
     break-after: avoid;
     page-break-after: avoid;
   }
+
+  /* Phases and tasks */
+  .phase-tag, .task-banner, .instruction-box {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* info-box sidebar floats: make it block on print */
+  .info-box {
+    float: none !important;
+    width: auto !important;
+    margin: 1em 0 !important;
+  }
 }
+

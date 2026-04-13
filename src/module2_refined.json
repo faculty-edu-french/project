@@ -592,6 +592,10 @@
           "content": "✓ Écrivez un court résumé de ce que vous avez compris de cette vidéo."
         },
         {
+          "id": "input_8923166c",
+          "type": "input"
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 11 : Discussion en groupes : 10 minutes"
         },

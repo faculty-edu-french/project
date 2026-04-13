@@ -1,0 +1,1761 @@
+{
+  "moduleTitle": "Module 1 : L’environnement",
+  "lessons": [
+    {
+      "id": "lecon1",
+      "title": "Leçon 1 : Le réchauffement climatique",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Leçon « 1 » Agir contre le réchauffement climatique"
+        },
+        {
+          "type": "objective",
+          "content": "Objectif  général : À la fin de la leçon « Agir contre le réchauffement climatique », l’apprenant sera capable de comprendre et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
+          "type": "objective",
+          "content": "Objectifs de cette leçon, l’apprenant doit être capable de/d’:"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Comprendre l’idée générale d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "2. Déterminer les idées principales et secondaires d’un texte lu. 3. Saisir le sens des mots selon le contexte."
+        },
+        {
+          "type": "list_item",
+          "content": "4. Faire des inférences en établissant des liens entre les éléments d’un texte lu en justifiant son interprétation."
+        },
+        {
+          "type": "list_item",
+          "content": "5. Résumer correctement un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "6. Suivre l’enchaînement chronologique des événements d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "7. Employer un vocabulaire riche et varié pour que le message écrit soit compréhensible."
+        },
+        {
+          "type": "list_item",
+          "content": "8. Employer les connecteurs logiques."
+        },
+        {
+          "type": "list_item",
+          "content": "9. Écrire des phrases correctes et cohérentes."
+        },
+        {
+          "type": "list_item",
+          "content": "10. Développer chez les apprenants le sentiment que l’apprentissage du français est utile et significatif."
+        },
+        {
+          "type": "list_item",
+          "content": "11. Éveiller la curiosité et l’intérêt des apprenants à travers des activités d’apprentissage variées."
+        },
+        {
+          "type": "image",
+          "content": "/images/m1_lecon1.jpg",
+          "caption": "Illustration de la leçon"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
+        },
+        {
+          "type": "header",
+          "content": "I. \t  Introduction et Motivation : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Observez attentivement les deux images suivantes, puis prédisez le thème du texte."
+        },
+        {
+          "type": "image",
+          "content": "/images/img-121.jpg"
+        },
+        {
+          "type": "image",
+          "content": "/images/img-122.jpg"
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Répondez aux questions suivantes :"
+        },
+        {
+          "type": "question",
+          "content": "➢ Savez-vous ce qu’est le réchauffement climatique ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "➢ Quelles actions peut-on faire pour protéger l’environnement au quotidien ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "header",
+          "content": "II. \t Lecture guidée du texte (15 minutes)"
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 1 : Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Lisez le texte suivant, puis répondez aux questions. Agir contre le réchauffement climatique"
+        },
+        {
+          "type": "paragraph",
+          "content": "Pour lutter contre le réchauffement climatique, j’essaie de faire des petites choses à mon échelle au quotidien. Je pense que c’est important que chacun fasse quelque chose à son niveau. Bien sûr, il faudrait aussi que des décisions politiques soient vraiment prises pour protéger l’environnement, mais nous avons tous un pouvoir que nous oublions trop souvent : le pouvoir du consommateur."
+        },
+        {
+          "type": "paragraph",
+          "content": "Tel que je vois les choses, si tout le monde arrêtait d’acheter des produits polluants, on arrêterait tout simplement d’en vendre. Alors, j’essaie de faire les choses à mon échelle en espérant que d’autres feront pareil."
+        },
+        {
+          "type": "paragraph",
+          "content": "Par exemple, j’essaie de n’acheter que des fruits et légumes de saison. J’achète plutôt des produits locaux pour privilégier les circuits courts. Aussi, je fais attention à acheter le moins possible de produits fabriqués à l’étranger, comme ça, je sais que ce que j’achète n’a pas été transporté dans des conteneurs polluants."
+        },
+        {
+          "type": "paragraph",
+          "content": "Je ne demande pas de sacs plastiques quand je fais des courses, car je sais qu’ils se retrouvent dans les océans et sont dévastateurs pour la faune marine."
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Ensuite, pour mes déplacements, je privilégie plutôt les transports en commun, la marche à pied ou le vélo pour éviter la voiture le plus possible."
+        },
+        {
+          "type": "paragraph",
+          "content": "Bien sûr, quand on vit à la campagne, c’est beaucoup plus difficile de vivre sans voiture, surtout quand on est obligé de faire 20 kilomètres pour faire des courses. Mais quand on vit en centre-ville et que tout est à 2 ou 3 kilomètres à pied, je trouve qu’on n’a pas trop d’excuses."
+        },
+        {
+          "type": "paragraph",
+          "content": "J’aimerais vraiment que le vélo se démocratise en France comme en Allemagne, mais le problème des villes françaises, c’est qu’elles ne sont pas aménagées pour les vélos."
+        },
+        {
+          "type": "paragraph",
+          "content": "Mais je reste plutôt optimiste, les choses commencent à changer, bien que trop lentement à mon goût. De toute façon, je ne suis pas un modèle non plus et je sais que je pollue énormément malgré mes petits gestes."
+        },
+        {
+          "type": "link",
+          "content": "https://anyfrench.com/lecture/agir-contre-le-rechauffement-climatique",
+          "url": "https://anyfrench.com/lecture/agir-contre-le-rechauffement-climatique"
+        },
+        {
+          "type": "text",
+          "content": "Questions guidées (10 minutes)"
+        },
+        {
+          "type": "text",
+          "content": "Répondez aux questions suivantes :"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Pourquoi l’auteur fait-il attention à ses achats ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "2. Quels moyens de transport privilégie-t-il ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "3. Quel rôle le consommateur peut-il jouer ?"
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Déterminez les mots-clés dans le texte et leurs significations selon le contexte) 5 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "o Consommateur : o produits polluants"
+        },
+        {
+          "type": "text",
+          "content": "o circuits courts"
+        },
+        {
+          "type": "paragraph",
+          "content": "o transports en commun o sacs plastiques"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro  tâche  2  : Trouvez l’idée générale du texte ?  (5 minutes)"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "info_box",
+          "content": "LE TEXTE ARGUMENTATIF\n\n1️⃣ Définition : Le texte argumentatif cherche à convaincre ou persuader le lecteur d’adopter une idée ou une attitude.\n• Présente un problème ou un sujet.\n• Expose l’opinion de l’auteur.\n• Fournit arguments et exemples concrets.\nPeut inclure un appel à l’action.\n\n2️⃣ Objectif :\n• Persuader ou convaincre le lecteur.\n• Faire réfléchir sur un sujet.\n• Proposer des solutions ou encourager un comportement.\n\n3️⃣ Caractéristiques principales :\nExemple dans le texte sur le réchauffement\n\n• Problème : Sujet ou question (Ex: Le réchauffement climatique menace la planète)\n• Opinion : Ce que pense l’auteur (Ex: « J’essaie de faire des petites choses à mon échelle »)\n• Arguments : Raisons pour convaincre (Ex: Acheter local, éviter les sacs plastiques, utiliser vélo/transports en commun)\n• Exemples concrets : Actions pour illustrer (Ex: Fruits et légumes de saison, circuits courts, limiter produits importés)\n• Appel à l’action : Invitation à agir (Ex: « Chacun peut agir, nous avons le pouvoir du consommateur »)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : l’étudiant clique et surligne la phrase qui exprime l’idée générale → il obtient le feedback immédiat « Correct / Réessayez »."
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 3 : (5 minutes) : Identifiez les connecteurs"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Persuader ou convaincre le lecteur."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Faire réfléchir sur un sujet."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Proposer des solutions ou encourager un comportement."
+        },
+        {
+          "type": "paragraph",
+          "content": "• 3️⃣ Caractéristiques principales : Exemple dans le texte sur le réchauffement"
+        },
+        {
+          "type": "paragraph",
+          "content": "logiques (ex. : “Alors”, “Aussi”, “Mais”) et expliquer leur rôle."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 4 : (10 minutes) Résumez chaque paragraphe en une phrase ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Élément Problème"
+        },
+        {
+          "type": "text",
+          "content": "Opinion"
+        },
+        {
+          "type": "text",
+          "content": "Arguments"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 5 : (5 minutes) Déterminez les phrases difficiles à comprendre pour vous ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Mettez vrai ou faux devant chaque phrase : (5 minutes)"
+        },
+        {
+          "type": "list_item",
+          "content": "1. L’auteur pense que chacun peut agir contre le réchauffement climatique.  ( ) 2. L’auteur utilise souvent la voiture pour ses déplacements.                          ( ) 3. Les sacs plastiques ont un impact sur la faune marine.                                ( ) 4. Acheter des produits locaux réduit le transport polluant.                             ( ) 5. Est-ce que les gouvernements ont un rôle d’après le texte.                          ( )"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 6 : (5 minutes) Reformulez la phrase suivante ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots."
+        },
+        {
+          "type": "paragraph",
+          "content": "« Je ne demande pas de sacs plastiques car ils sont dévastateurs pour la faune marine. »"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 7 : Mini-production (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne :  Écrivez (2 à 3 lignes) : Quelles actions écologiques faites-vous dans votre vie"
+        },
+        {
+          "type": "paragraph",
+          "content": "quotidienne pour lutter contre le réchauffement climatique ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro \ttâche \t8 : \t(5 minutes(  :  Regardez cette vidéo          pour          bien comprendre le changement climatique : comprendre ses      causes      et      ses conséquences pour mieux réagir https://youtu.be/NfaeoC"
+        },
+        {
+          "type": "text",
+          "content": "ORuzk"
+        },
+        {
+          "type": "text",
+          "content": "Structures à observer :"
+        },
+        {
+          "type": "question",
+          "content": "Les connecteurs d’opinion : je pense que, je trouve que…          Les connecteurs d’exemple : par exemple…"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "Les connecteurs d’opposition : mais, pourtant…"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "question",
+          "content": "Les structures pour exprimer un souhait : J’aimerais que…"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 9 : Discussion en groupes (10 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Quelles actions peuvent être mises en œuvre à l’université ou dans votre ville pour lutter contre le réchauffement climatique ?"
+        },
+        {
+          "type": "text",
+          "content": "Déroulement:"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Les étudiants travaillent en petits groupes (3 à 4 étudiants)."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Chaque groupe échange ses idées envers la tâche visée et note les propositions les plus convenables."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "phase",
+          "content": "Phase 3 : Post-action (Tâche finale) Durée (20 minutes) :"
+        },
+        {
+          "type": "paragraph",
+          "content": "Tâche Finale: Rédiger un message de sensibilisation écologique (format publication Facebook / Instagram)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Consigne  : L’université de Minia souhaite un article de sensibilisation contre le réchauffement \tclimatique. Elle demande aux étudiants de créer un article officiel à diffuser dans les réseaux sociaux de l’université."
+        },
+        {
+          "type": "paragraph",
+          "content": "La \tdemande \t: En tant qu’étudiant, rédigez article (8 à 10 lignes) pour sensibiliser vos camarades aux comportement simples qui réduisent le réchauffement climatique. La publication doit être claire, motivante et adaptée aux réseaux sociaux."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "phase",
+          "content": "Phase  4  :  évaluation  des  produits  des  étudiants :  Durée  :    10  minutes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, structure), comparez avec vos camarades et corrigez si nécessaire."
+        },
+        {
+          "type": "paragraph",
+          "content": "Discuter en groupe : quelles actions pourraient être mises en place dans votre ville ou votre quartier ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "É- évaluation :  Répondez à ces questions :"
+        },
+        {
+          "type": "paragraph",
+          "content": "− Écrivez quatre idées secondaires ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Pourquoi l’auteur pense-t-il que les actions individuelles sont importantes ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Donnez un autre exemple d’action écologique que l’auteur aurait pu mentionner ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Identifiez les mots clés du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Trouvez un (autre) titre qui donne bien la clé du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Qui doit agir contre le réchauffement climatique ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Identifiez l’opinion de l’auteur et ses arguments principaux."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "− Comparez ces pratiques économiques de l’auteur pour la protection de l’environnement selon votre propre expérience."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Proposez une critique ou un commentaire sur les actions proposées."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− En petit groupe, déterminez avec tes camarades des autres causes de réchauffement climatique."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Vérifier ta repense correcte"
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Module « 1 » L’environnement et le développement durable"
+        }
+      ]
+    },
+    {
+      "id": "lecon2",
+      "title": "Leçon 2 : Les espaces verts",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": "Leçon « 2 » Les espaces verts"
+        },
+        {
+          "type": "objective",
+          "content": "Objectif général : À la fin de la leçon « les espaces verts », l’apprenant sera capable de comprendre un texte explicatif et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
+          "type": "objective",
+          "content": "Objectifs de cette leçon, l’apprenant doit être capable de/d’:"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Comprendre l’idée générale et déterminer les idées principales et secondaires d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "2. Saisir le sens des mots selon le contexte."
+        },
+        {
+          "type": "list_item",
+          "content": "3. Etablir des liens entre les parties d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "4. Suivre l’enchaînement chronologique des événements d’un texte lu. 5. Résumer correctement un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "6. Employer des mots adéquats à la situation. 7. Écrire des phrases correctes et cohérentes. 8. Employer les connecteurs logiques."
+        },
+        {
+          "type": "list_item",
+          "content": "9. Fonctionner les règles de présentation du texte (introduction-développement - conclusion)."
+        },
+        {
+          "type": "list_item",
+          "content": "10. Réviser et améliorer son texte à partir des remarques ou en comparant avec les camarades."
+        },
+        {
+          "type": "list_item",
+          "content": "11. Amener les apprenants à comprendre l’importance de l’apprentissage du français pour leur avenir académique et professionnel."
+        },
+        {
+          "type": "list_item",
+          "content": "12. Renforcer l’engagement des apprenants dans les activités d’apprentissage afin de susciter leur intérêt pour l’apprentissage du FLE."
+        },
+        {
+          "type": "image",
+          "content": "/images/m1_lecon2.jpg",
+          "caption": "Illustration de la leçon"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : (Activation des connaissances) 20 minutes"
+        },
+        {
+          "type": "header",
+          "content": "I. \t  Introduction et Motivation : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Observez ce que vous voyez et prédisez le thème de la leçon."
+        },
+        {
+          "type": "image",
+          "content": "/images/img-166.jpg"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "text",
+          "content": "Répondez aux questions suivantes :"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Que voyez-vous dans cette image ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "2.     Pourquoi ces endroits sont-ils importants ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "3. Quel est le thème du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche  1  : Écrivez deux phrases pour expliquer ce qu’est un espace vert selon vous ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "header",
+          "content": "II. \t Lecture guidée du texte (15 minutes)"
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 2 : Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 2: Action (Compréhension approfondie) 60 minutes"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Lisez le texte suivant, puis répondez aux questions."
+        },
+        {
+          "type": "text",
+          "content": "Les espaces verts"
+        },
+        {
+          "type": "paragraph",
+          "content": "Les espaces verts sont des endroits naturels en ville où l’on trouve des arbres, des pelouses et des fleurs. Ces lieux, comme les parcs, les jardins publics ou les forêts urbaines, sont très importants pour les habitants. Ils permettent de se détendre, de faire du sport ou simplement"
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "de profiter de la nature. Dans les grandes villes, les espaces verts améliorent la qualité de l’air et réduisent la pollution."
+        },
+        {
+          "type": "paragraph",
+          "content": "Beaucoup de personnes aiment passer leur temps libre dans les espaces verts. Les enfants y jouent, les adultes font des pique-niques ou lisent un livre, et les personnes âgées s’y promènent pour rester en forme. Ces endroits sont aussi utiles pour les animaux et les insectes, comme les oiseaux et les abeilles, qui y trouvent de la nourriture et un habitat naturel. Sans les espaces verts, la vie en ville serait beaucoup moins agréable."
+        },
+        {
+          "type": "paragraph",
+          "content": "Malheureusement, dans certaines villes, les espaces verts disparaissent à cause de la construction de bâtiments ou de routes. Les gouvernements et les citoyens doivent agir pour protéger et créer plus de zones vertes. Planter des arbres, nettoyer les parcs et organiser des activités écologiques sont des solutions simples mais efficaces. Si tout le monde participe, les villes pourront devenir plus vertes et plus saines pour les générations futures."
+        },
+        {
+          "type": "link",
+          "content": "https://www.bien-ecrire.com",
+          "url": "https://www.bien-ecrire.com"
+        },
+        {
+          "type": "text",
+          "content": "Questions guidées (10 minutes)"
+        },
+        {
+          "type": "text",
+          "content": "Choisissez la bonne réponse :"
+        },
+        {
+          "type": "question",
+          "content": "1. Les espaces verts améliorent… a) la pollution"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "b) la qualité de l’air  c) la circulation"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "2. Dans les espaces verts, les adultes… a) jouent au ballon"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "b) font des pique-niques  c) vont à l’école"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "3. Les abeilles et les oiseaux trouvent dans les espaces verts…   a) des voitures"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "b) de la nourriture  c) des bâtiments"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 3 : (5 minutes) Trouvez dans le texte trois activités qu’on peut faire dans un"
+        },
+        {
+          "type": "text",
+          "content": "espace vert ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Informations enrichissantes"
+        },
+        {
+          "type": "text",
+          "content": "Présentation du texte explicatif:"
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 4: (5 minutes) Trouvez l’idée générale du texte?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Le texte explicatif est un texte qui a pour objectif d’expliquer un phénomène, une idée ou une situation. Il répond souvent à des questions comme : Pourquoi ? Comment ? Quels sont les effets ?"
+        },
+        {
+          "type": "text",
+          "content": "Caractéristiques principales:"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 5 : (10 minutes) Résumez chaque paragraphe en"
+        },
+        {
+          "type": "text",
+          "content": "une phrase ?"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Il donne des informations précises."
+        },
+        {
+          "type": "question",
+          "content": "• Il utilise des connecteurs logiques : car, parce que, ainsi, donc, cependant…"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "• Il présente causes, conséquences, solutions."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Il peut contenir des exemples pour aider à comprendre."
+        },
+        {
+          "type": "question",
+          "content": "Dans ton texte sur les espaces verts, l’auteur :"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "• Décrit ce qu’est un espace vert,"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Explique pourquoi ils sont importants,"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Montre les problèmes liés à leur disparition,"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Propose des solutions pour les protéger."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 6 : (5 minutes) Déterminez les phrases difficiles à comprendre pour vous ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Mettez vrai ou faux devant chaque phrase : (5 minutes)"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Les espaces verts existent seulement dans les villages.      (  ) 2. Les espaces verts permettent aux gens de se détendre.       (  ) 3. Les animaux ne peuvent pas vivre dans les espaces verts.  (  ) 4. Dans certaines villes, les espaces verts disparaissent.         (  )"
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 7 : (5 minutes) Reformulez la phrase suivante ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots. « Les espaces verts améliorent la qualité de l’air »."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 9 : (5"
+        },
+        {
+          "type": "text",
+          "content": "minutes)"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Structures à observer :"
+        },
+        {
+          "type": "text",
+          "content": "Prépositions :"
+        },
+        {
+          "type": "paragraph",
+          "content": " Dans → indique le lieu : « dans les grandes villes »"
+        },
+        {
+          "type": "paragraph",
+          "content": " À cause de → indique la cause : « à cause de la construction »"
+        },
+        {
+          "type": "text",
+          "content": "Temps verbaux:"
+        },
+        {
+          "type": "paragraph",
+          "content": " Présent → utilisé pour décrire, expliquer ou parler de faits généraux :"
+        },
+        {
+          "type": "paragraph",
+          "content": "« Les espaces verts sont des endroits naturels » → \"Les espaces verts existent et sont naturels\""
+        },
+        {
+          "type": "paragraph",
+          "content": "« Ils permettent de se détendre » → \"Ils permettent aux habitants de se relaxer\" « Ils améliorent la qualité de l’air » → \"Ils améliorent la qualité de l’air\""
+        },
+        {
+          "type": "paragraph",
+          "content": " Futur → utilisé pour exprimer une conséquence possible ou un résultat conditionnel :"
+        },
+        {
+          "type": "paragraph",
+          "content": "« Si tout le monde participe, les villes pourront devenir plus vertes » → \"Si tout le monde participe, les villes pourront devenir plus vertes\""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 10 : Discussion en groupes : (10 minutes) : Quelles actions pourraient être mises en place dans votre ville ou votre quartier ?"
+        },
+        {
+          "type": "text",
+          "content": "Déroulement :"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Travaillez en petits groupes (3 à 4 étudiants)."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Échangez vos idées envers la tâche visée et notez les propositions les plus convenables."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "phase",
+          "content": "Phase 3: Post-action (Tâche finale):"
+        },
+        {
+          "type": "paragraph",
+          "content": "Tâche finale (avec modèle + aide lexicale) (20 minutes)"
+        },
+        {
+          "type": "text",
+          "content": "Consigne:"
+        },
+        {
+          "type": "paragraph",
+          "content": "Vous êtes membre d’un club écologique à l’université. Rédigez un article (6–8 lignes) pour convaincre vos camarades de protéger les espaces verts dans votre ville."
+        },
+        {
+          "type": "text",
+          "content": "Le texte doit contenir:"
+        },
+        {
+          "type": "text",
+          "content": "• Définition d’un espace vert."
+        },
+        {
+          "type": "text",
+          "content": "• Importance pour les habitants."
+        },
+        {
+          "type": "text",
+          "content": "• Problèmes actuels."
+        },
+        {
+          "type": "text",
+          "content": "• Solutions proposées."
+        },
+        {
+          "type": "text",
+          "content": "• Conclusion motivante."
+        },
+        {
+          "type": "text",
+          "content": "Outils interactifs fournis:"
+        },
+        {
+          "type": "question",
+          "content": "• Banque de connecteurs (d’abord, ensuite, en plus, pourtant, enfin…)"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "• Aide lexicale (arbres, pollution, protéger, créer, planter…)"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "phase",
+          "content": "Phase  4  :  évaluation  des  produits  des  étudiants :  Durée  :    10  minutes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, structure), comparez avec vos camarades et corrigez si nécessaire."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "É- évaluation :"
+        },
+        {
+          "type": "paragraph",
+          "content": "− Déterminez quatre idées secondaires du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Quels animaux peuvent y vivre ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Pourquoi \tcertains \tespaces \tverts \tdisparaissent-ils \t?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Identifiez les mots clés du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Trouvez un (autre) titre qui donne bien la clé du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "− Quelles solutions le texte propose-t-il ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Comparez ces pratiques économiques de l’auteur pour la protection de l’environnement avec votre propre expérience."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− En petit groupe, déterminez avec tes camarades d’autres causes de la disparition des espaces verts"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Quels sont les avantages des espaces verts en ville ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Que font les adultes dans les espaces verts ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Pourquoi les espaces verts sont-ils importants pour les animaux ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Quelles sont les causes de la disparition des espaces verts ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "− Comment peut-on protéger les espaces verts ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Vérifier ta repense correcte"
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Module « 1 » L’environnement et le développement durable Leçon « 3 »"
+        },
+        {
+          "type": "paragraph",
+          "content": "Le covoiturage : voyager ensemble pour une vie plus simple"
+        }
+      ]
+    },
+    {
+      "id": "lecon3",
+      "title": "Leçon 3 : Le covoiturage",
+      "blocks": [
+        {
+          "type": "objective",
+          "content": "Objectif général : À la fin de la leçon « Le covoiturage », l’apprenant sera capable de comprendre un texte explicatif et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
+          "type": "paragraph",
+          "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Comprendre l’idée générale et déterminer les idées principales et secondaires d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "2. Faire ressortir les mots clés d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "3. Lier entre ses connaissances antérieures et les informations d’un texte lu. 4. Résumer correctement un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "5. Dégager le sens implicite existant entre les lignes."
+        },
+        {
+          "type": "list_item",
+          "content": "6. Évaluer Porter un jugement d’un texte lu à partir des critères pertinents. 7. Employer des mots adéquats à la situation."
+        },
+        {
+          "type": "list_item",
+          "content": "8. Écrire des phrases correctes et cohérentes."
+        },
+        {
+          "type": "list_item",
+          "content": "9. S’exprimer et se faire comprendre à l’écrit en organisant les idées. 10. Écrire un texte clair et bien structuré."
+        },
+        {
+          "type": "list_item",
+          "content": "11. Créer une atmosphère positive et agréable en classe de FLE."
+        },
+        {
+          "type": "list_item",
+          "content": "12. Renforcer le sentiment de soutien pédagogique chez les apprenants."
+        },
+        {
+          "type": "image",
+          "content": "/images/m1_lecon3.jpg",
+          "caption": "Illustration de la leçon"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : Activation des connaissances) (20 minutes)"
+        },
+        {
+          "type": "header",
+          "content": "I. \t  Introduction et Motivation : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Observez ce que vous voyez et prédisez le thème de la leçon."
+        },
+        {
+          "type": "image",
+          "content": "/images/img-192.jpg"
+        },
+        {
+          "type": "image",
+          "content": "/images/img-193.jpg"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Répondez aux questions suivantes: 1. Que voyez-vous dans ces images ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "2. Selon vous, quel est le thème de la leçon ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 1 : Exprimez-vous avec votre propre style ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Écrivez deux phrases pour expliquer ce qu’est le covoiturage."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "header",
+          "content": "II. \t Lecture guidée du texte (15 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Lisez le texte, puis répondez aux questions."
+        },
+        {
+          "type": "paragraph",
+          "content": "Le covoiturage : voyager ensemble pour une vie plus simple"
+        },
+        {
+          "type": "paragraph",
+          "content": "Le covoiturage, c’est le fait de partager sa voiture avec d’autres personnes qui vont dans la même direction. Ce n’est pas un service de transport professionnel : le conducteur ne fait pas de bénéfice, il partage seulement les frais du trajet, comme l’essence ou les péages. Ce mode de déplacement connaît un grand succès en France. Les routes sont souvent pleines, le carburant coûte cher et les transports publics ne couvrent pas toujours toutes les zones. Dans ce contexte, le covoiturage apparaît comme une solution économique, écologique et solidaire. Il permet de rouler moins cher, de rencontrer du monde et de réduire la pollution."
+        },
+        {
+          "type": "paragraph",
+          "content": "Beaucoup de gens racontent leurs expériences positives. Par exemple, Antoine, un étudiant de Nantes, dit qu’il a découvert cette pratique grâce à une application mobile : « J’ai tout de suite aimé l’ambiance dans la voiture. On discute, on écoute de la musique, et le trajet paraît plus court. » Pour lui, le covoiturage est une manière agréable de faire des rencontres tout en économisant de l’argent. D’autres apprécient surtout le côté écologique : en remplissant une seule voiture au lieu de trois, on émet beaucoup moins de CO₂. Selon le ministère de la Transition écologique, chaque année, plusieurs millions de trajets sont réalisés ainsi, ce qui prouve que cette habitude entre vraiment dans le quotidien des Français."
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Mais il ne faut pas oublier les petits inconvénients. Parfois, les horaires ne sont pas respectés ou les trajets changent au dernier moment. Il arrive aussi qu’on ne s’entende pas avec les autres passagers. Certaines personnes préfèrent conduire seules, par confort ou par besoin d’intimité. Pourtant, malgré ces petits problèmes, le covoiturage reste une solution moderne et responsable. Il montre qu’on peut changer nos habitudes de transport sans perdre notre liberté. Voyager ensemble, c’est aussi apprendre à partager, à faire confiance et à penser un peu plus à la planète."
+        },
+        {
+          "type": "link",
+          "content": "https://www.bien-ecrire.com",
+          "url": "https://www.bien-ecrire.com"
+        },
+        {
+          "type": "text",
+          "content": "Questions guidées (10 minutes)"
+        },
+        {
+          "type": "text",
+          "content": "Choisissez la bonne réponse :"
+        },
+        {
+          "type": "text",
+          "content": "ENRICHISSANTES Des informations enrichissantes"
+        },
+        {
+          "type": "question",
+          "content": "1. Le covoiturage permet de… a) Voyager plus cher"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "b) Économiser de l’argent c) Acheter une voiture"
+        },
+        {
+          "type": "question",
+          "content": "2. Selon le texte, le covoiturage est…"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Présentation du texte explicatif:"
+        },
+        {
+          "type": "paragraph",
+          "content": "Le texte explicatif est un texte qui a pour objectif d’expliquer un phénomène, une idée ou une situation. Il répond souvent à des questions comme : Pourquoi ? Comment ? Quels sont les effets ?"
+        },
+        {
+          "type": "paragraph",
+          "content": "a) Un service professionnel de transport b) Une solution écologique et solidaire c) Une obligation légale"
+        },
+        {
+          "type": "question",
+          "content": "3. Les passagers apprécient surtout… a) Les horaires stricts."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "b) Les rencontres et la discussion. c) Conduire seuls."
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 2 : (5 minutes) Trouvez dans le texte trois"
+        },
+        {
+          "type": "text",
+          "content": "Caractéristiques principales:"
+        },
+        {
+          "type": "paragraph",
+          "content": "• Il donne des informations précises."
+        },
+        {
+          "type": "question",
+          "content": "• Il utilise des connecteurs logiques : car, parce que, ainsi, donc, cependant…"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "• Il présente causes, conséquences, solutions."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Il peut contenir des exemples pour aider à comprendre."
+        },
+        {
+          "type": "paragraph",
+          "content": "Dans le texte sur le covoiturage, l’auteur :"
+        },
+        {
+          "type": "paragraph",
+          "content": "avantages et un inconvénient du covoiturage ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "• Définit le covoiturage."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Explique ses avantages économiques et écologiques."
+        },
+        {
+          "type": "text",
+          "content": "• Évoque certains inconvénients."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Illustre ses propos par des exemples et des témoignages."
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 3 : (5 minutes) Identifiez l’idée essentielle du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 4 : (5 minutes) Résumez chaque paragraphe en une phrase ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 5 : (5 minutes) Déterminez les phrases difficiles à comprendre pour vous ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Mettez vrai ou faux devant chaque phrase : (5 minutes)"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Le covoiturage est un service professionnel. ( ) 2. Il permet de réduire les frais du trajet. ( )"
+        },
+        {
+          "type": "list_item",
+          "content": "3. Le covoiturage ne contribue pas à l’écologie. ( ) 4. Il favorise les relations sociales. ( )"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 6 : (5 minutes) : Corrigez les phrases suivantes ?"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Le covoiturage réduire la pollution."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "2. Les passagers partage les frais."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "3. C’est une solution économique et il protège l’environnement."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "4. Beaucoup personnes utilisent covoiturage."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 7 : (5 minutes) Reformulez la phrase suivante ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots. « Il permet de réduire la pollution. »"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 8 : Mini-production : (5 minutes)                                                               Consigne :   À travers cette image, rédigez un court paragraphe (3–4 lignes) mettant en"
+        },
+        {
+          "type": "text",
+          "content": "valeur les avantages du covoiturage."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Structures à observer : (5 minutes)"
+        },
+        {
+          "type": "text",
+          "content": "Exprimer l’utilité / l’avantage"
+        },
+        {
+          "type": "paragraph",
+          "content": "Structure : Il permet de + infinitif"
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 9 : (5 minutes) Regardez cette vidéo pour bien comprendre qu’est-ce que signifie le covoit : https://toutenfrancais.tv/fle-"
+        },
+        {
+          "type": "text",
+          "content": "covoiturage-a2"
+        },
+        {
+          "type": "paragraph",
+          "content": "Rédigez un court résumé de ce que vous avez compris de cette vidéo."
+        },
+        {
+          "type": "paragraph",
+          "content": "Malgré ces petits problèmes, le covoiturage reste une solution responsable."
+        },
+        {
+          "type": "text",
+          "content": "Exprimer la conséquence"
+        },
+        {
+          "type": "paragraph",
+          "content": "Structure : ce qui + verbe"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 10 : Discussion en groupes : (10 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "En observant cette carte mentale discutez avec vos collèges sur les éléments essentiels du covoiturage comme les avantages, les inconvénients, les solutions et comment faire pour encourager ce pratique dans notre société."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "phase",
+          "content": "Phase 3 : Post-action (Tâche finale) Durée : (20 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Tâche finale (avec modèle + aide lexicale)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Consigne: Chaque étudiant utilise les idées générées pendant la discussion."
+        },
+        {
+          "type": "paragraph",
+          "content": "Imaginez que vous êtes membre d’un club universitaire de développement durable. Rédigez un article (8–10 lignes) pour convaincre vos camarades d’adopter le covoiturage pour leurs déplacements quotidiens (université, travail, sorties)."
+        },
+        {
+          "type": "text",
+          "content": "Le texte doit contenir:"
+        },
+        {
+          "type": "text",
+          "content": "• Une définition du covoiturage."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Son importance pour les étudiants et les habitants."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Les avantages principaux (économiques, écologiques, sociaux)."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Les difficultés possibles liées au covoiturage."
+        },
+        {
+          "type": "paragraph",
+          "content": "• Une conclusion motivante incitant à changer les habitudes de transport."
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "text",
+          "content": "Outils interactifs fournis:"
+        },
+        {
+          "type": "question",
+          "content": "▪ Banque de connecteurs (d’abord, ensuite, en plus, par exemple, mais, pourtant, enfin…)"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "▪ Aide lexicale (covoiturage, trajet, partager, frais, carburant, pollution, application, écologique, solidaire…)"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "phase",
+          "content": "Phase  4  :  évaluation  des  produits  des  étudiants :  Durée  :    10  minutes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos collèges et corrigez son texte si nécessaire."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "É- évaluation : (10 minutes)   Répondez à ces questions :"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Écrivez trois idées secondaires du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "list_item",
+          "content": "2. Quels sont les avantages du covoiturage ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "3. Pourquoi \tcertains \tétudiants \tne \tfont-ils \tpas \tde \tcovoiturage \t?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "4. Identifiez les mots clés du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "5. Trouvez un (autre) titre qui qui reflète bien le texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "6. Quelles solutions le texte propose-t-il pour encourager le covoiturage ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "7. En petit groupe, déterminez avec tes camarades des autres causes qui empêchent le covoiturage :"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "list_item",
+          "content": "8. Pensez-vous que ce texte encourage le covoiturage ? Justifiez votre réponse à l’aide de deux éléments du texte."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "text",
+          "content": "Vérifier ta repense correcte"
+        },
+        {
+          "type": "text",
+          "content": "Les Annexes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Module « 2 » La technologie et la société."
+        }
+      ]
+    }
+  ]
+}

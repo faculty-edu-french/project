@@ -1,0 +1,585 @@
+{
+  "title": "Introduction & Manuel d'Utilisation",
+  "blocks": [
+    {
+      "type": "header",
+      "content": "Introduction :"
+    },
+    {
+      "type": "paragraph",
+      "content": "Ce programme vise à développer les compétences de la communication écrite et le plaisir d’apprendre chez les étudiants de quatrième année section de français à la faculté de pédagogie de Minia. Pour atteindre cet objectif, la chercheuse va utiliser le livre numérique interactif basé sur l’approche actionnelle."
+    },
+    {
+      "type": "header",
+      "content": "Objectifs généraux du programme :"
+    },
+    {
+      "type": "objective",
+      "content": "Développer les compétences de la communication écrite et le plaisir d’apprendre pour"
+    },
+    {
+      "type": "paragraph",
+      "content": "les étudiants de quatrième année à la section de français à la faculté de Pédagogie de Minia."
+    },
+    {
+      "type": "header",
+      "content": "Objectifs spécifiques du programme :"
+    },
+    {
+      "type": "objective",
+      "content": "Le programme actuel vise à développer les compétences de la compréhension écrite"
+    },
+    {
+      "type": "header",
+      "content": "suivantes :"
+    },
+    {
+      "type": "list_item",
+      "content": "1. Comprendre l’idée générale d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "2. Déterminer les idées principales et secondaires d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "3. Saisir le sens des mots selon le contexte."
+    },
+    {
+      "type": "list_item",
+      "content": "4. Faire ressortir les mots clés d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "5. Prédire des hypothèses sur le thème d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "6. Poser des questions variées dont les réponses se trouvent dans le texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "7. Donner le synonyme d’un mot cité dans un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "8. Connaitre les trois parties du mot (la racine, le préfixe et le suffixe)."
+    },
+    {
+      "type": "list_item",
+      "content": "9. Reconnaitre les règles grammaticales dans un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "10. Prédire le sens général d’un texte lu à travers des indices."
+    },
+    {
+      "type": "list_item",
+      "content": "11. Identifier les informations détaillées du texte."
+    },
+    {
+      "type": "list_item",
+      "content": "12. Lier entre ses connaissances antérieures et les informations d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "13. Déterminer l’idée de chaque paragraphe dans un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "14. Déterminer le genre d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "15. Etablir des liens entre les parties d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "16. Proposer un autre titre pertinent pour un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "17. Dégager le sens implicite existant entre les lignes."
+    },
+    {
+      "type": "list_item",
+      "content": "18. Suivre l’enchaînement chronologique des événements d’un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "19. Faire des comparaisons entre les problèmes contenus dans le texte et les problèmes semblables dans la vie quotidienne."
+    },
+    {
+      "type": "list_item",
+      "content": "20. Résumer correctement un texte lu."
+    },
+    {
+      "type": "list_item",
+      "content": "21. Porter un jugement d’un texte lu à partir des critères pertinents."
+    },
+    {
+      "type": "list_item",
+      "content": "22.    Faire des inférences en établissant des liens entre les éléments d’un texte lu en"
+    },
+    {
+      "type": "paragraph",
+      "content": "justifiant son interprétation."
+    },
+    {
+      "type": "list_item",
+      "content": "23. Réorganiser les informations d’un texte d’une manière personnelle."
+    },
+    {
+      "type": "list_item",
+      "content": "24. Analyser l’organisation d’un texte lu et interpréter son sens en s’appuyant sur des"
+    },
+    {
+      "type": "paragraph",
+      "content": "indices."
+    },
+    {
+      "type": "objective",
+      "content": "De même, ce programme vise à développer les compétences de la production écrite"
+    },
+    {
+      "type": "header",
+      "content": "suivantes :"
+    },
+    {
+      "type": "list_item",
+      "content": "1. Employer des mots adéquats à la situation."
+    },
+    {
+      "type": "list_item",
+      "content": "2. Employer un vocabulaire riche et varié pour que le message écrit soit compréhensible."
+    },
+    {
+      "type": "list_item",
+      "content": "3. Fonctionner les consignes."
+    },
+    {
+      "type": "list_item",
+      "content": "4. Donner des exemples, en tant que possible sur le sujet du texte."
+    },
+    {
+      "type": "list_item",
+      "content": "5. Orthographier correctement les mots."
+    },
+    {
+      "type": "list_item",
+      "content": "6. Choisir des mots clairs et simples."
+    },
+    {
+      "type": "list_item",
+      "content": "7. Employer correctement les prépositions (dans – en – au – à – de)."
+    },
+    {
+      "type": "list_item",
+      "content": "8. Conjuguer correctement des verbes dans le temps convenable."
+    },
+    {
+      "type": "list_item",
+      "content": "9. Respecter les éléments essentiels de la phrase (sujet+ verbe+ complément)."
+    },
+    {
+      "type": "list_item",
+      "content": "10. Écrire des phrases correctes et cohérentes."
+    },
+    {
+      "type": "list_item",
+      "content": "11. Respecter l’ordre logique des mots dans la phrase."
+    },
+    {
+      "type": "list_item",
+      "content": "12. Employer le temps convenable d’après le type du texte."
+    },
+    {
+      "type": "list_item",
+      "content": "13. Employer les connecteurs logiques."
+    },
+    {
+      "type": "list_item",
+      "content": "14. Maîtriser les règles de l’accord en genre et en nombre."
+    },
+    {
+      "type": "list_item",
+      "content": "15. Fonctionner convenablement les signes de ponctuation."
+    },
+    {
+      "type": "list_item",
+      "content": "16. Maîtriser les règles de l’orthographe (utiliser la majuscule au début de la phrase, nom propre)."
+    },
+    {
+      "type": "list_item",
+      "content": "17. Écrire un texte clair et bien structuré."
+    },
+    {
+      "type": "list_item",
+      "content": "18. Développer chaque idée secondaire dans un paragraphe."
+    },
+    {
+      "type": "list_item",
+      "content": "19. Argumenter son point de vue."
+    },
+    {
+      "type": "list_item",
+      "content": "20. S’exprimer et se faire comprendre à l’écrit en organisant les idées."
+    },
+    {
+      "type": "list_item",
+      "content": "21. Fonctionner les règles de présentation du texte (introduction-développement - conclusion)."
+    },
+    {
+      "type": "list_item",
+      "content": "22. Écrire un titre à son texte pour attirer le lecteur."
+    },
+    {
+      "type": "list_item",
+      "content": "23. Mettre en lien des connaissances antérieures au sujet visé."
+    },
+    {
+      "type": "list_item",
+      "content": "24. Présenter des idées exprimant correctement le contenu d’un sujet."
+    },
+    {
+      "type": "list_item",
+      "content": "25. Fonctionner la mise en page du texte."
+    },
+    {
+      "type": "list_item",
+      "content": "26. Enchaîner logiquement les idées."
+    },
+    {
+      "type": "list_item",
+      "content": "27. Exprimer ses goûts et ses préférences."
+    },
+    {
+      "type": "list_item",
+      "content": "28.  Réviser et améliorer son texte à partir des remarques ou en comparant avec les camarades."
+    },
+    {
+      "type": "header",
+      "content": "De même, ce programme vise à développer les objectifs du plaisir d’apprendre suivants :"
+    },
+    {
+      "type": "list_item",
+      "content": "1. Développer chez les apprenants le sentiment que l’apprentissage du français est utile et significatif."
+    },
+    {
+      "type": "list_item",
+      "content": "2. Éveiller la curiosité et l’intérêt des apprenants à travers des activités d’apprentissage variées."
+    },
+    {
+      "type": "list_item",
+      "content": "3. Amener les apprenants à comprendre l’importance de l’apprentissage du français pour leur avenir académique et professionnel."
+    },
+    {
+      "type": "list_item",
+      "content": "4. Renforcer l’engagement des apprenants dans les activités d’apprentissage afin de susciter leur intérêt pour l’apprentissage du FLE."
+    },
+    {
+      "type": "list_item",
+      "content": "5. Créer une atmosphère positive et agréable en classe de FLE."
+    },
+    {
+      "type": "list_item",
+      "content": "6. Renforcer le sentiment de soutien pédagogique chez les apprenants."
+    },
+    {
+      "type": "list_item",
+      "content": "7. Mettre en œuvre des stratégies d’enseignement variées et motivantes afin de rendre le cours plus intéressant."
+    },
+    {
+      "type": "list_item",
+      "content": "8. Fournir une rétroaction constructive pour aider les apprenants à améliorer leurs apprentissages."
+    },
+    {
+      "type": "list_item",
+      "content": "9. Utiliser l’humour pédagogique pour rendre l’apprentissage du FLE plus plaisant."
+    },
+    {
+      "type": "list_item",
+      "content": "10. Renforcer la confiance en soi des apprenants dans l’apprentissage du français."
+    },
+    {
+      "type": "list_item",
+      "content": "11. Encourager les apprenants à élargir leurs connaissances et à développer leur curiosité intellectuelle."
+    },
+    {
+      "type": "list_item",
+      "content": "12. Proposer des activités pédagogiques motivantes qui suscitent l’intérêt des apprenants pour le cours."
+    },
+    {
+      "type": "list_item",
+      "content": "13. Créer un climat de classe agréable, motivant et favorable à l’apprentissage."
+    },
+    {
+      "type": "list_item",
+      "content": "14. Encourager les apprenants à participer librement sans craindre de commettre des erreurs."
+    },
+    {
+      "type": "list_item",
+      "content": "15. Favoriser des relations positives et solidaires entre les apprenants."
+    },
+    {
+      "type": "list_item",
+      "content": "16. Promouvoir un environnement d’apprentissage basé sur la coopération et les échanges."
+    },
+    {
+      "type": "list_item",
+      "content": "17. Intégrer des moments d’échange et d’interaction afin de rendre l’apprentissage plus plaisant."
+    },
+    {
+      "type": "list_item",
+      "content": "18. Intégrer le livre numérique interactif pour rendre l’apprentissage du français plus motivant et plus plaisant."
+    },
+    {
+      "type": "list_item",
+      "content": "19. Encourager la participation active des apprenants à travers des activités numériques interactives."
+    },
+    {
+      "type": "list_item",
+      "content": "20. Exploiter les supports numériques pour enrichir l’expérience d’apprentissage du FLE."
+    },
+    {
+      "type": "list_item",
+      "content": "21. Renforcer le plaisir d’apprendre le français chez les apprenants."
+    },
+    {
+      "type": "list_item",
+      "content": "22. Développer le sentiment de satisfaction lié au progrès dans l’apprentissage du FLE."
+    },
+    {
+      "type": "list_item",
+      "content": "23. Encourager les apprenants à relever les défis liés à l’apprentissage du français."
+    },
+    {
+      "type": "list_item",
+      "content": "24. Stimuler la motivation des apprenants à participer aux activités et à progresser en FLE."
+    },
+    {
+      "type": "list_item",
+      "content": "25. Amener les apprenants à profiter les difficultés comme des occasions d’apprentissage et de développement."
+    },
+    {
+      "type": "header",
+      "content": "Contenu du programme :"
+    },
+    {
+      "type": "header",
+      "content": "Ce programme se compose de quatre modules :"
+    },
+    {
+      "type": "list_item",
+      "content": " Module (1) L’environnement et le développement durable."
+    },
+    {
+      "type": "list_item",
+      "content": " Module (2) La technologie et la société."
+    },
+    {
+      "type": "list_item",
+      "content": " Module (3) Le travail et le bien-être."
+    },
+    {
+      "type": "list_item",
+      "content": " Module (4) Le sport et la vie scolaire."
+    },
+    {
+      "type": "paragraph",
+      "content": "Chaque module se compose de trois leçons et chaque leçon comprend quatre phases ;"
+    },
+    {
+      "type": "list_item",
+      "content": " La première phase : la pré- action (Introduction et motivation et la lecture guidée du texte)."
+    },
+    {
+      "type": "list_item",
+      "content": " La deuxième phase : L’action (la compréhension approfondie)."
+    },
+    {
+      "type": "list_item",
+      "content": " La troisième phase : Post action (Tâche finale)."
+    },
+    {
+      "type": "list_item",
+      "content": " La quatrième phase : évaluation des produits des étudiants."
+    },
+    {
+      "type": "list_item",
+      "content": " Leçon zéro présente une introduction sur l’approche actionnelle et son utilisation dans la salle de classe."
+    },
+    {
+      "type": "header",
+      "content": "Évaluation dans le programme :"
+    },
+    {
+      "type": "header",
+      "content": "Évaluation initiale :"
+    },
+    {
+      "type": "paragraph",
+      "content": "Ce type d’évaluation vise à déterminer les connaissances antérieures des apprenants en ce qui concerne la compréhension et la production écrite en appliquant les pré-tests."
+    },
+    {
+      "type": "header",
+      "content": "Évaluation formative :"
+    },
+    {
+      "type": "paragraph",
+      "content": "Ce type d’évaluation se déroule durant l’étude de chaque leçon en vue de mesurer le progrès des apprenants pendant l’étude du programme. Chaque leçon comprend un certain nombre de tâches variées pour évaluer le niveau des apprenants durant l’étude de chaque leçon."
+    },
+    {
+      "type": "header",
+      "content": "Évaluation sommative :"
+    },
+    {
+      "type": "paragraph",
+      "content": "À la fin du programme, les post tests visent à mesurer l’efficacité d’utilisation du livre numérique interactif basé sur l’approche actionnelle dans le développement des compétences de la compréhension, de la production écrite et le plaisir d’apprendre chez les étudiants de l’échantillon. Leçon zéro : Premier contact « L’approche actionnelle »"
+    },
+    {
+      "type": "header",
+      "content": "Introduction :"
+    },
+    {
+      "type": "paragraph",
+      "content": "Cette approche présente l’avantage de permettre à l’apprenant de se focaliser sur les objectifs à atteindre, de façon à ce que le langage devienne un outil, et enfin, de transformer l’usage de la langue en nécessité. Ces situations ressemblent à des activités ou des tâches que l’apprenant réalise afin d’atteindre le but désiré. Pendant qu’il accomplit ces tâches, il pratique la langue comme un outil, en même temps il apprend la langue à travers la pratiquer dans ces tâches."
+    },
+    {
+      "type": "header",
+      "content": "Objectifs de l’approche actionnelle :"
+    },
+    {
+      "type": "paragraph",
+      "content": "L’objectif essentiel de l’approche actionnelle est de mettre l’accent sur les tâches à accomplir par lesquels l’apprenant qui participe à l’intérieur d’un projet global pour des objectifs sociaux, non pour des objectifs langagiers ou pédagogiques seulement."
+    },
+    {
+      "type": "header",
+      "content": "En bref, l’approche actionnelle à une grande importance dans le processus d’apprentissage de l’apprenant, c’est pourquoi, cette approche vise à :"
+    },
+    {
+      "type": "list_item",
+      "content": " Améliorer l’acquisition de connaissances afin de permettre aux apprenants d’utiliser le français de manière compétente et en toute confiance en tant qu’acteurs sociaux pour réaliser des tâches quotidiennes."
+    },
+    {
+      "type": "list_item",
+      "content": " Fournir des rétroactions spécifiques et ponctuelles et créer des occasions qui permettent aux apprenants d’en tenir compte."
+    },
+    {
+      "type": "list_item",
+      "content": " Présenter des tâches pertinentes et authentiques qui conviennent bien aux apprenants."
+    },
+    {
+      "type": "list_item",
+      "content": " Créer un climat d’apprentissage en donnant aux apprenants le désir de communiquer."
+    },
+    {
+      "type": "header",
+      "content": "Les caractéristiques de l’approche actionnelle :"
+    },
+    {
+      "type": "header",
+      "content": "En effet, les caractéristiques de la perspective actionnelle sont en relation avec les théories d’apprentissage dominantes selon la communauté scientifique:"
+    },
+    {
+      "type": "list_item",
+      "content": " À travers des projets/scénarios, les apprenants travaillent sur des tâches verbales et non-verbales, authentiques, qui doivent encourager la réflexion sur la langue en exposant un problème à résoudre."
+    },
+    {
+      "type": "list_item",
+      "content": " L’enseignant guide l’apprenant dans la résolution de problème."
+    },
+    {
+      "type": "list_item",
+      "content": " Les étudiants collaborent sur le problème pour le résoudre ensemble."
+    },
+    {
+      "type": "list_item",
+      "content": " Les étudiants ont l’occasion de réfléchir sur leurs propres méthodes d’apprentissage."
+    },
+    {
+      "type": "header",
+      "content": "Les principes de l’approche actionnelle :"
+    },
+    {
+      "type": "header",
+      "content": "Dans ce cadre, Cette approche repose sur deux principes essentiels pour atteindre les objectifs de l’enseignement/apprentissage et favorise l’utilisation de la langue ; ces deux principes sont les suivants :"
+    },
+    {
+      "type": "paragraph",
+      "content": "L’apprenant est un acteur social : L’apprenant est considéré comme un acteur de ses apprentissages. Il le met en activité et introduit la langue et la culture comme instruments d’action et non seulement de communication. On ne communique plus seulement pour parler avec l’autre mais on communique pour agir avec l’autre. Dans ce cas, l’apprenant entre en action pour communiquer et il sollicite ces trois composantes : la composante linguistique, la composante sociolinguistique et la composante pragmatique. La tâche : Premièrement, la tâche est une interaction entre les apprenants pour arriver à accomplir quelque chose. Deuxièmement, pour accomplir ce quelque chose et pour accomplir cette interaction, il faut que les apprenants mobilisent tous les acquis, tous les apprentissages faites au cours de l’unité que ce soit des apprentissages grammaticaux, lexicaux, phonétiques ou pragmatiques (comment utiliser la langue en situation de communication)."
+    },
+    {
+      "type": "header",
+      "content": "La tâche comme point central de l’approche actionnelle :"
+    },
+    {
+      "type": "paragraph",
+      "content": "Simplement, la tâche est le point central de l’approche actionnelle. Elle est une action qui a un but, un contenu et un plan déterminé. Son objectif est de rendre l’apprentissage de la langue étrangère plus facile en passant d’activités simples aux plus complexes. Les tâches doivent être variées, proches de la vie réelle et complexes en posant plusieurs défis aux apprenants qui doivent utiliser la langue de manière efficace pour accomplir ces tâches. Cela peut permettre à l’apprenant de communiquer, d’agir et de s’intégrer dans toutes les situations de la vie quotidienne. La tâche est une activité menée par l’apprenant dont l’objectif est de déclencher les processus mentaux qui conduise à un apprentissage et qui permettent une évaluation personnalisée. C’est une unité de sens à l’intérieur du processus d’apprentissage. La réussite de l’apprenant dans sa tâche dépend non seulement de sa capacité à utiliser des savoirs variés mais aussi de sa capacité à interpréter et à utiliser les données linguistiques présentes."
+    },
+    {
+      "type": "header",
+      "content": "Les types de tâches :"
+    },
+    {
+      "type": "paragraph",
+      "content": "Effectivement, la pratique des tâches en classe des langues n’est jamais homogène. C’est-à-dire que les enseignants adoptent des approches variées en fonction de leurs propres expériences, de leur formation et des caractéristiques de leurs apprenants. De plus, les tâches elles-mêmes peuvent être mises en œuvre de différentes manières, selon les objectifs visés et les ressources disponibles."
+    },
+    {
+      "type": "list_item",
+      "content": " Tâches cibles (proches de la vie réelle) / tâches pédagogiques : Le CECRL distingue deux types de tâches : La tâche cible est assez proche de la vie réelle et son choix est orienté par les besoins de l’apprenant hors de la classe. Par contre, la tâche pédagogique est loin de la vie réelle, dans le but de développer la compétence communicative."
+    },
+    {
+      "type": "header",
+      "content": " Mono-tâche/projet intégrant une ou plusieurs tâches/ suite de tâches scénarisées :"
+    },
+    {
+      "type": "header",
+      "content": "Rôles de l’enseignant dans l’approche actionnelle :"
+    },
+    {
+      "type": "paragraph",
+      "content": "D’après l’approche actionnelle, l’enseignant ne rend pas un responsable unique des connaissances mais il joue différents rôles parmi lesquels comme guide, contrôleur et formateur. Il aide chaque apprenant à être responsable de son apprentissage. À la lueur de l’approche actionnelle, l’enseignant prend en charge de diverses responsabilités. Il devient un guide qui dirige les apprenants, incite leur motivation, facilite leur apprentissage, fournit les instructions et les directives nécessaires, les encourage de faire le meilleur, intervient pour résoudre les problèmes, leur offre les conseils, facilite les interactions entre eux, prendre en compte leurs besoins et les différences individuelles entre eux , les aider à accomplir les tâches et enfin les évalue et leur fournit des feedbacks nécessaires pour atteindre l’objectif final."
+    },
+    {
+      "type": "header",
+      "content": "Rôles de l’apprenant dans l’approche actionnelle :"
+    },
+    {
+      "type": "header",
+      "content": "Afin de mettre en œuvre les tâches à accomplir, les apprenants doivent :"
+    },
+    {
+      "type": "list_item",
+      "content": " Savoir identifier et définir précisément l’information nécessaire pour satisfaire le besoin ou résoudre le problème."
+    },
+    {
+      "type": "list_item",
+      "content": " Savoir trouver l’information nécessaire quand on sait qu’elle existe."
+    },
+    {
+      "type": "list_item",
+      "content": " Savoir comprendre l’information trouvée, ou à qui faire appel pour cela, si nécessaire."
+    },
+    {
+      "type": "list_item",
+      "content": " Savoir organiser, analyser, interpréter et évaluer l’information."
+    },
+    {
+      "type": "list_item",
+      "content": " Savoir communiquer et présenter l’information à autrui à l’aide de formats/ supports adaptés / utilisables."
+    },
+    {
+      "type": "list_item",
+      "content": " Savoir utiliser l’information afin de résoudre un problème, prendre une décision et répondre à un besoin."
+    },
+    {
+      "type": "list_item",
+      "content": " Savoir à supprimer les informations qui ne sont plus indispensables et à préserver celles qui doivent être protégées."
+    },
+    {
+      "type": "paragraph",
+      "content": "La nature du manuel numérique interactif peut aider dans le développement des compétences de la communication écrite. Ce manuel offre des supports supplémentaires (vidéos, images audios et liens d’internet) qui rend le processus d’apprentissage plus actif et enrichi et réalise l’interaction. Cette interaction renforce non seulement la compréhension du texte écrit mais aussi la capacité d’écrire un texte cohérent en utilisant les informations supplémentaires. En bref, les outils numériques, comme le livre numérique interactif, seront utilisés comme supports pour faciliter la mise en œuvre des tâches."
+    }
+  ]
+}

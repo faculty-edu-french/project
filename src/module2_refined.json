@@ -359,56 +359,8 @@
           "content": ""
         },
         {
-          "type": "header",
-          "content": "ENRICHISSANTES"
-        },
-        {
-          "type": "paragraph",
-          "content": "Des informations enrichissantes"
-        },
-        {
-          "type": "paragraph",
-          "content": "🌟 Présentation du texte explicatif : Le texte explicatif est un type de texte qui a pour objectif d’expliquer un phénomène, une situation ou une idée pour aider le lecteur à mieux comprendre un sujet donné. Il répond généralement à des questions comme : Pourquoi ? Comment ? Quelles sont les causes et les conséquences ?"
-        },
-        {
-          "type": "paragraph",
-          "content": "Caractéristiques principales du texte explicatif :"
-        },
-        {
-          "type": "list_item",
-          "content": "• Il présente des informations claires et précises."
-        },
-        {
-          "type": "list_item",
-          "content": "• Il utilise des connecteurs logiques tels que : car, parce que, donc, ainsi, cependant, malgré, en effet."
-        },
-        {
-          "type": "list_item",
-          "content": "• Il explique les causes et les conséquences d’un phénomène."
-        },
-        {
-          "type": "list_item",
-          "content": "• Il peut proposer des exemples pour faciliter la compréhension du phénomène."
-        },
-        {
-          "type": "paragraph",
-          "content": "Dans ce texte « La vie dans le passé : sans téléphone, sans Internet », l’auteur :"
-        },
-        {
-          "type": "list_item",
-          "content": "• Décrit la manière de vivre et de communiquer dans le passé."
-        },
-        {
-          "type": "list_item",
-          "content": "• Explique comment les gens communiquaient avant l’apparition d’internet et du téléphone portable."
-        },
-        {
-          "type": "list_item",
-          "content": "• Aborde les avantages de cette vie (relations humaines directes, calme, concentration)."
-        },
-        {
-          "type": "list_item",
-          "content": "• Clarifie ses idées par des exemples concrets, comme l’écriture de lettres ou la lecture des livres dans les bibliothèques."
+          "type": "info_box",
+          "content": "🌟 Présentation du texte explicatif : Le texte explicatif est un type de texte qui a pour objectif d’expliquer un phénomène, une situation ou une idée pour aider le lecteur à mieux comprendre un sujet donné. Il répond généralement à des questions comme : Pourquoi ? Comment ? Quelles sont les causes et les conséquences ?\nCaractéristiques principales du texte explicatif :\n• Il présente des informations claires et précises.\n• Il utilise des connecteurs logiques tels que : car, parce que, donc, ainsi, cependant, malgré, en effet.\n• Il explique les causes et les conséquences d’un phénomène.\n• Il peut proposer des exemples pour faciliter la compréhension du phénomène.\nDans ce texte « La vie dans le passé : sans téléphone, sans Internet », l’auteur :\n• Décrit la manière de vivre et de communiquer dans le passé.\n• Explique comment les gens communiquaient avant l’apparition d’internet et du téléphone portable.\n• Aborde les avantages de cette vie (relations humaines directes, calme, concentration).\n• Clarifie ses idées par des exemples concrets, comme l’écriture de lettres ou la lecture des livres dans les bibliothèques."
         },
         {
           "type": "task",

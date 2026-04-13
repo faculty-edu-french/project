@@ -300,6 +300,39 @@ const BlockRenderer = ({
         </a>
       );
     }
+    case 'section_title':
+      return (
+        <h3 className="section-title">
+          {block.icon && <i className={`fas ${block.icon}`}></i>}
+          {block.content}
+        </h3>
+      );
+    case 'grammar_card':
+      return (
+        <div className="grammar-card">
+          <div className="grammar-card-header">
+            <h4><i className="fas fa-lightbulb"></i> {block.title}</h4>
+          </div>
+          <div className="grammar-card-body">
+             {block.structure && (
+                <div className="grammar-structure">
+                  <strong>Structure : </strong>
+                  <code>{block.structure}</code>
+                </div>
+             )}
+             {block.examples && block.examples.length > 0 && (
+                <div className="grammar-examples">
+                  <div className="examples-title"><i className="fas fa-book-open"></i> Exemples :</div>
+                  <ul>
+                    {block.examples.map((ex: string, i: number) => (
+                      <li key={i}>{ex.replace(/^•\s*/, '')}</li>
+                    ))}
+                  </ul>
+                </div>
+             )}
+          </div>
+        </div>
+      );
     case 'info_box': {
       const content = block.content || '';
       let icon = '📚';

@@ -452,132 +452,65 @@
           "url": "https://youtu.be/S2ZE4Rvbt0A?si=0Yizbbq6F8H384s4"
         },
         {
-          "type": "paragraph",
-          "content": "Structures à observer : (5 minutes)"
+          "type": "section_title",
+          "content": "📐 Structures à observer",
+          "icon": "fa-cogs"
         },
         {
-          "type": "paragraph",
-          "content": "Pour exprimer la description dans le passé : On utilise l’imparfait."
+          "type": "grammar_card",
+          "title": "Pour exprimer la description dans le passé : On utilise l’imparfait.",
+          "structure": "Sa structure  Sujet + verbe à l’imparfait",
+          "examples": [
+            "• Dans le passé, les gens vivaient sans Internet.",
+            "• Les enfants jouaient dehors tous les jours.",
+            "• Les familles se réunissaient le soir."
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "Sa structure : Sujet + verbe à l’imparfait : Exemples :"
+          "type": "grammar_card",
+          "title": "Pour exprimer les habitudes dans le passé",
+          "structure": "Imparfait + souvent / toujours / généralement",
+          "examples": [
+            "• Les gens communiquaient souvent face à face.",
+            "• On lisait toujours des journaux en papier."
+          ]
         },
         {
-          "type": "list_item",
-          "content": "• Dans le passé, les gens vivaient sans Internet."
+          "type": "grammar_card",
+          "title": "Pour exprimer la négation dans le passé",
+          "structure": "Structure  ne + verbe à l’imparfait + pas / jamais",
+          "examples": [
+            "• Les gens n’utilisaient pas Internet.",
+            "• Ils ne passaient jamais des heures devant les écrans."
+          ]
         },
         {
-          "type": "list_item",
-          "content": "• Les enfants jouaient dehors tous les jours."
+          "type": "grammar_card",
+          "title": "Pour exprimer l’opposition entre le passé et le présent",
+          "structure": "Expressions  mais / aujourd’hui / alors qu’avant",
+          "examples": [
+            "• Avant, la vie était plus simple, mais elle était plus lente.",
+            "• Aujourd’hui, tout est rapide, alors qu’avant, on prenait son temps."
+          ]
         },
         {
-          "type": "list_item",
-          "content": "• Les familles se réunissaient le soir."
+          "type": "grammar_card",
+          "title": "Pour exprimer la comparaison",
+          "structure": "Structures  plus… que / moins… que / contrairement à",
+          "examples": [
+            "• La vie était plus calme qu’aujourd’hui.",
+            "• Les relations étaient plus fortes qu’à notre époque.",
+            "• Contrairement à aujourd’hui, les gens se parlaient directement."
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "Pour exprimer les habitudes dans le passé :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Imparfait + souvent / toujours / généralement"
-        },
-        {
-          "type": "paragraph",
-          "content": "Exemples :"
-        },
-        {
-          "type": "list_item",
-          "content": "• Les gens communiquaient souvent face à face."
-        },
-        {
-          "type": "list_item",
-          "content": "• On lisait toujours des journaux en papier."
-        },
-        {
-          "type": "paragraph",
-          "content": "Pour exprimer la négation dans le passé :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Structure : ne + verbe à l’imparfait + pas / jamais"
-        },
-        {
-          "type": "paragraph",
-          "content": "Examples :"
-        },
-        {
-          "type": "list_item",
-          "content": "• Les gens n’utilisaient pas Internet."
-        },
-        {
-          "type": "list_item",
-          "content": "• Ils ne passaient jamais des heures devant les écrans."
-        },
-        {
-          "type": "paragraph",
-          "content": "Pour exprimer l’opposition entre le passé et le présent :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Expressions : mais / aujourd’hui / alors qu’avant"
-        },
-        {
-          "type": "paragraph",
-          "content": "Exemples :"
-        },
-        {
-          "type": "list_item",
-          "content": "• Avant, la vie était plus simple, mais elle était plus lente."
-        },
-        {
-          "type": "list_item",
-          "content": "• Aujourd’hui, tout est rapide, alors qu’avant, on prenait son temps."
-        },
-        {
-          "type": "paragraph",
-          "content": "Pour exprimer la comparaison :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Structures : plus… que / moins… que / contrairement à"
-        },
-        {
-          "type": "paragraph",
-          "content": "Examples :"
-        },
-        {
-          "type": "list_item",
-          "content": "• La vie était plus calme qu’aujourd’hui."
-        },
-        {
-          "type": "list_item",
-          "content": "• Les relations étaient plus fortes qu’à notre époque."
-        },
-        {
-          "type": "list_item",
-          "content": "• Contrairement à aujourd’hui, les gens se parlaient directement."
-        },
-        {
-          "type": "paragraph",
-          "content": "Pour exprimer la conséquence :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Structures : donc / c’est pourquoi / ce qui"
-        },
-        {
-          "type": "paragraph",
-          "content": "Examples :"
-        },
-        {
-          "type": "list_item",
-          "content": "• Les gens se rencontraient souvent, ce qui renforçait les liens sociaux."
-        },
-        {
-          "type": "list_item",
-          "content": "• Il n’y avait pas d’Internet, donc les activités étaient plus sociales."
+          "type": "grammar_card",
+          "title": "Pour exprimer la conséquence",
+          "structure": "Structures  donc / c’est pourquoi / ce qui",
+          "examples": [
+            "• Les gens se rencontraient souvent, ce qui renforçait les liens sociaux.",
+            "• Il n’y avait pas d’Internet, donc les activités étaient plus sociales."
+          ]
         },
         {
           "type": "paragraph",

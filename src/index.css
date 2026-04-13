@@ -862,3 +862,140 @@ body {
   line-height: 1.6;
   white-space: pre-wrap;
 }
+
+/* --- GRAMMAR SECTION & CARDS --- */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 3px solid var(--primary-light);
+  padding-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .section-title {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.grammar-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grammar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.1);
+}
+
+[data-theme="dark"] .grammar-card {
+  background: var(--surface);
+  border-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.grammar-card-header {
+  background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+[data-theme="dark"] .grammar-card-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+.grammar-card-header h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grammar-card-body {
+  padding: 1.5rem;
+}
+
+.grammar-structure {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-left: 4px solid var(--primary);
+}
+
+[data-theme="dark"] .grammar-structure {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--text);
+  border-left-color: var(--primary-light);
+}
+
+.grammar-structure code {
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: inline-block;
+  align-self: flex-start;
+}
+
+[data-theme="dark"] .grammar-structure code {
+  background: rgba(0,0,0,0.2);
+  color: #60a5fa;
+}
+
+.grammar-examples {
+  margin-top: 1rem;
+}
+
+.examples-title {
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grammar-examples ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.grammar-examples li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.grammar-examples li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}

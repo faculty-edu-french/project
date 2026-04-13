@@ -447,6 +447,11 @@
           "content": ""
         },
         {
+          "type": "link",
+          "content": "https://youtu.be/S2ZE4Rvbt0A?si=0Yizbbq6F8H384s4",
+          "url": "https://youtu.be/S2ZE4Rvbt0A?si=0Yizbbq6F8H384s4"
+        },
+        {
           "type": "paragraph",
           "content": "Structures à observer : (5 minutes)"
         },
@@ -519,9 +524,8 @@
           "content": "/videos/m2_lecon1.mp4"
         },
         {
-          "type": "link",
-          "content": "https://youtu.be/S2ZE4Rvbt0A?si=0Yizbbq6F8H384s4",
-          "url": "https://youtu.be/S2ZE4Rvbt0A?si=0Yizbbq6F8H384s4"
+          "type": "instruction",
+          "content": "Consigne : Chaque étudiant utilise les idées générées pendant la discussion :"
         },
         {
           "type": "paragraph",
@@ -610,10 +614,6 @@
         {
           "type": "paragraph",
           "content": "Tâche finale (avec modèle + aide lexicale)"
-        },
-        {
-          "type": "instruction",
-          "content": "Consigne : Chaque étudiant utilise les idées générées pendant la discussion :"
         },
         {
           "type": "paragraph",

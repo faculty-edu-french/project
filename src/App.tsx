@@ -282,11 +282,17 @@ const BlockRenderer = ({
       );
     case 'input': {
       const isFirstInput = idx === 0 || allBlocks[idx - 1].type !== 'input';
+      const storageKey = `livret_input_${lessonId}_${idx}`;
+      const savedValue = typeof window !== 'undefined' ? (localStorage.getItem(storageKey) || '') : '';
       return (
         <input
           type="text"
           className="input-field"
           placeholder={isFirstInput ? "Votre réponse ici..." : ""}
+          defaultValue={savedValue}
+          onChange={(e) => {
+            localStorage.setItem(storageKey, e.target.value);
+          }}
         />
       );
     }
@@ -300,39 +306,6 @@ const BlockRenderer = ({
         </a>
       );
     }
-    case 'section_title':
-      return (
-        <h3 className="section-title">
-          {block.icon && <i className={`fas ${block.icon}`}></i>}
-          {block.content}
-        </h3>
-      );
-    case 'grammar_card':
-      return (
-        <div className="grammar-card">
-          <div className="grammar-card-header">
-            <h4><i className="fas fa-lightbulb"></i> {block.title}</h4>
-          </div>
-          <div className="grammar-card-body">
-             {block.structure && (
-                <div className="grammar-structure">
-                  <strong>Structure : </strong>
-                  <code>{block.structure}</code>
-                </div>
-             )}
-             {block.examples && block.examples.length > 0 && (
-                <div className="grammar-examples">
-                  <div className="examples-title"><i className="fas fa-book-open"></i> Exemples :</div>
-                  <ul>
-                    {block.examples.map((ex: string, i: number) => (
-                      <li key={i}>{ex.replace(/^•\s*/, '')}</li>
-                    ))}
-                  </ul>
-                </div>
-             )}
-          </div>
-        </div>
-      );
     case 'info_box': {
       const content = block.content || '';
       let icon = '📚';
@@ -403,11 +376,11 @@ const BlockRenderer = ({
           {block.content}
         </div>
       );
-        case 'image_group':
+    case 'image_group':
       return (
         <div style={{ display: 'flex', gap: '1rem', overflowX: 'auto', paddingBottom: '1rem', margin: '2rem 0', WebkitOverflowScrolling: 'touch' }}>
           {block.images.map((imgSrc: string, i: number) => (
-             <img key={i} src={import.meta.env.BASE_URL + imgSrc.replace(/^\//, '')} alt="Illustration group" style={{ height: '220px', borderRadius: '12px', flexShrink: 0, boxShadow: 'var(--shadow-md)', objectFit: 'cover' }} />
+            <img key={i} src={import.meta.env.BASE_URL + imgSrc.replace(/^\//, '')} alt="Illustration group" style={{ height: '220px', borderRadius: '12px', flexShrink: 0, boxShadow: 'var(--shadow-md)', objectFit: 'cover' }} />
           ))}
         </div>
       );
@@ -474,7 +447,7 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const lessonRef = useRef<HTMLDivElement>(null);
-  const [studentName, setStudentName] = useState<string | null>(() => 
+  const [studentName, setStudentName] = useState<string | null>(() =>
     localStorage.getItem('livret_student_name')
   );
 
@@ -535,13 +508,13 @@ function App() {
       const mcqs = MCQ_BY_LESSON[activeTab];
       return (
         <div className="lesson-card" key={activeTab} ref={lessonRef}>
-          <h1 style={{ 
-            fontFamily: 'var(--font-sans)', 
-            fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', 
+          <h1 style={{
+            fontFamily: 'var(--font-sans)',
+            fontSize: 'clamp(1.75rem, 3vw, 2.25rem)',
             fontWeight: 800,
-            marginBottom: '2rem', 
+            marginBottom: '2rem',
             letterSpacing: '-0.02em',
-            color: 'var(--primary)' 
+            color: 'var(--primary)'
           }}>
             {lesson.title}
           </h1>
@@ -589,10 +562,10 @@ function App() {
       <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <img 
-              src={import.meta.env.BASE_URL + 'minia_logo.png'} 
-              alt="Minia University" 
-              style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} 
+            <img
+              src={import.meta.env.BASE_URL + 'minia_logo.png'}
+              alt="Minia University"
+              style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
             />
             <div>
               <div className="logo" style={{ fontSize: '0.9rem', lineHeight: '1.3' }}>Faculty of Education</div>

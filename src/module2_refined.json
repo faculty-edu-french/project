@@ -513,8 +513,8 @@
           ]
         },
         {
-          "type": "paragraph",
-          "content": "Regardez cette vidéo :"
+          "type": "task",
+          "content": "Micro-tâche 10 : Regardez cette vidéo"
         },
         {
           "type": "video",

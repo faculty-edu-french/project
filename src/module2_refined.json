@@ -588,16 +588,16 @@
           "content": "/videos/m2_lecon1.mp4"
         },
         {
-          "type": "instruction",
-          "content": "Consigne : Chaque étudiant utilise les idées générées pendant la discussion :"
-        },
-        {
           "type": "task",
           "content": "Micro-tâches 11 : Discussion en groupes : 10 minutes"
         },
         {
           "type": "paragraph",
           "content": "Quelles activités du passé pourraient être mises en place aujourd’hui dans notre vie ou à l’université ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Chaque étudiant utilise les idées générées pendant la discussion :"
         },
         {
           "type": "input",

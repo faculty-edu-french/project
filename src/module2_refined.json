@@ -517,18 +517,6 @@
         },
         {
           "type": "paragraph",
-          "content": "Regardez cette vidéo :"
-        },
-        {
-          "type": "video",
-          "content": "/videos/m2_lecon1.mp4"
-        },
-        {
-          "type": "instruction",
-          "content": "Consigne : Chaque étudiant utilise les idées générées pendant la discussion :"
-        },
-        {
-          "type": "paragraph",
           "content": "Pour exprimer l’opposition entre le passé et le présent :"
         },
         {
@@ -590,6 +578,18 @@
         {
           "type": "list_item",
           "content": "• Il n’y avait pas d’Internet, donc les activités étaient plus sociales."
+        },
+        {
+          "type": "paragraph",
+          "content": "Regardez cette vidéo :"
+        },
+        {
+          "type": "video",
+          "content": "/videos/m2_lecon1.mp4"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Chaque étudiant utilise les idées générées pendant la discussion :"
         },
         {
           "type": "task",

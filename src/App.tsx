@@ -290,12 +290,16 @@ const BlockRenderer = ({
         />
       );
     }
-    case 'link':
+    case 'link': {
+      const isLocal = block.url && block.url.startsWith('/');
+      const href = isLocal ? import.meta.env.BASE_URL + block.url.replace(/^\//, '') : block.url;
+      const label = block.label || (isLocal ? '📄 Ouvrir le texte' : '🔗 Lien externe');
       return (
-        <a href={block.url} target="_blank" rel="noopener noreferrer" className="link-button">
-          <span>🔗</span> {block.content.replace(block.url, '').trim() || 'Lien externe'}
+        <a href={href} target="_blank" rel="noopener noreferrer" className="link-button">
+          <span>{isLocal ? '📄' : '🔗'}</span> {label.replace(/^📄|^🔗/, '').trim() || (isLocal ? 'Ouvrir le texte' : 'Lien externe')}
         </a>
       );
+    }
     case 'info_box': {
       const content = block.content || '';
       let icon = '📚';

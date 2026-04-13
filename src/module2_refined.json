@@ -588,6 +588,10 @@
           "content": "/videos/m2_lecon1.mp4"
         },
         {
+          "type": "paragraph",
+          "content": "✓ Écrivez un court résumé de ce que vous avez compris de cette vidéo."
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 11 : Discussion en groupes : 10 minutes"
         },
@@ -596,20 +600,12 @@
           "content": "Quelles activités du passé pourraient être mises en place aujourd’hui dans notre vie ou à l’université ?"
         },
         {
-          "type": "instruction",
-          "content": "Consigne : Chaque étudiant utilise les idées générées pendant la discussion :"
-        },
-        {
           "type": "input",
           "content": ""
         },
         {
           "type": "phase",
           "content": "Phase 3 : Post-action (Tâche finale) Durée (20 minutes) :"
-        },
-        {
-          "type": "paragraph",
-          "content": "✓ Écrivez un court résumé de ce que vous avez compris de cette vidéo."
         },
         {
           "type": "paragraph",

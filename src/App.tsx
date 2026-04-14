@@ -90,68 +90,7 @@ const LECON3_MCQ = [
 // =========================================================
 // Module 2 MCQs
 // =========================================================
-const M2_LECON2_MCQ = [
-  {
-    id: 'm2l2q1',
-    question: "1. Le thème principal du texte est :",
-    lessonId: 'm2_lecon2',
-    lessonTitle: 'Leçon 2 : L’absence familiale et ses effets',
-    options: [
-      { id: 'a', text: 'Les avantages de la technologie moderne.' },
-      { id: 'b', text: 'L’absence familiale et ses conséquences sur la vie quotidienne.' },
-      { id: 'c', text: 'Les loisirs des familles aujourd’hui.' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'm2l2q2',
-    question: "2. Selon le texte, quelles sont les causes de l’éloignement familial ?",
-    lessonId: 'm2_lecon2',
-    lessonTitle: 'Leçon 2 : L’absence familiale et ses effets',
-    options: [
-      { id: 'a', text: 'Uniquement le travail à l’étranger.' },
-      { id: 'b', text: 'Le travail, les études, les migrations et les choix de vie.' },
-      { id: 'c', text: 'Les conflits familiaux.' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'm2l2q3',
-    question: "3. Quand les liens familiaux reposent surtout sur les appels et les messages,",
-    lessonId: 'm2_lecon2',
-    lessonTitle: 'Leçon 2 : L’absence familiale et ses effets',
-    options: [
-      { id: 'a', text: 'La relation devient plus forte.' },
-      { id: 'b', text: 'La relation change.' },
-      { id: 'c', text: 'La relation disparaît totalement.' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'm2l2q4',
-    question: "4. Selon le texte, quelles solutions peuvent aider à réduire le problème de la solitude ?",
-    lessonId: 'm2_lecon2',
-    lessonTitle: 'Leçon 2 : L’absence familiale et ses effets',
-    options: [
-      { id: 'a', text: 'Éviter tout contact avec les autres.' },
-      { id: 'b', text: 'Utiliser seulement la technologie.' },
-      { id: 'c', text: 'Maintenir le contact familial et participer à des activités sociales.' },
-    ],
-    correctAnswer: 'c'
-  },
-  {
-    id: 'm2l2q5',
-    question: "5. Quel est le message essentiel de ce texte ?",
-    lessonId: 'm2_lecon2',
-    lessonTitle: 'Leçon 2 : L’absence familiale et ses effets',
-    options: [
-      { id: 'a', text: 'La technologie peut remplacer le rôle de la famille.' },
-      { id: 'b', text: 'L’éloignement familial n’a aucun effet sur la vie quotidienne.' },
-      { id: 'c', text: 'Le lien social est très important et doit être renforcé malgré la distance familiale.' },
-    ],
-    correctAnswer: 'c'
-  }
-];
+// Note: M2_LECON2_MCQ moved to module2_refined.json as inline mcq blocks
 
 const M2_LECON3_MCQ = [
   {
@@ -224,7 +163,6 @@ const M2_LECON3_MCQ = [
 const MCQ_BY_LESSON: Record<string, typeof LECON1_MCQ> = {
   lecon2: LECON1_MCQ,
   lecon3: LECON3_MCQ,
-  m2_lecon2: M2_LECON2_MCQ,
   m2_lecon3: M2_LECON3_MCQ,
 };
 
@@ -636,7 +574,7 @@ function App() {
 
           <div className="nav-group-title">{refinedData2.moduleTitle}</div>
           {refinedData2.lessons.map((l: any) => {
-            const isUnlocked = l.id === 'm2_lecon1';
+            const isUnlocked = l.id === 'm2_lecon1' || l.id === 'm2_lecon2';
             return (
               <div
                 key={l.id}

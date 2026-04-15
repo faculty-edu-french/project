@@ -403,6 +403,78 @@ const BlockRenderer = ({
           ></iframe>
         </div>
       );
+    case 'section_title':
+      return (
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.75rem',
+          margin: '2.5rem 0 1.5rem',
+          padding: '1rem 1.5rem',
+          background: 'linear-gradient(135deg, var(--primary), #6366f1)',
+          borderRadius: 'var(--radius-sm)',
+          boxShadow: '0 4px 20px rgba(59, 130, 246, 0.3)',
+        }}>
+          <span style={{ fontSize: '1.4rem' }}>📐</span>
+          <h3 style={{ margin: 0, color: '#fff', fontSize: '1.15rem', fontWeight: 700, letterSpacing: '0.01em' }}>
+            {block.content}
+          </h3>
+        </div>
+      );
+    case 'grammar_card':
+      return (
+        <div style={{
+          background: 'rgba(255,255,255,0.08)',
+          backdropFilter: 'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
+          border: '1px solid rgba(99,102,241,0.3)',
+          borderRadius: '16px',
+          padding: '1.5rem 1.75rem',
+          margin: '1rem 0',
+          boxShadow: '0 8px 32px rgba(99,102,241,0.12)',
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.6rem',
+            marginBottom: '0.85rem',
+          }}>
+            <span style={{ fontSize: '1.1rem' }}>🔷</span>
+            <strong style={{ color: 'var(--primary)', fontSize: '1rem', fontWeight: 700 }}>
+              {block.title}
+            </strong>
+          </div>
+          <div style={{
+            background: 'rgba(99,102,241,0.1)',
+            borderRadius: '8px',
+            padding: '0.6rem 1rem',
+            marginBottom: '1rem',
+            fontFamily: 'monospace',
+            fontSize: '0.95rem',
+            color: 'var(--primary-dark)',
+            fontWeight: 600,
+            letterSpacing: '0.02em',
+          }}>
+            {block.structure}
+          </div>
+          <div style={{ borderTop: '1px solid rgba(99,102,241,0.15)', paddingTop: '0.85rem' }}>
+            <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              📌 Exemples du texte :
+            </div>
+            {block.examples?.map((ex: string, i: number) => (
+              <div key={i} style={{
+                fontSize: '0.95rem',
+                color: 'var(--text-main)',
+                lineHeight: '1.7',
+                padding: '0.2rem 0',
+                borderBottom: i < block.examples.length - 1 ? '1px solid rgba(0,0,0,0.05)' : 'none',
+              }}>
+                {ex}
+              </div>
+            ))}
+          </div>
+        </div>
+      );
     default:
       return null;
   }

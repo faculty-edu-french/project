@@ -888,16 +888,12 @@
           "content": ""
         },
         {
-          "type": "paragraph",
-          "content": "Questions guidées (10 minutes) :"
+          "type": "header",
+          "content": "Questions guidées (10 minutes)"
         },
         {
-          "type": "paragraph",
-          "content": "Répondez aux questions suivantes :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Choisissez la bonne réponse :"
+          "type": "instruction",
+          "content": "Répondez aux questions suivantes : Choisissez la bonne réponse :"
         },
         {
           "type": "mcq",

@@ -1759,25 +1759,23 @@
         {
           "type": "grammar_card",
           "title": "Connecteurs logiques — Cause / Conséquence :",
-          "structure": "car | grâce à | donc | ainsi",
+          "structure": "car, grâce à, donc, ainsi",
           "examples": [
-            "• Cette visibilité repose souvent sur une relation de confiance, car les abonnés ont l'impression de connaître personnellement la personne qu'ils suivent.",
-            "• Grâce à un grand nombre d'abonnés, il peut orienter les goûts et les opinions.",
-            "• Ainsi, l'influenceur devient une source d'information et un modèle."
+            "• Cette visibilité repose souvent sur une relation de confiance, car les abonnés ont l'impression…"
           ]
         },
         {
           "type": "grammar_card",
           "title": "Connecteurs logiques — Opposition :",
-          "structure": "cependant | mais",
+          "structure": "cependant, mais",
           "examples": [
             "• Cependant, cette influence peut aussi avoir des effets négatifs."
           ]
         },
         {
           "type": "grammar_card",
-          "title": "Présenter un avis ou un jugement :",
-          "structure": "Il semble essentiel de + infinitif | Il semble que + subjonctif",
+          "title": "Structures pour présenter un avis ou jugement :",
+          "structure": "Rôle : utile pour exprimer son point de vue ou opinion.",
           "examples": [
             "• Il semble essentiel de développer un esprit critique…",
             "• Les abonnés ont l'impression de connaître personnellement la personne qu'ils suivent."

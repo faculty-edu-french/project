@@ -716,7 +716,7 @@
     },
     {
       "id": "m2_lecon2",
-      "title": "Leçon 2 : L'absence familiale et ses effets",
+      "title": "Leçon 2 : L’absence familiale et ses effets sur la vie quotidienne",
       "blocks": [
         {
           "type": "objective",
@@ -1089,10 +1089,8 @@
           "content": "Micro-tâche 8 : (5 minutes) : Regardez cette vidéo pour bien comprendre qu'est-ce que signifie le covit :"
         },
         {
-          "type": "link",
-          "content": "https://youtube.com/shorts/JtbORiJ0MKk?si=HVuC219g7Di89X94",
-          "url": "https://youtube.com/shorts/JtbORiJ0MKk?si=HVuC219g7Di89X94",
-          "label": "🎬 Regarder la vidéo"
+          "type": "video",
+          "content": "/videos/m2_lecon2_tache8.mp4"
         },
         {
           "type": "paragraph",

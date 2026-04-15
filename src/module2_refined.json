@@ -816,7 +816,7 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâche 1 : Identifiez l'idée générale du texte ?"
+          "content": "Micro-tâche 1 : Dégagez l'idée générale du texte ?"
         },
         {
           "type": "instruction",
@@ -1103,40 +1103,6 @@
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "section_title",
-          "content": "📐 Structures à observer",
-          "icon": "fa-cogs"
-        },
-        {
-          "type": "grammar_card",
-          "title": "Exprimer la cause d'après le texte :",
-          "structure": "Lorsque + verbe | En raison de + nom | Par + nom",
-          "examples": [
-            "• La solitude est une réalité silencieuse lorsque les familles vivent loin les unes des autres.",
-            "• Notamment en raison de l'absence familiale.",
-            "• Certaines personnes hésitent à parler de leur mal-être par peur de déranger."
-          ]
-        },
-        {
-          "type": "grammar_card",
-          "title": "Exprimer la conséquence d'après ce texte :",
-          "structure": "Peut / peuvent + infinitif | Devient / deviennent + adjectif",
-          "examples": [
-            "• Cette distance peut créer un sentiment de vide.",
-            "• La solitude prolongée peut provoquer de la tristesse.",
-            "• Il devient plus difficile de partager ses émotions."
-          ]
-        },
-        {
-          "type": "grammar_card",
-          "title": "Exprimer l'opposition d'après ce texte :",
-          "structure": "Même si / même + participe | Cependant",
-          "examples": [
-            "• Même entouré par la technologie, l'être humain peut ressentir un manque profond…",
-            "• Cependant, la vie sans soutien familial présente des difficultés."
-          ]
         },
         {
           "type": "task",

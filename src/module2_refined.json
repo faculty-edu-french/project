@@ -1573,31 +1573,11 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâche 2 : (5 minutes) : Trouvez le synonyme :"
+          "content": "Micro-tâches 2 : (5 minutes) Trouvez le synonyme?"
         },
         {
           "type": "instruction",
-          "content": "Consigne : Donnez un synonyme des mots suivants d'après le contexte du texte :"
-        },
-        {
-          "type": "paragraph",
-          "content": "1. Influence → "
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "2. Abonnés → "
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "3. Promouvoir → "
+          "content": "Consigne : Donnez un synonyme des mots suivants : Influence – abonnés – promouvoir."
         },
         {
           "type": "input",
@@ -1605,31 +1585,11 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâche 3 : (5 minutes) : Trouvez l'idée de chaque paragraphe :"
+          "content": "Micro tâche 3 : (5 minutes) : Trouver l’idée de chaque paragraphe ?"
         },
         {
           "type": "instruction",
-          "content": "Consigne : Écrivez l'idée principale de chaque paragraphe du texte."
-        },
-        {
-          "type": "paragraph",
-          "content": "Paragraphe 1 :"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "Paragraphe 2 :"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "Paragraphe 3 :"
+          "content": "Consigne : Écrivez l’idée de chaque paragraphe."
         },
         {
           "type": "input",

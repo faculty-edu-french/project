@@ -90,80 +90,11 @@ const LECON3_MCQ = [
 // =========================================================
 // Module 2 MCQs
 // =========================================================
-// Note: M2_LECON2_MCQ moved to module2_refined.json as inline mcq blocks
-
-const M2_LECON3_MCQ = [
-  {
-    id: 'm2l3q1',
-    question: "1. Quelle est la principale activité des influenceurs ?",
-    lessonId: 'm2_lecon3',
-    lessonTitle: 'Leçon 3 : Le phénomène des influenceurs',
-    options: [
-      { id: 'a', text: 'Lire des livres.' },
-      { id: 'b', text: 'Partager des contenus sur les réseaux sociaux.' },
-      { id: 'c', text: 'Travailler dans une entreprise.' },
-      { id: 'd', text: 'Regarder la télévision.' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'm2l3q2',
-    question: "2. Sur quelles plateformes sont présents les influenceurs cités dans le texte ?",
-    lessonId: 'm2_lecon3',
-    lessonTitle: 'Leçon 3 : Le phénomène des influenceurs',
-    options: [
-      { id: 'a', text: 'Instagram, YouTube, TikTok.' },
-      { id: 'b', text: 'Facebook uniquement.' },
-      { id: 'c', text: 'Twitter et LinkedIn.' },
-      { id: 'd', text: 'Snapchat uniquement.' },
-    ],
-    correctAnswer: 'a'
-  },
-  {
-    id: 'm2l3q3',
-    question: "3. Quel est l’effet positif des influenceurs ?",
-    lessonId: 'm2_lecon3',
-    lessonTitle: 'Leçon 3 : Le phénomène des influenceurs',
-    options: [
-      { id: 'a', text: 'Encourager la consommation excessive.' },
-      { id: 'b', text: 'Sensibiliser à des causes sociales et culturelles.' },
-      { id: 'c', text: 'Créer de la frustration chez les abonnés.' },
-      { id: 'd', text: 'Promouvoir des produits chers.' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'm2l3q4',
-    question: "4. Quel est l’effet négatif des influenceurs ?",
-    lessonId: 'm2_lecon3',
-    lessonTitle: 'Leçon 3 : Le phénomène des influenceurs',
-    options: [
-      { id: 'a', text: 'Encourager le sport et l’acceptation de soi.' },
-      { id: 'b', text: 'Créer une confusion entre conseil sincère et publicité.' },
-      { id: 'c', text: 'Transmettre des messages responsables.' },
-      { id: 'd', text: 'Rendre des sujets accessibles.' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'm2l3q5',
-    question: "5. Quelle est la bonne manière pour suivre les influenceurs de manière responsable ?",
-    lessonId: 'm2_lecon3',
-    lessonTitle: 'Leçon 3 : Le phénomène des influenceurs',
-    options: [
-      { id: 'a', text: 'Développer un esprit critique.' },
-      { id: 'b', text: 'Suivre tous les influenceurs sans réfléchir.' },
-      { id: 'c', text: 'Acheter tous les produits présentés.' },
-      { id: 'd', text: 'Regarder uniquement les vidéos drôles.' },
-    ],
-    correctAnswer: 'a'
-  }
-];
+// Note: M2_LECON3_MCQ moved to module2_refined.json as inline mcq blocks
 
 const MCQ_BY_LESSON: Record<string, typeof LECON1_MCQ> = {
   lecon2: LECON1_MCQ,
   lecon3: LECON3_MCQ,
-  m2_lecon3: M2_LECON3_MCQ,
 };
 
 // =========================================================
@@ -646,7 +577,7 @@ function App() {
 
           <div className="nav-group-title">{refinedData2.moduleTitle}</div>
           {refinedData2.lessons.map((l: any) => {
-            const isUnlocked = l.id === 'm2_lecon1' || l.id === 'm2_lecon2';
+            const isUnlocked = l.id === 'm2_lecon1' || l.id === 'm2_lecon2' || l.id === 'm2_lecon3';
             return (
               <div
                 key={l.id}

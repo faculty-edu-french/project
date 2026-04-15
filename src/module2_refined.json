@@ -1373,197 +1373,231 @@
     },
     {
       "id": "m2_lecon3",
-      "title": "Leçon 3 : Le phénomène des influenceurs",
+      "title": "Leçon 3 : Le phénomène des influenceurs sur les réseaux sociaux",
       "blocks": [
         {
-          "type": "paragraph",
-          "content": "Leçon : « 3 » Le phénomène des \"influenceurs\" sur les réseaux sociaux"
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 1 : Identifiez l'idée générale du texte ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Observez les images ci-dessus et prédisez : de quoi parle ce texte ?"
+        },
+        {
+          "type": "image_group",
+          "images": [
+            "/images/m2_lecon3_1.png",
+            "/images/m2_lecon3_2.png"
+          ]
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "objective",
-          "content": "Objectif général : À la fin de la leçon « Le phénomène des \"influenceurs\" sur les réseaux sociaux », l’apprenant sera capable de comprendre un texte explicatif et de produire un écrit cohérent et structuré pour informer et convaincre."
+          "content": "Objectif général : À la fin de la leçon « Le phénomène des influenceurs sur les réseaux sociaux », l'apprenant sera capable de comprendre un texte explicatif et de produire un écrit cohérent et structuré pour informer et convaincre."
         },
         {
-          "type": "paragraph",
-          "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
+          "type": "header",
+          "content": "Objectifs spécifiques"
         },
         {
-          "type": "paragraph",
-          "content": "Etablir des liens entre les parties d’un texte lu."
+          "type": "list_item",
+          "content": "Établir des liens entre les parties d'un texte lu."
         },
         {
-          "type": "paragraph",
-          "content": "Donner le synonyme d’un mot cité dans un texte lu."
+          "type": "list_item",
+          "content": "Donner le synonyme d'un mot cité dans un texte lu."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "Faire des comparaisons entre les problèmes contenus dans le texte et les problèmes semblables dans la vie quotidienne."
         },
         {
-          "type": "paragraph",
-          "content": "Déterminer l’idée de chaque paragraphe dans un texte lu."
+          "type": "list_item",
+          "content": "Déterminer l'idée de chaque paragraphe dans un texte lu."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "Employer un vocabulaire riche et varié pour que le message écrit soit compréhensible."
         },
         {
-          "type": "paragraph",
-          "content": "Respecter les éléments essentiels de la phrase (sujet+ verbe+ complément)."
+          "type": "list_item",
+          "content": "Respecter les éléments essentiels de la phrase (sujet + verbe + complément)."
         },
         {
-          "type": "text",
+          "type": "list_item",
           "content": "Employer les connecteurs logiques."
         },
         {
-          "type": "text",
+          "type": "list_item",
           "content": "Fonctionner les consignes."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "Écrire un texte clair et bien structuré."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "Écrire un titre à son texte pour attirer le lecteur."
         },
         {
-          "type": "paragraph",
-          "content": "Encourager les apprenants à élargir leurs connaissances et à développer leur curiosité intellectuelle."
-        },
-        {
-          "type": "paragraph",
-          "content": "Proposer des activités pédagogiques motivantes qui suscitent l’intérêt des apprenants pour le cours."
-        },
-        {
-          "type": "image",
-          "content": "/images/m2_lecon3.jpg",
-          "caption": "Illustration de la leçon"
-        },
-        {
           "type": "phase",
-          "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
-        },
-        {
-          "type": "paragraph",
-          "content": "Introduction et Motivation : (5 minutes)"
+          "content": "Phase 2 : Action : Lecture guidée du texte (15 minutes)"
         },
         {
           "type": "instruction",
-          "content": "Consigne : Observez ce que vous voyez et prédisez le thème de la leçon."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "Que voyez-vous dans ces images ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "Selon vous, quel est le thème de la leçon ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "task",
-          "content": "Micro-tâche 1 :  Identifier l’idée générale du texte ?"
-        },
-        {
-          "type": "instruction",
-          "content": "Consigne : Selon les images ci-dessus, de quoi parle ce texte."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "Lecture guidée du texte (15 minutes)"
-        },
-        {
-          "type": "phase",
-          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
-        },
-        {
-          "type": "instruction",
-          "content": "Consigne : Lisez le texte suivant puis répondez aux questions."
-        },
-        {
-          "type": "paragraph",
-          "content": "Le phénomène des \"influenceurs\" sur les réseaux sociaux"
-        },
-        {
-          "type": "paragraph",
-          "content": "Les réseaux sociaux occupent une place importante dans la vie quotidienne et ont fait apparaître une nouvelle figure médiatique : l’influenceur. Présent sur des plateformes comme Instagram, YouTube ou TikTok, l’influenceur partage des contenus variés liés à la mode, au sport, à la cuisine ou encore au voyage. Grâce à un grand nombre d’abonnés, il peut orienter les goûts, les opinions et parfois les comportements de son public. Cette visibilité repose souvent sur une relation de confiance, car les abonnés ont l’impression de connaître personnellement la personne qu’ils suivent. Ainsi, l’influenceur devient une source d’information et un modèle, notamment pour les jeunes, qui s’identifient facilement à son style de vie et à ses choix."
-        },
-        {
-          "type": "paragraph",
-          "content": "L’influence exercée par ces personnalités peut être positive lorsqu’elle transmet des messages utiles et responsables. Certains influenceurs encouragent la pratique du sport, la protection de l’environnement ou l’acceptation de soi. Ils peuvent aussi sensibiliser à des causes sociales et culturelles, en rendant certains sujets plus accessibles. Par leur langage simple et leur proximité avec le public, ils réussissent parfois à expliquer des idées complexes de manière claire. Dans ce cas, les réseaux sociaux deviennent un espace d’échange et d’apprentissage, où l’influence sert à informer et à motiver, sans imposer une vision unique du monde."
-        },
-        {
-          "type": "paragraph",
-          "content": "Cependant, cette influence peut aussi avoir des effets négatifs. La promotion excessive de produits commerciaux peut pousser à la consommation inutile et créer une confusion entre conseil sincère et publicité. Certains contenus valorisent une image irréaliste du succès, de la beauté ou de la richesse, ce qui peut provoquer un sentiment de frustration chez les abonnés. Le manque de recul face aux informations diffusées pose également problème, car tout influenceur n’est pas un expert. Face à ce phénomène, il semble essentiel de développer un esprit critique afin de distinguer le divertissement, l’information fiable et les intérêts économiques cachés derrière certaines publications."
+          "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
         },
         {
           "type": "link",
-          "content": "https://leconjugueur.lefigaro.fr",
-          "url": "https://leconjugueur.lefigaro.fr"
+          "content": "/lesson3-text.html",
+          "url": "/lesson3-text.html"
         },
         {
-          "type": "text",
-          "content": "Questions guidées (10 minutes) :"
-        },
-        {
-          "type": "paragraph",
-          "content": ".  Choisissez la bonne réponse :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Quelle est la principale activité des influenceurs ?"
-        },
-        {
-          "type": "text",
-          "content": "Lire des livres."
-        },
-        {
-          "type": "paragraph",
-          "content": "Partager des contenus sur les réseaux sociaux."
-        },
-        {
-          "type": "text",
-          "content": "Travailler dans une entreprise."
-        },
-        {
-          "type": "text",
-          "content": "Regarder la télévision."
+          "type": "header",
+          "content": "Questions guidées (10 minutes)"
         },
         {
           "type": "instruction",
-          "content": "Consigne : La formatrice encourage les étudiants à répondre en citant des parties du texte ou avec leurs propres mots."
+          "content": "Répondez aux questions suivantes : Choisissez la bonne réponse :"
+        },
+        {
+          "type": "mcq",
+          "id": "m2l3q1",
+          "question": "1. Quelle est la principale activité des influenceurs ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Lire des livres."
+            },
+            {
+              "id": "b",
+              "text": "Partager des contenus sur les réseaux sociaux."
+            },
+            {
+              "id": "c",
+              "text": "Travailler dans une entreprise."
+            }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m2l3q2",
+          "question": "2. Où les influenceurs publient-ils leurs contenus ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sur des sites universitaires."
+            },
+            {
+              "id": "b",
+              "text": "Dans des journaux imprimés."
+            },
+            {
+              "id": "c",
+              "text": "Sur des plateformes comme Instagram, TikTok ou YouTube."
+            }
+          ],
+          "correctAnswer": "c"
+        },
+        {
+          "type": "mcq",
+          "id": "m2l3q3",
+          "question": "3. Pourquoi les influenceurs ont-ils un impact sur les utilisateurs ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Parce qu'ils ont une grande popularité et une relation de confiance avec leurs abonnés."
+            },
+            {
+              "id": "b",
+              "text": "Parce qu'ils sont des experts universitaires."
+            },
+            {
+              "id": "c",
+              "text": "Parce qu'ils vendent des produits en magasin."
+            }
+          ],
+          "correctAnswer": "a"
+        },
+        {
+          "type": "mcq",
+          "id": "m2l3q4",
+          "question": "4. Quelle est la conséquence négative possible de l'influence ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Elle aide toujours à développer l'esprit critique."
+            },
+            {
+              "id": "b",
+              "text": "Elle peut encourager la consommation excessive ou diffuser de fausses informations."
+            },
+            {
+              "id": "c",
+              "text": "Elle n'a aucun effet sur les jeunes."
+            }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m2l3q5",
+          "question": "5. Selon le texte, quel type de texte est présenté ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Un texte narratif."
+            },
+            {
+              "id": "b",
+              "text": "Un texte poétique."
+            },
+            {
+              "id": "c",
+              "text": "Un texte explicatif."
+            }
+          ],
+          "correctAnswer": "c"
         },
         {
           "type": "task",
-          "content": "Micro-tâches 2 : (5 minutes) Trouvez le synonyme?"
+          "content": "Micro-tâche 2 : (5 minutes) : Trouvez le synonyme :"
         },
         {
           "type": "instruction",
-          "content": "Consigne : Donnez un synonyme des mots suivants : Influence – abonnés – promouvoir."
+          "content": "Consigne : Donnez un synonyme des mots suivants d'après le contexte du texte :"
         },
         {
-          "type": "task",
-          "content": "Micro tâche 3 : (5 minutes) : Trouver l’idée de chaque paragraphe ?"
+          "type": "paragraph",
+          "content": "1. Influence → "
         },
         {
-          "type": "instruction",
-          "content": "Consigne : Écrivez l’idée de chaque paragraph."
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "2. Abonnés → "
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "3. Promouvoir → "
         },
         {
           "type": "input",
@@ -1571,7 +1605,39 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâches 4 : (10 minutes) : Faire une comparaison?"
+          "content": "Micro-tâche 3 : (5 minutes) : Trouvez l'idée de chaque paragraphe :"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Écrivez l'idée principale de chaque paragraphe du texte."
+        },
+        {
+          "type": "paragraph",
+          "content": "Paragraphe 1 :"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Paragraphe 2 :"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "Paragraphe 3 :"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 4 : (10 minutes) : Faites une comparaison :"
         },
         {
           "type": "instruction",
@@ -1582,76 +1648,44 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
-          "content": "Micro-tâches 5 : (5 minutes) : Utilisez les mots suivants dans des phrases correctes : (influenceur – réseaux sociaux – publicité)"
+          "content": "Micro-tâche 5 : (5 minutes) : Utilisez les mots suivants dans des phrases correctes : (influenceur – réseaux sociaux – publicité)"
         },
         {
           "type": "input",
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "info_box",
+          "content": "Aide lexicale : influenceur(s), abonné(s), réseau social / réseaux sociaux, promouvoir, popularité, contenu, plateforme, opinion, publicité, tendance, impact, consommateur, visibilité, confiance, esprit critique."
+        },
+        {
           "type": "task",
-          "content": "Micro-tâches 6 : (5 minutes) : Reformulez la phrase suivante ?"
+          "content": "Micro-tâche 6 : (5 minutes) : Reformulez la phrase suivante :"
         },
         {
           "type": "instruction",
-          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots."
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots."
         },
         {
           "type": "paragraph",
-          "content": "« L’influence exercée par ces personnalités peut être positive lorsqu’elle transmet des messages utiles et responsables »."
-        },
-        {
-          "type": "paragraph",
-          "content": "Structures à observer : (5 minutes)"
-        },
-        {
-          "type": "text",
-          "content": "Connecteurs logiques :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Cause / Conséquence : car, grâce à, donc, ainsi"
-        },
-        {
-          "type": "question",
-          "content": "Cette visibilité repose souvent sur une relation de confiance, car les abonnés ont l’impression…"
+          "content": "« L'influence exercée par ces personnalités peut être positive lorsqu'elle transmet des messages utiles et responsables. »"
         },
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Opposition: cependant, mais"
-        },
-        {
-          "type": "paragraph",
-          "content": "Cependant, cette influence peut aussi avoir des effets négatifs."
-        },
-        {
-          "type": "paragraph",
-          "content": "Structures pour présenter un avis ou jugement :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Rôle : utile pour exprimer son point de vue ou opinion."
-        },
-        {
-          "type": "question",
-          "content": "Il semble essentiel de développer un esprit critique…"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "Les abonnés ont l’impression de connaître personnellement la personne qu’ils suivent."
-        },
-        {
-          "type": "task",
-          "content": "Micro-tâches 8 : Mini-production : (10 minutes) Résumez ce texte en trois phrases ?"
         },
         {
           "type": "input",
@@ -1659,55 +1693,88 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâches 9 : Discussion en groupes : (10 minutes)"
-        },
-        {
-          "type": "text",
-          "content": "👉Déroulement:"
-        },
-        {
-          "type": "paragraph",
-          "content": "Les étudiants travaillent en petits groupes (3 à 4 étudiants). Ils discutent autour de la question suivante :"
-        },
-        {
-          "type": "paragraph",
-          "content": "👉 Quel est l’impact des influenceurs sur les réseaux sociaux?"
-        },
-        {
-          "type": "paragraph",
-          "content": "Chaque groupe propose des points réels liées à cette affaire."
-        },
-        {
-          "type": "phase",
-          "content": "Phase 3 : Post-action (Tâche finale) Durée : (20 minutes)"
+          "content": "Micro-tâche 7 : (5 minutes) : Regardez cette vidéo pour mieux comprendre le phénomène des influenceurs :"
         },
         {
           "type": "video",
-          "content": "/videos/m2_lecon3.mp4"
+          "content": "/videos/m2_lecon3_tache.mp4"
         },
         {
           "type": "paragraph",
-          "content": "Tâche finale (avec modèle + aide lexicale)"
+          "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "section_title",
+          "content": "📐 Structures à observer (10 minutes)",
+          "icon": "fa-cogs"
+        },
+        {
+          "type": "grammar_card",
+          "title": "Exprimer la cause / conséquence d'après le texte :",
+          "structure": "car | grâce à | donc | ainsi",
+          "examples": [
+            "• Cette visibilité repose souvent sur une relation de confiance, car les abonnés ont l'impression de connaître personnellement la personne qu'ils suivent.",
+            "• Grâce à un grand nombre d'abonnés, il peut orienter les goûts et les opinions.",
+            "• Ainsi, l'influenceur devient une source d'information et un modèle."
+          ]
+        },
+        {
+          "type": "grammar_card",
+          "title": "Exprimer l'opposition d'après le texte :",
+          "structure": "cependant | mais",
+          "examples": [
+            "• Cependant, cette influence peut aussi avoir des effets négatifs.",
+            "• Il semble essentiel de développer un esprit critique, mais cela reste difficile pour les jeunes."
+          ]
+        },
+        {
+          "type": "grammar_card",
+          "title": "Présenter un avis ou un jugement :",
+          "structure": "Il semble que + subj. | Il est essentiel de + inf.",
+          "examples": [
+            "• Il semble essentiel de développer un esprit critique face aux contenus des influenceurs.",
+            "• Les abonnés ont l'impression de connaître personnellement la personne qu'ils suivent."
+          ]
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 8 : (10 minutes) : Résumez ce texte en trois phrases :"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 9 : Discussion en groupes : (10 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Déroulement : Les étudiants travaillent en petits groupes (3 à 4 étudiants). Ils discutent autour de la question suivante :"
         },
         {
           "type": "paragraph",
-          "content": "📌Consigne: À travers la discussion précédente, rédigez un texte explicatif (6 à 8 lignes) sur le phénomène des influenceurs sur les réseaux sociaux et Proposez un titre attractif pour votre texte."
+          "content": "👉 Quel est l'impact des influenceurs sur les réseaux sociaux ?"
         },
         {
-          "type": "text",
-          "content": "Votre texte doit :"
-        },
-        {
-          "type": "text",
-          "content": "Présenter le problème."
-        },
-        {
-          "type": "paragraph",
-          "content": "Présenter un avantage et un inconvénient."
-        },
-        {
-          "type": "question",
-          "content": "Utiliser des connecteurs logiques (car, donc, cependant, en effet…)."
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1715,119 +1782,159 @@
         },
         {
           "type": "phase",
-          "content": "Phase 4 : évaluation des produits des étudiants : Durée :  10 minutes"
+          "content": "Phase 3 : Post-action (Tâche finale) : (20 minutes)"
         },
         {
-          "type": "text",
-          "content": "É- évaluation :"
+          "type": "instruction",
+          "content": "📌 Consigne : À travers la discussion précédente, rédigez un texte explicatif (6 à 8 lignes) sur le phénomène des influenceurs sur les réseaux sociaux et proposez un titre attractif pour votre texte."
         },
         {
-          "type": "text",
+          "type": "paragraph",
+          "content": "Votre texte doit :"
+        },
+        {
+          "type": "list_item",
+          "content": "Présenter le phénomène des influenceurs."
+        },
+        {
+          "type": "list_item",
+          "content": "Présenter un avantage et un inconvénient."
+        },
+        {
+          "type": "list_item",
+          "content": "Utiliser des connecteurs logiques (car, donc, cependant, en effet…)."
+        },
+        {
+          "type": "list_item",
+          "content": "Banque de connecteurs : d'abord, ensuite, en plus, cependant, malgré tout, enfin…"
+        },
+        {
+          "type": "list_item",
+          "content": "Aide lexicale : influenceur, réseau social, popularité, contenu, confiance, publicité, impact, esprit critique, abonnés…"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "phase",
+          "content": "Phase 4 : Évaluation des produits des étudiants : Durée : 10 minutes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Lisez votre production et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos collègues et corrigez si nécessaire."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "header",
+          "content": "É-évaluation :"
+        },
+        {
+          "type": "instruction",
           "content": "Répondez à ces questions :"
         },
         {
           "type": "paragraph",
-          "content": "Qui sont les influenceurs selon le texte ?"
+          "content": "1) Qui sont les influenceurs selon le texte ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
-          "content": "La réponse :"
+          "type": "input",
+          "content": ""
         },
         {
           "type": "paragraph",
-          "content": "Ce sont des personnes qui utilisent les réseaux sociaux pour partager leur journée, leurs opinions ou annoncer des produits."
-        },
-        {
-          "type": "paragraph",
-          "content": "Sur quelles plateformes les influenceurs sont-ils actifs ?"
+          "content": "2) Sur quelles plateformes les influenceurs sont-ils actifs ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
-          "content": "La réponse :"
+          "type": "input",
+          "content": ""
         },
         {
           "type": "paragraph",
-          "content": "Ils sont actifs sur des plateformes comme Instagram, TikTok ou YouTube."
-        },
-        {
-          "type": "paragraph",
-          "content": "Pourquoi les influenceurs ont-ils un impact sur les utilisateurs d’internet ?"
+          "content": "3) Pourquoi les influenceurs ont-ils un impact sur les utilisateurs d'internet ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
-          "content": "La Réponse :"
+          "type": "input",
+          "content": ""
         },
         {
           "type": "paragraph",
-          "content": "Parce qu’ils ont une grande popularité et un large public qui les suit et leur fait confiance."
-        },
-        {
-          "type": "paragraph",
-          "content": "Citez un avantage et un inconvénient de ce phénomène."
+          "content": "4) Citez un avantage et un inconvénient du phénomène des influenceurs."
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
-          "content": "La Réponse :"
+          "type": "input",
+          "content": ""
         },
         {
           "type": "paragraph",
-          "content": "Conséquence positive : ils peuvent informer et inspirer leur public."
-        },
-        {
-          "type": "paragraph",
-          "content": "Conséquence négative : ils peuvent encourager la consommation excessive d’un produit ou diffuser des informations trompeuses."
-        },
-        {
-          "type": "paragraph",
-          "content": "Quel est le type de ce texte ? Justifiez votre réponse."
+          "content": "5) Trouvez un (autre) titre qui reflète bien le texte ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
-          "content": "La Réponse :"
-        },
-        {
           "type": "paragraph",
-          "content": "C’est un texte explicatif, car il explique un phénomène social en présentant des causes, des avantages, des inconvénients et des solutions."
-        },
-        {
-          "type": "paragraph",
-          "content": "Selon vous, faut-il suivre les influenceurs ? Pourquoi ?"
+          "content": "6) Selon vous, faut-il suivre les influenceurs ? Pourquoi ?"
         },
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "text",
-          "content": "La Réponse :"
-        },
-        {
-          "type": "paragraph",
-          "content": "Oui, mais avec esprit critique, car tous les contenus ne sont pas fiables."
-        },
-        {
-          "type": "paragraph",
-          "content": "Trouver un (autre) titre qui reflète bien le texte ?"
         },
         {
           "type": "input",

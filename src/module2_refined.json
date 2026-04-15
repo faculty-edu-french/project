@@ -711,6 +711,18 @@
         {
           "type": "input",
           "content": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "6. En petit groupe, déterminez avec tes camarades d’autres difficultés de la vie sans Internet."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         }
       ]
     },

@@ -1505,7 +1505,8 @@
         {
           "type": "link",
           "content": "/lesson3-text.html",
-          "url": "/lesson3-text.html"
+          "url": "/lesson3-text.html",
+          "label": "📄 النص القرائي لموضوع: Le phénomène des influenceurs"
         },
         {
           "type": "header",

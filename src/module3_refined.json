@@ -723,11 +723,8 @@
           "content": "Consigne : Observez l’image, puis prédisez le thème de la leçon."
         },
         {
-          "type": "image_group",
-          "images": [
-            "/images/m3_lecon3_m1.png",
-            "/images/m3_lecon3_m2.png"
-          ]
+          "type": "image",
+          "content": "/images/m3_lecon3_intro.png"
         },
         { "type": "paragraph", "content": "Répondez aux questions suivantes :" },
         { "type": "question", "content": "1. Qui sont ces personnages ?" },
@@ -735,10 +732,18 @@
         { "type": "question", "content": "2. Où vivent-ils ?" },
         { "type": "input", "content": "" },
         {
+          "type": "image",
+          "content": "/images/m3_lecon3_pot.png"
+        },
+        {
           "type": "task",
           "content": "Micro-tâche 1 : Que fait-elle ?"
         },
         { "type": "input", "content": "" },
+        {
+          "type": "image",
+          "content": "/images/m3_lecon3_dream.png"
+        },
         {
           "type": "task",
           "content": "Micro-tâche 2 : Quels problèmes pourrait-elle rencontrer ?"

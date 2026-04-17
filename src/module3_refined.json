@@ -14,7 +14,7 @@
           "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
         },
         { "type": "list_item", "content": "1. Saisir le sens des mots selon le contexte." },
-        { "type": "list_item", "content": "2. Connaitre les three parties du mot (la racine, le préfixه et le suffixه)." },
+        { "type": "list_item", "content": "2. Connaitre les trois parties du mot (la racine, le préfixe et le suffixe)." },
         { "type": "list_item", "content": "3. Prédire le sens général d’un texte lu à travers des indices." },
         { "type": "list_item", "content": "4. Proposer un autre titre pertinent pour un texte lu." },
         { "type": "list_item", "content": "5. Faire des inférences en établissant des liens entre les éléments d’un texte lu en justifiant son interprétation." },
@@ -22,7 +22,7 @@
         { "type": "list_item", "content": "7. S’exprimer et se faire comprendre à l’écrit en organisant les idées." },
         { "type": "list_item", "content": "8. Mettre en lien des connaissances antérieures au sujet visé." },
         { "type": "list_item", "content": "9. Exprimer ses goûts et ses préférences." },
-        { "type": "list_item", "content": "10. Créer un clima de classe agréable, motivant et favorable à l’apprentissage." },
+        { "type": "list_item", "content": "10. Créer un climat de classe agréable, motivant et favorable à l’apprentissage." },
         { "type": "list_item", "content": "11. Encourager les apprenants à participer librement sans craindre de commettre des erreurs." },
         {
           "type": "phase",
@@ -45,7 +45,7 @@
           ]
         },
         { "type": "paragraph", "content": "Répondez aux questions suivantes :" },
-        { "type": "question", "content": "1. Que voyez-وز في هذه الصور ؟" },
+        { "type": "question", "content": "1. Que voyez-vous dans ces images ?" },
         { "type": "input", "content": "" },
         { "type": "question", "content": "2. Selon vous, quel est le thème de la leçon ?" },
         { "type": "input", "content": "" },
@@ -114,7 +114,7 @@
         },
         {
           "type": "instruction",
-          "content": "Metteز vrai ou faux devant chaque phrase :"
+          "content": "Mettez vrai ou faux devant chaque phrase :"
         },
         {
           "type": "mcq",
@@ -172,7 +172,7 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : Choisissez dans le texte le mot « trajets quotidiens » et expliqueز-le selon le contexte."
+          "content": "Consigne : Choisissez dans le texte le mot « trajets quotidiens » et expliquez-le selon le contexte."
         },
         { "type": "input", "content": "" },
         {
@@ -181,12 +181,12 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : précisez le word « télétravail » and identify the root, prefix and suffix."
+          "content": "Consigne : précisez le mot « télétravail » and identify the root, prefix and suffix."
         },
         { "type": "input", "content": "" },
         {
           "type": "info_box",
-          "content": "🌟 Présentation du texte explicatif:\nLe texte explicatif est un type de texte qui a pour objectif d’expliquer un phénomène, une situation ou une idea pour aider le lecteur à mieux comprendre un sujet donné. Il répond généralement à des questions comme : Pourquoi ? Comment ? Quelles sont les causes et les conséquences ?\n\nCaractéristiques principales du texte explicatif :\n• Il présente des informations claires et précises.\n• Il utilise des connecteurs logiques tels que : car, parce que, donc, ainsi, cependant, malgré, en effet.\n• Il explique les causes et les conséquences d’un phénomène.\n• Il peut proposer des exemples pour faciliter la compréhension du phénomène.\n\n🔎 Dans ce texte «Le télétravail», l’auteur:\n• Décrit le télétravail grâce à l’intégration des outils numériques.\n• Présente les avantages du télétravail, comme la flexibilité, le gain de temps et la réduction de l’empreinte écologique.\n• Souligne aussi les inconvénients, tels que l’isolement des employés et la difficulté à séparer la vie professionnelle de la vie personnelle.\n• Explique en même temps que le télétravail ne convient pas à tous les métiers."
+          "content": "🌟 Présentation du texte explicatif:\nLe texte explicatif est un type de texte qui a pour objectif d’expliquer un phénomène, une situation ou une idée pour aider le lecteur à mieux comprendre un sujet donné. Il répond généralement à des questions comme : Pourquoi ? Comment ? Quelles sont les causes et les conséquences ?\n\nCaractéristiques principales du texte explicatif :\n• Il présente des informations claires et précises.\n• Il utilise des connecteurs logiques tels que : car, parce que, donc, ainsi, cependant, malgré, en effet.\n• Il explique les causes et les conséquences d’un phénomène.\n• Il peut proposer des exemples pour faciliter la compréhension du phénomène.\n\n🔎 Dans ce texte «Le télétravail», l’auteur:\n• Décrit le télétravail grâce à l’intégration des outils numériques.\n• Présente les avantages du télétravail, comme la flexibilité, le gain de temps et la réduction de l’empreinte écologique.\n• Souligne aussi les inconvénients, tels que l’isolement des employés et la difficulté à séparer la vie professionnelle de la vie personnelle.\n• Explique en même temps que le télétravail ne convient pas à tous les métiers."
         },
         {
           "type": "task",
@@ -237,7 +237,7 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâches 9 : Mini-production : (10 minutes) Résumeز ce texte lu en three phrases ?"
+          "content": "Micro-tâches 9 : Mini-production : (10 minutes) Résumez ce texte lu en trois phrases ?"
         },
         { "type": "input", "content": "" },
         {
@@ -273,7 +273,7 @@
         },
         {
           "type": "instruction",
-          "content": "📌 Consigne: Vous travaillez en ligne et vos amis vous demandent quels sont les avantages et les inconvénients du télétravail. Rédigeز un texte explicatif de 8 à 10 lignes sur le télétravail, en présentant ses avantages et ses inconvénients."
+          "content": "📌 Consigne: Vous travaillez en ligne et vos amis vous demandent quels sont les avantages et les inconvénients du télétravail. Rédigez un texte explicatif de 8 à 10 lignes sur le télétravail, en présentant ses avantages et ses inconvénients."
         },
         {
           "type": "paragraph",
@@ -291,13 +291,13 @@
         },
         {
           "type": "paragraph",
-          "content": "Lisez votre produit écrit et identifieز vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), compareز with your colleges and corrigeز son texte si nécessaire."
+          "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez with your colleges and corrigez son texte si nécessaire."
         },
         { "type": "input", "content": "" },
         { "type": "section_title", "content": "📝 É-évaluation :" },
         { "type": "question", "content": "1. Quels sont les avantages et les inconvénients du télétravail mentionnés dans le texte ?" },
         { "type": "input", "content": "" },
-        { "type": "question", "content": "2. Rédigeز 3 à 4 lignes pour expliquer si vous aimerieز travailler en télétravail ou pas. Justifiez votre réponse." },
+        { "type": "question", "content": "2. Rédigez 3 à 4 lignes pour expliquer si vous aimeriez travailler en télétravail ou pas. Justifiez votre réponse." },
         { "type": "input", "content": "" },
         { "type": "question", "content": "3. Trouvez un (autre) titre qui qui reflète bien le texte ?" },
         { "type": "input", "content": "" },
@@ -324,7 +324,7 @@
           "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
         },
         { "type": "list_item", "content": "1. Comprendre l’idée générale d’un texte lu." },
-        { "type": "list_item", "content": "2. Déterminer les ideas principales et secondaires d’un texte lu." },
+        { "type": "list_item", "content": "2. Déterminer les idées principales et secondaires d’un texte lu." },
         { "type": "list_item", "content": "3. Saisir le sens des mots selon le contexte." },
         { "type": "list_item", "content": "4. Porter un jugement d’un texte lu à partir des critères pertinents." },
         { "type": "list_item", "content": "5. Lier entre ses connaissances antérieures et les informations d’un texte lu." },
@@ -495,7 +495,7 @@
         },
         {
           "type": "task",
-          "content": "Micro tâche 4 : (5 minutes) : Donnez un exemple de votre vie ou de la société qui confirme une idea du texte."
+          "content": "Micro tâche 4 : (5 minutes) : Donnez un exemple de votre vie ou de la société qui confirme une idée du texte."
         },
         { "type": "input", "content": "" },
         {
@@ -534,11 +534,11 @@
         { "type": "input", "content": "" },
         {
           "type": "task",
-          "content": "Micro-tâches 9 : (5 minutes) : Reformule la phrase suivante"
+          "content": "Micro-tâches 9 : (5 minutes) : Reformulez la phrase suivante"
         },
         {
           "type": "instruction",
-          "content": "Consigne : Reformuleز cette phrase en utilisant vos propres mots : « Le travail peut donner une identité à certaines personnes. »"
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots : « Le travail peut donner une identité à certaines personnes. »"
         },
         { "type": "input", "content": "" },
         {
@@ -571,7 +571,7 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâches 10 : Mini-production : (10 minutes) Résumeز ce texte lu en three phrases ?"
+          "content": "Micro-tâches 10 : Mini-production : (10 minutes) Résumez ce texte lu en trois phrases ?"
         },
         { "type": "input", "content": "" },
         {
@@ -593,7 +593,7 @@
         },
         {
           "type": "instruction",
-          "content": "📌 Consigne: À travers la discussion précédente, Écriveز un e-mail à votre ami français à propos de votre récent changement d’emploi. Expliqueز why you changed jobs, describeز your new responsibilities and expressز your feelings about this change."
+          "content": "📌 Consigne: À travers la discussion précédente, Écrivez un e-mail à votre ami français à propos de votre récent changement d’emploi. Expliquez why you changed jobs, décrivez your new responsibilities and exprimez your feelings about this change."
         },
         {
           "type": "paragraph",
@@ -613,7 +613,7 @@
         },
         {
           "type": "paragraph",
-          "content": "Relisez votre produit écrit et identifieز vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), compareز with your colleges and corrigeز son texte si nécessaire."
+          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez with your colleges and corrigez son texte si nécessaire."
         },
         { "type": "input", "content": "" },
         { "type": "section_title", "content": "📝 É-évaluation :" },

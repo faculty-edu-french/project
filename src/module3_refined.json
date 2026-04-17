@@ -245,9 +245,9 @@
           "content": "Micro tâche 8 : (5 minutes) : Regardez cette vidéo"
         },
         {
-          "type": "link",
-          "url": "https://youtu.be/PHRwehPtSLs?si=X5M2xSOBcyouRkXQ",
-          "label": "🎥 Vidéo : Qu'est-ce que le télétravail ?"
+          "type": "video",
+          "title": "Qu'est-ce que le télétravail ?",
+          "content": "/videos/m3_l1_video.mp4"
         },
         {
           "type": "paragraph",
@@ -526,9 +526,9 @@
           "content": "Micro tâche 8 : (5 minutes) : Regardez cette vidéo"
         },
         {
-          "type": "link",
-          "url": "https://youtu.be/K5TUHK_J5QQ",
-          "label": "🎥 Vidéo : Le travail et le bonheur"
+          "type": "video",
+          "title": "Le travail et le bonheur",
+          "content": "/videos/m3_l2_video.mp4"
         },
         { "type": "paragraph", "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo." },
         { "type": "input", "content": "" },

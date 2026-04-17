@@ -367,11 +367,30 @@ const BlockRenderer = ({
       );
     case 'video':
       return (
-        <div className="video-container">
-          <video controls preload="metadata" className="lesson-video">
-            <source src={import.meta.env.BASE_URL + block.content.replace(/^\//, '')} type="video/mp4" />
-            Votre navigateur ne supporte pas la lecture de vidéos.
-          </video>
+        <div style={{ margin: '2rem 0' }}>
+          {block.title && (
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.6rem',
+              marginBottom: '1rem',
+              color: 'var(--primary)',
+              fontWeight: 700
+            }}>
+              <span>🎬</span> {block.title}
+            </div>
+          )}
+          <div className="video-container" style={{
+            borderRadius: '12px',
+            overflow: 'hidden',
+            boxShadow: 'var(--shadow-md)',
+            background: '#000'
+          }}>
+            <video controls preload="metadata" className="lesson-video" style={{ width: '100%', display: 'block' }}>
+              <source src={import.meta.env.BASE_URL + block.content.replace(/^\//, '')} type="video/mp4" />
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+          </div>
         </div>
       );
     case 'iframe':

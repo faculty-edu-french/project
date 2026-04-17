@@ -676,7 +676,14 @@
             { "id": "d", "text": "De donner un sens à sa vie" }
           ],
           "correctAnswer": "d"
-        }
+        },
+        { "type": "section_title", "content": "Répondez aux questions :" },
+        { "type": "question", "content": "1. Trouvez un (autre) titre qui qui reflète bien le texte ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "2. Proposez d’autres avantages et inconvénients du travail." },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "3. Êtes-vous d’accord avec l’idée que le travail peut contribuer au bonheur ? Justifiez votre réponse." },
+        { "type": "input", "content": "" }
       ]
     }
   ]

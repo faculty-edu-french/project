@@ -935,5 +935,6 @@
         { "type": "question", "content": "7. Donnez un autre titre possible pour cette histoire." },
         { "type": "input", "content": "" }
       ]
+    }
   ]
 }

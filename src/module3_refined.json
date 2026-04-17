@@ -96,8 +96,8 @@
         },
         {
           "type": "link",
-          "url": "https://www.bien-ecrire.com/",
-          "label": "Source : https://www.bien-ecrire.com/"
+          "url": "/articles/m3_l1_article.html",
+          "label": "📄 Ouvrir l'article interactif : Le télétravail"
         },
         {
           "type": "task",

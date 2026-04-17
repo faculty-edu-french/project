@@ -1,0 +1,683 @@
+{
+  "moduleTitle": "Module 3 : Le travail et la vie sociale",
+  "lessons": [
+    {
+      "id": "m3_lecon1",
+      "title": "Leçon 1 : Le télétravail",
+      "blocks": [
+        {
+          "type": "objective",
+          "content": "Objectif général : À la fin de la leçon « Le télétravail », l’apprenant sera capable de comprendre un texte explicatif et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
+          "type": "paragraph",
+          "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
+        },
+        { "type": "list_item", "content": "1. Saisir le sens des mots selon le contexte." },
+        { "type": "list_item", "content": "2. Connaitre les three parties du mot (la racine, le préfixه et le suffixه)." },
+        { "type": "list_item", "content": "3. Prédire le sens général d’un texte lu à travers des indices." },
+        { "type": "list_item", "content": "4. Proposer un autre titre pertinent pour un texte lu." },
+        { "type": "list_item", "content": "5. Faire des inférences en établissant des liens entre les éléments d’un texte lu en justifiant son interprétation." },
+        { "type": "list_item", "content": "6. Respecter l’ordre logique des mots dans la phrase." },
+        { "type": "list_item", "content": "7. S’exprimer et se faire comprendre à l’écrit en organisant les idées." },
+        { "type": "list_item", "content": "8. Mettre en lien des connaissances antérieures au sujet visé." },
+        { "type": "list_item", "content": "9. Exprimer ses goûts et ses préférences." },
+        { "type": "list_item", "content": "10. Créer un clima de classe agréable, motivant et favorable à l’apprentissage." },
+        { "type": "list_item", "content": "11. Encourager les apprenants à participer librement sans craindre de commettre des erreurs." },
+        {
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
+        },
+        {
+          "type": "header",
+          "content": "I. Introduction et Motivation : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Observez ce que vous voyez et prédisez le thème de la leçon."
+        },
+        {
+          "type": "image_group",
+          "images": [
+            "/images/m3_lecon1_1.png",
+            "/images/m3_lecon1_2.png",
+            "/images/m3_lecon1_3.png"
+          ]
+        },
+        { "type": "paragraph", "content": "Répondez aux questions suivantes :" },
+        { "type": "question", "content": "1. Que voyez-وز في هذه الصور ؟" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "2. Selon vous, quel est le thème de la leçon ?" },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâche 1 : Trouver l’idée générale du texte ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Selon les images ci-dessus, de quoi parle ce texte ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "header",
+          "content": "II. Lecture guidée du texte (15 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : lisez le texte suivant, puis répondez aux questions."
+        },
+        {
+          "type": "header",
+          "content": "Le télétravail"
+        },
+        {
+          "type": "paragraph",
+          "content": "Depuis quelques années, une nouvelle manière de travailler a fait son apparition : le télétravail. Cela signifie que les employés n'ont plus besoin de se rendre dans un bureau tous les jours. Grâce à leur ordinateur and a connection Internet, they can perform their tasks from home. This practice, which was still not widespread a few years ago, has developed considerably, particularly with the Covid-19 health crisis which forced many companies to adapt their operating modes."
+        },
+        {
+          "type": "paragraph",
+          "content": "Le télétravail presents de nombreux avantages. Tout d’abord, il permet de gagner du temps en évitant les trajets quotidiens. Ensuite, il offre une plus grande flexibilité dans l'organisation du travail. Les salariés peuvent ainsi mieux concilier leur vie professionnelle et leur vie personnelle. Enfin, le télétravail peut contribuer à réduire l'empreinte écologique en limitant les déplacements."
+        },
+        {
+          "type": "paragraph",
+          "content": "Cependant, cette nouvelle façon de travailler n'est pas sans poser de problèmes. Le principal inconvénient est sans doute l'isolement que peuvent ressentir certains télétravailleurs, privés des échanges with their colleagues. De plus, it is sometimes difficult to separate professional and personal life when working from home."
+        },
+        {
+          "type": "paragraph",
+          "content": "Si le télétravail est une réalité pour de plus en plus de personnes, it is important to emphasize that this practice is not suitable for all professions. Some jobs require a physical presence and regular interactions with colleagues. Furthermore, teleworking raises many questions, particularly in terms of working time arrangements and performance evaluation. Companies and employees must therefore learn to adapt to this new work organization to make the most of it."
+        },
+        {
+          "type": "link",
+          "url": "https://www.bien-ecrire.com/",
+          "label": "Source : https://www.bien-ecrire.com/"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 2 : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Quelle est l’idée principale de ce texte ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "header",
+          "content": "Questions guidées (10 minutes) :"
+        },
+        {
+          "type": "instruction",
+          "content": "Metteز vrai ou faux devant chaque phrase :"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l1q1",
+          "question": "1. Le télétravail signifie que les employés doivent se rendre au bureau tous les jours.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l1q2",
+          "question": "2. Le télétravail permet de gagner du temps en évitant les trajets quotidiens.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "a"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l1q3",
+          "question": "3. Le télétravail ne présente aucun inconvénient.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l1q4",
+          "question": "4. Le télétravail peut contribuer à réduire l’empreinte écologique.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "a"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l1q5",
+          "question": "5. Tous les métiers peuvent être exercés en télétravail.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 3 : (5 minutes) trouvez le sens des mots selon le contexte?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Choisissez dans le texte le mot « trajets quotidiens » et expliqueز-le selon le contexte."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro tâche 4 : (5 minutes) : reconnaitre les parties des mots?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : précisez le word « télétravail » and identify the root, prefix and suffix."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "info_box",
+          "content": "🌟 Présentation du texte explicatif:\nLe texte explicatif est un type de texte qui a pour objectif d’expliquer un phénomène, une situation ou une idea pour aider le lecteur à mieux comprendre un sujet donné. Il répond généralement à des questions comme : Pourquoi ? Comment ? Quelles sont les causes et les conséquences ?\n\nCaractéristiques principales du texte explicatif :\n• Il présente des informations claires et précises.\n• Il utilise des connecteurs logiques tels que : car, parce que, donc, ainsi, cependant, malgré, en effet.\n• Il explique les causes et les conséquences d’un phénomène.\n• Il peut proposer des exemples pour faciliter la compréhension du phénomène.\n\n🔎 Dans ce texte «Le télétravail», l’auteur:\n• Décrit le télétravail grâce à l’intégration des outils numériques.\n• Présente les avantages du télétravail, comme la flexibilité, le gain de temps et la réduction de l’empreinte écologique.\n• Souligne aussi les inconvénients, tels que l’isolement des employés et la difficulté à séparer la vie professionnelle de la vie personnelle.\n• Explique en même temps que le télétravail ne convient pas à tous les métiers."
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 5 : (5 minutes) : Donnez un exemple de votre vie personnelle ou familiale lié au télétravail ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 6 : (5 minutes) : Utiliser les connecteurs logiques ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reliez les phrases suivantes with a connecteur logique : « Il permet de gagner du temps et …. Les salariés peuvent mieux concilier leur vie professionnelle et personnelle. »"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 7 : (5 minutes) : Reformulez la phrase suivante ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots : « Le télétravail permet de gagner du temps en évitant les trajets quotidiens »."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "section_title",
+          "content": "📐 Structure à observer : (5 minutes)"
+        },
+        {
+          "type": "grammar_card",
+          "title": "Les connecteurs logiques :",
+          "description": "Ils permettent d’organiser les idées et de montrer les relations entre elles.",
+          "structure": "Tout d’abord, Ensuite, Enfin, Cependant, De plus",
+          "examples": [
+            "• Tout d’abord, il permet de gagner du temps en évitant les trajets quotidiens.",
+            "• De plus, il est parfois difficile de séparer vie professionnelle et vie privée lorsque l’on travaille à domicile."
+          ]
+        },
+        {
+          "type": "grammar_card",
+          "title": "Les expressions pour donner des causes et des conséquences :",
+          "description": "Grâce à… → Exprimer la cause | Cela permet de… → Exprimer la conséquence",
+          "structure": "Grâce à… (cause) | Cela permet de… (conséquence)",
+          "examples": [
+            "• Grâce à leur ordinateur and a connection Internet, they can perform their tasks from home.",
+            "• Cela permet de gagner du temps en évitant les trajets quotidiens."
+          ]
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 9 : Mini-production : (10 minutes) Résumeز ce texte lu en three phrases ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro tâche 8 : (5 minutes) : Regardez cette vidéo"
+        },
+        {
+          "type": "link",
+          "url": "https://youtu.be/PHRwehPtSLs?si=X5M2xSOBcyouRkXQ",
+          "label": "🎥 Vidéo : Qu'est-ce que le télétravail ?"
+        },
+        {
+          "type": "paragraph",
+          "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 10: Discussion en groupes: (10 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Selon vous, quelles solutions pourraient aider à améliorer la quality de vie des télétravailleurs? Chaque groupe propose des solutions réelles liées à ce phénomène."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "phase",
+          "content": "Phase 3 : Post-action (Tâche finale) Durée : 20 minutes"
+        },
+        {
+          "type": "header",
+          "content": "Tâche finale (avec modèle + aide lexicale)"
+        },
+        {
+          "type": "instruction",
+          "content": "📌 Consigne: Vous travaillez en ligne et vos amis vous demandent quels sont les avantages et les inconvénients du télétravail. Rédigeز un texte explicatif de 8 à 10 lignes sur le télétravail, en présentant ses avantages et ses inconvénients."
+        },
+        {
+          "type": "paragraph",
+          "content": "Votre texte must :"
+        },
+        { "type": "list_item", "content": "Décrire le problème." },
+        { "type": "list_item", "content": "Présenter un avantage et un inconvénient." },
+        { "type": "list_item", "content": "Utiliser des connecteurs logiques (car, donc, cependant, en effet…)." },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
+        {
+          "type": "phase",
+          "content": "Phase 4 : évaluation des produits des étudiants : Durée : 10 minutes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Lisez votre produit écrit et identifieز vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), compareز with your colleges and corrigeز son texte si nécessaire."
+        },
+        { "type": "input", "content": "" },
+        { "type": "section_title", "content": "📝 É-évaluation :" },
+        { "type": "question", "content": "1. Quels sont les avantages et les inconvénients du télétravail mentionnés dans le texte ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "2. Rédigeز 3 à 4 lignes pour expliquer si vous aimerieز travailler en télétravail ou pas. Justifiez votre réponse." },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "3. Trouvez un (autre) titre qui qui reflète bien le texte ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "4. Pourquoi certaines personnes trouvent-elles difficile de travailler à domicile ? Justifiez with the text." },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "5. Préférez-vous le télétravail ou le travail en présentiel ? Justifiez-en 2–3 lignes." },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "6. Proposez d’autres avantages et inconvénients du télétravail." },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "7. Précisez les métiers qui ne peuvent pas travailler en ligne ? Donnez un exemple." },
+        { "type": "input", "content": "" }
+      ]
+    },
+    {
+      "id": "m3_lecon2",
+      "title": "Leçon 2 : Le travail contribue-t-il au bonheur ?",
+      "blocks": [
+        {
+          "type": "objective",
+          "content": "Objectif général : À la fin de la leçon « Le travail contribue-t-il au bonheur ? », l’apprenant sera capable de comprendre un texte explicatif et de produire un écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
+          "type": "paragraph",
+          "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
+        },
+        { "type": "list_item", "content": "1. Comprendre l’idée générale d’un texte lu." },
+        { "type": "list_item", "content": "2. Déterminer les ideas principales et secondaires d’un texte lu." },
+        { "type": "list_item", "content": "3. Saisir le sens des mots selon le contexte." },
+        { "type": "list_item", "content": "4. Porter un jugement d’un texte lu à partir des critères pertinents." },
+        { "type": "list_item", "content": "5. Lier entre ses connaissances antérieures et les informations d’un texte lu." },
+        { "type": "list_item", "content": "6. Choisir des mots clairs et simples." },
+        { "type": "list_item", "content": "7. Fonctionner les consignes." },
+        { "type": "list_item", "content": "8. Employer correctement les prépositions (dans – en – au – à – de)." },
+        { "type": "list_item", "content": "9. Maîtriser les règles de l’accord en genre et en nombre." },
+        { "type": "list_item", "content": "10. Favoriser des relations positives et solidaires entre les apprenants." },
+        { "type": "list_item", "content": "11. Promouvoir un environnement d’apprentissage basé sur la coopération et les échanges." },
+        {
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
+        },
+        {
+          "type": "header",
+          "content": "I. Introduction et Motivation : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Observez ce que vous voyez et prédisez le thème de la leçon."
+        },
+        {
+          "type": "image_group",
+          "images": [
+            "/images/m3_lecon2_m1.png",
+            "/images/m3_lecon2_m2.png",
+            "/images/m3_lecon2_m3.png"
+          ]
+        },
+        { "type": "paragraph", "content": "Répondez aux questions suivantes :" },
+        { "type": "question", "content": "1. Que voyez-vous dans ces images ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "2. Selon vous, quel est le thème de la leçon ?" },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâche 1 : Identifiez l’idée générale du texte ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Selon les images ci-dessus, de quoi parle ce texte ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "header",
+          "content": "II. Lecture guidée du texte (15 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Lisez le texte suivant, puis répondez aux questions."
+        },
+        {
+          "type": "header",
+          "content": "Le travail contribue-t-il au bonheur ?"
+        },
+        {
+          "type": "paragraph",
+          "content": "Si l’on s’en tient à l’étymologie du mot « travail » qui vient du latin « tripalium », un ancien instrument de torture, alors, le travail ne contribue définitivement pas au bonheur. En effet, tout le monde n’a pas la chance de choisir son métier. Parfois, on est contraint de faire un travail ennuyeux, stressant et sans intérêt. Pas parce qu’on l’a décidé, but because one is obliged to earn money to subvenir to one's needs or those of one's family."
+        },
+        {
+          "type": "paragraph",
+          "content": "Mais d’un autre côté, même avoir un travail qui ne nous intéresse pas peut être formateur. En effet, sometimes, performing a job that one does not like allows one to know what one does not want to do in life, which can motivate us to find solutions to get out of it."
+        },
+        {
+          "type": "paragraph",
+          "content": "De plus, c’est parfois en commençant un nouveau travail que l’on peut se découvrir des passions cachées. Le travail peut aussi donner du sens à la vie des gens. Many people identify with their work, the work gives them a reason to live, an identity."
+        },
+        {
+          "type": "paragraph",
+          "content": "Ensuite, on peut rencontrer des personnes passionnantes au travail. C’est un lieu d’interaction sociale where you can make friends. Finally, I know many people who say they don't like their work and who often complain about their condition. But when these people take vacations for too long, they get bored and want to return to their company."
+        },
+        {
+          "type": "paragraph",
+          "content": "Cette situation est assez paradoxale. En fait, I believe that many of us need to be a little frustrated at work during the day to better appreciate these small moments once at home. So, work can contribute to happiness even if one does not always realize it."
+        },
+        {
+          "type": "link",
+          "url": "https://anyfrench.com/lecture/le-travail-contribue-t-il-au-bonheur",
+          "label": "Source : anyfrench.com"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 2 : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Quelle est l’idée principale de ce texte ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "header",
+          "content": "Questions guidées (5 minutes) :"
+        },
+        {
+          "type": "instruction",
+          "content": "Mettez vrai ou faux devant chaque phrase :"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2q1",
+          "question": "1. Le mot « travail » vient d'un mot latin signifiant un instrument de torture.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "a"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2q2",
+          "question": "2. Selon le texte, tout le monde a la possibility de choisir librement son métier.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2q3",
+          "question": "3. D’après l’auteur, un travail ennuyeux ne peut jamais être utile.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2q4",
+          "question": "4. Le travail peut donner un sens à la vie et une identité à certaines personnes.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "a"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2q5",
+          "question": "5. L’auteur pense que le travail ne contribue jamais au bonheur.",
+          "options": [
+            { "id": "a", "text": "Vrai" },
+            { "id": "b", "text": "Faux" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 3 : (5 minutes) Saisir le sens des mot selon le contexte?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Donnez le sens du mot « paradoxale » selon le contexte du texte."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "info_box",
+          "content": "🌟 Présentation du texte explicatif argumentatif:\nCe type de texte a pour objectif d’expliquer comment le travail peut influencer le bonheur des individus, en présentant à la fois ses avantages et ses inconvénients.\n\nCaractéristiques principales du texte explicatif :\n• Il présente des informations claires et précises.\n• Il utilise des connecteurs logiques tels que : en effet, cependant, car, donc, ainsi.\n• Il présente des causes et les conséquences du travail sur le bonheur.\n• Il propose des exemples pour faciliter la compréhension.\n\n🔎 Dans ce texte, l’auteur:\n• Présente son point de vue et sa justification : « Mais d’un autre côté, même avoir un travail qui ne nous intéresse pas peut être formateur. »\n• Argumente sur l'identité : « Beaucoup de personnes s’identifient à leur travail... »\n• Conclut : « Alors, le travail peut contribuer au bonheur même si on ne s’en rend pas toujours compte. »"
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 4 : (5 minutes) : Donnez un exemple de votre vie ou de la société qui confirme une idea du texte."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 5 : (5 minutes) : Selon vous, le travail est-il une source de bonheur ou de frustration ? Pourquoi ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 6 : (5 minutes) : Employer correctement les prépositions (dans – en – au – à – de)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Complétez avec la préposition correcte ?"
+        },
+        { "type": "fill_blank", "content": "1. Je travaille [...] une grande entreprise." },
+        { "type": "fill_blank", "content": "2. Beaucoup de personnes s’identifient [...] leur travail." },
+        { "type": "fill_blank", "content": "3. Elle est intéressée [...] la psychologie du travail." },
+        { "type": "fill_blank", "content": "4. Il passe beaucoup de temps [...] son bureau." },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 7 : (5 minutes) : Écrivez une seule phrase sur le rôle du travail dans la vie ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro tâche 8 : (5 minutes) : Regardez cette vidéo"
+        },
+        {
+          "type": "link",
+          "url": "https://youtu.be/K5TUHK_J5QQ",
+          "label": "🎥 Vidéo : Le travail et le bonheur"
+        },
+        { "type": "paragraph", "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo." },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 9 : (5 minutes) : Reformule la phrase suivante"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reformuleز cette phrase en utilisant vos propres mots : « Le travail peut donner une identité à certaines personnes. »"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "section_title",
+          "content": "📐 Structures à observer : (5 minutes)"
+        },
+        {
+          "type": "grammar_card",
+          "title": "Structure de l’opposition :",
+          "description": "Sert à présenter des points de vue opposés et à nuancer l’argumentation.",
+          "structure": "Si…, alors… | Mais d’un autre côté… | Même si…"
+        },
+        {
+          "type": "grammar_card",
+          "title": "Structure de la cause :",
+          "description": "Sert à justifier une idée ou une opinion.",
+          "structure": "Parce que… | Car… | En effet…"
+        },
+        {
+          "type": "grammar_card",
+          "title": "Structure de la conséquence :",
+          "description": "Sert à montrer les effets du travail sur le bonheur.",
+          "structure": "Alors… | Ce qui peut… | Cela permet de…"
+        },
+        {
+          "type": "grammar_card",
+          "title": "Structure de l’énumération :",
+          "description": "Sert à organiser les idées de manière logique.",
+          "structure": "En effet… / De plus… / Ensuite… / Enfin…"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 10 : Mini-production : (10 minutes) Résumeز ce texte lu en three phrases ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 11 : Discussion en groupes : (10 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "👉 « Selon vous, que peut-on faire pour que le travail contribue au bonheur des employés? » Each group proposes real solutions related to this phenomenon."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "phase",
+          "content": "Phase 3 : Post-action (Tâche finale) Durée : (20 minutes)"
+        },
+        {
+          "type": "header",
+          "content": "Tâche finale (avec modèle + aide lexicale)"
+        },
+        {
+          "type": "instruction",
+          "content": "📌 Consigne: À travers la discussion précédente, Écriveز un e-mail à votre ami français à propos de votre récent changement d’emploi. Expliqueز why you changed jobs, describeز your new responsibilities and expressز your feelings about this change."
+        },
+        {
+          "type": "paragraph",
+          "content": "Votre texte must :"
+        },
+        { "type": "list_item", "content": "Commencer par une salutation adaptée." },
+        { "type": "list_item", "content": "Expliquer pourquoi vous avez changé de travail." },
+        { "type": "list_item", "content": "Décrire vos nouvelles responsabilités." },
+        { "type": "list_item", "content": "Exprimer vos sentiments et impressions sur ce changement." },
+        { "type": "list_item", "content": "Conclure par une phrase de conclusion amicale et une formule de politesse." },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
+        {
+          "type": "phase",
+          "content": "Phase 4 : évaluation des produits des étudiants : Durée : 10 minutes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Relisez votre produit écrit et identifieز vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), compareز with your colleges and corrigeز son texte si nécessaire."
+        },
+        { "type": "input", "content": "" },
+        { "type": "section_title", "content": "📝 É-évaluation :" },
+        {
+          "type": "mcq",
+          "id": "m3l2e1",
+          "question": "1. D’après l’auteur, tout le monde peut-il choisir son métier ?",
+          "options": [
+            { "id": "a", "text": "Non, on n’a pas tous cette chance." },
+            { "id": "b", "text": "Non, c’est réservé à une élite." },
+            { "id": "c", "text": "Oui, être libre c’est choisir." },
+            { "id": "d", "text": "Oui, mais les gens ne le font pas." }
+          ],
+          "correctAnswer": "a"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2e2",
+          "question": "2. D’après l’auteur, quelles sont les caractéristiques des métiers subis ?",
+          "options": [
+            { "id": "a", "text": "Ils sont passionnants et relaxants" },
+            { "id": "b", "text": "Ils sont très bien payés" },
+            { "id": "c", "text": "Ils sont ennuyeux, stressants et sans intérêt" },
+            { "id": "d", "text": "Ils sont très mal payés" }
+          ],
+          "correctAnswer": "c"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2e3",
+          "question": "3. D’après l’auteur, est-ce qu’un travail inintéressant peut servir ?",
+          "options": [
+            { "id": "a", "text": "Non, car il ne sert à rien" },
+            { "id": "b", "text": "Oui, il peut aider à savoir ce qu’on ne veut pas" },
+            { "id": "c", "text": "Oui, il reste utile à la société" },
+            { "id": "d", "text": "Non, c’est évidence" }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2e4",
+          "question": "4. D’après l’auteur, que peut-on découvrir quand on commence un nouveau travail ?",
+          "options": [
+            { "id": "a", "text": "Une nouvelle manière de voir le monde" },
+            { "id": "b", "text": "Une nouvelle méthode de travail" },
+            { "id": "c", "text": "Que l’on est doué de conscience" },
+            { "id": "d", "text": "Une passion dont on n’avait pas conscience" }
+          ],
+          "correctAnswer": "d"
+        },
+        {
+          "type": "mcq",
+          "id": "m3l2e5",
+          "question": "5. D’après l’auteur, que peut permettre le travail ?",
+          "options": [
+            { "id": "a", "text": "De cotiser pour sa retraite" },
+            { "id": "b", "text": "De contribuer à la society" },
+            { "id": "c", "text": "De s’améliorer en permanence" },
+            { "id": "d", "text": "De donner un sens à sa vie" }
+          ],
+          "correctAnswer": "d"
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import './index.css';
 import refinedData1 from './module1_refined.json';
 import refinedData2 from './module2_refined.json';
+import refinedData3 from './module3_refined.json';
 import introData from './intro.json';
 import { MCQGroup, MCQBlock, StudentGate, EssaySubmitter } from './MCQ';
 
@@ -107,7 +108,7 @@ const PersistentInput = ({ storageKey, isFirst }: { storageKey: string; isFirst:
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const v = e.target.value;
     setValue(v);
-    try { localStorage.setItem(storageKey, v); } catch {}
+    try { localStorage.setItem(storageKey, v); } catch { }
   };
   return (
     <input
@@ -116,6 +117,42 @@ const PersistentInput = ({ storageKey, isFirst }: { storageKey: string; isFirst:
       placeholder={isFirst ? "Votre réponse ici..." : ""}
       value={value}
       onChange={handleChange}
+    />
+  );
+};
+
+// =========================================================
+// InlineInput — for fill-in-the-blank questions
+// =========================================================
+const InlineInput = ({ storageKey }: { storageKey: string }) => {
+  const [value, setValue] = useState<string>(() => {
+    try { return localStorage.getItem(storageKey) || ''; } catch { return ''; }
+  });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const v = e.target.value;
+    setValue(v);
+    try { localStorage.setItem(storageKey, v); } catch { }
+  };
+  return (
+    <input
+      type="text"
+      className="inline-input"
+      value={value}
+      onChange={handleChange}
+      style={{
+        width: '80px',
+        border: 'none',
+        borderBottom: '2px dotted var(--primary)',
+        background: 'rgba(59, 130, 246, 0.05)',
+        textAlign: 'center',
+        padding: '0 4px',
+        margin: '0 4px',
+        outline: 'none',
+        fontSize: 'inherit',
+        color: 'var(--primary-dark)',
+        fontWeight: 'bold',
+        borderRadius: '4px'
+      }}
     />
   );
 };
@@ -186,6 +223,21 @@ const BlockRenderer = ({
       );
     case 'paragraph':
       return <p className="article-paragraph">{block.content}</p>;
+    case 'fill_blank': {
+      const parts = (block.content || '').split('[...]');
+      return (
+        <p className="article-paragraph" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4px' }}>
+          {parts.map((part: string, i: number) => (
+            <span key={i} style={{ display: 'inline-flex', alignItems: 'center' }}>
+              {part}
+              {i < parts.length - 1 && (
+                <InlineInput storageKey={`fill_blank_${lessonId}_${idx}_${i}`} />
+              )}
+            </span>
+          ))}
+        </p>
+      );
+    }
     case 'question':
       return (
         <div className="question-item">
@@ -374,6 +426,11 @@ const BlockRenderer = ({
             <strong style={{ color: 'var(--primary)', fontSize: '1rem', fontWeight: 700 }}>
               {block.title}
             </strong>
+            {block.description && (
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontStyle: 'italic', marginLeft: '0.4rem' }}>
+                : {block.description}
+              </span>
+            )}
           </div>
           <div style={{
             background: 'rgba(99,102,241,0.1)',
@@ -388,22 +445,24 @@ const BlockRenderer = ({
           }}>
             {block.structure}
           </div>
-          <div style={{ borderTop: '1px solid rgba(99,102,241,0.15)', paddingTop: '0.85rem' }}>
-            <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-              📌 Exemples du texte :
-            </div>
-            {block.examples?.map((ex: string, i: number) => (
-              <div key={i} style={{
-                fontSize: '0.95rem',
-                color: 'var(--text-main)',
-                lineHeight: '1.7',
-                padding: '0.2rem 0',
-                borderBottom: i < block.examples.length - 1 ? '1px solid rgba(0,0,0,0.05)' : 'none',
-              }}>
-                {ex}
+          {block.examples && block.examples.length > 0 && (
+            <div style={{ borderTop: '1px solid rgba(99,102,241,0.15)', paddingTop: '0.85rem' }}>
+              <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                📌 Exemples du texte :
               </div>
-            ))}
-          </div>
+              {block.examples.map((ex: string, i: number) => (
+                <div key={i} style={{
+                  fontSize: '0.95rem',
+                  color: 'var(--text-main)',
+                  lineHeight: '1.7',
+                  padding: '0.2rem 0',
+                  borderBottom: i < block.examples.length - 1 ? '1px solid rgba(0,0,0,0.05)' : 'none',
+                }}>
+                  {ex}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       );
     default:
@@ -426,6 +485,7 @@ function App() {
   );
 
   const getModuleData = () => {
+    if (activeModule === 'module3') return refinedData3;
     if (activeModule === 'module2') return refinedData2;
     return refinedData1;
   };
@@ -595,8 +655,25 @@ function App() {
             );
           })}
 
-          <div className="nav-group-title">Séquences suivantes</div>
-          <div className="nav-link" style={{ opacity: 0.45, cursor: 'not-allowed' }}>🔒 Module 3</div>
+          <div className="nav-group-title">{refinedData3.moduleTitle}</div>
+          {refinedData3.lessons.map((l: any) => {
+            const isUnlocked = ['m3_lecon1', 'm3_lecon2'].includes(l.id);
+            return (
+              <div
+                key={l.id}
+                className={`nav-link ${activeTab === l.id && isUnlocked ? 'active' : ''}`}
+                onClick={() => isUnlocked && handleNavClick('module3', l.id)}
+                style={{
+                  paddingLeft: '2.5rem',
+                  borderLeft: activeTab === l.id && isUnlocked ? '4px solid var(--primary)' : 'none',
+                  opacity: isUnlocked ? 1 : 0.45,
+                  cursor: isUnlocked ? 'pointer' : 'not-allowed'
+                }}
+              >
+                {isUnlocked ? '📖' : '🔒'} {l.title.split(':').pop()?.trim() || l.title}
+              </div>
+            );
+          })}
         </div>
       </aside>
 

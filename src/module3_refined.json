@@ -685,6 +685,255 @@
         { "type": "question", "content": "3. Êtes-vous d’accord avec l’idée que le travail peut contribuer au bonheur ? Justifiez votre réponse." },
         { "type": "input", "content": "" }
       ]
-    }
+    },
+    {
+      "id": "m3_lecon3",
+      "title": "Leçon 3 : Le pot de lait de Gita",
+      "blocks": [
+        {
+          "type": "objective",
+          "content": "Objectif général : À la fin de la leçon « Le pot de lait de Gita », l’apprenant sera capable de comprendre et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
+          "type": "paragraph",
+          "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
+        },
+        { "type": "list_item", "content": "1. Faire ressortir les mots clés d’un texte lu." },
+        { "type": "list_item", "content": "2. Déterminer le genre d’un texte lu." },
+        { "type": "list_item", "content": "3. Dégager le sens implicite existant entre les lignes." },
+        { "type": "list_item", "content": "4. Suivre l’enchaînement chronologique des événements d’un texte lu." },
+        { "type": "list_item", "content": "5. Réorganiser les informations d’un texte d’une manière personnelle." },
+        { "type": "list_item", "content": "6. Analyser l’organisation d’un texte lu et interpréter son sens en s’appuyant sur des indices." },
+        { "type": "list_item", "content": "7. Choisir des mots clairs et simples." },
+        { "type": "list_item", "content": "8. Conjuguer correctement des verbes dans le temps convenable." },
+        { "type": "list_item", "content": "9. Employer le temps convenable d’après le type du texte." },
+        { "type": "list_item", "content": "10. Enchaîner logiquement les idées." },
+        { "type": "list_item", "content": "11. Intégrer des moments d’échange et d’interaction afin de rendre l’apprentissage plus plaisant." },
+        { "type": "list_item", "content": "12. Intégrer le livre numérique interactif pour rendre l’apprentissage du français plus motivant et plus plaisant." },
+        {
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
+        },
+        {
+          "type": "header",
+          "content": "I. Introduction et Motivation : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Observez l’image, puis prédisez le thème de la leçon."
+        },
+        {
+          "type": "image_group",
+          "images": [
+            "/images/m3_lecon3_m1.png",
+            "/images/m3_lecon3_m2.png"
+          ]
+        },
+        { "type": "paragraph", "content": "Répondez aux questions suivantes :" },
+        { "type": "question", "content": "1. Qui sont ces personnages ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "2. Où vivent-ils ?" },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâche 1 : Que fait-elle ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâche 2 : Quels problèmes pourrait-elle rencontrer ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "header",
+          "content": "II. Lecture guidée du texte (15 minutes)"
+        },
+        {
+          "type": "paragraph",
+          "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+        },
+        {
+          "type": "phase",
+          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Lisez le texte suivant, puis répondez aux questions."
+        },
+        {
+          "type": "header",
+          "content": "Le pot de lait de Gita"
+        },
+        {
+          "type": "paragraph",
+          "content": "Il était une fois une jeune fille nommée Gita, qui vivait avec sa grand-mère dans une petite maison de campagne. Tous les matins, elle trayait les vaches et portait un grand pot de lait au marché du village. Elle aimait marcher le long du chemin, entourée des oiseaux et des fleurs. Ce jour-là, le soleil brillait fort et Gita était de bonne humeur. Sa grand-mère lui dit avant de partir : « Sois prudente, ma fille, et pense à bien tenir ton pot de lait. » Gita hocha la tête, mais, à peine sortie, elle se mit à rêver. Elle pensait à tout ce qu'elle pourrait acheter avec l'argent qu'elle gagnerait."
+        },
+        {
+          "type": "paragraph",
+          "content": "En marchant, Gita imagina une vie magnifique. « Avec l’argent du lait, je vais acheter une poule. Cette poule pondra des œufs. Je vendrai les œufs et j’aurai assez pour acheter une vache. Avec le lait de cette vache, j’aurai encore plus d’argent. Je pourrai acheter une belle robe bleue et aller à la fête du village. Qui sait ? Peut-être qu’un prince me remarquera ! Gita riait en pensant à tout cela. Mais, toute à ses rêves, elle oubliait son pot. Elle leva la tête fièrement, fit un grand pas... et ploc ! le pot tomba par terre. Le lait se renversa, coula sur la route, et tous ses beaux rêves disparurent d’un seul coup."
+        },
+        {
+          "type": "paragraph",
+          "content": "Gita resta là, sans bouger, le cœur serré. Elle pensa à sa grand-mère et sentit la honte la gagner. Elle avait perdu le lait, l'argent et la confiance de sa famille. Quand elle rentra à la maison, sa grand-mère l'écouta sans colère et dit doucement : « Tu vois, ma petite, il faut d'abord travailler avant de rêver. Les beaux projets naissent de la patience. » Gita essuya ses larmes et promit de ne plus rêver sans effort. Le lendemain, elle retourna au marché, plus prudente, un nouveau pot sur la tête et un vrai sourire sur les lèvres : cette fois, elle savait que le courage et la patience valent mieux que les rêves sans travail."
+        },
+        {
+          "type": "link",
+          "url": "https://www.bien-ecrire.com",
+          "label": "📄 [Bientôt disponible] Article interactif"
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâche 3 : (5 minutes) Identifiez l’idée générale de l’histoire?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "header",
+          "content": "Questions guidées (10 minutes) :"
+        },
+        { "type": "question", "content": "1. Qui sont les personnages principaux ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "2. Où vivent-ils ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "3. Que fait Gita chaque matin ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "4. Que rêvait Gita en allant au marché ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "5. Quel problème rencontre-t-elle à cause de ses rêves ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "6. Quelle leçon Gita apprend-elle à la fin ?" },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 4 : (5 minutes) Faire ressortir les mots clés de l’histoire?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro tâche 5 : (5 minutes) : Identifiez le genre de cette histoire."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 6 : (5 minutes) : Quel est le moral de cette histoire ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "info_box",
+          "content": "🌟 Présentation du texte.\nCe texte est un texte narratif. Il raconte une histoire pour expliquer une leçon de vie importante : la valeur du travail, de la patience et de la prudence.\n\nCaractéristiques principales du texte narratif :\n• Il présente des informations claires et précises à travers une histoire.\n• Il utilise des connecteurs logiques pour organiser les idées : tout d’abord, ensuite, enfin, mais d’un autre côté.\n• Il montre les causes et les conséquences des actions de Gita : rêver sans agir conduit à des erreurs, tandis que le travail et la prudence mènent à la réussite.\n\n🔎 Dans ce texte, le narrateur:\n• Décrit la vie quotidienne de Gita et sa relation avec sa grand-mère.\n• Montre les conséquences de l’inattention et du rêve sans effort.\n• Donne une leçon morale sur l’importance du travail, de la patience et du courage."
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 7 : (5 minutes) : Conjuguez à l’imparfait ?"
+        },
+        { "type": "fill_blank", "content": "1. Gita [...] (marcher) le long du chemin." },
+        { "type": "fill_blank", "content": "2. Elle [...] (rêver) d’une vie magnifique." },
+        { "type": "fill_blank", "content": "3. Le soleil [...] (briller) fort." },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 9 : (5 minutes) : Reformulez la phrase suivante ?"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots : « Les beaux projets naissent de la patience. »"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "section_title",
+          "content": "📐 Structure à observer : (5 minutes)"
+        },
+        {
+          "type": "grammar_card",
+          "title": "Structure de la cause :",
+          "description": "Sert à justifier une idée ou une conséquence.",
+          "structure": "Parce que… / Car… / Puisque…",
+          "examples": [
+            "• Elle avait perdu le lait, l'argent et la confiance de sa famille parce qu’elle rêvait sans faire attention."
+          ]
+        },
+        {
+          "type": "grammar_card",
+          "title": "Structure de la conséquence :",
+          "description": "Sert à montrer l’effet d’une action ou d’une situation.",
+          "structure": "Alors… / Donc… / C’est pourquoi…",
+          "examples": [
+            "• Le pot tomba par terre. Le lait se renversa, et tous ses beaux rêves disparurent d’un seul coup."
+          ]
+        },
+        {
+          "type": "grammar_card",
+          "title": "L’Imparfait :",
+          "description": "Sert à décrire la situation, les sentiments ou les actions répétitives.",
+          "structure": "Radical + ais, ais, ait, ions, iez, aient",
+          "examples": [
+            "• Tous les matins, elle trayait les vaches…",
+            "• Elle pensait à tout ce qu'elle pourrait acheter avec l'argent…",
+            "• Gita était de bonne humeur."
+          ]
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 10 : (5 minutes) : Vidéo de la leçon"
+        },
+        {
+          "type": "link",
+          "url": "",
+          "label": "🎥 [Vidéo bientôt disponible]"
+        },
+        { "type": "paragraph", "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo." },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 11 : Mini-production : (10 minutes) Résumez l’histoire en trois phrases ?"
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 12 : Discussion en groupes : (10 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "👉 « Que feriez-vous à la place de Gita? » Chaque groupe propose des solutions réelles liées à ce phénomène."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "phase",
+          "content": "Phase 3 : Post-action (Tâche finale) Durée : 20 minutes"
+        },
+        {
+          "type": "header",
+          "content": "Tâche finale (avec modèle + aide lexicale)"
+        },
+        {
+          "type": "instruction",
+          "content": "📌 Consigne: À travers la discussion précédente. Racontez une expérience personnelle qui vous est arrivée et expliquez ce que vous en avez appris."
+        },
+        { "type": "input", "content": "" },
+        {
+          "type": "phase",
+          "content": "Phase 4 : évaluation des produits des étudiants : Durée : 10 minutes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos collèges et corrigez son texte si nécessaire."
+        },
+        { "type": "input", "content": "" },
+        { "type": "section_title", "content": "📝 É-évaluation :" },
+        { "type": "paragraph", "content": "Répondez aux questions suivantes :" },
+        { "type": "question", "content": "1. Pourquoi Gita a-t-elle fait tomber le pot de lait ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "2. Comment se sent-elle après avoir perdu le lait ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "3. Que lui dit sa grand-mère après l’accident ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "4. Qu’est-ce que Gita apprend de cette expérience ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "5. Comment Gita agit-elle le lendemain ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "6. Quel est le thème principal de l’histoire ?" },
+        { "type": "input", "content": "" },
+        { "type": "question", "content": "7. Donnez un autre titre possible pour cette histoire." },
+        { "type": "input", "content": "" }
+      ]
   ]
 }

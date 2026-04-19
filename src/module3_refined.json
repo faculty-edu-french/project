@@ -928,6 +928,11 @@
           ]
         },
         {
+          "type": "link",
+          "url": "https://www.kartable.fr/ressources/francais/cours/les-connecteurs-3/49846",
+          "label": "🔗 En savoir plus sur les connecteurs logiques"
+        },
+        {
           "type": "task",
           "content": "Micro tâche 10 : (5 minutes) : Vidéo de la leçon"
         },

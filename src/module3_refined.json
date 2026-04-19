@@ -823,6 +823,10 @@
           "type": "task",
           "content": "Micro-tâche 3 : (5 minutes) Identifiez l’idée générale de l’histoire?"
         },
+        {
+          "type": "instruction",
+          "content": "Consigne : Quelle est l’idée générale de cette histoire."
+        },
         { "type": "input", "content": "" },
         { "type": "input", "content": "" },
         { "type": "input", "content": "" },

@@ -824,6 +824,8 @@
           "content": "Micro-tâche 3 : (5 minutes) Identifiez l’idée générale de l’histoire?"
         },
         { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
         {
           "type": "header",
           "content": "Questions guidées (10 minutes) :"
@@ -866,6 +868,16 @@
         { "type": "fill_blank", "content": "1. Gita [...] (marcher) le long du chemin." },
         { "type": "fill_blank", "content": "2. Elle [...] (rêver) d’une vie magnifique." },
         { "type": "fill_blank", "content": "3. Le soleil [...] (briller) fort." },
+        { "type": "input", "content": "" },
+        {
+          "type": "task",
+          "content": "Micro-tâches 8 : (5 minutes) : Arrangez ces phrases dans un ordre logique d’après l’histoire :"
+        },
+        { "type": "list_item", "content": "• Elle retourna au marché avec prudence." },
+        { "type": "list_item", "content": "• Gita renverse le pot de lait." },
+        { "type": "list_item", "content": "• Gita trayait les vaches chaque matin." },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
         { "type": "input", "content": "" },
         {
           "type": "task",

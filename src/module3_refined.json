@@ -235,6 +235,11 @@
           ]
         },
         {
+          "type": "link",
+          "url": "https://www.espacefrancais.com/les-connecteurs-logiques/",
+          "label": "🔗 En savoir plus sur les connecteurs logiques"
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 9 : Mini-production : (10 minutes) Résumez ce texte lu en trois phrases ?"
         },
@@ -573,6 +578,11 @@
           "title": "Structure de l’énumération :",
           "description": "Sert à organiser les idées de manière logique.",
           "structure": "En effet… / De plus… / Ensuite… / Enfin…"
+        },
+        {
+          "type": "link",
+          "url": "https://www.espacefrancais.com/les-connecteurs-logiques/",
+          "label": "🔗 En savoir plus sur les connecteurs logiques"
         },
         {
           "type": "task",

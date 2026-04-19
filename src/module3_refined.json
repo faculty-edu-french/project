@@ -876,6 +876,8 @@
           "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots : « Les beaux projets naissent de la patience. »"
         },
         { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
         {
           "type": "section_title",
           "content": "📐 Structure à observer : (5 minutes)"
@@ -937,6 +939,8 @@
           "type": "instruction",
           "content": "👉 « Que feriez-vous à la place de Gita? » Chaque groupe propose des solutions réelles liées à ce phénomène."
         },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
         { "type": "input", "content": "" },
         {
           "type": "phase",

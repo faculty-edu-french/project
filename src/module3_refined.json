@@ -561,9 +561,12 @@
         },
         {
           "type": "grammar_card",
-          "title": "Structure de l’opposition :",
-          "description": "Sert à présenter des points de vue opposés et à nuancer l’argumentation.",
-          "structure": "Si…, alors… | Mais d’un autre côté… | Même si…"
+          "title": "Structure de l’opposition / contraste :",
+          "description": "Sert à présenter deux points de vue ou des situations différentes pour nuancer.",
+          "structure": "Si…, alors… | Mais d’un autre côté… | Même si…",
+          "examples": [
+            "• Mais d’un autre côté, même avoir un travail que l’on n’aime pas peut être formateur."
+          ]
         },
         {
           "type": "grammar_card",

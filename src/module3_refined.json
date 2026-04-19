@@ -694,6 +694,18 @@
           ],
           "correctAnswer": "d"
         },
+        {
+          "type": "mcq",
+          "id": "m3l2e6",
+          "question": "6. D’après l’auteur, le travail a-t-il un impact sur la vie sociale ?",
+          "options": [
+            { "id": "a", "text": "Non, il n’apporte que frustration" },
+            { "id": "b", "text": "Non, on ne peut pas se faire des amis au travail" },
+            { "id": "c", "text": "Oui, il permet de se faire des amis" },
+            { "id": "d", "text": "Oui, il fausse les relations" }
+          ],
+          "correctAnswer": "c"
+        },
         { "type": "section_title", "content": "Répondez aux questions :" },
         { "type": "question", "content": "1. Trouvez un (autre) titre qui qui reflète bien le texte ?" },
         { "type": "input", "content": "" },

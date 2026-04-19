@@ -39,7 +39,6 @@
         {
           "type": "image_group",
           "images": [
-            "/images/m3_lecon1_1.png",
             "/images/m3_lecon1_2.png",
             "/images/m3_lecon1_3.png"
           ]

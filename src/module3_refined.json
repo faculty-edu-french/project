@@ -934,12 +934,12 @@
         },
         {
           "type": "task",
-          "content": "Micro tâche 10 : (5 minutes) : Vidéo de la leçon"
+          "content": "Micro tâche 10 : (5 minutes) : Regardez cette vidéo pour bien comprendre l'histoire :"
         },
         {
-          "type": "link",
-          "url": "",
-          "label": "🎥 [Vidéo bientôt disponible]"
+          "type": "video",
+          "title": "La Laitière et le Pot au Lait",
+          "content": "/videos/m3_l3_video.mp4"
         },
         { "type": "paragraph", "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo." },
         { "type": "input", "content": "" },

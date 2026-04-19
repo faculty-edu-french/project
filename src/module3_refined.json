@@ -529,6 +529,8 @@
           "content": "Micro-tâches 7 : (5 minutes) : Écrivez une seule phrase sur le rôle du travail dans la vie ?"
         },
         { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
         {
           "type": "task",
           "content": "Micro tâche 8 : (5 minutes) : Regardez cette vidéo"
@@ -550,6 +552,8 @@
           "type": "instruction",
           "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots : « Le travail peut donner une identité à certaines personnes. »"
         },
+        { "type": "input", "content": "" },
+        { "type": "input", "content": "" },
         { "type": "input", "content": "" },
         {
           "type": "section_title",

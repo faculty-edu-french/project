@@ -80,19 +80,19 @@
         },
         {
           "type": "paragraph",
-          "content": "Depuis quelques années, une nouvelle manière de travailler a fait son apparition : le télétravail. Cela signifie que les employés n'ont plus besoin de se rendre dans un bureau tous les jours. Grâce à leur ordinateur and a connection Internet, they can perform their tasks from home. This practice, which was still not widespread a few years ago, has developed considerably, particularly with the Covid-19 health crisis which forced many companies to adapt their operating modes."
+          "content": "Depuis quelques années, une nouvelle manière de travailler a fait son apparition : le télétravail. Cela signifie que les employés n'ont plus besoin de se rendre dans un bureau tous les jours. Grâce à leur ordinateur et à une connexion internet, ils peuvent effectuer leurs tâches depuis chez eux. Cette pratique, encore peu répandue il y a quelques années, s'est considérablement développée, notamment avec la crise sanitaire du Covid-19 qui a contraint de nombreuses entreprises à adapter leurs modes de fonctionnement."
         },
         {
           "type": "paragraph",
-          "content": "Le télétravail presents de nombreux avantages. Tout d’abord, il permet de gagner du temps en évitant les trajets quotidiens. Ensuite, il offre une plus grande flexibilité dans l'organisation du travail. Les salariés peuvent ainsi mieux concilier leur vie professionnelle et leur vie personnelle. Enfin, le télétravail peut contribuer à réduire l'empreinte écologique en limitant les déplacements."
+          "content": "Le télétravail présente de nombreux avantages. Tout d'abord, il permet de gagner du temps en évitant les trajets quotidiens. Ensuite, il offre une plus grande flexibilité dans l'organisation du travail. Les salariés peuvent ainsi mieux concilier leur vie professionnelle et leur vie personnelle. Enfin, le télétravail peut contribuer à réduire l'empreinte écologique en limitant les déplacements."
         },
         {
           "type": "paragraph",
-          "content": "Cependant, cette nouvelle façon de travailler n'est pas sans poser de problèmes. Le principal inconvénient est sans doute l'isolement que peuvent ressentir certains télétravailleurs, privés des échanges with their colleagues. De plus, it is sometimes difficult to separate professional and personal life when working from home."
+          "content": "Cependant, cette nouvelle façon de travailler n'est pas sans poser de problèmes. Le principal inconvénient est sans doute l'isolement que peuvent ressentir certains télétravailleurs, privés des échanges avec leurs collègues. De plus, il est parfois difficile de séparer vie professionnelle et vie personnelle lorsque l'on travaille à domicile."
         },
         {
           "type": "paragraph",
-          "content": "Si le télétravail est une réalité pour de plus en plus de personnes, it is important to emphasize that this practice is not suitable for all professions. Some jobs require a physical presence and regular interactions with colleagues. Furthermore, teleworking raises many questions, particularly in terms of working time arrangements and performance evaluation. Companies and employees must therefore learn to adapt to this new work organization to make the most of it."
+          "content": "Si le télétravail est une réalité pour de plus en plus de personnes, il est important de souligner que cette pratique ne convient pas à tous les métiers. Certains emplois nécessitent une présence physique et des interactions régulières avec les collègues. De plus, le télétravail soulève de nombreuses questions, notamment en termes d'aménagement du temps de travail et d'évaluation des performances. Les entreprises et les salariés doivent donc apprendre à s'adapter à cette nouvelle organisation du travail pour en tirer le meilleur parti."
         },
         {
           "type": "link",
@@ -181,7 +181,7 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : précisez le mot « télétravail » and identify the root, prefix and suffix."
+          "content": "Consigne : précisez le mot « télétravail » et identifiez la racine, le préfixe et le suffixe."
         },
         { "type": "input", "content": "" },
         {
@@ -199,7 +199,7 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : Reliez les phrases suivantes with a connecteur logique : « Il permet de gagner du temps et …. Les salariés peuvent mieux concilier leur vie professionnelle et personnelle. »"
+          "content": "Consigne : Reliez les phrases suivantes avec un connecteur logique : « Il permet de gagner du temps et …. Les salariés peuvent mieux concilier leur vie professionnelle et personnelle. »"
         },
         { "type": "input", "content": "" },
         {
@@ -231,7 +231,7 @@
           "description": "Grâce à… → Exprimer la cause | Cela permet de… → Exprimer la conséquence",
           "structure": "Grâce à… (cause) | Cela permet de… (conséquence)",
           "examples": [
-            "• Grâce à leur ordinateur and a connection Internet, they can perform their tasks from home.",
+            "• Grâce à leur ordinateur et à une connexion internet, ils peuvent effectuer leurs tâches depuis chez eux.",
             "• Cela permet de gagner du temps en évitant les trajets quotidiens."
           ]
         },
@@ -260,7 +260,7 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : Selon vous, quelles solutions pourraient aider à améliorer la quality de vie des télétravailleurs? Chaque groupe propose des solutions réelles liées à ce phénomène."
+          "content": "Consigne : Selon vous, quelles solutions pourraient aider à améliorer la qualité de vie des télétravailleurs ? Chaque groupe propose des solutions réelles liées à ce phénomène."
         },
         { "type": "input", "content": "" },
         {
@@ -277,7 +277,7 @@
         },
         {
           "type": "paragraph",
-          "content": "Votre texte must :"
+          "content": "Votre texte doit :"
         },
         { "type": "list_item", "content": "Décrire le problème." },
         { "type": "list_item", "content": "Présenter un avantage et un inconvénient." },
@@ -291,7 +291,7 @@
         },
         {
           "type": "paragraph",
-          "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez with your colleges and corrigez son texte si nécessaire."
+          "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos camarades et corrigez votre texte si nécessaire."
         },
         { "type": "input", "content": "" },
         { "type": "section_title", "content": "📝 É-évaluation :" },
@@ -301,7 +301,7 @@
         { "type": "input", "content": "" },
         { "type": "question", "content": "3. Trouvez un (autre) titre qui qui reflète bien le texte ?" },
         { "type": "input", "content": "" },
-        { "type": "question", "content": "4. Pourquoi certaines personnes trouvent-elles difficile de travailler à domicile ? Justifiez with the text." },
+        { "type": "question", "content": "4. Pourquoi certaines personnes trouvent-elles difficile de travailler à domicile ? Justifiez avec le texte." },
         { "type": "input", "content": "" },
         { "type": "question", "content": "5. Préférez-vous le télétravail ou le travail en présentiel ? Justifiez-en 2–3 lignes." },
         { "type": "input", "content": "" },
@@ -390,23 +390,23 @@
         },
         {
           "type": "paragraph",
-          "content": "Si l’on s’en tient à l’étymologie du mot « travail » qui vient du latin « tripalium », un ancien instrument de torture, alors, le travail ne contribue définitivement pas au bonheur. En effet, tout le monde n’a pas la chance de choisir son métier. Parfois, on est contraint de faire un travail ennuyeux, stressant et sans intérêt. Pas parce qu’on l’a décidé, but because one is obliged to earn money to subvenir to one's needs or those of one's family."
+          "content": "Si l’on s’en tient à l’étymologie du mot « travail » qui vient du latin « tripalium », un ancien instrument de torture, alors, le travail ne contribue définitivement pas au bonheur. En effet, tout le monde n’a pas la chance de choisir son métier. Parfois, on est contraint de faire un travail ennuyeux, stressant et sans intérêt. Pas parce qu’on l’a décidé, mais parce qu'on est obligé de gagner de l'argent pour subvenir à ses besoins ou à ceux de sa famille."
         },
         {
           "type": "paragraph",
-          "content": "Mais d’un autre côté, même avoir un travail qui ne nous intéresse pas peut être formateur. En effet, sometimes, performing a job that one does not like allows one to know what one does not want to do in life, which can motivate us to find solutions to get out of it."
+          "content": "Mais d’un autre côté, même avoir un travail qui ne nous intéresse pas peut être formateur. En effet, parfois, exercer un métier que l'on n'aime pas permet de savoir ce que l'on ne veut pas faire dans la vie, ce qui peut nous motiver à trouver des solutions pour s'en sortir."
         },
         {
           "type": "paragraph",
-          "content": "De plus, c’est parfois en commençant un nouveau travail que l’on peut se découvrir des passions cachées. Le travail peut aussi donner du sens à la vie des gens. Many people identify with their work, the work gives them a reason to live, an identity."
+          "content": "De plus, c’est parfois en commençant un nouveau travail que l’on peut se découvrir des passions cachées. Le travail peut aussi donner du sens à la vie des gens. Beaucoup de personnes s'identifient à leur travail, le travail leur donne une raison de vivre, une identité."
         },
         {
           "type": "paragraph",
-          "content": "Ensuite, on peut rencontrer des personnes passionnantes au travail. C’est un lieu d’interaction sociale where you can make friends. Finally, I know many people who say they don't like their work and who often complain about their condition. But when these people take vacations for too long, they get bored and want to return to their company."
+          "content": "Ensuite, on peut rencontrer des personnes passionnantes au travail. C’est un lieu d’interaction sociale où l'on peut se faire des amis. Enfin, je connais beaucoup de personnes qui disent ne pas aimer leur travail et qui se plaignent souvent de leur condition. Mais quand ces personnes prennent des vacances trop longues, elles s'ennuient et veulent retourner dans leur entreprise."
         },
         {
           "type": "paragraph",
-          "content": "Cette situation est assez paradoxale. En fait, I believe that many of us need to be a little frustrated at work during the day to better appreciate these small moments once at home. So, work can contribute to happiness even if one does not always realize it."
+          "content": "Cette situation est assez paradoxale. En fait, je crois que beaucoup d'entre nous ont besoin d'être un peu frustrés au travail la journée pour mieux apprécier ces petits moments une fois rentrés à la maison. Alors, le travail peut contribuer au bonheur même si on ne s'en rend pas toujours compte."
         },
         {
           "type": "link",
@@ -443,7 +443,7 @@
         {
           "type": "mcq",
           "id": "m3l2q2",
-          "question": "2. Selon le texte, tout le monde a la possibility de choisir librement son métier.",
+          "question": "2. Selon le texte, tout le monde a la possibilité de choisir librement son métier.",
           "options": [
             { "id": "a", "text": "Vrai" },
             { "id": "b", "text": "Faux" }
@@ -580,7 +580,7 @@
         },
         {
           "type": "instruction",
-          "content": "👉 « Selon vous, que peut-on faire pour que le travail contribue au bonheur des employés? » Each group proposes real solutions related to this phenomenon."
+          "content": "👉 « Selon vous, que peut-on faire pour que le travail contribue au bonheur des employés ? » Chaque groupe propose des solutions réelles liées à ce phénomène."
         },
         { "type": "input", "content": "" },
         {
@@ -593,11 +593,11 @@
         },
         {
           "type": "instruction",
-          "content": "📌 Consigne: À travers la discussion précédente, Écrivez un e-mail à votre ami français à propos de votre récent changement d’emploi. Expliquez why you changed jobs, décrivez your new responsibilities and exprimez your feelings about this change."
+          "content": "📌 Consigne: À travers la discussion précédente, Écrivez un e-mail à votre ami français à propos de votre récent changement d’emploi. Expliquez pourquoi vous avez changé de travail, décrivez vos nouvelles responsabilités et exprimez vos sentiments concernant ce changement."
         },
         {
           "type": "paragraph",
-          "content": "Votre texte must :"
+          "content": "Votre texte doit :"
         },
         { "type": "list_item", "content": "Commencer par une salutation adaptée." },
         { "type": "list_item", "content": "Expliquer pourquoi vous avez changé de travail." },
@@ -613,7 +613,7 @@
         },
         {
           "type": "paragraph",
-          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez with your colleges and corrigez son texte si nécessaire."
+          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos camarades et corrigez votre texte si nécessaire."
         },
         { "type": "input", "content": "" },
         { "type": "section_title", "content": "📝 É-évaluation :" },
@@ -671,7 +671,7 @@
           "question": "5. D’après l’auteur, que peut permettre le travail ?",
           "options": [
             { "id": "a", "text": "De cotiser pour sa retraite" },
-            { "id": "b", "text": "De contribuer à la society" },
+            { "id": "b", "text": "De contribuer à la société" },
             { "id": "c", "text": "De s’améliorer en permanence" },
             { "id": "d", "text": "De donner un sens à sa vie" }
           ],
@@ -920,7 +920,7 @@
         },
         {
           "type": "paragraph",
-          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos collèges et corrigez son texte si nécessaire."
+          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos camarades et corrigez votre texte si nécessaire."
         },
         { "type": "input", "content": "" },
         { "type": "section_title", "content": "📝 É-évaluation :" },

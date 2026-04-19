@@ -451,19 +451,21 @@ const BlockRenderer = ({
               </span>
             )}
           </div>
-          <div style={{
-            background: 'rgba(99,102,241,0.1)',
-            borderRadius: '8px',
-            padding: '0.6rem 1rem',
-            marginBottom: '1rem',
-            fontFamily: 'monospace',
-            fontSize: '0.95rem',
-            color: 'var(--primary-dark)',
-            fontWeight: 600,
-            letterSpacing: '0.02em',
-          }}>
-            {block.structure}
-          </div>
+          {block.structure && (
+            <div style={{
+              background: 'rgba(99,102,241,0.1)',
+              borderRadius: '8px',
+              padding: '0.6rem 1rem',
+              marginBottom: '1rem',
+              fontFamily: 'monospace',
+              fontSize: '0.95rem',
+              color: 'var(--primary-dark)',
+              fontWeight: 600,
+              letterSpacing: '0.02em',
+            }}>
+              {block.structure}
+            </div>
+          )}
           {block.examples && block.examples.length > 0 && (
             <div style={{ borderTop: '1px solid rgba(99,102,241,0.15)', paddingTop: '0.85rem' }}>
               <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>

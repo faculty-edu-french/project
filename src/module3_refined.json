@@ -559,15 +559,7 @@
           "type": "section_title",
           "content": "📐 Structures à observer : (5 minutes)"
         },
-        {
-          "type": "grammar_card",
-          "title": "Structure de l’opposition / contraste :",
-          "description": "Sert à présenter deux points de vue ou des situations différentes pour nuancer.",
-          "structure": "Si…, alors… | Mais d’un autre côté… | Même si…",
-          "examples": [
-            "• Mais d’un autre côté, même avoir un travail que l’on n’aime pas peut être formateur."
-          ]
-        },
+
         {
           "type": "grammar_card",
           "title": "Structure de la cause :",
@@ -905,29 +897,34 @@
           "type": "grammar_card",
           "title": "Structure de la cause :",
           "description": "Sert à justifier une idée ou une conséquence.",
-          "structure": "Parce que… / Car… / Puisque…",
           "examples": [
-            "• Elle avait perdu le lait, l'argent et la confiance de sa famille parce qu’elle rêvait sans faire attention."
+            "« Elle avait perdu le lait, l'argent et la confiance de sa famille parce qu’elle rêvait sans faire attention. »"
           ]
         },
         {
           "type": "grammar_card",
           "title": "Structure de la conséquence :",
           "description": "Sert à montrer l’effet d’une action ou d’une situation.",
-          "structure": "Alors… / Donc… / C’est pourquoi…",
           "examples": [
-            "• Le pot tomba par terre. Le lait se renversa, et tous ses beaux rêves disparurent d’un seul coup."
+            "« Le pot tomba par terre. Le lait se renversa, et tous ses beaux rêves disparurent d'un seul coup. »"
           ]
         },
         {
           "type": "grammar_card",
-          "title": "L’Imparfait :",
-          "description": "Sert à décrire la situation, les sentiments ou les actions répétitives.",
-          "structure": "Radical + ais, ais, ait, ions, iez, aient",
+          "title": "Structure de l'opposition / contraste :",
+          "description": "Sert à présenter deux points de vue ou des situations différentes pour nuancer.",
           "examples": [
-            "• Tous les matins, elle trayait les vaches…",
-            "• Elle pensait à tout ce qu'elle pourrait acheter avec l'argent…",
-            "• Gita était de bonne humeur."
+            "« Mais d’un autre côté, même avoir un travail que l'on n'aime pas peut être formateur. »"
+          ]
+        },
+        {
+          "type": "grammar_card",
+          "title": "Imparfait :",
+          "description": "Sert à décrire la situation, les sentiments ou les actions répétitives.",
+          "examples": [
+            "o « Tous les matins, elle trayait les vaches... »",
+            "o « Elle pensait à tout ce qu'elle pourrait acheter avec l'argent... »",
+            "o « Gita était de bonne humeur. »"
           ]
         },
         {

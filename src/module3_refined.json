@@ -811,8 +811,8 @@
         },
         {
           "type": "link",
-          "url": "https://www.bien-ecrire.com",
-          "label": "📄 [Bientôt disponible] Article interactif"
+          "url": "/articles/m3_l3_article.html",
+          "label": "📄 Article interactif : Le pot de lait de Gita"
         },
         {
           "type": "task",

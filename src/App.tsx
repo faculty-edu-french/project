@@ -186,10 +186,12 @@ const VraiFauxBlock = ({
   content,
   storageKey,
   defaultAnswer,
+  correctAnswer,
 }: {
   content: string;
   storageKey: string;
   defaultAnswer: string | null;
+  correctAnswer?: string;
 }) => {
   const [selected, setSelected] = useState<string | null>(defaultAnswer);
 
@@ -198,35 +200,52 @@ const VraiFauxBlock = ({
     localStorage.setItem(storageKey, val);
   };
 
-  const optionStyle = (val: string): React.CSSProperties => ({
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.75rem',
-    padding: '0.75rem 1.25rem',
-    borderRadius: '0.75rem',
-    border: selected === val ? '2px solid var(--primary)' : '2px solid #e2e8f0',
-    background: selected === val ? 'var(--primary-light)' : '#fff',
-    cursor: 'pointer',
-    fontWeight: selected === val ? 700 : 400,
-    color: selected === val ? 'var(--primary)' : '#374151',
-    transition: 'all 0.2s',
-    marginBottom: '0.5rem',
-  });
+  const isCorrect = correctAnswer && selected ? selected === correctAnswer : null;
+
+  const optionStyle = (val: string): React.CSSProperties => {
+    let border = '2px solid #e2e8f0';
+    let background = '#fff';
+    let color = '#374151';
+    if (selected === val) {
+      if (isCorrect === true) { border = '2px solid #16a34a'; background = '#f0fdf4'; color = '#16a34a'; }
+      else if (isCorrect === false) { border = '2px solid #dc2626'; background = '#fef2f2'; color = '#dc2626'; }
+      else { border = '2px solid var(--primary)'; background = 'var(--primary-light)'; color = 'var(--primary)'; }
+    }
+    return {
+      display: 'flex', alignItems: 'center', gap: '0.75rem',
+      padding: '0.75rem 1.25rem', borderRadius: '0.75rem', border,
+      background, cursor: selected ? 'default' : 'pointer',
+      fontWeight: selected === val ? 700 : 400, color,
+      transition: 'all 0.2s', marginBottom: '0.5rem',
+    };
+  };
+
+  const badgeColor = (val: string) => {
+    if (selected === val) {
+      if (isCorrect === true) return { bg: '#16a34a', fg: '#fff' };
+      if (isCorrect === false) return { bg: '#dc2626', fg: '#fff' };
+      return { bg: 'var(--primary)', fg: '#fff' };
+    }
+    return { bg: '#e2e8f0', fg: '#64748b' };
+  };
 
   return (
     <div style={{ margin: '1rem 0', padding: '1.25rem 1.5rem', background: '#f8fafc', borderRadius: '1rem', border: '1px solid #e2e8f0' }}>
       <p style={{ fontWeight: 600, marginBottom: '1rem', color: '#1e293b' }}>📋 {content}</p>
-      <div onClick={() => choose('Vrai')} style={optionStyle('Vrai')}>
-        <span style={{ width: '1.75rem', height: '1.75rem', borderRadius: '50%', background: selected === 'Vrai' ? 'var(--primary)' : '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: selected === 'Vrai' ? '#fff' : '#64748b', fontSize: '0.8rem', fontWeight: 700, flexShrink: 0 }}>a</span>
-        Vrai
-      </div>
-      <div onClick={() => choose('Faux')} style={optionStyle('Faux')}>
-        <span style={{ width: '1.75rem', height: '1.75rem', borderRadius: '50%', background: selected === 'Faux' ? 'var(--primary)' : '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: selected === 'Faux' ? '#fff' : '#64748b', fontSize: '0.8rem', fontWeight: 700, flexShrink: 0 }}>b</span>
-        Faux
-      </div>
+      {['Vrai', 'Faux'].map((val, i) => {
+        const badge = badgeColor(val);
+        return (
+          <div key={val} onClick={() => !selected && choose(val)} style={optionStyle(val)}>
+            <span style={{ width: '1.75rem', height: '1.75rem', borderRadius: '50%', background: badge.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', color: badge.fg, fontSize: '0.8rem', fontWeight: 700, flexShrink: 0 }}>
+              {i === 0 ? 'a' : 'b'}
+            </span>
+            {val}
+          </div>
+        );
+      })}
       {selected && (
-        <p style={{ marginTop: '0.75rem', color: '#6366f1', fontWeight: 600, fontSize: '0.9rem' }}>
-          ✅ Vous avez choisi : <strong>{selected}</strong>
+        <p style={{ marginTop: '0.75rem', fontWeight: 700, fontSize: '0.9rem', color: isCorrect ? '#16a34a' : '#dc2626' }}>
+          {isCorrect ? '✅ Bonne réponse !' : `❌ Mauvaise réponse. La bonne réponse est : ${correctAnswer}`}
         </p>
       )}
     </div>
@@ -487,6 +506,7 @@ const BlockRenderer = ({
           storageKey={storageKeyVF}
           content={block.content}
           defaultAnswer={savedVF}
+          correctAnswer={block.correctAnswer}
         />
       );
     }

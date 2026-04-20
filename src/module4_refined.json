@@ -475,8 +475,8 @@
           "content": ""
         },
         {
-          "type": "header",
-          "content": "Mettez Vrai ou Faux devant chaque phrase :"
+          "type": "section_title",
+          "content": "✅ Mettez Vrai ou Faux devant chaque phrase :"
         },
         {
           "type": "question",

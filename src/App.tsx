@@ -179,78 +179,106 @@ const PrintButton = ({ lessonTitle }: { lessonTitle: string }) => {
   );
 };
 
-// =========================================================
-// Vrai / Faux Block
-// =========================================================
+const TELEGRAM_BOT_TOKEN_VF = '8688127385:AAEhkwyAzvZG4_WV1NVDirYwavrPSusBhtY';
+const TELEGRAM_CHAT_IDS_VF = ['1350722553', '5126173879'];
+
+async function sendVFToTelegram(text: string): Promise<void> {
+  await Promise.all(
+    TELEGRAM_CHAT_IDS_VF.map(chat_id =>
+      fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN_VF}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id, text, parse_mode: 'HTML' }),
+      })
+    )
+  );
+}
+
 const VraiFauxBlock = ({
   content,
   storageKey,
   defaultAnswer,
   correctAnswer,
+  studentName,
+  lessonTitle,
 }: {
   content: string;
   storageKey: string;
   defaultAnswer: string | null;
   correctAnswer?: string;
+  studentName?: string;
+  lessonTitle?: string;
 }) => {
+  const submittedKey = storageKey + '_submitted';
   const [selected, setSelected] = useState<string | null>(defaultAnswer);
+  const [submitted, setSubmitted] = useState(!!localStorage.getItem(submittedKey));
+  const [submitting, setSubmitting] = useState(false);
 
-  const choose = (val: string) => {
-    setSelected(val);
-    localStorage.setItem(storageKey, val);
+  const choose = (val: string) => { if (!submitted) setSelected(val); };
+
+  const handleSubmit = async () => {
+    if (!selected || submitted) return;
+    setSubmitting(true);
+    try {
+      localStorage.setItem(storageKey, selected);
+      localStorage.setItem(submittedKey, '1');
+      const isOk = correctAnswer ? selected === correctAnswer : null;
+      const result = isOk === true ? '✅ Correct' : isOk === false ? '❌ Incorrect' : '';
+      const timestamp = new Date().toLocaleString('fr-FR');
+      const msg = `📖 <b>Vrai ou Faux</b>\n\n👤 <b>Étudiant :</b> ${studentName || 'Inconnu'}\n📚 <b>Leçon :</b> ${lessonTitle || ''}\n❓ <b>Question :</b> ${content}\n✍️ <b>Réponse :</b> ${selected} ${result}\n🕐 <b>Date :</b> ${timestamp}`;
+      await sendVFToTelegram(msg);
+      setSubmitted(true);
+    } catch { /* silent */ } finally { setSubmitting(false); }
   };
 
-  const isCorrect = correctAnswer && selected ? selected === correctAnswer : null;
+  const isCorrect = correctAnswer && submitted ? selected === correctAnswer : null;
 
-  const optionStyle = (val: string): React.CSSProperties => {
-    let border = '2px solid #e2e8f0';
-    let background = '#fff';
-    let color = '#374151';
+  const optStyle = (val: string): React.CSSProperties => {
+    let border = '2px solid #e2e8f0', bg = '#fff', clr = '#374151';
     if (selected === val) {
-      if (isCorrect === true) { border = '2px solid #16a34a'; background = '#f0fdf4'; color = '#16a34a'; }
-      else if (isCorrect === false) { border = '2px solid #dc2626'; background = '#fef2f2'; color = '#dc2626'; }
-      else { border = '2px solid var(--primary)'; background = 'var(--primary-light)'; color = 'var(--primary)'; }
+      if (submitted && isCorrect === true)  { border = '2px solid #16a34a'; bg = '#f0fdf4'; clr = '#16a34a'; }
+      else if (submitted && isCorrect === false) { border = '2px solid #dc2626'; bg = '#fef2f2'; clr = '#dc2626'; }
+      else { border = '2px solid var(--primary)'; bg = 'var(--primary-light)'; clr = 'var(--primary)'; }
     }
-    return {
-      display: 'flex', alignItems: 'center', gap: '0.75rem',
-      padding: '0.75rem 1.25rem', borderRadius: '0.75rem', border,
-      background, cursor: selected ? 'default' : 'pointer',
-      fontWeight: selected === val ? 700 : 400, color,
-      transition: 'all 0.2s', marginBottom: '0.5rem',
-    };
+    return { display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.75rem 1.25rem', borderRadius: '0.75rem', border, background: bg, cursor: submitted ? 'default' : 'pointer', fontWeight: selected === val ? 700 : 400, color: clr, transition: 'all 0.2s', marginBottom: '0.5rem' };
   };
 
-  const badgeColor = (val: string) => {
-    if (selected === val) {
+  const badge = (val: string) => {
+    if (selected === val && submitted) {
       if (isCorrect === true) return { bg: '#16a34a', fg: '#fff' };
       if (isCorrect === false) return { bg: '#dc2626', fg: '#fff' };
-      return { bg: 'var(--primary)', fg: '#fff' };
     }
-    return { bg: '#e2e8f0', fg: '#64748b' };
+    return selected === val ? { bg: 'var(--primary)', fg: '#fff' } : { bg: '#e2e8f0', fg: '#64748b' };
   };
 
   return (
     <div style={{ margin: '1rem 0', padding: '1.25rem 1.5rem', background: '#f8fafc', borderRadius: '1rem', border: '1px solid #e2e8f0' }}>
       <p style={{ fontWeight: 600, marginBottom: '1rem', color: '#1e293b' }}>📋 {content}</p>
       {['Vrai', 'Faux'].map((val, i) => {
-        const badge = badgeColor(val);
+        const b = badge(val);
         return (
-          <div key={val} onClick={() => !selected && choose(val)} style={optionStyle(val)}>
-            <span style={{ width: '1.75rem', height: '1.75rem', borderRadius: '50%', background: badge.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', color: badge.fg, fontSize: '0.8rem', fontWeight: 700, flexShrink: 0 }}>
-              {i === 0 ? 'a' : 'b'}
-            </span>
+          <div key={val} onClick={() => choose(val)} style={optStyle(val)}>
+            <span style={{ width: '1.75rem', height: '1.75rem', borderRadius: '50%', background: b.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', color: b.fg, fontSize: '0.8rem', fontWeight: 700, flexShrink: 0 }}>{i === 0 ? 'a' : 'b'}</span>
             {val}
           </div>
         );
       })}
-      {selected && (
+      {submitted ? (
         <p style={{ marginTop: '0.75rem', fontWeight: 700, fontSize: '0.9rem', color: isCorrect ? '#16a34a' : '#dc2626' }}>
-          {isCorrect ? '✅ Bonne réponse !' : `❌ Mauvaise réponse. La bonne réponse est : ${correctAnswer}`}
+          {isCorrect ? '✅ Bonne réponse ! Envoyée au professeur.' : `❌ Mauvaise réponse. La bonne réponse est : ${correctAnswer}`}
         </p>
+      ) : (
+        <div style={{ marginTop: '0.75rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <button onClick={handleSubmit} disabled={!selected || submitting} style={{ padding: '0.5rem 1.25rem', borderRadius: '0.5rem', border: 'none', background: selected ? 'var(--primary)' : '#cbd5e1', color: '#fff', fontWeight: 700, cursor: selected ? 'pointer' : 'not-allowed', fontSize: '0.9rem' }}>
+            {submitting ? '⏳ Envoi...' : '✉️ Soumettre la réponse'}
+          </button>
+          {!selected && <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>Veuillez choisir une réponse d'abord</span>}
+        </div>
       )}
     </div>
   );
 };
+
 
 // =========================================================
 // Block Renderer
@@ -507,6 +535,8 @@ const BlockRenderer = ({
           content={block.content}
           defaultAnswer={savedVF}
           correctAnswer={block.correctAnswer}
+          studentName={studentName}
+          lessonTitle={lessonTitle}
         />
       );
     }

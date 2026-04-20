@@ -33,16 +33,13 @@
           "content": "I. Introduction et Motivation : (5 minutes)"
         },
         {
-          "type": "instruction",
-          "content": "Consigne : Observez l’image, puis prédisez le thème de la leçon."
-        },
-        {
           "type": "image_group",
           "images": [
-            "/images/placeholder.png"
+            "/images/m4_lecon1_salah1.png",
+            "/images/m4_lecon1_salah2.png"
           ]
         },
-        { "type": "paragraph", "content": "Répondez aux questions suivantes :" },
+        { "type": "paragraph", "content": "La formatrice invite les apprenants à répondre par écrit à des questions simples intégrées dans le livre numérique interactif :" },
         { "type": "question", "content": "1. Que voyez-vous dans ces images ?" },
         { "type": "input", "content": "" },
         { "type": "question", "content": "2. Selon vous, quel est le thème de la leçon ?" },

@@ -470,46 +470,11 @@
           "type": "section_title",
           "content": "✅ Mettez Vrai ou Faux devant chaque phrase :"
         },
-        {
-          "type": "question",
-          "content": "1. Salah a commencé sa carrière au Caire avec El Mokawloon."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "2. À Chelsea, Salah était titulaire dans l’équipe."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "3. Il a marqué 19 buts en une saison avec l’AS Roma."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "4. Sa fondation aide 100 familles par mois."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "5. Salah a payé l'essence de tous les clients dans une station-service."
-        },
-        {
-          "type": "input",
-          "content": ""
-        }
+        { "type": "vrai_faux", "content": "1. Salah a commencé sa carrière au Caire avec El Mokawloon." },
+        { "type": "vrai_faux", "content": "2. À Chelsea, Salah était titulaire dans l'équipe." },
+        { "type": "vrai_faux", "content": "3. Il a marqué 19 buts en une saison avec l'AS Roma." },
+        { "type": "vrai_faux", "content": "4. Sa fondation aide 100 familles par mois." },
+        { "type": "vrai_faux", "content": "5. Salah a payé l'essence de tous les clients dans une station-service." }
       ]
     }
   ]

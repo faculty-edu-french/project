@@ -180,6 +180,60 @@ const PrintButton = ({ lessonTitle }: { lessonTitle: string }) => {
 };
 
 // =========================================================
+// Vrai / Faux Block
+// =========================================================
+const VraiFauxBlock = ({
+  content,
+  storageKey,
+  defaultAnswer,
+}: {
+  content: string;
+  storageKey: string;
+  defaultAnswer: string | null;
+}) => {
+  const [selected, setSelected] = useState<string | null>(defaultAnswer);
+
+  const choose = (val: string) => {
+    setSelected(val);
+    localStorage.setItem(storageKey, val);
+  };
+
+  const optionStyle = (val: string): React.CSSProperties => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    padding: '0.75rem 1.25rem',
+    borderRadius: '0.75rem',
+    border: selected === val ? '2px solid var(--primary)' : '2px solid #e2e8f0',
+    background: selected === val ? 'var(--primary-light)' : '#fff',
+    cursor: 'pointer',
+    fontWeight: selected === val ? 700 : 400,
+    color: selected === val ? 'var(--primary)' : '#374151',
+    transition: 'all 0.2s',
+    marginBottom: '0.5rem',
+  });
+
+  return (
+    <div style={{ margin: '1rem 0', padding: '1.25rem 1.5rem', background: '#f8fafc', borderRadius: '1rem', border: '1px solid #e2e8f0' }}>
+      <p style={{ fontWeight: 600, marginBottom: '1rem', color: '#1e293b' }}>📋 {content}</p>
+      <div onClick={() => choose('Vrai')} style={optionStyle('Vrai')}>
+        <span style={{ width: '1.75rem', height: '1.75rem', borderRadius: '50%', background: selected === 'Vrai' ? 'var(--primary)' : '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: selected === 'Vrai' ? '#fff' : '#64748b', fontSize: '0.8rem', fontWeight: 700, flexShrink: 0 }}>a</span>
+        Vrai
+      </div>
+      <div onClick={() => choose('Faux')} style={optionStyle('Faux')}>
+        <span style={{ width: '1.75rem', height: '1.75rem', borderRadius: '50%', background: selected === 'Faux' ? 'var(--primary)' : '#e2e8f0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: selected === 'Faux' ? '#fff' : '#64748b', fontSize: '0.8rem', fontWeight: 700, flexShrink: 0 }}>b</span>
+        Faux
+      </div>
+      {selected && (
+        <p style={{ marginTop: '0.75rem', color: '#6366f1', fontWeight: 600, fontSize: '0.9rem' }}>
+          ✅ Vous avez choisi : <strong>{selected}</strong>
+        </p>
+      )}
+    </div>
+  );
+};
+
+// =========================================================
 // Block Renderer
 // =========================================================
 type BlockRendererProps = {
@@ -424,6 +478,18 @@ const BlockRenderer = ({
           </h3>
         </div>
       );
+    case 'vrai_faux': {
+      const storageKeyVF = `vf_${lessonId}_${idx}`;
+      const savedVF = typeof window !== 'undefined' ? localStorage.getItem(storageKeyVF) : null;
+      return (
+        <VraiFauxBlock
+          key={storageKeyVF}
+          storageKey={storageKeyVF}
+          content={block.content}
+          defaultAnswer={savedVF}
+        />
+      );
+    }
     case 'grammar_card':
       return (
         <div style={{

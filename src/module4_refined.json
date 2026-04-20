@@ -347,14 +347,6 @@
           "content": ""
         },
         {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
           "type": "task",
           "content": "Micro-tâches 11 : Discussion en groupes : (10 minutes)"
         },
@@ -371,7 +363,7 @@
           "content": "Phase 3 : Post-action (Tâche finale) Durée : 20 minutes"
         },
         {
-          "type": "header",
+          "type": "section_title",
           "content": "Tâche finale (avec modèle + aide lexicale)"
         },
         {
@@ -380,7 +372,7 @@
         },
         {
           "type": "paragraph",
-          "content": "<u>Votre texte doit :</u>"
+          "content": "Votre texte doit :"
         },
         {
           "type": "list_item",
@@ -408,7 +400,7 @@
         },
         {
           "type": "paragraph",
-          "content": "La formatrice demande à chaque étudiant de relire son produit écrit et identifier ses erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparer avec ses collèges et corriger son texte si nécessaire."
+          "content": "La formatrice demande à chaque étudiant de relire son produit écrit et identifier ses erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparer avec ses collègues et corriger son texte si nécessaire."
         },
         {
           "type": "input",
@@ -475,8 +467,8 @@
           "content": ""
         },
         {
-          "type": "section_title",
-          "content": "✅ Mettez Vrai ou Faux devant chaque phrase :"
+          "type": "header",
+          "content": "Mettez Vrai ou Faux devant chaque phrase :"
         },
         {
           "type": "question",

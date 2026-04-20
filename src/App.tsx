@@ -3,6 +3,7 @@ import './index.css';
 import refinedData1 from './module1_refined.json';
 import refinedData2 from './module2_refined.json';
 import refinedData3 from './module3_refined.json';
+import refinedData4 from './module4_refined.json';
 import introData from './intro.json';
 import { MCQGroup, MCQBlock, StudentGate, EssaySubmitter } from './MCQ';
 
@@ -451,21 +452,19 @@ const BlockRenderer = ({
               </span>
             )}
           </div>
-          {block.structure && (
-            <div style={{
-              background: 'rgba(99,102,241,0.1)',
-              borderRadius: '8px',
-              padding: '0.6rem 1rem',
-              marginBottom: '1rem',
-              fontFamily: 'monospace',
-              fontSize: '0.95rem',
-              color: 'var(--primary-dark)',
-              fontWeight: 600,
-              letterSpacing: '0.02em',
-            }}>
-              {block.structure}
-            </div>
-          )}
+          <div style={{
+            background: 'rgba(99,102,241,0.1)',
+            borderRadius: '8px',
+            padding: '0.6rem 1rem',
+            marginBottom: '1rem',
+            fontFamily: 'monospace',
+            fontSize: '0.95rem',
+            color: 'var(--primary-dark)',
+            fontWeight: 600,
+            letterSpacing: '0.02em',
+          }}>
+            {block.structure}
+          </div>
           {block.examples && block.examples.length > 0 && (
             <div style={{ borderTop: '1px solid rgba(99,102,241,0.15)', paddingTop: '0.85rem' }}>
               <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
@@ -506,6 +505,7 @@ function App() {
   );
 
   const getModuleData = () => {
+    if (activeModule === 'module4') return refinedData4;
     if (activeModule === 'module3') return refinedData3;
     if (activeModule === 'module2') return refinedData2;
     return refinedData1;
@@ -684,6 +684,26 @@ function App() {
                 key={l.id}
                 className={`nav-link ${activeTab === l.id && isUnlocked ? 'active' : ''}`}
                 onClick={() => isUnlocked && handleNavClick('module3', l.id)}
+                style={{
+                  paddingLeft: '2.5rem',
+                  borderLeft: activeTab === l.id && isUnlocked ? '4px solid var(--primary)' : 'none',
+                  opacity: isUnlocked ? 1 : 0.45,
+                  cursor: isUnlocked ? 'pointer' : 'not-allowed'
+                }}
+              >
+                {isUnlocked ? '📖' : '🔒'} {l.title.split(':').pop()?.trim() || l.title}
+              </div>
+            );
+          })}
+
+          <div className="nav-group-title">{refinedData4.moduleTitle}</div>
+          {refinedData4.lessons.map((l: any) => {
+            const isUnlocked = ['m4_lecon1'].includes(l.id);
+            return (
+              <div
+                key={l.id}
+                className={`nav-link ${activeTab === l.id && isUnlocked ? 'active' : ''}`}
+                onClick={() => isUnlocked && handleNavClick('module4', l.id)}
                 style={{
                   paddingLeft: '2.5rem',
                   borderLeft: activeTab === l.id && isUnlocked ? '4px solid var(--primary)' : 'none',

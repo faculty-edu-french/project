@@ -73,8 +73,8 @@
           ]
         },
         {
-          "type": "paragraph",
-          "content": "La formatrice invite les apprenants à répondre par écrit à des questions simples intégrées dans le livre numérique interactif :"
+          "type": "instruction",
+          "content": "Consigne : Observez l'image, puis prédisez le thème de la leçon."
         },
         {
           "type": "question",
@@ -112,10 +112,7 @@
           "type": "paragraph",
           "content": "La formatrice demande aux étudiants de lire le texte en entier en silence ou à voix basse et comprendre le sens global. (10 minutes)"
         },
-        {
-          "type": "paragraph",
-          "content": "La formatrice lit un paragraphe à voix haute et explique le vocabulaire difficile. (5 minutes)"
-        },
+
         {
           "type": "phase",
           "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
@@ -287,18 +284,6 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâches 10 : (5 minutes) : Reformulez la phrase suivante."
-        },
-        {
-          "type": "instruction",
-          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots. « Salah n’oublie jamais son pays »"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "task",
           "content": "Micro tâche 9 : (5 minutes) : Vidéo de la leçon"
         },
         {
@@ -309,6 +294,18 @@
         {
           "type": "paragraph",
           "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro-tâches 10 : (5 minutes) : Reformulez la phrase suivante."
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots. « Salah n’oublie jamais son pays »"
         },
         {
           "type": "input",
@@ -337,6 +334,11 @@
             "• « Mais sa vraie gloire commence en Italie. »",
             "• « Mais sa mère refuse que son petit frère suive le même chemin. »"
           ]
+        },
+        {
+          "type": "link",
+          "url": "https://francais.lingolia.com/fr/grammaire/les-temps/imparfaitpasse-compose",
+          "label": "📄 Explications et exercices : Imparfait ou passé composé"
         },
         {
           "type": "task",

@@ -287,7 +287,7 @@
         },
         {
           "type": "video",
-          "url": "videos/m4_l1_video.mp4"
+          "content": "/videos/m4_l1_video.mp4"
         },
         {
           "type": "paragraph",
@@ -1248,7 +1248,7 @@
         },
         {
           "type": "video",
-          "url": "videos/m4_l3_video.mp4"
+          "content": "/videos/m4_l3_video.mp4"
         },
         {
           "type": "paragraph",

@@ -791,19 +791,22 @@ function App() {
 
       <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-brand">
-          <div className="brand-icon">🎓</div>
+          <div className="brand-icon" style={{ background: 'transparent', boxShadow: 'none' }}>
+            <img
+              src={import.meta.env.BASE_URL + 'minia_logo.png'}
+              alt="Minia University"
+              style={{ width: '52px', height: '52px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
+            />
+          </div>
           <div className="brand-text">
             <div className="brand-title">FACULTY OF <span>EDU</span></div>
-            <div className="brand-subtitle">FRENCH DEPT.</div>
+            <div className="brand-subtitle">FRENCH DEPARTMENT</div>
           </div>
         </div>
 
         <div className="portal-tabs">
           <div className="portal-tab active">
             <span style={{ fontSize: "1rem" }}>⊞</span> PORTAL
-          </div>
-          <div className="portal-tab">
-            <span style={{ fontSize: "1rem" }}>📚</span> LIBRARY
           </div>
         </div>
 
@@ -828,7 +831,6 @@ function App() {
               </div>
               <div className="user-info">
                 <div className="user-name">{studentName}</div>
-                <div className="user-id-text">STUDENT ID: {Math.floor(Math.random() * 9000) + 1000}</div>
               </div>
               <button className="logout-btn" onClick={() => {
                 localStorage.removeItem("livret_student_name");

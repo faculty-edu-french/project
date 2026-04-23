@@ -814,7 +814,7 @@ function App() {
 
           <div className="nav-group-title">{refinedData4.moduleTitle}</div>
           {refinedData4.lessons.map((l: any) => {
-            const isUnlocked = ['m4_lecon1'].includes(l.id);
+            const isUnlocked = ['m4_lecon1', 'm4_lecon2'].includes(l.id);
             return (
               <div
                 key={l.id}

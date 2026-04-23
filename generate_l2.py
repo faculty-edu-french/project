@@ -1,0 +1,337 @@
+import json
+
+blocks = [
+    {
+        "type": "objective",
+        "content": "Objectif général : À la fin de la leçon « L'intelligence artificielle à l’école : un nouvel outil pédagogique », l’apprenant sera capable de comprendre et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+    },
+    {
+        "type": "paragraph",
+        "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
+    },
+    {"type": "list_item", "content": "1. Comprendre l’idée générale d’un texte lu."},
+    {"type": "list_item", "content": "2. Donner le synonyme d’un mot cité dans un texte lu."},
+    {"type": "list_item", "content": "3. Dégager le sens implicite existant entre les lignes."},
+    {"type": "list_item", "content": "4. Analyser l’organisation d’un texte lu et interpréter son sens en s’appuyant sur des indices."},
+    {"type": "list_item", "content": "5. Choisir des mots clairs et simples."},
+    {"type": "list_item", "content": "6. Argumenter son point de vue."},
+    {"type": "list_item", "content": "7. Présenter des idées exprimant correctement le contenu d’un sujet."},
+    {"type": "list_item", "content": "8. Mettre en lien des connaissances antérieures au sujet visé."},
+    {"type": "list_item", "content": "9. Fonctionner la mise en page du texte."},
+    {"type": "list_item", "content": "10. Renforcer le plaisir d’apprendre le français chez les apprenants."},
+    {"type": "list_item", "content": "11. Développer le sentiment de satisfaction lié au progrès dans l’apprentissage du FLE."},
+    {
+        "type": "phase",
+        "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
+    },
+    {
+        "type": "header",
+        "content": "I. Introduction et Motivation : (5 minutes)"
+    },
+    {
+        "type": "instruction",
+        "content": "Consigne : Observez l’image, puis prédisez le thème de la leçon."
+    },
+    {
+        "type": "image_group",
+        "images": [
+            "/images/m4_l2_img1.png",
+            "/images/m4_l2_img2.png"
+        ]
+    },
+    {
+        "type": "paragraph",
+        "content": "Répondez aux questions suivantes :"
+    },
+    {
+        "type": "question",
+        "content": "1. Que voyez-vous dans ces images ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "question",
+        "content": "2. Selon vous, quel est le thème de la leçon ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro-tâche 1 : Identifiez l’idée générale du texte ?"
+    },
+    {
+        "type": "instruction",
+        "content": "Consigne : Selon les images ci-dessus, de quoi parle ce texte."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "header",
+        "content": "II. Lecture guidée du texte (15 minutes)"
+    },
+    {
+        "type": "paragraph",
+        "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+    },
+    {
+        "type": "phase",
+        "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+    },
+    {
+        "type": "instruction",
+        "content": "Consigne : Lisez le texte suivant, puis répondez aux questions."
+    },
+    {
+        "type": "header",
+        "content": "L'intelligence artificielle à l’école : un nouvel outil pédagogique"
+    },
+    {
+        "type": "paragraph",
+        "content": "L'intelligence artificielle (IA) fait son entrée dans les salles de classe. Pour les enseignants, cette technologie représente un soutien précieux. Elle peut générer des exercices, proposer des idées pour les cours ou aider à analyser les difficultés des élèves. Cela libère du temps pour l'enseignant, qui peut alors se concentrer sur l'accompagnement individuel. De plus, l'IA permet de personnaliser les apprentissages. Elle peut adapter le contenu et le rythme des activités en fonction des besoins spécifiques de chaque élève, offrant un parcours éducatif plus flexible."
+    },
+    {
+        "type": "paragraph",
+        "content": "Cependant, cette innovation présente aussi des inconvénients majeurs. Le premier risque est que l'IA rende les élèves passifs. Si les outils donnent des réponses trop rapidement, les élèves pourraient cesser de réfléchir par eux-mêmes. Un autre problème est l'inégalité d'accès. Toutes les écoles n'ont pas le même équipement technologique, ce qui peut créer des différences entre les établissements. Enfin, il existe des questions éthiques importantes. La protection des données personnelles des élèves et la fiabilité des informations fournies par l'IA nécessitent une vigilance constante."
+    },
+    {
+        "type": "paragraph",
+        "content": "Pour que l'intelligence artificielle soit un véritable progrès à l'école, un cadre d'utilisation est nécessaire. Les enseignants doivent recevoir une formation pour maîtriser ces outils et guider leurs élèves. Les élèves, de leur côté, doivent apprendre à utiliser l'IA de manière critique et responsable. L'objectif n'est pas de remplacer le professeur, mais de l'assister. L'école doit rester un lieu où l'on apprend à penser, pas seulement à obtenir des réponses. Avec des règles claires, l'IA peut devenir un allié pour une éducation plus moderne et plus adaptée."
+    },
+    {
+        "type": "link",
+        "url": "https://www.bien-ecrire.com",
+        "label": "📄 [Bientôt disponible] Article interactif"
+    },
+    {
+        "type": "task",
+        "content": "Micro-tâche 2 : (5 minutes)"
+    },
+    {
+        "type": "instruction",
+        "content": "Consigne : Quelle est l’idée principale de ce texte ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "header",
+        "content": "Questions guidées (10 minutes) :"
+    },
+    {
+        "type": "paragraph",
+        "content": "Répondez aux questions suivantes :"
+    },
+    {
+        "type": "question",
+        "content": "1. Quels sont les avantages de l’IA selon le texte ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "info_box",
+        "content": "🌟 Présentation du texte explicatif argumentatif:\nCe texte est explicatif parce qu’il présente et explique le rôle de l’intelligence artificielle à l’école, ses avantages et ses inconvénients. Il est aussi argumentatif car l’auteur donne son point de vue, souligne les risques, propose des solutions.\n\n🔎 Dans ce texte « l'intelligence artificielle », l’auteur :\n Explique le rôle de l’intelligence artificielle dans le domaine de l’éducation.\n Présente ses avantages pour les enseignants et les élèves.\n Présente les avantages et les inconvénients liés à son utilisation à l’école.\n Propose des solutions et des conditions pour une utilisation responsable de l’IA."
+    },
+    {
+        "type": "question",
+        "content": "2. Quels problèmes l’auteur souligne-t-il ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "question",
+        "content": "3. Que doit-on faire pour utiliser l’IA de manière responsable et profiter de ces outils ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "question",
+        "content": "4. Selon vous, l’IA peut-elle remplacer le professeur ? Pourquoi ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro-tâches 3 : (5 minutes) En une seule phrase, écrivez de quoi parle le texte."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro tâche 4 : (5 minutes) : Écrivez en deux phrases comment vous utiliseriez l’IA à l’école si vous étiez élève."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro-tâches 5 : (5 minutes) : Donnez votre opinion ?"
+    },
+    {
+        "type": "instruction",
+        "content": "Consigne : Donnez votre opinion sur l’utilisation de l’IA à l’école. Expliquez un avantage et un inconvénient selon vous."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro-tâches 6 : (5 minutes) : Expliquez-en deux phrases comment éviter les problèmes liés à l’IA."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro-tâches 7 : (5 minutes) : Reformulez la phrase suivante ?"
+    },
+    {
+        "type": "instruction",
+        "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots.\n\"Les enseignants doivent recevoir une formation pour maîtriser ces outils et guider leurs élèves.\""
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "section_title",
+        "content": "Structures à observer : (5 minutes)"
+    },
+    {
+        "type": "grammar_card",
+        "title": "Structure de l’opinion :",
+        "examples": [
+            "• Pour les enseignants, …",
+            "• L’objectif n’est pas de…, mais de…",
+            "• L’école doit rester un lieu où…"
+        ]
+    },
+    {
+        "type": "grammar_card",
+        "title": "Structure de la cause :",
+        "examples": [
+            "• Parce que…",
+            "• Car…",
+            "• En raison de…"
+        ]
+    },
+    {
+        "type": "grammar_card",
+        "title": "Structure de la conséquence :",
+        "examples": [
+            "• Cela permet de…",
+            "• Ce qui peut…",
+            "• Ainsi…",
+            "• Donc…"
+        ]
+    },
+    {
+        "type": "grammar_card",
+        "title": "Structure de l’opposition / concession :",
+        "examples": [
+            "• Cependant…",
+            "• Mais…",
+            "• Toutefois…",
+            "• D’un autre côté…"
+        ]
+    },
+    {
+        "type": "grammar_card",
+        "title": "Structure de l’énumération :",
+        "examples": [
+            "• D’abord…",
+            "• De plus…",
+            "• Ensuite…",
+            "• Enfin…"
+        ]
+    },
+    {
+        "type": "grammar_card",
+        "title": "Structure de la condition :",
+        "examples": [
+            "• Pour que…",
+            "• À condition que…",
+            "• Si…, alors…"
+        ]
+    },
+    {
+        "type": "task",
+        "content": "Micro tâche 8 : (5 minutes) : Regardez cette vidéo pour bien comprendre qu’est-ce que signifie le covoit :"
+    },
+    {
+        "type": "video",
+        "title": "Vidéo de la leçon",
+        "content": "/videos/m4_l2_video.mp4"
+    },
+    {
+        "type": "paragraph",
+        "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro-tâches 9 : Mini-production : (10 minutes) Résumez ce texte lu en trois phrases ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "task",
+        "content": "Micro-tâches 10 : Discussion en groupes : (10 minutes)"
+    },
+    {
+        "type": "instruction",
+        "content": "👉 Déroulement:\nTravaillez en petits groupes (3 à 4 étudiants). Discutez autour de la question suivante :\n👉 « Quelles actions concrètes pourriez-vous faire pour utiliser l’intelligence artificielle de manière responsable à l’école?\nChaque groupe propose des solutions réelles liées à ce phénomène."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "phase",
+        "content": "Phase 3 : Post-action (Tâche finale) Durée : 20 minutes"
+    },
+    {
+        "type": "section_title",
+        "content": "Tâche finale (avec modèle + aide lexicale)"
+    },
+    {
+        "type": "instruction",
+        "content": "📌Consigne: À travers la discussion précédente, imaginez que votre école va utiliser l’intelligence artificielle pendant les cours. Rédigez un petit texte (5 à 7 lignes) pour présenter l’importance de l’AI et les méthodes d’éviter les inconvénients de cette technologie"
+    },
+    {
+        "type": "paragraph",
+        "content": "Où tu expliques :"
+    },
+    {
+        "type": "list_item",
+        "content": "• Comment tu utiliserais l’IA pour apprendre mieux."
+    },
+    {
+        "type": "list_item",
+        "content": "• Quels problèmes pourraient apparaître."
+    },
+    {
+        "type": "list_item",
+        "content": "• Ce que tu ferais pour que l’IA soit utile et sûre."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "phase",
+        "content": "Phase 4 : évaluation des produits des étudiants : Durée : 10 minutes"
+    },
+    {
+        "type": "paragraph",
+        "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos collèges et corrigez son texte si nécessaire."
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "section_title",
+        "content": "É- évaluation :"
+    },
+    {
+        "type": "question",
+        "content": "1. Quel est l’avantage principal de l’IA pour les enseignants ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "question",
+        "content": "2. Quel est le premier risque de l’IA pour les élèves ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "question",
+        "content": "3. Pourquoi l’IA peut-elle créer des inégalités entre les écoles ?"
+    },
+    {"type": "input", "content": ""},
+    {
+        "type": "question",
+        "content": "4. Quel est le rôle du professeur que l’IA ne doit pas remplacer ?"
+    },
+    {"type": "input", "content": ""}
+]
+
+lesson_json = {
+    "id": "m4_lecon2",
+    "title": "Leçon 2 : L'intelligence artificielle à l’école : un nouvel outil pédagogique",
+    "blocks": blocks
+}
+
+with open("/home/george/Desktop/project/web-book/src/scratch_m4_l2.json", "w", encoding="utf-8") as f:
+    json.dump(lesson_json, f, ensure_ascii=False, indent=2)
+print("Done.")

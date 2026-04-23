@@ -620,6 +620,17 @@ function App() {
     localStorage.getItem('livret_student_name')
   );
 
+  const [expandedModules, setExpandedModules] = useState<Record<string, boolean>>({
+    module1: false,
+    module2: false,
+    module3: false,
+    module4: true,
+  });
+
+  const toggleModule = (modId: string) => {
+    setExpandedModules(prev => ({ ...prev, [modId]: !prev[modId] }));
+  };
+
   const getModuleData = () => {
     if (activeModule === 'module4') return refinedData4;
     if (activeModule === 'module3') return refinedData3;
@@ -761,8 +772,11 @@ function App() {
             🏠 Accueil
           </div>
 
-          <div className="nav-group-title">{refinedData1.moduleTitle}</div>
-          {refinedData1.lessons.map((l: any) => (
+          <div className="nav-group-title" onClick={() => toggleModule('module1')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span>{refinedData1.moduleTitle}</span>
+            <span style={{ fontSize: '0.8rem', transform: expandedModules.module1 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
+          </div>
+          {expandedModules.module1 && refinedData1.lessons.map((l: any) => (
             <div
               key={l.id}
               className="nav-link"
@@ -772,8 +786,11 @@ function App() {
             </div>
           ))}
 
-          <div className="nav-group-title">{refinedData2.moduleTitle}</div>
-          {refinedData2.lessons.map((l: any) => {
+          <div className="nav-group-title" onClick={() => toggleModule('module2')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span>{refinedData2.moduleTitle}</span>
+            <span style={{ fontSize: '0.8rem', transform: expandedModules.module2 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
+          </div>
+          {expandedModules.module2 && refinedData2.lessons.map((l: any) => {
             const isUnlocked = l.id === 'm2_lecon1' || l.id === 'm2_lecon2' || l.id === 'm2_lecon3';
             return (
               <div
@@ -792,8 +809,11 @@ function App() {
             );
           })}
 
-          <div className="nav-group-title">{refinedData3.moduleTitle}</div>
-          {refinedData3.lessons.map((l: any) => {
+          <div className="nav-group-title" onClick={() => toggleModule('module3')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span>{refinedData3.moduleTitle}</span>
+            <span style={{ fontSize: '0.8rem', transform: expandedModules.module3 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
+          </div>
+          {expandedModules.module3 && refinedData3.lessons.map((l: any) => {
             const isUnlocked = ['m3_lecon1', 'm3_lecon2', 'm3_lecon3'].includes(l.id);
             return (
               <div
@@ -812,8 +832,11 @@ function App() {
             );
           })}
 
-          <div className="nav-group-title">{refinedData4.moduleTitle}</div>
-          {refinedData4.lessons.map((l: any) => {
+          <div className="nav-group-title" onClick={() => toggleModule('module4')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span>{refinedData4.moduleTitle}</span>
+            <span style={{ fontSize: '0.8rem', transform: expandedModules.module4 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
+          </div>
+          {expandedModules.module4 && refinedData4.lessons.map((l: any) => {
             const isUnlocked = ['m4_lecon1', 'm4_lecon2', 'm4_lecon3'].includes(l.id);
             return (
               <div

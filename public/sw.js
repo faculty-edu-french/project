@@ -23,27 +23,40 @@ self.addEventListener('fetch', (event) => {
 
   if (isVideo) {
     // Cache-First strategy for videos
+    // IMPORTANT: Only cache full 200 responses, never partial 206 responses
+    // (browsers send Range requests for videos which return 206 Partial Content,
+    //  and the Cache API does NOT support storing 206 responses)
     event.respondWith(
       caches.open(CACHE_NAME).then(async (cache) => {
-        const cached = await cache.match(event.request);
+        const cached = await cache.match(event.request.url);
         if (cached) {
           console.log('[SW] Serving video from cache:', url.pathname);
           return cached;
         }
-        // Not in cache — fetch from network and cache it
-        console.log('[SW] Fetching video from network:', url.pathname);
+
+        // Not cached — fetch WITHOUT range headers to get a full 200 response
+        const fullRequest = new Request(event.request.url, {
+          method: 'GET',
+          headers: {}, // No range headers
+          mode: 'cors',
+          credentials: 'same-origin',
+        });
+
+        console.log('[SW] Fetching full video from network:', url.pathname);
         try {
-          const networkResponse = await fetch(event.request);
-          if (networkResponse.ok) {
-            cache.put(event.request, networkResponse.clone());
+          const networkResponse = await fetch(fullRequest);
+          // Only cache full 200 OK responses (never 206 Partial Content)
+          if (networkResponse.ok && networkResponse.status === 200) {
+            cache.put(event.request.url, networkResponse.clone());
+            console.log('[SW] Video cached successfully:', url.pathname);
           }
           return networkResponse;
         } catch (err) {
-          console.error('[SW] Network fetch failed for video:', url.pathname);
+          console.error('[SW] Network fetch failed for video:', url.pathname, err);
           throw err;
         }
       })
     );
   }
-  // All other requests: use default browser behavior (no interception)
+  // All other requests: use default browser behavior
 });

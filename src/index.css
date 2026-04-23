@@ -1036,12 +1036,16 @@ body {
 @media (max-width: 900px) {
   .sidebar {
     position: fixed;
-    left: -300px;
-    height: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    width: 300px;
+    max-width: 85vw;
   }
   
   .sidebar.open {
-    left: 0;
+    transform: translateX(0);
     box-shadow: var(--shadow-lg);
   }
   

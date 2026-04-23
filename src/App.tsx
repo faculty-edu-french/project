@@ -633,7 +633,7 @@ function App() {
 
   const renderModuleCard = (modNum: string, modId: string, title: string, data: any, unlockedList: string[]) => {
     const isExpanded = expandedModules[modId];
-    const isActiveModule = activeTab.startsWith(`m${modNum}`);
+    const isActiveModule = activeModule === modId;
     
     return (
       <div className={`module-card ${isActiveModule ? 'active-module' : ''}`}>
@@ -677,14 +677,6 @@ function App() {
   };
 
 
-  const getModuleData = () => {
-    if (activeModule === 'module4') return refinedData4;
-    if (activeModule === 'module3') return refinedData3;
-    if (activeModule === 'module2') return refinedData2;
-    return refinedData1;
-  };
-
-  const refinedData = getModuleData();
 
   const handleNavClick = (moduleId: string, tabId: string) => {
     setActiveModule(moduleId);
@@ -731,7 +723,14 @@ function App() {
       );
     }
 
-    const lesson = refinedData.lessons.find(l => l.id === activeTab);
+    // Search across ALL modules to avoid stale-state mismatch
+    const allLessons = [
+      ...refinedData1.lessons,
+      ...refinedData2.lessons,
+      ...refinedData3.lessons,
+      ...refinedData4.lessons,
+    ];
+    const lesson = allLessons.find((l: any) => l.id === activeTab);
     if (lesson) {
       const mcqs = MCQ_BY_LESSON[activeTab];
       return (

@@ -631,6 +631,52 @@ function App() {
     setExpandedModules(prev => ({ ...prev, [modId]: !prev[modId] }));
   };
 
+  const renderModuleCard = (modNum: string, modId: string, title: string, data: any, unlockedList: string[]) => {
+    const isExpanded = expandedModules[modId];
+    const isActiveModule = activeTab.startsWith(`m${modNum}`);
+    
+    return (
+      <div className={`module-card ${isActiveModule ? 'active-module' : ''}`}>
+        <div className="module-header" onClick={() => toggleModule(modId)}>
+          <div className="module-num-box">0{modNum}</div>
+          <div className="module-title-container">
+            <div className="module-label">MODULE {modNum}</div>
+            <div className="module-name">{title.split(':').pop()?.trim() || title}</div>
+          </div>
+          <div className="module-chevron" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</div>
+        </div>
+        {isExpanded && (
+          <div className="module-lessons">
+            {modId === 'module1' && (
+              <div 
+                className={`lesson-item ${activeTab === 'intro' ? 'active' : ''}`} 
+                onClick={() => handleNavClick(modId, 'intro')}
+              >
+                <div className="lesson-bullet"></div>
+                <span>Accueil / Introduction</span>
+              </div>
+            )}
+            {data.lessons.map((l: any) => {
+              const isUnlocked = unlockedList.includes(l.id);
+              const isActive = activeTab === l.id;
+              return (
+                <div
+                  key={l.id}
+                  className={`lesson-item ${isActive ? 'active' : ''} ${!isUnlocked ? 'disabled' : ''}`}
+                  onClick={() => isUnlocked && handleNavClick(modId, l.id)}
+                >
+                  <div className="lesson-bullet"></div>
+                  <span>{l.title.split(':').pop()?.trim() || l.title}</span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  };
+
+
   const getModuleData = () => {
     if (activeModule === 'module4') return refinedData4;
     if (activeModule === 'module3') return refinedData3;
@@ -743,118 +789,57 @@ function App() {
         />
       )}
 
-      <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-        <div className="sidebar-header">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <img
-              src={import.meta.env.BASE_URL + 'minia_logo.png'}
-              alt="Minia University"
-              style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
-            />
-            <div>
-              <div className="logo" style={{ fontSize: '0.9rem', lineHeight: '1.3' }}>Faculty of Education</div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.1rem' }}>French Department</div>
-            </div>
+      <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+        <div className="sidebar-brand">
+          <div className="brand-icon">🎓</div>
+          <div className="brand-text">
+            <div className="brand-title">FACULTY OF <span>EDU</span></div>
+            <div className="brand-subtitle">FRENCH DEPT.</div>
           </div>
-          {studentName && (
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
-              👤 {studentName}
-            </div>
-          )}
+        </div>
+
+        <div className="portal-tabs">
+          <div className="portal-tab active">
+            <span style={{ fontSize: "1rem" }}>⊞</span> PORTAL
+          </div>
+          <div className="portal-tab">
+            <span style={{ fontSize: "1rem" }}>📚</span> LIBRARY
+          </div>
+        </div>
+
+        <div className="academic-label">
+          ACADEMIC PROGRAM
+          <div className="academic-label-dot"></div>
         </div>
 
         <div className="nav-links">
-          <div className="nav-group-title">Introduction</div>
-          <div
-            className={`nav-link ${activeTab === 'intro' ? 'active' : ''}`}
-            onClick={() => handleNavClick('module1', 'intro')}
-          >
-            🏠 Accueil
-          </div>
-
-          <div className="nav-group-title" onClick={() => toggleModule('module1')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>{refinedData1.moduleTitle}</span>
-            <span style={{ fontSize: '0.8rem', transform: expandedModules.module1 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
-          </div>
-          {expandedModules.module1 && refinedData1.lessons.map((l: any) => (
-            <div
-              key={l.id}
-              className="nav-link"
-              style={{ paddingLeft: '2.5rem', opacity: 0.45, cursor: 'not-allowed', pointerEvents: 'none' }}
-            >
-              🔒 {l.title.split(':').pop()?.trim() || l.title}
-            </div>
-          ))}
-
-          <div className="nav-group-title" onClick={() => toggleModule('module2')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>{refinedData2.moduleTitle}</span>
-            <span style={{ fontSize: '0.8rem', transform: expandedModules.module2 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
-          </div>
-          {expandedModules.module2 && refinedData2.lessons.map((l: any) => {
-            const isUnlocked = l.id === 'm2_lecon1' || l.id === 'm2_lecon2' || l.id === 'm2_lecon3';
-            return (
-              <div
-                key={l.id}
-                className={`nav-link ${activeTab === l.id && isUnlocked ? 'active' : ''}`}
-                onClick={() => isUnlocked && handleNavClick('module2', l.id)}
-                style={{
-                  paddingLeft: '2.5rem',
-                  borderLeft: activeTab === l.id && isUnlocked ? '4px solid var(--primary)' : 'none',
-                  opacity: isUnlocked ? 1 : 0.45,
-                  cursor: isUnlocked ? 'pointer' : 'not-allowed'
-                }}
-              >
-                {isUnlocked ? '📖' : '🔒'} {l.title.split(':').pop()?.trim() || l.title}
-              </div>
-            );
-          })}
-
-          <div className="nav-group-title" onClick={() => toggleModule('module3')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>{refinedData3.moduleTitle}</span>
-            <span style={{ fontSize: '0.8rem', transform: expandedModules.module3 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
-          </div>
-          {expandedModules.module3 && refinedData3.lessons.map((l: any) => {
-            const isUnlocked = ['m3_lecon1', 'm3_lecon2', 'm3_lecon3'].includes(l.id);
-            return (
-              <div
-                key={l.id}
-                className={`nav-link ${activeTab === l.id && isUnlocked ? 'active' : ''}`}
-                onClick={() => isUnlocked && handleNavClick('module3', l.id)}
-                style={{
-                  paddingLeft: '2.5rem',
-                  borderLeft: activeTab === l.id && isUnlocked ? '4px solid var(--primary)' : 'none',
-                  opacity: isUnlocked ? 1 : 0.45,
-                  cursor: isUnlocked ? 'pointer' : 'not-allowed'
-                }}
-              >
-                {isUnlocked ? '📖' : '🔒'} {l.title.split(':').pop()?.trim() || l.title}
-              </div>
-            );
-          })}
-
-          <div className="nav-group-title" onClick={() => toggleModule('module4')} style={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span>{refinedData4.moduleTitle}</span>
-            <span style={{ fontSize: '0.8rem', transform: expandedModules.module4 ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}>▼</span>
-          </div>
-          {expandedModules.module4 && refinedData4.lessons.map((l: any) => {
-            const isUnlocked = ['m4_lecon1', 'm4_lecon2', 'm4_lecon3'].includes(l.id);
-            return (
-              <div
-                key={l.id}
-                className={`nav-link ${activeTab === l.id && isUnlocked ? 'active' : ''}`}
-                onClick={() => isUnlocked && handleNavClick('module4', l.id)}
-                style={{
-                  paddingLeft: '2.5rem',
-                  borderLeft: activeTab === l.id && isUnlocked ? '4px solid var(--primary)' : 'none',
-                  opacity: isUnlocked ? 1 : 0.45,
-                  cursor: isUnlocked ? 'pointer' : 'not-allowed'
-                }}
-              >
-                {isUnlocked ? '📖' : '🔒'} {l.title.split(':').pop()?.trim() || l.title}
-              </div>
-            );
-          })}
+          {renderModuleCard("1", "module1", refinedData1.moduleTitle, refinedData1, [])}
+          {renderModuleCard("2", "module2", refinedData2.moduleTitle, refinedData2, ["m2_lecon1", "m2_lecon2", "m2_lecon3"])}
+          {renderModuleCard("3", "module3", refinedData3.moduleTitle, refinedData3, ["m3_lecon1", "m3_lecon2", "m3_lecon3"])}
+          {renderModuleCard("4", "module4", refinedData4.moduleTitle, refinedData4, ["m4_lecon1", "m4_lecon2", "m4_lecon3"])}
         </div>
+
+        {studentName && (
+          <div className="user-profile-footer">
+            <div className="user-profile-card">
+              <div className="user-avatar-container">
+                👤
+                <div className="user-status-dot"></div>
+              </div>
+              <div className="user-info">
+                <div className="user-name">{studentName}</div>
+                <div className="user-id-text">STUDENT ID: {Math.floor(Math.random() * 9000) + 1000}</div>
+              </div>
+              <button className="logout-btn" onClick={() => {
+                localStorage.removeItem("livret_student_name");
+                setStudentName(null);
+                setActiveTab("intro");
+              }}>
+                ↪
+              </button>
+            </div>
+          </div>
+        )}
       </aside>
 
       <main className="main-view">

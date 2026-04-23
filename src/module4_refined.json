@@ -286,9 +286,8 @@
           "content": "Micro tâche 9 : (5 minutes) : Vidéo de la leçon"
         },
         {
-          "type": "link",
-          "url": "",
-          "label": "🎥 [Vidéo bientôt disponible]"
+          "type": "video",
+          "url": "videos/m4_l1_video.mp4"
         },
         {
           "type": "paragraph",
@@ -1248,9 +1247,8 @@
           "content": "Micro tâche 7 : (5 minutes) : Regardez cette vidéo pour bien comprendre qu’est-ce que signifie le covoit :"
         },
         {
-          "type": "link",
-          "url": "",
-          "label": "🎥 [Vidéo bientôt disponible]"
+          "type": "video",
+          "url": "videos/m4_l3_video.mp4"
         },
         {
           "type": "paragraph",

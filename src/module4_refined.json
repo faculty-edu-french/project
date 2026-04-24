@@ -138,8 +138,8 @@
         },
         {
           "type": "link",
-          "url": "https://www.bien-ecrire.com",
-          "label": "📄 [Bientôt disponible] Article interactif"
+          "url": "/project/articles/m4_l1/index.html",
+          "label": "📄 Article interactif : Mohamed Salah"
         },
         {
           "type": "task",
@@ -638,8 +638,8 @@
         },
         {
           "type": "link",
-          "url": "https://www.bien-ecrire.com",
-          "label": "📄 [Bientôt disponible] Article interactif"
+          "url": "/project/articles/m4_l2/index.html",
+          "label": "📄 Article interactif : L'intelligence artificielle à l'école"
         },
         {
           "type": "task",

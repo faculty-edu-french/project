@@ -798,19 +798,19 @@ function App() {
             />
           </div>
           <div className="brand-text">
-            <div className="brand-title">FACULTY OF <span>EDU</span></div>
-            <div className="brand-subtitle">FRENCH DEPARTMENT</div>
+            <div className="brand-title">FACULTÉ D'<span>ÉDU</span></div>
+            <div className="brand-subtitle">DÉPARTEMENT DE FRANÇAIS</div>
           </div>
         </div>
 
         <div className="portal-tabs">
           <div className="portal-tab active">
-            <span style={{ fontSize: "1rem" }}>⊞</span> PORTAL
+            <span style={{ fontSize: "1rem" }}>⊞</span> PORTAIL
           </div>
         </div>
 
         <div className="academic-label">
-          ACADEMIC PROGRAM
+          PROGRAMME ACADÉMIQUE
           <div className="academic-label-dot"></div>
         </div>
 

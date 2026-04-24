@@ -1503,10 +1503,20 @@
           "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
         },
         {
-          "type": "link",
-          "content": "/lesson3-text.html",
-          "url": "/lesson3-text.html",
-          "label": "📄 Le phénomène des influenceurs"
+          "type": "header",
+          "content": "Le phénomène des \"influenceurs\" sur les réseaux sociaux"
+        },
+        {
+          "type": "paragraph",
+          "content": "Les réseaux sociaux occupent une place importante dans la vie quotidienne et ont fait apparaître une nouvelle figure médiatique : l’influenceur. Présent sur des plateformes comme Instagram, YouTube ou TikTok, l’influenceur partage des contenus variés liés à la mode, au sport, à la cuisine ou encore au voyage. Grâce à un grand nombre d’abonnés, il peut orienter les goûts, les opinions et parfois les comportements de son public. Cette visibilité repose souvent sur une relation de confiance, car les abonnés ont l’impression de connaître personnellement la personne qu’ils suivent. Ainsi, l’influenceur devient une source d’information et un modèle, notamment pour les jeunes, qui s’identifient facilement à son style de vie et à ses choix."
+        },
+        {
+          "type": "paragraph",
+          "content": "L’influence exercée par ces personnalités peut être positive lorsqu’elle transmet des messages utiles et responsables. Certains influenceurs encouragent la pratique du sport, la protection de l’environnement ou l’acceptation de soi. Ils peuvent aussi sensibiliser à des causes sociales et culturelles, en rendant certains sujets plus accessibles. Par leur langage simple et leur proximité avec le public, ils réussissent parfois à expliquer des idées complexes de manière claire. Dans ce cas, les réseaux sociaux deviennent un espace d’échange et d’apprentissage, où l’influence sert à informer et à motiver, sans imposer une vision unique du monde."
+        },
+        {
+          "type": "paragraph",
+          "content": "Cependant, cette influence peut aussi avoir des effets négatifs. La promotion excessive de produits commerciaux peut pousser à la consommation inutile et créer une confusion entre conseil sincère et publicité. Certains contenus valorisent une image irréaliste du succès, de la beauté ou de la richesse, ce qui peut provoquer un sentiment de frustration chez les abonnés. Le manque de recul face aux informations diffusées pose également problème, car tout influenceur n’est pas un expert. Face à ce phénomène, il semble essentiel de développer un esprit critique afin de distinguer le divertissement, l’information fiable et les intérêts économiques cachés derrière certaines publications."
         },
         {
           "type": "header",

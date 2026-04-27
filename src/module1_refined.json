@@ -1088,6 +1088,74 @@
       "title": "Leçon 3 : Le covoiturage",
       "blocks": [
         {
+          "type": "objective",
+          "content": "Objectif général : À la fin de la leçon « Le covoiturage », l’apprenant sera capable de comprendre un texte explicatif et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
+          "type": "paragraph",
+          "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
+        },
+        {
+          "type": "list_item",
+          "content": "1. Comprendre l’idée générale et déterminer les idées principales et secondaires d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "2. Faire ressortir les mots clés d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "3. Lier entre ses connaissances antérieures et les informations d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "4. Résumer correctement un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "5. Dégager le sens implicite existant entre les lignes."
+        },
+        {
+          "type": "list_item",
+          "content": "6. Évaluer Porter un jugement d’un texte lu à partir des critères pertinents."
+        },
+        {
+          "type": "list_item",
+          "content": "7. Employer des mots adéquats à la situation."
+        },
+        {
+          "type": "list_item",
+          "content": "8. Écrire des phrases correctes et cohérentes."
+        },
+        {
+          "type": "list_item",
+          "content": "9. S’exprimer et se faire comprendre à l’écrit en organisant les idées."
+        },
+        {
+          "type": "list_item",
+          "content": "10. Écrire un texte clair et bien structuré."
+        },
+        {
+          "type": "list_item",
+          "content": "11. Créer une atmosphère positive et agréable en classe de FLE."
+        },
+        {
+          "type": "list_item",
+          "content": "12. Renforcer le sentiment de soutien pédagogique chez les apprenants."
+        },
+        {
+          "type": "phase",
+          "content": "Phase 1 : Pré-action : Activation des connaissances) (20 minutes)"
+        },
+        {
+          "type": "image",
+          "content": "/images/m1_lecon3.jpg"
+        },
+        {
+          "type": "header",
+          "content": "I. Introduction et Motivation : (5 minutes)"
+        },
+        {
           "type": "image_group",
           "images": [
             "/images/m1_lecon3_1.png",

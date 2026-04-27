@@ -1142,21 +1142,29 @@ body {
 @media (max-width: 900px) {
   .sidebar {
     position: fixed;
-    left: -300px;
-    height: 100%;
+    left: -330px; /* Hide completely */
+    height: 100vh;
+    visibility: hidden; /* Prevent interaction when closed */
+    transition: transform 0.3s ease, visibility 0.3s ease, left 0.3s ease;
+    box-shadow: none;
   }
 
   .sidebar.open {
     left: 0;
-    box-shadow: var(--shadow-lg);
+    visibility: visible;
+    box-shadow: 20px 0 50px rgba(0, 0, 0, 0.2);
+    transform: none;
   }
 
   .hamburger {
     display: block;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
   }
 
   .main-view {
     padding: 1rem;
+    width: 100%;
   }
 
   .lesson-card {

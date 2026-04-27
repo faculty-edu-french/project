@@ -258,6 +258,59 @@ const BlockRenderer = ({
           <div className="phase-tag">🔘 {block.content}</div>
         </div>
       );
+    case 'cover':
+      return (
+        <div style={{
+          textAlign: 'center',
+          padding: '3rem 2rem',
+          background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+          borderRadius: '24px',
+          border: '1px solid var(--border)',
+          marginBottom: '3rem',
+          boxShadow: 'var(--shadow-lg)'
+        }}>
+          <h2 style={{
+            fontSize: '1.4rem',
+            lineHeight: '1.5',
+            color: 'var(--primary-dark)',
+            marginBottom: '2rem',
+            fontFamily: 'var(--font-serif)',
+            padding: '0 1rem'
+          }}>
+            "{block.title}"
+          </h2>
+          
+          <h1 style={{
+            fontSize: '2.2rem',
+            fontWeight: 800,
+            color: 'var(--primary)',
+            margin: '2rem 0',
+            fontStyle: 'italic'
+          }}>
+            {block.subtitle}
+          </h1>
+
+          <div style={{ margin: '2rem 0', color: 'var(--text-muted)', fontSize: '1.1rem', fontWeight: 500 }}>
+            {block.description}
+          </div>
+
+          <div style={{ margin: '3rem 0' }}>
+            <span style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-light)' }}>Par</span>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-main)', marginTop: '0.5rem' }}>
+              {block.author}
+            </h3>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', marginTop: '0.5rem' }}>
+              {block.role}
+              <br />
+              {block.department}
+            </p>
+          </div>
+
+          <div style={{ marginTop: '3rem', fontWeight: 700, color: 'var(--primary)', fontSize: '1.2rem' }}>
+            {block.year}
+          </div>
+        </div>
+      );
     case 'header':
       return <h3 className="section-header">{block.content}</h3>;
     case 'task':

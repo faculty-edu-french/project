@@ -81,8 +81,11 @@ const FILE_MAP: Record<string, string> = {
 
 async function githubGetFile(path: string, token: string) {
   const res = await fetch(
-    `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${GITHUB_BRANCH}`,
-    { headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' } }
+    `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}?ref=${GITHUB_BRANCH}&_=${Date.now()}`,
+    {
+      headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' },
+      cache: 'no-store',
+    }
   );
   if (!res.ok) throw new Error(`GitHub GET failed: ${res.status}`);
   return res.json();

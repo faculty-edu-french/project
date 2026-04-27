@@ -6,16 +6,12 @@
       "title": "Leçon 1 : Le réchauffement climatique",
       "blocks": [
         {
+          "type": "objective",
+          "content": "Objectif général : À la fin de la leçon « Agir contre le réchauffement climatique », l’apprenant sera capable de comprendre et de produire un texte écrit cohérent et structuré pour informer et convaincre."
+        },
+        {
           "type": "paragraph",
-          "content": "Leçon « 1 » Agir contre le réchauffement climatique"
-        },
-        {
-          "type": "objective",
-          "content": "Objectif  général : À la fin de la leçon « Agir contre le réchauffement climatique », l’apprenant sera capable de comprendre et de produire un texte écrit cohérent et structuré pour informer et convaincre."
-        },
-        {
-          "type": "objective",
-          "content": "Objectifs de cette leçon, l’apprenant doit être capable de/d’:"
+          "content": "Objectifs de cette leçon, l’apprenant doit être capable de/d’ :"
         },
         {
           "type": "list_item",
@@ -23,7 +19,11 @@
         },
         {
           "type": "list_item",
-          "content": "2. Déterminer les idées principales et secondaires d’un texte lu. 3. Saisir le sens des mots selon le contexte."
+          "content": "2. Déterminer les idées principales et secondaires d’un texte lu."
+        },
+        {
+          "type": "list_item",
+          "content": "3. Saisir le sens des mots selon le contexte."
         },
         {
           "type": "list_item",
@@ -59,16 +59,15 @@
         },
         {
           "type": "image",
-          "content": "/images/m1_lecon1.jpg",
-          "caption": "Illustration de la leçon"
+          "content": "/images/m1_lecon1.jpg"
         },
         {
           "type": "phase",
-          "content": "Phase 1 : Pré-action : (Activation des connaissances) (20 minutes)"
+          "content": "Phase 1 : Pré-action (Activation des connaissances) (20 minutes)"
         },
         {
           "type": "header",
-          "content": "I. \t  Introduction et Motivation : (5 minutes)"
+          "content": "I. Introduction et Motivation : (5 minutes)"
         },
         {
           "type": "instruction",
@@ -83,15 +82,11 @@
           "content": "/images/img-122.jpg"
         },
         {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
+          "type": "instruction",
           "content": "Répondez aux questions suivantes :"
         },
         {
@@ -111,157 +106,89 @@
           "content": ""
         },
         {
+          "type": "phase",
+          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+        },
+        {
           "type": "header",
-          "content": "II. \t Lecture guidée du texte (15 minutes)"
+          "content": "II. Lecture guidée du texte (15 minutes)"
         },
         {
           "type": "task",
           "content": "Micro tâche 1 : Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
         },
         {
-          "type": "phase",
-          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
-        },
-        {
-          "type": "instruction",
-          "content": "Consigne : Lisez le texte suivant, puis répondez aux questions. Agir contre le réchauffement climatique"
-        },
-        {
-          "type": "paragraph",
-          "content": "Pour lutter contre le réchauffement climatique, j’essaie de faire des petites choses à mon échelle au quotidien. Je pense que c’est important que chacun fasse quelque chose à son niveau. Bien sûr, il faudrait aussi que des décisions politiques soient vraiment prises pour protéger l’environnement, mais nous avons tous un pouvoir que nous oublions trop souvent : le pouvoir du consommateur."
-        },
-        {
-          "type": "paragraph",
-          "content": "Tel que je vois les choses, si tout le monde arrêtait d’acheter des produits polluants, on arrêterait tout simplement d’en vendre. Alors, j’essaie de faire les choses à mon échelle en espérant que d’autres feront pareil."
-        },
-        {
-          "type": "paragraph",
-          "content": "Par exemple, j’essaie de n’acheter que des fruits et légumes de saison. J’achète plutôt des produits locaux pour privilégier les circuits courts. Aussi, je fais attention à acheter le moins possible de produits fabriqués à l’étranger, comme ça, je sais que ce que j’achète n’a pas été transporté dans des conteneurs polluants."
-        },
-        {
-          "type": "paragraph",
-          "content": "Je ne demande pas de sacs plastiques quand je fais des courses, car je sais qu’ils se retrouvent dans les océans et sont dévastateurs pour la faune marine."
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "paragraph",
-          "content": "Ensuite, pour mes déplacements, je privilégie plutôt les transports en commun, la marche à pied ou le vélo pour éviter la voiture le plus possible."
-        },
-        {
-          "type": "paragraph",
-          "content": "Bien sûr, quand on vit à la campagne, c’est beaucoup plus difficile de vivre sans voiture, surtout quand on est obligé de faire 20 kilomètres pour faire des courses. Mais quand on vit en centre-ville et que tout est à 2 ou 3 kilomètres à pied, je trouve qu’on n’a pas trop d’excuses."
-        },
-        {
-          "type": "paragraph",
-          "content": "J’aimerais vraiment que le vélo se démocratise en France comme en Allemagne, mais le problème des villes françaises, c’est qu’elles ne sont pas aménagées pour les vélos."
-        },
-        {
-          "type": "paragraph",
-          "content": "Mais je reste plutôt optimiste, les choses commencent à changer, bien que trop lentement à mon goût. De toute façon, je ne suis pas un modèle non plus et je sais que je pollue énormément malgré mes petits gestes."
-        },
-        {
           "type": "link",
-          "content": "https://anyfrench.com/lecture/agir-contre-le-rechauffement-climatique",
-          "url": "https://anyfrench.com/lecture/agir-contre-le-rechauffement-climatique"
+          "url": "/articles/m1_l1/index.html",
+          "label": "📄 Article interactif : Agir contre le réchauffement climatique"
         },
         {
-          "type": "text",
+          "type": "header",
           "content": "Questions guidées (10 minutes)"
         },
         {
-          "type": "text",
-          "content": "Répondez aux questions suivantes :"
-        },
-        {
-          "type": "list_item",
-          "content": "1. Pourquoi l’auteur fait-il attention à ses achats ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "list_item",
-          "content": "2. Quels moyens de transport privilégie-t-il ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "list_item",
-          "content": "3. Quel rôle le consommateur peut-il jouer ?"
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "Déterminez les mots-clés dans le texte et leurs significations selon le contexte) 5 minutes)"
-        },
-        {
-          "type": "paragraph",
-          "content": "o Consommateur : o produits polluants"
-        },
-        {
-          "type": "text",
-          "content": "o circuits courts"
-        },
-        {
-          "type": "paragraph",
-          "content": "o transports en commun o sacs plastiques"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "task",
-          "content": "Micro  tâche  2  : Trouvez l’idée générale du texte ?  (5 minutes)"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "info_box",
-          "content": "LE TEXTE ARGUMENTATIF\n\n1️⃣ Définition : Le texte argumentatif cherche à convaincre ou persuader le lecteur d’adopter une idée ou une attitude.\n• Présente un problème ou un sujet.\n• Expose l’opinion de l’auteur.\n• Fournit arguments et exemples concrets.\nPeut inclure un appel à l’action.\n\n2️⃣ Objectif :\n• Persuader ou convaincre le lecteur.\n• Faire réfléchir sur un sujet.\n• Proposer des solutions ou encourager un comportement.\n\n3️⃣ Caractéristiques principales :\nExemple dans le texte sur le réchauffement\n\n• Problème : Sujet ou question (Ex: Le réchauffement climatique menace la planète)\n• Opinion : Ce que pense l’auteur (Ex: « J’essaie de faire des petites choses à mon échelle »)\n• Arguments : Raisons pour convaincre (Ex: Acheter local, éviter les sacs plastiques, utiliser vélo/transports en commun)\n• Exemples concrets : Actions pour illustrer (Ex: Fruits et légumes de saison, circuits courts, limiter produits importés)\n• Appel à l’action : Invitation à agir (Ex: « Chacun peut agir, nous avons le pouvoir du consommateur »)"
-        },
-        {
           "type": "instruction",
-          "content": "Consigne : l’étudiant clique et surligne la phrase qui exprime l’idée générale → il obtient le feedback immédiat « Correct / Réessayez »."
+          "content": "Déterminez les mots-clés dans le texte et leurs significations selon le contexte (5 minutes)"
+        },
+        {
+          "type": "list_item",
+          "content": "• Consommateur"
+        },
+        {
+          "type": "list_item",
+          "content": "• Produits polluants"
+        },
+        {
+          "type": "list_item",
+          "content": "• Circuits courts"
+        },
+        {
+          "type": "list_item",
+          "content": "• Transports en commun"
+        },
+        {
+          "type": "list_item",
+          "content": "• Sacs plastiques"
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "task",
-          "content": "Micro-tâches 3 : (5 minutes) : Identifiez les connecteurs"
+          "content": "Micro tâche 2 : Trouvez l’idée générale du texte ? (5 minutes)"
         },
         {
-          "type": "paragraph",
-          "content": "• Persuader ou convaincre le lecteur."
+          "type": "input",
+          "content": ""
         },
         {
-          "type": "paragraph",
-          "content": "• Faire réfléchir sur un sujet."
+          "type": "grammar_card",
+          "title": "Le texte argumentatif",
+          "description": "Le texte argumentatif cherche à convaincre ou persuader le lecteur d’adopter une idée ou une attitude.",
+          "structure": "Il présente un problème ou un sujet, expose l’opinion de l’auteur, et fournit des arguments et des exemples concrets.",
+          "examples": [
+            "• Persuader ou convaincre le lecteur.",
+            "• Faire réfléchir sur un sujet.",
+            "• Proposer des solutions ou encourager un comportement."
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "• Proposer des solutions ou encourager un comportement."
+          "type": "grammar_card",
+          "title": "Caractéristiques du texte sur le réchauffement",
+          "description": "",
+          "structure": "Élément -> Explication",
+          "examples": [
+            "• Problème (Sujet) : Le réchauffement climatique menace la planète.",
+            "• Opinion (Ce que pense l'auteur) : « J'essaie de faire des petites choses à mon échelle »",
+            "• Arguments (Raisons) : Acheter local, éviter les sacs plastiques, utiliser le vélo.",
+            "• Exemples concrets : Fruits et légumes de saison, circuits courts.",
+            "• Appel à l'action : « Chacun peut agir, nous avons le pouvoir du consommateur »"
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "• 3️⃣ Caractéristiques principales : Exemple dans le texte sur le réchauffement"
-        },
-        {
-          "type": "paragraph",
-          "content": "logiques (ex. : “Alors”, “Aussi”, “Mais”) et expliquer leur rôle."
+          "type": "task",
+          "content": "Micro-tâches 3 : (5 minutes) : Identifiez les connecteurs logiques (ex. : “Alors”, “Aussi”, “Mais”) et expliquez leur rôle."
         },
         {
           "type": "input",
@@ -276,18 +203,6 @@
           "content": ""
         },
         {
-          "type": "text",
-          "content": "Élément Problème"
-        },
-        {
-          "type": "text",
-          "content": "Opinion"
-        },
-        {
-          "type": "text",
-          "content": "Arguments"
-        },
-        {
           "type": "task",
           "content": "Micro-tâches 5 : (5 minutes) Déterminez les phrases difficiles à comprendre pour vous ?"
         },
@@ -296,12 +211,88 @@
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "instruction",
           "content": "Mettez vrai ou faux devant chaque phrase : (5 minutes)"
         },
         {
-          "type": "list_item",
-          "content": "1. L’auteur pense que chacun peut agir contre le réchauffement climatique.  ( ) 2. L’auteur utilise souvent la voiture pour ses déplacements.                          ( ) 3. Les sacs plastiques ont un impact sur la faune marine.                                ( ) 4. Acheter des produits locaux réduit le transport polluant.                             ( ) 5. Est-ce que les gouvernements ont un rôle d’après le texte.                          ( )"
+          "type": "mcq",
+          "id": "m1l1q1",
+          "question": "1. L’auteur pense que chacun peut agir contre le réchauffement climatique.",
+          "options": [
+            {
+              "id": "vrai",
+              "text": "Vrai"
+            },
+            {
+              "id": "faux",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "vrai"
+        },
+        {
+          "type": "mcq",
+          "id": "m1l1q2",
+          "question": "2. L’auteur utilise souvent la voiture pour ses déplacements.",
+          "options": [
+            {
+              "id": "vrai",
+              "text": "Vrai"
+            },
+            {
+              "id": "faux",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "faux"
+        },
+        {
+          "type": "mcq",
+          "id": "m1l1q3",
+          "question": "3. Les sacs plastiques ont un impact sur la faune marine.",
+          "options": [
+            {
+              "id": "vrai",
+              "text": "Vrai"
+            },
+            {
+              "id": "faux",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "vrai"
+        },
+        {
+          "type": "mcq",
+          "id": "m1l1q4",
+          "question": "4. Acheter des produits locaux réduit le transport polluant.",
+          "options": [
+            {
+              "id": "vrai",
+              "text": "Vrai"
+            },
+            {
+              "id": "faux",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "vrai"
+        },
+        {
+          "type": "mcq",
+          "id": "m1l1q5",
+          "question": "5. Est-ce que les gouvernements ont un rôle d’après le texte.",
+          "options": [
+            {
+              "id": "vrai",
+              "text": "Vrai"
+            },
+            {
+              "id": "faux",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "vrai"
         },
         {
           "type": "task",
@@ -309,11 +300,7 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots."
-        },
-        {
-          "type": "paragraph",
-          "content": "« Je ne demande pas de sacs plastiques car ils sont dévastateurs pour la faune marine. »"
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots : « Je ne demande pas de sacs plastiques car ils sont dévastateurs pour la faune marine. »"
         },
         {
           "type": "input",
@@ -325,11 +312,7 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne :  Écrivez (2 à 3 lignes) : Quelles actions écologiques faites-vous dans votre vie"
-        },
-        {
-          "type": "paragraph",
-          "content": "quotidienne pour lutter contre le réchauffement climatique ?"
+          "content": "Consigne : Écrivez (2 à 3 lignes) : Quelles actions écologiques faites-vous dans votre vie quotidienne pour lutter contre le réchauffement climatique ?"
         },
         {
           "type": "input",
@@ -337,63 +320,36 @@
         },
         {
           "type": "task",
-          "content": "Micro \ttâche \t8 : \t(5 minutes(  :  Regardez cette vidéo          pour          bien comprendre le changement climatique : comprendre ses      causes      et      ses conséquences pour mieux réagir https://youtu.be/NfaeoC"
+          "content": "Micro tâche 8 : (5 minutes) : Regardez cette vidéo pour bien comprendre le changement climatique : comprendre ses causes et ses conséquences pour mieux réagir"
         },
         {
-          "type": "text",
-          "content": "ORuzk"
+          "type": "video",
+          "title": "Le changement climatique",
+          "content": "https://youtu.be/WsILHnwc4As"
         },
         {
-          "type": "text",
-          "content": "Structures à observer :"
-        },
-        {
-          "type": "question",
-          "content": "Les connecteurs d’opinion : je pense que, je trouve que…          Les connecteurs d’exemple : par exemple…"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "Les connecteurs d’opposition : mais, pourtant…"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "question",
-          "content": "Les structures pour exprimer un souhait : J’aimerais que…"
-        },
-        {
-          "type": "input",
-          "content": ""
+          "type": "grammar_card",
+          "title": "Structures à observer :",
+          "description": "",
+          "structure": "",
+          "examples": [
+            "• Les connecteurs d’opinion : je pense que, je trouve que…",
+            "• Les connecteurs d’exemple : par exemple…",
+            "• Les connecteurs d’opposition : mais, pourtant…",
+            "• Les structures pour exprimer un souhait : J’aimerais que…"
+          ]
         },
         {
           "type": "task",
           "content": "Micro-tâches 9 : Discussion en groupes (10 minutes)"
         },
         {
-          "type": "paragraph",
+          "type": "instruction",
           "content": "Quelles actions peuvent être mises en œuvre à l’université ou dans votre ville pour lutter contre le réchauffement climatique ?"
         },
         {
-          "type": "text",
-          "content": "Déroulement:"
-        },
-        {
           "type": "paragraph",
-          "content": "• Les étudiants travaillent en petits groupes (3 à 4 étudiants)."
-        },
-        {
-          "type": "paragraph",
-          "content": "• Chaque groupe échange ses idées envers la tâche visée et note les propositions les plus convenables."
+          "content": "🗣️ Déroulement:\n• Les étudiants travaillent en petits groupes (3 à 4 étudiants).\n• Chaque groupe échange ses idées et note les propositions les plus convenables."
         },
         {
           "type": "input",
@@ -405,46 +361,42 @@
         },
         {
           "type": "paragraph",
-          "content": "Tâche Finale: Rédiger un message de sensibilisation écologique (format publication Facebook / Instagram)"
+          "content": "📌 Tâche Finale : Rédiger un message de sensibilisation écologique (format publication Facebook / Instagram)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : L’université de Minia souhaite un article de sensibilisation contre le réchauffement climatique. Elle demande aux étudiants de créer un article officiel à diffuser dans les réseaux sociaux de l’université."
         },
         {
           "type": "paragraph",
-          "content": "Consigne  : L’université de Minia souhaite un article de sensibilisation contre le réchauffement \tclimatique. Elle demande aux étudiants de créer un article officiel à diffuser dans les réseaux sociaux de l’université."
-        },
-        {
-          "type": "paragraph",
-          "content": "La \tdemande \t: En tant qu’étudiant, rédigez article (8 à 10 lignes) pour sensibiliser vos camarades aux comportement simples qui réduisent le réchauffement climatique. La publication doit être claire, motivante et adaptée aux réseaux sociaux."
+          "content": "La demande : En tant qu’étudiant, rédigez un article (8 à 10 lignes) pour sensibiliser vos camarades aux comportements simples qui réduisent le réchauffement climatique. La publication doit être claire, motivante et adaptée aux réseaux sociaux."
         },
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
         },
         {
           "type": "phase",
-          "content": "Phase  4  :  évaluation  des  produits  des  étudiants :  Durée  :    10  minutes"
+          "content": "Phase 4 : Évaluation des produits des étudiants : Durée : 10 minutes"
         },
         {
           "type": "paragraph",
-          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, structure), comparez avec vos camarades et corrigez si nécessaire."
+          "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, structure), comparez avec vos collèges et corrigez son texte si nécessaire."
         },
         {
           "type": "paragraph",
-          "content": "Discuter en groupe : quelles actions pourraient être mises en place dans votre ville ou votre quartier ?"
+          "content": "Discutez en groupe : quelles actions pourraient être mises en place dans votre ville ou votre quartier ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "paragraph",
-          "content": "É- évaluation :  Répondez à ces questions :"
+          "type": "header",
+          "content": "É-évaluation : Répondez à ces questions :"
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Écrivez quatre idées secondaires ?"
         },
         {
@@ -452,7 +404,7 @@
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Pourquoi l’auteur pense-t-il que les actions individuelles sont importantes ?"
         },
         {
@@ -460,7 +412,7 @@
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Donnez un autre exemple d’action écologique que l’auteur aurait pu mentionner ?"
         },
         {
@@ -468,7 +420,7 @@
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Identifiez les mots clés du texte ?"
         },
         {
@@ -476,7 +428,7 @@
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Trouvez un (autre) titre qui donne bien la clé du texte ?"
         },
         {
@@ -484,7 +436,7 @@
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Qui doit agir contre le réchauffement climatique ?"
         },
         {
@@ -492,7 +444,7 @@
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Identifiez l’opinion de l’auteur et ses arguments principaux."
         },
         {
@@ -500,19 +452,15 @@
           "content": ""
         },
         {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "paragraph",
-          "content": "− Comparez ces pratiques économiques de l’auteur pour la protection de l’environnement selon votre propre expérience."
+          "type": "question",
+          "content": "− Comparez ces pratiques économiques de l’auteur pour la protection de l’environnement selon votre propre environnement."
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "question",
           "content": "− Proposez une critique ou un commentaire sur les actions proposées."
         },
         {
@@ -520,24 +468,12 @@
           "content": ""
         },
         {
-          "type": "paragraph",
-          "content": "− En petit groupe, déterminez avec tes camarades des autres causes de réchauffement climatique."
+          "type": "question",
+          "content": "− En petit groupe, déterminez avec vos camarades des autres causes du réchauffement climatique."
         },
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Vérifier ta repense correcte"
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "paragraph",
-          "content": "Module « 1 » L’environnement et le développement durable"
         }
       ]
     },

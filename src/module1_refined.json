@@ -236,30 +236,6 @@
           "content": ""
         },
         {
-          "type": "grammar_card",
-          "title": "Le texte argumentatif",
-          "description": "Le texte argumentatif cherche à convaincre ou persuader le lecteur d’adopter une idée ou une attitude.",
-          "structure": "Il présente un problème ou un sujet, expose l’opinion de l’auteur, et fournit des arguments et des exemples concrets.",
-          "examples": [
-            "• Persuader ou convaincre le lecteur.",
-            "• Faire réfléchir sur un sujet.",
-            "• Proposer des solutions ou encourager un comportement."
-          ]
-        },
-        {
-          "type": "grammar_card",
-          "title": "Caractéristiques du texte sur le réchauffement",
-          "description": "",
-          "structure": "Élément -> Explication",
-          "examples": [
-            "• Problème (Sujet) : Le réchauffement climatique menace la planète.",
-            "• Opinion (Ce que pense l'auteur) : « J'essaie de faire des petites choses à mon échelle »",
-            "• Arguments (Raisons) : Acheter local, éviter les sacs plastiques, utiliser le vélo.",
-            "• Exemples concrets : Fruits et légumes de saison, circuits courts.",
-            "• Appel à l'action : « Chacun peut agir, nous avons le pouvoir du consommateur »"
-          ]
-        },
-        {
           "type": "task",
           "content": "Micro-tâches 3 : (5 minutes) : Identifiez les connecteurs logiques (ex. : “Alors”, “Aussi”, “Mais”) et expliquez leur rôle."
         },
@@ -274,6 +250,23 @@
         {
           "type": "input",
           "content": ""
+        },
+        {
+          "type": "info_box",
+          "content": "Des informations supplémentaires : LE TEXTE ARGUMENTATIF\n\n1️⃣ Définition : Le texte argumentatif cherche à convaincre ou persuader le lecteur d’adopter une idée ou une attitude.\n• Présente un problème ou un sujet.\n• Expose l’opinion de l’auteur.\n• Fournit arguments et exemples concrets.\n• Peut inclure un appel à l’action.\n\n2️⃣ Objectif :\n• Persuader ou convaincre le lecteur.\n• Faire réfléchir sur un sujet.\n• Proposer des solutions ou encourager un comportement."
+        },
+        {
+          "type": "grammar_card",
+          "title": "3️⃣ Caractéristiques principales :",
+          "description": "Exemple dans le texte sur le réchauffement",
+          "structure": "Élément ➡️ Explication ➡️ Exemple",
+          "examples": [
+            "• Problème : Sujet ou question ➡️ Le réchauffement climatique menace la planète.",
+            "• Opinion : Ce que pense l'auteur ➡️ « J'essaie de faire des petites choses à mon échelle »",
+            "• Arguments : Raisons pour convaincre ➡️ Acheter local, éviter les sacs plastiques, utiliser le vélo/transports en commun.",
+            "• Exemples concrets : Actions pour illustrer ➡️ Fruits et légumes de saison, circuits courts, limiter produits importés.",
+            "• Appel à l'action : Invitation à agir ➡️ « Chacun peut agir, nous avons le pouvoir du consommateur »"
+          ]
         },
         {
           "type": "task",

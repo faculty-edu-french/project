@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-// Token configured at build time via .env.local (VITE_GH_TOKEN)
-const DEFAULT_GH_TOKEN: string = import.meta.env.VITE_GH_TOKEN ?? '';
+// Token is stored in localStorage after one-time admin setup
+
 // ── i18n ────────────────────────────────────────────────────
 const T: Record<string, Record<string, string>> = {
   fr: {
@@ -125,7 +125,7 @@ export default function AdminPanel({ onClose, allData }: AdminPanelProps) {
   const [authed, setAuthed] = useState(false);
   const [uInput, setUInput] = useState('');
   const [pInput, setPInput] = useState('');
-  const [tokenInput] = useState(() => localStorage.getItem('admin_gh_token') || DEFAULT_GH_TOKEN);
+  const [tokenInput] = useState<string>(() => localStorage.getItem('admin_gh_token') || '');
   const [loginErr, setLoginErr] = useState('');
 
   // Navigation

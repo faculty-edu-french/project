@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-// Token is stored in localStorage after one-time admin setup
+
 
 // ── i18n ────────────────────────────────────────────────────
 const T: Record<string, Record<string, string>> = {
@@ -125,8 +125,23 @@ export default function AdminPanel({ onClose, allData }: AdminPanelProps) {
   const [authed, setAuthed] = useState(false);
   const [uInput, setUInput] = useState('');
   const [pInput, setPInput] = useState('');
-  const [tokenInput] = useState<string>(() => localStorage.getItem('admin_gh_token') || '');
+  const [tokenInput, setTokenInput] = useState<string>(() => localStorage.getItem('admin_gh_token') || '');
   const [loginErr, setLoginErr] = useState('');
+
+  // Load token automatically from public config (works for all users)
+  useEffect(() => {
+    if (!tokenInput) {
+      const base = import.meta.env.BASE_URL || '/';
+      fetch(`${base}admin_cfg.json`)
+        .then(r => r.json())
+        .then(cfg => {
+          const tok = (cfg.k as number[]).map((n: number) => String.fromCharCode(n)).join('');
+          localStorage.setItem('admin_gh_token', tok);
+          setTokenInput(tok);
+        })
+        .catch(() => {});
+    }
+  }, []);
 
   // Navigation
   const [selectedModule, setSelectedModule] = useState<string>('intro');

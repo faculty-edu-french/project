@@ -2045,17 +2045,10 @@
           "type": "instruction",
           "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots. « Il permet de réduire la pollution. »"
         },
+        { "type": "input", "content": "" }, { "type": "input", "content": "" }, { "type": "input", "content": "" },
         {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
+          "type": "image",
+          "content": "/images/m1_lecon3_3.png"
         },
         {
           "type": "task",
@@ -2064,10 +2057,6 @@
         {
           "type": "instruction",
           "content": "Consigne : À travers cette image, rédigez un court paragraphe (3–4 lignes) mettant en valeur les avantages du covoiturage."
-        },
-        {
-          "type": "image",
-          "content": "/images/m1_lecon3_3.png"
         },
         { "type": "input", "content": "" }, { "type": "input", "content": "" }, { "type": "input", "content": "" },
         {
@@ -2111,18 +2100,7 @@
           "type": "paragraph",
           "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
         },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
+        { "type": "input", "content": "" }, { "type": "input", "content": "" }, { "type": "input", "content": "" },
         {
           "type": "task",
           "content": "Micro-tâches 10 : Discussion en groupes : (10 minutes)"
@@ -2132,17 +2110,10 @@
           "content": "En observant cette carte mentale, discutez avec vos collègues sur les éléments essentiels du covoiturage comme les avantages, les inconvénients, les solutions et comment faire pour encourager cette pratique dans notre société."
         },
         {
-          "type": "input",
-          "content": ""
+          "type": "iframe",
+          "content": "/articles/m1_l3_mindmap.html"
         },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
+        { "type": "input", "content": "" }, { "type": "input", "content": "" }, { "type": "input", "content": "" },
         {
           "type": "phase",
           "content": "Phase 3 : Post-action (Tâche finale) (20 minutes)"

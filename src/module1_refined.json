@@ -1088,93 +1088,35 @@
       "title": "Leçon 3 : Le covoiturage",
       "blocks": [
         {
-          "type": "objective",
-          "content": "Objectif général : À la fin de la leçon « Le covoiturage », l’apprenant sera capable de comprendre un texte explicatif et de produire un texte écrit cohérent et structuré pour informer et convaincre."
-        },
-        {
-          "type": "paragraph",
-          "content": "À la fin de cette leçon, l’apprenant doit être capable de :"
-        },
-        {
-          "type": "list_item",
-          "content": "1. Comprendre l’idée générale et déterminer les idées principales et secondaires d’un texte lu."
-        },
-        {
-          "type": "list_item",
-          "content": "2. Faire ressortir les mots clés d’un texte lu."
-        },
-        {
-          "type": "list_item",
-          "content": "3. Lier entre ses connaissances antérieures et les informations d’un texte lu. 4. Résumer correctement un texte lu."
-        },
-        {
-          "type": "list_item",
-          "content": "5. Dégager le sens implicite existant entre les lignes."
-        },
-        {
-          "type": "list_item",
-          "content": "6. Évaluer Porter un jugement d’un texte lu à partir des critères pertinents. 7. Employer des mots adéquats à la situation."
-        },
-        {
-          "type": "list_item",
-          "content": "8. Écrire des phrases correctes et cohérentes."
-        },
-        {
-          "type": "list_item",
-          "content": "9. S’exprimer et se faire comprendre à l’écrit en organisant les idées. 10. Écrire un texte clair et bien structuré."
-        },
-        {
-          "type": "list_item",
-          "content": "11. Créer une atmosphère positive et agréable en classe de FLE."
-        },
-        {
-          "type": "list_item",
-          "content": "12. Renforcer le sentiment de soutien pédagogique chez les apprenants."
-        },
-        {
-          "type": "image",
-          "content": "/images/m1_lecon3.jpg",
-          "caption": "Illustration de la leçon"
-        },
-        {
-          "type": "phase",
-          "content": "Phase 1 : Pré-action : Activation des connaissances) (20 minutes)"
-        },
-        {
-          "type": "header",
-          "content": "I. \t  Introduction et Motivation : (5 minutes)"
+          "type": "image_group",
+          "images": [
+            "/images/m1_lecon3_1.png",
+            "/images/m1_lecon3_2.png"
+          ]
         },
         {
           "type": "instruction",
           "content": "Consigne : Observez ce que vous voyez et prédisez le thème de la leçon."
         },
         {
-          "type": "image",
-          "content": "/images/img-192.jpg"
-        },
-        {
-          "type": "image",
-          "content": "/images/img-193.jpg"
+          "type": "question",
+          "content": "1. Que voyez-vous dans ces images ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "paragraph",
-          "content": "Répondez aux questions suivantes: 1. Que voyez-vous dans ces images ?"
-        },
-        {
           "type": "input",
           "content": ""
         },
         {
-          "type": "list_item",
+          "type": "question",
           "content": "2. Selon vous, quel est le thème de la leçon ?"
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1193,16 +1135,12 @@
           "content": ""
         },
         {
-          "type": "header",
-          "content": "II. \t Lecture guidée du texte (15 minutes)"
-        },
-        {
-          "type": "paragraph",
-          "content": "Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
+          "type": "input",
+          "content": ""
         },
         {
           "type": "phase",
-          "content": "Phase 2 : Action (Compréhension approfondie) (60 minutes)"
+          "content": "Phase 2 : Action (Compréhension approfondie)"
         },
         {
           "type": "instruction",
@@ -1218,11 +1156,7 @@
         },
         {
           "type": "paragraph",
-          "content": "Beaucoup de gens racontent leurs expériences positives. Par exemple, Antoine, un étudiant de Nantes, dit qu’il a découvert cette pratique grâce à une application mobile : « J’ai tout de suite aimé l’ambiance dans la voiture. On discute, on écoute de la musique, et le trajet paraît plus court. » Pour lui, le covoiturage est une manière agréable de faire des rencontres tout en économisant de l’argent. D’autres apprécient surtout le côté écologique : en remplissant une seule voiture au lieu de trois, on émet beaucoup moins de CO₂. Selon le ministère de la Transition écologique, chaque année, plusieurs millions de trajets sont réalisés ainsi, ce qui prouve que cette habitude entre vraiment dans le quotidien des Français."
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
+          "content": "Beaucoup de gens racontenturs expériences positives. Par exemple, Antoine, un étudiant de Nantes, dit qu’il a découvert cette pratique grâce à une application mobile : « J’ai tout de suite aimé l’ambiance dans la voiture. On discute, on écoute de la musique, et le trajet paraît plus court. » Pour lui, le covoiturage est une manière agréable de faire des rencontres tout en économisant de l’argent. D’autres apprécient surtout le côté écologique : en remplissant une seule voiture au lieu de trois, on émet beaucoup moins de CO₂. Selon le ministère de la Transition écologique, chaque année, plusieurs millions de trajets sont réalisés ainsi, ce qui prouve que cette habitude entre vraiment dans le quotidien des Français."
         },
         {
           "type": "paragraph",
@@ -1230,124 +1164,104 @@
         },
         {
           "type": "link",
-          "content": "https://leconjugueur.lefigaro.fr",
-          "url": "https://leconjugueur.lefigaro.fr"
+          "url": "https://www.bien-ecrire.com"
         },
         {
-          "type": "text",
+          "type": "header",
           "content": "Questions guidées (10 minutes)"
         },
         {
-          "type": "text",
+          "type": "instruction",
           "content": "Choisissez la bonne réponse :"
         },
         {
-          "type": "text",
-          "content": "ENRICHISSANTES Des informations enrichissantes"
+          "type": "mcq",
+          "id": "m1l3_q1",
+          "question": "1. Le covoiturage permet de…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Voyager plus cher"
+            },
+            {
+              "id": "b",
+              "text": "Économiser de l'argent"
+            },
+            {
+              "id": "c",
+              "text": "Acheter une voiture"
+            }
+          ],
+          "correctAnswer": "b"
         },
         {
-          "type": "question",
-          "content": "1. Le covoiturage permet de… a) Voyager plus cher"
+          "type": "mcq",
+          "id": "m1l3_q2",
+          "question": "2. Selon le texte, le covoiturage est…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Un service professionnel de transport"
+            },
+            {
+              "id": "b",
+              "text": "Une solution écologique et solidaire"
+            },
+            {
+              "id": "c",
+              "text": "Une obligation légale"
+            }
+          ],
+          "correctAnswer": "b"
         },
         {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "b) Économiser de l’argent c) Acheter une voiture"
-        },
-        {
-          "type": "question",
-          "content": "2. Selon le texte, le covoiturage est…"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Présentation du texte explicatif:"
-        },
-        {
-          "type": "paragraph",
-          "content": "Le texte explicatif est un texte qui a pour objectif d’expliquer un phénomène, une idée ou une situation. Il répond souvent à des questions comme : Pourquoi ? Comment ? Quels sont les effets ?"
-        },
-        {
-          "type": "paragraph",
-          "content": "a) Un service professionnel de transport b) Une solution écologique et solidaire c) Une obligation légale"
-        },
-        {
-          "type": "question",
-          "content": "3. Les passagers apprécient surtout… a) Les horaires stricts."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "b) Les rencontres et la discussion. c) Conduire seuls."
-        },
-        {
-          "type": "task",
-          "content": "Micro-tâches 2 : (5 minutes) Trouvez dans le texte trois"
-        },
-        {
-          "type": "text",
-          "content": "Caractéristiques principales:"
-        },
-        {
-          "type": "paragraph",
-          "content": "• Il donne des informations précises."
-        },
-        {
-          "type": "question",
-          "content": "• Il utilise des connecteurs logiques : car, parce que, ainsi, donc, cependant…"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "paragraph",
-          "content": "• Il présente causes, conséquences, solutions."
-        },
-        {
-          "type": "paragraph",
-          "content": "• Il peut contenir des exemples pour aider à comprendre."
-        },
-        {
-          "type": "paragraph",
-          "content": "Dans le texte sur le covoiturage, l’auteur :"
-        },
-        {
-          "type": "paragraph",
-          "content": "avantages et un inconvénient du covoiturage ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "text",
-          "content": "• Définit le covoiturage."
-        },
-        {
-          "type": "paragraph",
-          "content": "• Explique ses avantages économiques et écologiques."
-        },
-        {
-          "type": "text",
-          "content": "• Évoque certains inconvénients."
-        },
-        {
-          "type": "paragraph",
-          "content": "• Illustre ses propos par des exemples et des témoignages."
+          "type": "mcq",
+          "id": "m1l3_q3",
+          "question": "3. Les passagers apprécient surtout…",
+          "options": [
+            {
+              "id": "a",
+              "text": "Les horaires stricts"
+            },
+            {
+              "id": "b",
+              "text": "Les rencontres et la discussion"
+            },
+            {
+              "id": "c",
+              "text": "Conduire seuls"
+            }
+          ],
+          "correctAnswer": "b"
         },
         {
           "type": "task",
-          "content": "Micro tâche 3 : (5 minutes) Identifiez l’idée essentielle du texte ?"
+          "content": "Micro-tâches 2 : (5 minutes)"
+        },
+        {
+          "type": "question",
+          "content": "Trouvez dans le texte trois avantages et un inconvénient du covoiturage ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "info_box",
+          "title": "Présentation du texte explicatif",
+          "content": "Le texte explicatif est un texte qui a pour objectif d’expliquer un phénomène, un événement ou un concept pour le faire comprendre au lecteur.\n\nCaractéristiques principales:\n• Il donne des informations précises.\n• Il utilise des connecteurs logiques : car, parce que, ainsi, donc, cependant…\n• Il présente causes, conséquences, solutions.\n• Il peut contenir des exemples pour aider à comprendre.\n\nDans le texte sur le covoiturage, l’auteur :\n• Définit le covoiturage.\n• Explique ses avantages économiques et écologiques.\n• Évoque certains inconvénients.\n• Illustre ses propos par des exemples et des témoignages."
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 3 : (5 minutes)"
+        },
+        {
+          "type": "question",
+          "content": "Identifiez l’idée essentielle du texte ?"
         },
         {
           "type": "input",
@@ -1355,15 +1269,15 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâches 4 : (5 minutes) Résumez chaque paragraphe en une phrase ?"
+          "content": "Micro-tâches 4 : (5 minutes)"
+        },
+        {
+          "type": "question",
+          "content": "Résumez chaque paragraphe en une phrase ?"
         },
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
         },
         {
           "type": "input",
@@ -1371,30 +1285,90 @@
         },
         {
           "type": "task",
-          "content": "Micro-tâches 5 : (5 minutes) Déterminez les phrases difficiles à comprendre pour vous ?"
+          "content": "Micro-tâches 5 : (5 minutes)"
+        },
+        {
+          "type": "question",
+          "content": "Déterminez les phrases difficiles à comprendre pour vous."
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "header",
           "content": "Mettez vrai ou faux devant chaque phrase : (5 minutes)"
         },
         {
-          "type": "list_item",
-          "content": "1. Le covoiturage est un service professionnel. ( ) 2. Il permet de réduire les frais du trajet. ( )"
+          "type": "mcq",
+          "id": "m1l3_q4",
+          "question": "1. Le covoiturage est un service professionnel.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Vrai"
+            },
+            {
+              "id": "b",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "b"
         },
         {
-          "type": "list_item",
-          "content": "3. Le covoiturage ne contribue pas à l’écologie. ( ) 4. Il favorise les relations sociales. ( )"
+          "type": "mcq",
+          "id": "m1l3_q5",
+          "question": "2. Il permet de réduire les embouteillages.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Vrai"
+            },
+            {
+              "id": "b",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "a"
+        },
+        {
+          "type": "mcq",
+          "id": "m1l3_q6",
+          "question": "3. Le covoiturage ne contribue pas à l’écologie.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Vrai"
+            },
+            {
+              "id": "b",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "b"
+        },
+        {
+          "type": "mcq",
+          "id": "m1l3_q7",
+          "question": "4. Il favorise les relations sociales.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Vrai"
+            },
+            {
+              "id": "b",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "a"
         },
         {
           "type": "task",
           "content": "Micro-tâches 6 : (5 minutes) : Corrigez les phrases suivantes ?"
         },
         {
-          "type": "list_item",
+          "type": "question",
           "content": "1. Le covoiturage réduire la pollution."
         },
         {
@@ -1402,7 +1376,7 @@
           "content": ""
         },
         {
-          "type": "list_item",
+          "type": "question",
           "content": "2. Les passagers partage les frais."
         },
         {
@@ -1410,7 +1384,7 @@
           "content": ""
         },
         {
-          "type": "list_item",
+          "type": "question",
           "content": "3. C’est une solution économique et il protège l’environnement."
         },
         {
@@ -1418,7 +1392,7 @@
           "content": ""
         },
         {
-          "type": "list_item",
+          "type": "question",
           "content": "4. Beaucoup personnes utilisent covoiturage."
         },
         {
@@ -1431,63 +1405,69 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots. « Il permet de réduire la pollution. »"
+          "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots. « Il permet de rouler moins cher, de rencontrer du monde et de réduire la pollution. »"
         },
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
         },
         {
           "type": "task",
-          "content": "Micro-tâches 8 : Mini-production : (5 minutes)                                                               Consigne :   À travers cette image, rédigez un court paragraphe (3–4 lignes) mettant en"
+          "content": "Micro-tâches 8 : Mini-production : (5 minutes)"
         },
         {
-          "type": "text",
-          "content": "valeur les avantages du covoiturage."
+          "type": "instruction",
+          "content": "Rédigez deux phrases pour mettre en valeur les avantages du covoiturage."
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "paragraph",
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "header",
           "content": "Structures à observer : (5 minutes)"
         },
         {
-          "type": "text",
-          "content": "Exprimer l’utilité / l’avantage"
+          "type": "grammar_card",
+          "title": "1. Exprimer l'utilité / l'avantage",
+          "description": "",
+          "structure": "Il permet de + infinitif",
+          "examples": [
+            "• Il permet de rouler moins cher, de rencontrer du monde et de réduire la pollution."
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "Structure : Il permet de + infinitif"
+          "type": "grammar_card",
+          "title": "2. Exprimer la conséquence",
+          "description": "",
+          "structure": "ce qui + verbe",
+          "examples": [
+            "• ce qui prouve que cette habitude entre vraiment dans le quotidien des Français."
+          ]
         },
         {
           "type": "task",
-          "content": "Micro tâche 9 : (5 minutes) Regardez cette vidéo pour bien comprendre qu’est-ce que signifie le covoit : https://toutenfrancais.tv/fle-"
+          "content": "Micro tâche 9 : (5 minutes)"
         },
         {
-          "type": "text",
-          "content": "covoiturage-a2"
+          "type": "instruction",
+          "content": "Regardez cette vidéo pour bien comprendre ce que signifie le covoiturage :\nhttps://toutenfrancais.tv/fle-covoiturage-a2"
         },
         {
           "type": "paragraph",
           "content": "Rédigez un court résumé de ce que vous avez compris de cette vidéo."
         },
         {
-          "type": "paragraph",
-          "content": "Malgré ces petits problèmes, le covoiturage reste une solution responsable."
+          "type": "input",
+          "content": ""
         },
         {
-          "type": "text",
-          "content": "Exprimer la conséquence"
-        },
-        {
-          "type": "paragraph",
-          "content": "Structure : ce qui + verbe"
+          "type": "input",
+          "content": ""
         },
         {
           "type": "task",
@@ -1495,7 +1475,7 @@
         },
         {
           "type": "paragraph",
-          "content": "En observant cette carte mentale discutez avec vos collèges sur les éléments essentiels du covoiturage comme les avantages, les inconvénients, les solutions et comment faire pour encourager ce pratique dans notre société."
+          "content": "En observant cette carte mentale discutez avec vos collèges sur les éléments essentiels du covoiturage."
         },
         {
           "type": "input",
@@ -1510,56 +1490,56 @@
           "content": "Tâche finale (avec modèle + aide lexicale)"
         },
         {
-          "type": "paragraph",
-          "content": "Consigne: Chaque étudiant utilise les idées générées pendant la discussion."
+          "type": "instruction",
+          "content": "Consigne: Chaque étudiant utilise les idées générées pendant la discussion.\nImaginez que vous êtes membre d’un club universitaire de développement durable. Écrivez un texte (8-10 lignes) pour inciter les étudiants à utiliser le covoiturage."
         },
         {
           "type": "paragraph",
-          "content": "Imaginez que vous êtes membre d’un club universitaire de développement durable. Rédigez un article (8–10 lignes) pour convaincre vos camarades d’adopter le covoiturage pour leurs déplacements quotidiens (université, travail, sorties)."
+          "content": "📌 Le texte doit contenir:"
         },
         {
-          "type": "text",
-          "content": "Le texte doit contenir:"
-        },
-        {
-          "type": "text",
+          "type": "list_item",
           "content": "• Une définition du covoiturage."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "• Son importance pour les étudiants et les habitants."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "• Les avantages principaux (économiques, écologiques, sociaux)."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "• Les difficultés possibles liées au covoiturage."
         },
         {
-          "type": "paragraph",
+          "type": "list_item",
           "content": "• Une conclusion motivante incitant à changer les habitudes de transport."
         },
         {
-          "type": "text",
-          "content": "Les Annexes"
+          "type": "paragraph",
+          "content": "📌 Outils interactifs fournis:"
         },
         {
-          "type": "text",
-          "content": "Outils interactifs fournis:"
+          "type": "list_item",
+          "content": "• Banque de connecteurs : d’abord, ensuite, en plus, par exemple, mais, pourtant, enfin…"
         },
         {
-          "type": "question",
-          "content": "▪ Banque de connecteurs (d’abord, ensuite, en plus, par exemple, mais, pourtant, enfin…)"
+          "type": "list_item",
+          "content": "• Aide lexicale : covoiturage, trajet, partager, frais, carburant, pollution, application, convivial, écologie…"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "question",
-          "content": "▪ Aide lexicale (covoiturage, trajet, partager, frais, carburant, pollution, application, écologique, solidaire…)"
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1567,99 +1547,71 @@
         },
         {
           "type": "phase",
-          "content": "Phase  4  :  évaluation  des  produits  des  étudiants :  Durée  :    10  minutes"
+          "content": "Phase 4 : Évaluation des produits des étudiants : Durée : 10 minutes"
         },
         {
           "type": "paragraph",
-          "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe, organisation des idées), comparez avec vos collèges et corrigez son texte si nécessaire."
+          "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe), comparez avec vos camarades et corrigez le texte si nécessaire."
+        },
+        {
+          "type": "header",
+          "content": "É- évaluation : (10 minutes)"
+        },
+        {
+          "type": "question",
+          "content": "− Écrivez trois idées secondaires du texte ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "paragraph",
-          "content": "É- évaluation : (10 minutes)   Répondez à ces questions :"
-        },
-        {
-          "type": "list_item",
-          "content": "1. Écrivez trois idées secondaires du texte ?"
+          "type": "question",
+          "content": "− Pourquoi certains étudiants ne font-ils pas de covoiturage ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "list_item",
-          "content": "2. Quels sont les avantages du covoiturage ?"
+          "type": "question",
+          "content": "− Identifiez les mots clés du texte ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "list_item",
-          "content": "3. Pourquoi \tcertains \tétudiants \tne \tfont-ils \tpas \tde \tcovoiturage \t?"
+          "type": "question",
+          "content": "− Trouvez un (autre) titre qui reflète bien le texte ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "list_item",
-          "content": "4. Identifiez les mots clés du texte ?"
+          "type": "question",
+          "content": "− Quelles solutions le texte propose-t-il pour encourager le covoiturage ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "list_item",
-          "content": "5. Trouvez un (autre) titre qui qui reflète bien le texte ?"
+          "type": "question",
+          "content": "− En petit groupe, déterminez avec tes camarades des autres causes qui empêchent le covoiturage ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
-          "type": "list_item",
-          "content": "6. Quelles solutions le texte propose-t-il pour encourager le covoiturage ?"
+          "type": "question",
+          "content": "− Pensez-vous que ce texte encourage le covoiturage ? Justifiez votre réponse à partir du texte ?"
         },
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "list_item",
-          "content": "7. En petit groupe, déterminez avec tes camarades des autres causes qui empêchent le covoiturage :"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "list_item",
-          "content": "8. Pensez-vous que ce texte encourage le covoiturage ? Justifiez votre réponse à l’aide de deux éléments du texte."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "text",
-          "content": "Vérifier ta repense correcte"
-        },
-        {
-          "type": "text",
-          "content": "Les Annexes"
-        },
-        {
-          "type": "paragraph",
-          "content": "Module « 2 » La technologie et la société."
         }
       ]
     }

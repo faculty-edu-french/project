@@ -58,10 +58,6 @@
           "content": "11. Éveiller la curiosité et l’intérêt des apprenants à travers des activités d’apprentissage variées."
         },
         {
-          "type": "image",
-          "content": "/images/m1_lecon1.jpg"
-        },
-        {
           "type": "phase",
           "content": "Phase 1 : Pré-action (Activation des connaissances) (20 minutes)"
         },
@@ -80,6 +76,10 @@
         {
           "type": "image",
           "content": "/images/img-122.jpg"
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -121,6 +121,46 @@
           "type": "link",
           "url": "/articles/m1_l1/index.html",
           "label": "📄 Article interactif : Agir contre le réchauffement climatique"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Lisez le texte suivant, puis répondez aux questions."
+        },
+        {
+          "type": "header",
+          "content": "Agir contre le réchauffement climatique"
+        },
+        {
+          "type": "paragraph",
+          "content": "Pour lutter contre le réchauffement climatique, j’essaie de faire des petites choses à mon échelle au quotidien. Je pense que c’est important que chacun fasse quelque chose à son niveau. Bien sûr, il faudrait aussi que des décisions politiques soient vraiment prises pour protéger l’environnement, mais nous avons tous un pouvoir que nous oublions trop souvent : le pouvoir du consommateur."
+        },
+        {
+          "type": "paragraph",
+          "content": "Tel que je vois les choses, si tout le monde arrêtait d’acheter des produits polluants, on arrêterait tout simplement d’en vendre. Alors, j’essaie de faire les choses à mon échelle en espérant que d’autres feront pareil."
+        },
+        {
+          "type": "paragraph",
+          "content": "Par exemple, j’essaie de n’acheter que des fruits et légumes de saison. J’achète plutôt des produits locaux pour privilégier les circuits courts. Aussi, je fais attention à acheter le moins possible de produits fabriqués à l’étranger, comme ça, je sais que ce que j’achète n’a pas été transporté dans des conteneurs polluants."
+        },
+        {
+          "type": "paragraph",
+          "content": "Je ne demande pas de sacs plastiques quand je fais des courses, car je sais qu’ils se retrouvent dans les océans et sont dévastateurs pour la faune marine."
+        },
+        {
+          "type": "paragraph",
+          "content": "Ensuite, pour mes déplacements, je privilégie plutôt les transports en commun, la marche à pied ou le vélo pour éviter la voiture le plus possible."
+        },
+        {
+          "type": "paragraph",
+          "content": "Bien sûr, quand on vit à la campagne, c’est beaucoup plus difficile de vivre sans voiture, surtout quand on est obligé de faire 20 kilomètres pour faire des courses. Mais quand on vit en centre-ville et que tout est à 2 ou 3 kilomètres à pied, je trouve qu’on n’a pas trop d’excuses."
+        },
+        {
+          "type": "paragraph",
+          "content": "J’aimerais vraiment que le vélo se démocratise en France comme en Allemagne, mais le problème des villes françaises, c’est qu’elles ne sont pas aménagées pour les vélos."
+        },
+        {
+          "type": "paragraph",
+          "content": "Mais je reste plutôt optimiste, les choses commencent à changer, bien que trop lentement à mon goût. De toute façon, je ne suis pas un modèle non plus et je sais que je pollue énormément malgré mes petits gestes."
         },
         {
           "type": "header",

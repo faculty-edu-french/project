@@ -810,6 +810,28 @@ function App() {
         </div>
 
         <div className="nav-links">
+          <div 
+            className={`module-card ${activeTab === 'intro' ? 'active-module' : ''}`}
+            style={{ marginBottom: '1.5rem' }}
+          >
+            <div 
+              className="module-header" 
+              onClick={() => handleNavClick('module1', 'intro')}
+              style={{ padding: '0.85rem 1rem' }}
+            >
+              <div className="module-num-box" style={{ 
+                background: activeTab === 'intro' ? '#1d4ed8' : '#f1f5f9', 
+                color: activeTab === 'intro' ? '#fff' : '#64748b',
+                fontSize: '1.2rem'
+              }}>
+                🏠
+              </div>
+              <div className="module-title-container">
+                <div className="module-name" style={{ fontSize: '1rem' }}>Accueil / Introduction</div>
+              </div>
+            </div>
+          </div>
+
           {renderModuleCard("1", "module1", refinedData1.moduleTitle, refinedData1, ["lecon1", "lecon2", "lecon3"])}
           {renderModuleCard("2", "module2", refinedData2.moduleTitle, refinedData2, ["m2_lecon1", "m2_lecon2", "m2_lecon3"])}
           {renderModuleCard("3", "module3", refinedData3.moduleTitle, refinedData3, ["m3_lecon1", "m3_lecon2", "m3_lecon3"])}

@@ -2063,24 +2063,13 @@
         },
         {
           "type": "instruction",
-          "content": "Consigne : À travers هذه الصورة (image_m1_l3_3)، rédigez un court paragraphe (3–4 lignes) mettant en valeur les avantages du covoiturage."
+          "content": "Consigne : À travers cette image, rédigez un court paragraphe (3–4 lignes) mettant en valeur les avantages du covoiturage."
         },
         {
           "type": "image",
           "content": "/images/m1_lecon3_3.png"
         },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
+        { "type": "input", "content": "" }, { "type": "input", "content": "" }, { "type": "input", "content": "" },
         {
           "type": "header",
           "content": "Structures à observer : (5 minutes)"
@@ -2089,38 +2078,29 @@
           "type": "grammar_card",
           "title": "1. Exprimer l’utilité / l’avantage",
           "description": "Structure : Il permet de + infinitif",
-          "examples": [
-            "• Il permet de rouler moins cher et de réduire la pollution."
-          ]
+          "examples": [ "• Il permet de rouler moins cher et de réduire la pollution." ]
         },
         {
           "type": "grammar_card",
           "title": "2. Exprimer la négation",
           "description": "Structure : ne … pas",
-          "examples": [
-            "• Ce n’est pas un service de transport professionnel."
-          ]
+          "examples": [ "• Ce n’est pas un service de transport professionnel." ]
         },
         {
           "type": "grammar_card",
           "title": "3. Exprimer l’opposition / la concession",
           "description": "Expressions : mais / pourtant / malgré",
-          "examples": [
-            "• Mais il ne faut pas oublier les petits inconvénients.",
-            "• Malgré ces petits problèmes, le covoiturage reste une solution responsable."
-          ]
+          "examples": [ "• Mais il ne faut pas oublier les petits inconvénients.", "• Malgré ces petits problèmes, le covoiturage reste une solution responsable." ]
         },
         {
           "type": "grammar_card",
           "title": "4. Exprimer la conséquence",
           "description": "Structure : ce qui + verbe",
-          "examples": [
-            "• Ce qui prouve que cette habitude entre dans le quotidien des Français."
-          ]
+          "examples": [ "• Ce qui prouve que cette habitude entre dans le quotidien des Français." ]
         },
         {
           "type": "task",
-          "content": "Micro tâche 9 : (5 minutes) : Regardez هذه الفيديو لتبين ما معنى الـ covoiturage :"
+          "content": "Micro tâche 9 : (5 minutes) : Regardez cette vidéo pour bien comprendre ce que signifie le covoiturage :"
         },
         {
           "type": "video",
@@ -2131,25 +2111,14 @@
           "type": "paragraph",
           "content": "Rédigez un court résumé de ce que vous avez compris de cette vidéo."
         },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
+        { "type": "input", "content": "" }, { "type": "input", "content": "" }, { "type": "input", "content": "" },
         {
           "type": "task",
           "content": "Micro-tâches 10 : Discussion en groupes : (10 minutes)"
         },
         {
           "type": "instruction",
-          "content": "En observant هذه الخريطة الذهنية (Carte Mentale) ناقش مع زملائك العناصر الأساسية للـ covoiturage كالمزايا، العيوب، الحلول وكيفية تشجيع هذه الممارسة في مجتمعنا."
+          "content": "En observant cette carte mentale, discutez avec vos collègues sur les éléments essentiels du covoiturage comme les avantages, les inconvénients, les solutions et comment faire pour encourager cette pratique dans notre société."
         },
         {
           "type": "input",

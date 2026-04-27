@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agir contre le réchauffement climatique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e5e7eb;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        :root {
+            --primary-color: #2F6F4F; /* Dark green for environment */
+        }
+        .page-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: var(--primary-color);
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .inner-page {
+            background-color: white;
+            margin: 15px;
+            padding: 25px 30px;
+            border: 2px solid var(--primary-color);
+            position: relative;
+        }
+        .inner-page::before {
+            content: '';
+            position: absolute;
+            top: -6px; left: -6px; right: -6px; bottom: -6px;
+            border: 1px solid var(--primary-color);
+            pointer-events: none;
+        }
+        .dot {
+            width: 10px; height: 10px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            position: absolute;
+        }
+        .dot-tl { top: -5px; left: -5px; }
+        .dot-tr { top: -5px; right: -5px; }
+        .dot-bl { bottom: -5px; left: -5px; }
+        .dot-br { bottom: -5px; right: -5px; }
+        .text-primary { color: var(--primary-color); }
+        .bg-primary { background-color: var(--primary-color); }
+        .border-primary { border-color: var(--primary-color); }
+        .paragraph {
+            text-indent: 1.5rem;
+            text-align: justify;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            font-size: 0.95rem;
+        }
+        .question-box {
+            position: relative;
+            border: 2px solid var(--primary-color);
+            padding: 1.5rem 1rem 1rem 1rem;
+            flex: 1;
+        }
+        .question-header {
+            position: absolute;
+            top: -2px; left: -2px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+            padding: 0.1rem 0.5rem;
+            text-decoration: underline;
+            font-size: 1.05rem;
+        }
+        .footer-line-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .footer-line {
+            position: absolute;
+            top: 50%; left: 0; right: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            z-index: 1;
+        }
+        .footer-text {
+            background-color: white;
+            z-index: 2;
+            padding: 0 10px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+        }
+        .cross-icon {
+            display: inline-block;
+            position: relative;
+            width: 14px; height: 14px;
+        }
+        .cross-icon::before, .cross-icon::after {
+            content: '';
+            position: absolute;
+            background-color: var(--primary-color);
+        }
+        .cross-icon::before { top: 6px; left: 0; width: 14px; height: 2px; }
+        .cross-icon::after { top: 0; left: 6px; width: 2px; height: 14px; }
+        ol { list-style-type: decimal; padding-left: 1.5rem; }
+        ol li { margin-bottom: 0.35rem; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- SVG top -->
+        <svg class="absolute top-[-25px] left-0 w-full h-[30px]" preserveAspectRatio="none" viewBox="0 0 1200 40">
+            <path d="M0,40 Q100,0 200,40 T400,40 T600,40 T800,40 T1000,40 T1200,40 L1200,40 L1200,40 L0,40 Z" fill="var(--primary-color)" />
+        </svg>
+
+        <div class="inner-page">
+            <div class="dot dot-tl"></div>
+            <div class="dot dot-tr"></div>
+            <div class="dot dot-bl"></div>
+            <div class="dot dot-br"></div>
+
+            <div class="flex justify-between items-center mb-3">
+                <div class="flex items-center">
+                    <span class="text-primary text-2xl mr-2 leading-none">&bull;</span>
+                    <h2 class="text-primary font-bold text-xl underline underline-offset-4 decoration-2">Lisez ce texte puis répondez aux questions :</h2>
+                </div>
+                <div class="bg-primary text-white font-black text-xl px-3 py-1 rounded shadow-sm">
+                    B1
+                </div>
+            </div>
+
+            <div class="border-2 border-primary p-3 mb-4">
+                <h1 class="text-center font-bold text-lg mb-4">Agir contre le réchauffement climatique</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <p class="paragraph">Pour lutter contre le réchauffement climatique, j’essaie de faire des petites choses à mon échelle au quotidien. Je pense que c’est important que chacun fasse quelque chose à son niveau. Bien sûr, il faudrait aussi que des décisions politiques soient vraiment prises pour protéger l’environnement, mais nous avons tous un pouvoir que nous oublions trop souvent : le pouvoir du consommateur.</p>
+                        <p class="paragraph">Tel que je vois les choses, si tout le monde arrêtait d’acheter des produits polluants, on arrêterait tout simplement d’en vendre. Alors, j’essaie de faire les choses à mon échelle en espérant que d’autres feront pareil.</p>
+                        <p class="paragraph">Par exemple, j’essaie de n’acheter que des fruits et légumes de saison. J’achète plutôt des produits locaux pour privilégier les circuits courts. Aussi, je fais attention à acheter le moins possible de produits fabriqués à l’étranger, comme ça, je sais que ce que j’achète n’a pas été transporté dans des conteneurs polluants.</p>
+                        <p class="paragraph">Je ne demande pas de sacs plastiques quand je fais des courses, car je sais qu’ils se retrouvent dans les océans et sont dévastateurs pour la faune marine.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=600&auto=format&fit=crop" alt="Réchauffement climatique" class="w-full mb-3 border border-gray-300 rounded shadow-sm object-cover" style="height: 140px; object-position: center top;">
+                        <p class="paragraph" style="text-indent: 0;">Ensuite, pour mes déplacements, je privilégie plutôt les transports en commun, la marche à pied ou le vélo pour éviter la voiture le plus possible.</p>
+                        <p class="paragraph">Bien sûr, quand on vit à la campagne, c’est beaucoup plus difficile de vivre sans voiture, surtout quand on est obligé de faire 20 kilomètres pour faire des courses. Mais quand on vit en centre-ville et que tout est à 2 ou 3 kilomètres à pied, je trouve qu’on n’a pas trop d’excuses.</p>
+                        <p class="paragraph">J’aimerais vraiment que le vélo se démocratise en France comme en Allemagne, mais le problème des villes françaises, c’est qu’elles ne sont pas aménagées pour les vélos.</p>
+                        <p class="paragraph">Mais je reste plutôt optimiste, les choses commencent à changer, bien que trop lentement à mon goût. De toute façon, je ne suis pas un modèle non plus et je sais que je pollue énormément malgré mes petits gestes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-4 mt-6">
+                <div class="question-box">
+                    <div class="question-header">1) Répondez aux questions :</div>
+                    <ol>
+                        <li>Pourquoi l’auteur fait-il attention à ses achats ?</li>
+                        <li>Quels moyens de transport privilégie-t-il ?</li>
+                        <li>Quel rôle le consommateur peut-il jouer ?</li>
+                    </ol>
+                </div>
+                <div class="question-box">
+                    <div class="question-header">2) Mettez Vrai ☑ ou Faux ☒ :</div>
+                    <ol>
+                        <li>L’auteur pense que chacun peut agir contre le réchauffement climatique.</li>
+                        <li>L’auteur utilise souvent la voiture pour ses déplacements.</li>
+                        <li>Les sacs plastiques ont un impact sur la faune marine.</li>
+                        <li>Acheter des produits locaux réduit le transport polluant.</li>
+                        <li>D'après le texte, les gouvernements ont un rôle important à jouer.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="footer-line-container">
+                <div class="footer-line"></div>
+                <div class="footer-text pl-0">
+                    <span class="cross-icon mr-3"></span> La langue française
+                </div>
+                <div class="footer-text pr-0">
+                    Bien écrire <span class="cross-icon ml-3"></span>
+                </div>
+            </div>
+        </div>
+
+        <svg class="absolute bottom-[-25px] left-0 w-full h-[30px]" preserveAspectRatio="none" viewBox="0 0 1200 40">
+            <path d="M0,0 Q100,40 200,0 T400,0 T600,0 T800,0 T1000,0 T1200,0 L1200,0 L1200,40 L0,0 Z" fill="var(--primary-color)" />
+        </svg>
+    </div>
+</body>
+</html>

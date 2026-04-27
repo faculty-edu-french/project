@@ -163,8 +163,41 @@
           "content": "Mais je reste plutôt optimiste, les choses commencent à changer, bien que trop lentement à mon goût. De toute façon, je ne suis pas un modèle non plus et je sais que je pollue énormément malgré mes petits gestes."
         },
         {
+          "type": "link",
+          "url": "https://anyfrench.com/lecture/agir-contre-le-rechauffement-climatique",
+          "label": "🔗 Source de l'article"
+        },
+        {
           "type": "header",
           "content": "Questions guidées (10 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Répondez aux questions suivantes :"
+        },
+        {
+          "type": "question",
+          "content": "1. Pourquoi l’auteur fait-il attention à ses achats ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "2. Quels moyens de transport privilégie-t-il ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "question",
+          "content": "3. Quel rôle le consommateur peut-il jouer ?"
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "instruction",

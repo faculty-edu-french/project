@@ -796,41 +796,6 @@ function App() {
 
           {/* Navigation Buttons Container */}
           <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-            {/* Previous Button */}
-            <button
-              onClick={() => {
-                if (currentIndex === 0) {
-                  handleNavClick('module1', 'intro');
-                } else {
-                  const prevLesson = allLessons[currentIndex - 1];
-                  let prevModId = 'module1';
-                  if (refinedData4.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module4';
-                  else if (refinedData3.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module3';
-                  else if (refinedData2.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module2';
-                  handleNavClick(prevModId, prevLesson.id);
-                  setExpandedModules(prev => ({ ...prev, [prevModId]: true }));
-                }
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              style={{
-                flex: 1,
-                padding: '1rem',
-                background: '#f1f5f9',
-                color: '#475569',
-                border: '1px solid #e2e8f0',
-                borderRadius: '12px',
-                fontSize: '1rem',
-                fontWeight: '600',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.5rem'
-              }}
-            >
-              ⬅ Précédent
-            </button>
-
             {/* Next Lesson Button */}
             {currentIndex < allLessons.length - 1 && (
               <button
@@ -865,6 +830,41 @@ function App() {
                 Suivant : {allLessons[currentIndex + 1].title.split(':').pop()?.trim()} ➜
               </button>
             )}
+
+            {/* Previous Button */}
+            <button
+              onClick={() => {
+                if (currentIndex === 0) {
+                  handleNavClick('module1', 'intro');
+                } else {
+                  const prevLesson = allLessons[currentIndex - 1];
+                  let prevModId = 'module1';
+                  if (refinedData4.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module4';
+                  else if (refinedData3.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module3';
+                  else if (refinedData2.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module2';
+                  handleNavClick(prevModId, prevLesson.id);
+                  setExpandedModules(prev => ({ ...prev, [prevModId]: true }));
+                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              style={{
+                flex: 1,
+                padding: '1rem',
+                background: '#f1f5f9',
+                color: '#475569',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                fontSize: '1rem',
+                fontWeight: '600',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem'
+              }}
+            >
+              ⬅ Précédent
+            </button>
           </div>
         </div>
       );

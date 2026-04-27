@@ -1,269 +1,330 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Le Covoiturage – Carte Mentale</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Le Covoiturage – Carte Mentale</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: #f8fafc;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      overflow: hidden;
-    }
+html,body{
+  width:100%;height:100%;
+  font-family:'Segoe UI',system-ui,sans-serif;
+  background:#e8edf3;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
 
-    #mindmap-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      user-select: none;
-    }
+/* ── WRAPPER ── */
+#mm{
+  position:relative;
+  width:min(96vw,540px);
+  height:min(96vw,540px);   /* square so orbit looks round */
+  flex-shrink:0;
+}
 
-    #drag-hint {
-      position: absolute;
-      top: 12px; left: 50%;
-      transform: translateX(-50%);
-      font-size: 11px;
-      color: #94a3b8;
-      background: rgba(241, 245, 249, 0.8);
-      border: 1px solid #e2e8f0;
-      border-radius: 20px;
-      padding: 4px 12px;
-      z-index: 100;
-      pointer-events: none;
-      white-space: nowrap;
-      transition: opacity 0.6s;
-    }
+/* ── SVG lines layer ── */
+#lines{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  pointer-events:none;
+  z-index:1;
+  overflow:visible;
+}
 
-    #lines-svg {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      pointer-events: none;
-      z-index: 1;
-    }
+/* ── CENTER NODE ── */
+#center{
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  width:clamp(90px,22%,120px);
+  height:clamp(90px,22%,120px);
+  background:linear-gradient(135deg,#3b82f6,#1a5fba);
+  border-radius:50%;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  color:#fff;
+  font-size:clamp(10px,2.2vw,13px);
+  font-weight:700;
+  text-align:center;
+  line-height:1.35;
+  box-shadow:0 4px 24px rgba(59,130,246,.45);
+  z-index:20;
+  user-select:none;
+}
+#center svg{margin-bottom:4px;}
 
-    #center-node {
-      position: absolute;
-      width: 110px; height: 110px;
-      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-      border-radius: 50%;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      color: #fff;
-      font-size: 12px; font-weight: 700;
-      text-align: center;
-      line-height: 1.2;
-      box-shadow: 0 4px 15px rgba(59,130,246,0.4);
-      z-index: 20;
-      cursor: grab;
-    }
-    #center-node:active { cursor: grabbing; }
+/* ── ORBITING CARDS ── */
+.card{
+  position:absolute;
+  width:clamp(130px,36%,185px);
+  z-index:10;
+  /* translate is controlled entirely by JS */
+  transform-origin:center center;
+  pointer-events:none;   /* pause on hover handled via JS */
+}
 
-    .branch-group {
-      position: absolute;
-      width: 170px;
-      z-index: 10;
-      cursor: grab;
-    }
-    .branch-group:active { cursor: grabbing; }
+.card-header{
+  padding:clamp(5px,1.2vw,7px) clamp(10px,2.5vw,14px);
+  border-radius:9px;
+  font-size:clamp(11px,2.2vw,13px);
+  font-weight:700;
+  color:#fff;
+  text-align:center;
+  margin-bottom:6px;
+  white-space:nowrap;
+}
 
-    .branch-header {
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-size: 12px; font-weight: 700;
-      text-align: center;
-      color: #fff;
-      margin-bottom: 6px;
-    }
+.card-item{
+  background:#fff;
+  border-radius:8px;
+  padding:clamp(5px,1.2vw,7px) clamp(8px,2vw,10px);
+  font-size:clamp(10px,2vw,12px);
+  margin-bottom:4px;
+  display:flex;align-items:center;gap:6px;
+  border:1px solid #e8ecf0;
+  box-shadow:0 1px 4px rgba(0,0,0,.05);
+}
+.card-item .lbl{font-weight:600;display:block;}
+.card-item .sub{font-size:clamp(9px,1.8vw,11px);color:#7a8494;display:block;margin-top:1px;}
 
-    .branch-item {
-      background: #fff;
-      border-radius: 8px;
-      padding: 6px 8px;
-      font-size: 11px;
-      margin-bottom: 4px;
-      display: flex; align-items: center; gap: 6px;
-      border: 1px solid #f1f5f9;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
+.icon{
+  width:clamp(20px,5vw,24px);
+  height:clamp(20px,5vw,24px);
+  border-radius:5px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:clamp(11px,2.5vw,13px);
+  flex-shrink:0;
+}
 
-    .item-label { font-weight: 600; display: block; }
-    .item-sub   { font-size: 10px; color: #64748b; display: block; }
+/* colour themes */
+.av  .card-header{background:#27ae78;box-shadow:0 2px 8px rgba(39,174,120,.3);}
+.av  .card-item  {border-left:3px solid #27ae78;}
+.av  .icon       {background:#e6f8f1;}
 
-    .item-icon {
-      width: 22px; height: 22px;
-      border-radius: 5px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 12px; flex-shrink: 0;
-    }
+.inc .card-header{background:#e84545;box-shadow:0 2px 8px rgba(232,69,69,.3);}
+.inc .card-item  {border-left:3px solid #e84545;}
+.inc .icon       {background:#fdeaea;}
 
-    .avantages    .branch-header { background: #10b981; }
-    .avantages    .branch-item   { border-left: 3px solid #10b981; }
-    .inconvenients .branch-header { background: #ef4444; }
-    .inconvenients .branch-item   { border-left: 3px solid #ef4444; }
-    .solutions    .branch-header { background: #3b82f6; }
-    .solutions    .branch-item   { border-left: 3px solid #3b82f6; }
-    .actions      .branch-header { background: #f59e0b; }
-    .actions      .branch-item   { border-left: 3px solid #f59e0b; }
+.sol .card-header{background:#3b82f6;box-shadow:0 2px 8px rgba(59,130,246,.3);}
+.sol .card-item  {border-left:3px solid #3b82f6;}
+.sol .icon       {background:#e8f0fe;}
 
-    .idea-input {
-      border: none; background: transparent;
-      font-size: 11px; width: 100%; outline: none;
-    }
-    .add-btn {
-      width: 18px; height: 18px; border-radius: 50%; border: none;
-      background: #f59e0b; color: #fff; cursor: pointer;
-    }
+.act .card-header{background:#f5a623;box-shadow:0 2px 8px rgba(245,166,35,.3);}
+.act .card-item  {border-left:3px solid #f5a623;}
+.act .icon       {background:#fff3d6;}
 
-    #reset-btn {
-      position: absolute;
-      bottom: 12px; left: 12px;
-      font-size: 10px; color: #64748b;
-      background: #f1f5f9;
-      border: 1px solid #e2e8f0;
-      border-radius: 15px;
-      padding: 4px 12px;
-      cursor: pointer;
-      z-index: 100;
-    }
-  </style>
+/* editable fields */
+.idea-row{display:flex;align-items:center;gap:5px;width:100%;}
+.idea-inp{
+  border:none;background:transparent;
+  font-size:clamp(10px,2vw,12px);font-family:inherit;
+  color:#4a5568;width:100%;outline:none;cursor:text;
+  pointer-events:auto;
+}
+.idea-inp::placeholder{color:#b0bac6;font-style:italic;}
+.idea-inp.saved{color:#2d3748;font-weight:600;}
+.add-btn{
+  width:20px;height:20px;flex-shrink:0;
+  border-radius:50%;border:none;
+  background:#f5a623;color:#fff;
+  font-size:16px;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  pointer-events:auto;
+  transition:background .15s,transform .1s;
+}
+.add-btn:hover {background:#d4881e;}
+.add-btn:active{transform:scale(.9);}
+
+/* speed control */
+#ctrl{
+  position:fixed;
+  bottom:16px;left:50%;
+  transform:translateX(-50%);
+  display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(6px);
+  border:1px solid #dde2e8;
+  border-radius:24px;
+  padding:7px 18px;
+  font-size:12px;color:#666;
+  z-index:200;
+  white-space:nowrap;
+}
+#ctrl input[type=range]{width:100px;accent-color:#3b82f6;}
+#pause-btn{
+  background:none;border:none;cursor:pointer;
+  font-size:17px;line-height:1;padding:0;
+  transition:transform .1s;
+}
+#pause-btn:active{transform:scale(.9);}
+</style>
 </head>
 <body>
-<div id="mindmap-wrapper">
-  <div id="drag-hint">✦ اسحب العناصر لتحريكها</div>
-  <svg id="lines-svg"></svg>
 
-  <div id="center-node">Le covoiturage</div>
+<div id="mm">
+  <svg id="lines" xmlns="http://www.w3.org/2000/svg"></svg>
 
-  <div class="branch-group avantages" id="g-av">
-    <div class="branch-header">Avantages</div>
-    <div class="branch-item"><div class="item-icon">🌿</div><div><span class="item-label">Écologique</span></div></div>
-    <div class="branch-item"><div class="item-icon">💰</div><div><span class="item-label">Économique</span></div></div>
+  <!-- CENTER -->
+  <div id="center">
+    <svg width="38" height="26" viewBox="0 0 44 30" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <rect x="2" y="12" width="40" height="14" rx="4" fill="rgba(255,255,255,.25)" stroke="rgba(255,255,255,.6)" stroke-width="1.2"/>
+      <path d="M6 12L11 4H33L38 12" stroke="rgba(255,255,255,.8)" stroke-width="1.4" stroke-linejoin="round"/>
+      <rect x="11" y="5" width="9" height="7" rx="1.5" fill="rgba(255,255,255,.3)"/>
+      <rect x="24" y="5" width="9" height="7" rx="1.5" fill="rgba(255,255,255,.3)"/>
+      <circle cx="11" cy="26" r="4" fill="rgba(255,255,255,.35)" stroke="rgba(255,255,255,.7)" stroke-width="1.2"/>
+      <circle cx="33" cy="26" r="4" fill="rgba(255,255,255,.35)" stroke="rgba(255,255,255,.7)" stroke-width="1.2"/>
+    </svg>
+    Le covoiturage
   </div>
 
-  <div class="branch-group inconvenients" id="g-inc">
-    <div class="branch-header">Inconvénients</div>
-    <div class="branch-item"><div class="item-icon">📋</div><div><span class="item-label">Organisation</span></div></div>
-    <div class="branch-item"><div class="item-icon">🕐</div><div><span class="item-label">Horaires</span></div></div>
+  <!-- AVANTAGES -->
+  <div class="card av" id="c-av">
+    <div class="card-header">Avantages</div>
+    <div class="card-item"><div class="icon">🌿</div><div><span class="lbl">Écologique</span><span class="sub">Moins de CO₂</span></div></div>
+    <div class="card-item"><div class="icon">💰</div><div><span class="lbl">Économique</span><span class="sub">Économies d'essence</span></div></div>
+    <div class="card-item"><div class="icon">👥</div><div><span class="lbl">Social</span><span class="sub">Rencontrer des étudiants</span></div></div>
   </div>
 
-  <div class="branch-group solutions" id="g-sol">
-    <div class="branch-header">Solutions</div>
-    <div class="branch-item"><div class="item-icon">📱</div><div><span class="item-label">App Mobile</span></div></div>
-    <div class="branch-item"><div class="item-icon">🛡️</div><div><span class="item-label">Sécurité</span></div></div>
+  <!-- INCONVÉNIENTS -->
+  <div class="card inc" id="c-inc">
+    <div class="card-header">Inconvénients</div>
+    <div class="card-item"><div class="icon">📋</div><div><span class="lbl">Difficulté d'organisation</span></div></div>
+    <div class="card-item"><div class="icon">🕐</div><div><span class="lbl">Horaires rigides</span></div></div>
+    <div class="card-item"><div class="icon">⚠️</div><div><span class="lbl">Manque de confiance</span></div></div>
   </div>
 
-  <div class="branch-group actions" id="g-act">
-    <div class="branch-header">Vos Idées</div>
-    <div class="branch-item">
-      <input class="idea-input" placeholder="Ajouter..."/>
-      <button class="add-btn">+</button>
-    </div>
+  <!-- SOLUTIONS -->
+  <div class="card sol" id="c-sol">
+    <div class="card-header">Solutions</div>
+    <div class="card-item"><div class="icon">📱</div><div><span class="lbl">Application mobile</span></div></div>
+    <div class="card-item"><div class="icon">🎓</div><div><span class="lbl">Groupe universitaire</span></div></div>
+    <div class="card-item"><div class="icon">🛡️</div><div><span class="lbl">Règles de sécurité</span></div></div>
   </div>
 
-  <button id="reset-btn" onclick="resetPositions()">↺ Reset</button>
+  <!-- ACTIONS -->
+  <div class="card act" id="c-act">
+    <div class="card-header">Actions possibles</div>
+    <div class="card-item"><div class="icon">➕</div><div class="idea-row"><input class="idea-inp" id="i1" placeholder="Ajoute une idée..."/><button class="add-btn" onclick="save(1)">+</button></div></div>
+    <div class="card-item"><div class="icon">➕</div><div class="idea-row"><input class="idea-inp" id="i2" placeholder="Ajoute une idée..."/><button class="add-btn" onclick="save(2)">+</button></div></div>
+    <div class="card-item"><div class="icon">➕</div><div class="idea-row"><input class="idea-inp" id="i3" placeholder="Ajoute une idée..."/><button class="add-btn" onclick="save(3)">+</button></div></div>
+  </div>
+</div>
+
+<!-- CONTROLS -->
+<div id="ctrl">
+  <button id="pause-btn" title="إيقاف/تشغيل">⏸</button>
+  <span>السرعة</span>
+  <input type="range" id="speed" min="0.1" max="3" step="0.1" value="1"/>
 </div>
 
 <script>
-const CONNECTIONS = [
-  { from: 'center-node', to: 'g-av',  color: '#10b981' },
-  { from: 'center-node', to: 'g-inc', color: '#ef4444' },
-  { from: 'center-node', to: 'g-sol', color: '#3b82f6' },
-  { from: 'center-node', to: 'g-act', color: '#f59e0b' },
+/* ── CONFIG ── */
+const CARDS = [
+  { id:'c-av',  color:'#27ae78', phase: 0   },   // top-left   → 225°
+  { id:'c-inc', color:'#e84545', phase: 0.5 },   // top-right  → 315° (225+90)
+  { id:'c-sol', color:'#3b82f6', phase: 1.0 },   // bottom-left
+  { id:'c-act', color:'#f5a623', phase: 1.5 },   // bottom-right
 ];
+/* each card starts 90° apart, so 4 cards fill the full circle evenly */
 
-const DEFAULTS = {
-  'center-node': { rx: 0.5, ry: 0.5 },
-  'g-av':        { rx: 0.1, ry: 0.1 },
-  'g-inc':       { rx: 0.65, ry: 0.1 },
-  'g-sol':       { rx: 0.1, ry: 0.7 },
-  'g-act':       { rx: 0.65, ry: 0.7 },
-};
+let paused = false;
+let speed  = 1;          // rev / minute
+let t      = 0;          // accumulated angle in full turns
+let last   = null;
 
-const wrap = document.getElementById('mindmap-wrapper');
-function wW() { return wrap.offsetWidth; }
-function wH() { return wrap.offsetHeight; }
+const mm    = document.getElementById('mm');
+const svg   = document.getElementById('lines');
+const pbtn  = document.getElementById('pause-btn');
+const sinp  = document.getElementById('speed');
 
-function placeEl(id, px, py) {
-  const el = document.getElementById(id);
-  if (id === 'center-node') {
-    el.style.left = (px - el.offsetWidth/2) + 'px';
-    el.style.top = (py - el.offsetHeight/2) + 'px';
-  } else {
-    el.style.left = px + 'px';
-    el.style.top = py + 'px';
-  }
+pbtn.addEventListener('click', () => {
+  paused = !paused;
+  pbtn.textContent = paused ? '▶️' : '⏸';
+});
+sinp.addEventListener('input', () => { speed = parseFloat(sinp.value); });
+
+/* pause when user focuses an input inside a card */
+document.querySelectorAll('.idea-inp').forEach(inp => {
+  inp.addEventListener('focus', () => { paused = true;  pbtn.textContent = '▶️'; });
+  inp.addEventListener('blur',  () => { paused = false; pbtn.textContent = '⏸'; });
+  inp.addEventListener('keydown', e => { if(e.key==='Enter') save(+inp.id.slice(1)); });
+});
+
+/* ── GEOMETRY ── */
+function mmSize(){ return mm.offsetWidth; }
+
+function orbit(){
+  const S  = mmSize();
+  const cx = S / 2;
+  const cy = S / 2;
+  /* orbit radius: half the wrapper minus card width/2 and a little padding */
+  const r  = S * 0.36;
+  return { cx, cy, r };
 }
 
-function resetPositions() {
-  Object.entries(DEFAULTS).forEach(([id, d]) => placeEl(id, d.rx * wW(), d.ry * wH()));
-  drawLines();
+function cardSize(el){
+  return { w: el.offsetWidth, h: el.offsetHeight };
 }
 
-function drawLines() {
-  const svg = document.getElementById('lines-svg');
+/* angle for card i at time t (turns) */
+function cardAngle(phase, t){
+  /* starts at 225° (top-left) + phase*90°, goes clockwise */
+  const base = (225 + phase * 90) * Math.PI / 180;
+  return base + t * 2 * Math.PI;
+}
+
+/* ── DRAW ── */
+function draw(){
+  const { cx, cy, r } = orbit();
+  const S = mmSize();
+  svg.setAttribute('viewBox', `0 0 ${S} ${S}`);
   svg.innerHTML = '';
-  CONNECTIONS.forEach(c => {
-    const elA = document.getElementById(c.from);
-    const elB = document.getElementById(c.to);
-    const a = { x: elA.offsetLeft + elA.offsetWidth/2, y: elA.offsetTop + elA.offsetHeight/2 };
-    const b = { x: elB.offsetLeft + elB.offsetWidth/2, y: elB.offsetTop + elB.offsetHeight/2 };
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', `M${a.x},${a.y} L${b.x},${b.y}`);
-    path.setAttribute('stroke', c.color);
-    path.setAttribute('stroke-width', '2');
-    path.setAttribute('stroke-opacity', '0.4');
+
+  CARDS.forEach(cfg => {
+    const el  = document.getElementById(cfg.id);
+    const ang = cardAngle(cfg.phase, t);
+    const ex  = cx + r * Math.cos(ang);
+    const ey  = cy + r * Math.sin(ang);
+
+    /* position: center of card at (ex,ey) */
+    const { w, h } = cardSize(el);
+    el.style.left = (ex - w/2) + 'px';
+    el.style.top  = (ey - h/2) + 'px';
+
+    /* bezier line: center → card center */
+    const mx = (cx + ex) / 2;
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d', `M${cx},${cy} C${mx},${cy} ${mx},${ey} ${ex},${ey}`);
+    path.setAttribute('stroke', cfg.color);
+    path.setAttribute('stroke-width', '2.5');
+    path.setAttribute('stroke-opacity', '0.65');
+    path.setAttribute('stroke-linecap', 'round');
     path.setAttribute('fill', 'none');
     svg.appendChild(path);
   });
 }
 
-let dragging = null;
-let offset = { x: 0, y: 0 };
-
-function startDrag(e, el) {
-  if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON') return;
-  dragging = el;
-  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-  const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-  offset.x = clientX - el.getBoundingClientRect().left;
-  offset.y = clientY - el.getBoundingClientRect().top;
+/* ── ANIMATION LOOP ── */
+function loop(ts){
+  if(last !== null && !paused){
+    const dt = (ts - last) / 1000;          /* seconds */
+    t += dt * speed / 60;                   /* speed = rev/min → rev/sec / 60 */
+  }
+  last = ts;
+  draw();
+  requestAnimationFrame(loop);
 }
 
-document.addEventListener('mousemove', e => {
-  if (!dragging) return;
-  const wr = wrap.getBoundingClientRect();
-  let nx = e.clientX - wr.left - offset.x;
-  let ny = e.clientY - wr.top - offset.y;
-  dragging.style.left = nx + 'px';
-  dragging.style.top = ny + 'px';
-  drawLines();
-});
-
-document.addEventListener('mouseup', () => { dragging = null; });
-
-function init() {
-  const nodes = [document.getElementById('center-node'), ...document.querySelectorAll('.branch-group')];
-  nodes.forEach(n => {
-    n.addEventListener('mousedown', e => startDrag(e, n));
-    n.addEventListener('touchstart', e => startDrag(e, n), {passive:false});
-  });
-  resetPositions();
-  setTimeout(() => document.getElementById('drag-hint').style.opacity='0', 3000);
+/* ── SAVE IDEA ── */
+function save(n){
+  const inp = document.getElementById('i'+n);
+  if(inp.value.trim()){ inp.classList.add('saved'); inp.readOnly = true; }
 }
 
-window.onload = init;
-window.onresize = resetPositions;
+/* ── START ── */
+window.addEventListener('load', () => requestAnimationFrame(loop));
+window.addEventListener('resize', draw);
 </script>
 </body>
 </html>

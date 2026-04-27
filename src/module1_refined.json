@@ -2105,13 +2105,24 @@
         {
           "type": "video",
           "title": "Vidéo : Le covoiturage",
-          "content": "https://toutenfrancais.tv/fle-covoiturage-a2"
+          "content": "/videos/m1_lecon3.mp4"
         },
         {
           "type": "paragraph",
-          "content": "Rédigez un court résumé de ce que vous avez compris de cette vidéo."
+          "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
         },
-        { "type": "input", "content": "" }, { "type": "input", "content": "" }, { "type": "input", "content": "" },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
         {
           "type": "task",
           "content": "Micro-tâches 10 : Discussion en groupes : (10 minutes)"

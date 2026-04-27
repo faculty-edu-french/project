@@ -86,6 +86,22 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "instruction",
           "content": "Répondez aux questions suivantes :"
         },
@@ -98,8 +114,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "➢ Quelles actions peut-on faire pour protéger l’environnement au quotidien ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -179,6 +211,14 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "2. Quels moyens de transport privilégie-t-il ?"
         },
@@ -187,8 +227,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "3. Quel rôle le consommateur peut-il jouer ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -223,8 +279,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro tâche 2 : Trouvez l’idée générale du texte ? (5 minutes)"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -239,8 +311,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 4 : (10 minutes) Résumez chaque paragraphe en une phrase ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -253,6 +341,14 @@
         {
           "type": "task",
           "content": "Micro-tâches 5 : (5 minutes) Déterminez les phrases difficiles à comprendre pour vous ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -355,12 +451,28 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 7 : Mini-production (5 minutes)"
         },
         {
           "type": "instruction",
           "content": "Consigne : Écrivez (2 à 3 lignes) : Quelles actions écologiques faites-vous dans votre vie quotidienne pour lutter contre le réchauffement climatique ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -404,6 +516,14 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "phase",
           "content": "Phase 3 : Post-action (Tâche finale) Durée (20 minutes) :"
         },
@@ -418,6 +538,38 @@
         {
           "type": "paragraph",
           "content": "La demande : En tant qu’étudiant, rédigez un article (8 à 10 lignes) pour sensibiliser vos camarades aux comportements simples qui réduisent le réchauffement climatique. La publication doit être claire, motivante et adaptée aux réseaux sociaux."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -452,12 +604,28 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "header",
           "content": "É-évaluation : Répondez à ces questions :"
         },
         {
           "type": "question",
           "content": "− Écrivez quatre idées secondaires ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -472,8 +640,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Donnez un autre exemple d’action écologique que l’auteur aurait pu mentionner ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -488,8 +672,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Trouvez un (autre) titre qui donne bien la clé du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -504,8 +704,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Identifiez l’opinion de l’auteur et ses arguments principaux."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -520,8 +736,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Proposez une critique ou un commentaire sur les actions proposées."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -629,8 +861,48 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "2. Pourquoi ces endroits sont-ils importants ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -645,8 +917,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâche 1 : Écrivez deux phrases pour expliquer ce qu’est un espace vert à vos camarades."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -766,6 +1054,14 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "info_box",
           "content": "✨ Informations enrichissantes : Présentation du texte explicatif\n\n1️⃣ Le texte explicatif : \nLe texte explicatif est un texte qui a pour objectif d’expliquer un sujet ou un phénomène. Il répond généralement aux questions : Pourquoi ? Comment ?\n\n2️⃣ Caractéristiques principales :\n• Il donne des informations précises.\n• Il utilise des connecteurs logiques : car, parce que, ainsi, donc, cependant.\n• Il présente causes, conséquences, solutions.\n• Il peut contenir des exemples pour aider à comprendre.\n\n3️⃣ Dans ce texte sur les espaces verts, l’auteur :\n• Décrit ce qu’est un espace vert.\n• Explique pourquoi ils sont importants.\n• Montre les problèmes liés à leur disparition.\n• Propose des solutions pour les protéger."
         },
@@ -778,8 +1074,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 5 : (10 minutes) Résumez chaque paragraphe en une phrase ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -862,12 +1174,28 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 7 : (5 minutes) Reformulez la phrase suivante ?"
         },
         {
           "type": "instruction",
           "content": "Consigne : Reformulez cette phrase en utilisant vos propres mots.\n« Sans les espaces verts, la vie en ville serait beaucoup moins agréable. »"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -881,6 +1209,22 @@
           "type": "video",
           "title": "Vidéo : Les espaces verts",
           "content": "/videos/m1_lecon2.mp4"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -934,6 +1278,38 @@
         {
           "type": "list_item",
           "content": "• Échangez vos idées envers la tâche visée et notez les propositions les plus convenables."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1023,12 +1399,52 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "phase",
           "content": "Phase 4 : évaluation des produits des étudiants : Durée : 10 minutes"
         },
         {
           "type": "paragraph",
           "content": "Relisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, structure), comparez avec vos camarades et corrigez si nécessaire."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1047,8 +1463,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Quels animaux peuvent y vivre ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1063,8 +1495,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Identifiez les mots clés du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1079,6 +1527,14 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Quelles solutions le texte propose-t-il ?"
         },
@@ -1087,8 +1543,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Comparez ces pratiques économiques de l’auteur pour la protection de l’environnement avec votre propre expérience."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1196,8 +1668,40 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "2. Selon vous, quel est le thème de la leçon ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1214,6 +1718,22 @@
         {
           "type": "instruction",
           "content": "Consigne : Écrivez deux phrases pour expliquer ce qu’est le covoiturage."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1337,6 +1857,22 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "info_box",
           "title": "Présentation du texte explicatif",
           "content": "Le texte explicatif est un texte qui a pour objectif d’expliquer un phénomène, un événement ou un concept pour le faire comprendre au lecteur.\n\nCaractéristiques principales:\n• Il donne des informations précises.\n• Il utilise des connecteurs logiques : car, parce que, ainsi, donc, cependant…\n• Il présente causes, conséquences, solutions.\n• Il peut contenir des exemples pour aider à comprendre.\n\nDans le texte sur le covoiturage, l’auteur :\n• Définit le covoiturage.\n• Explique ses avantages économiques et écologiques.\n• Évoque certains inconvénients.\n• Illustre ses propos par des exemples et des témoignages."
@@ -1348,6 +1884,14 @@
         {
           "type": "question",
           "content": "Identifiez l’idée essentielle du texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1370,12 +1914,36 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 5 : (5 minutes)"
         },
         {
           "type": "question",
           "content": "Déterminez les phrases difficiles à comprendre pour vous."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1462,8 +2030,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "2. Les passagers partage les frais."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1478,8 +2062,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "4. Beaucoup personnes utilisent covoiturage."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1498,12 +2098,36 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 8 : Mini-production : (5 minutes)"
         },
         {
           "type": "instruction",
           "content": "Rédigez deux phrases pour mettre en valeur les avantages du covoiturage."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1572,6 +2196,22 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "task",
           "content": "Micro-tâches 10 : Discussion en groupes : (10 minutes)"
         },
@@ -1582,6 +2222,14 @@
         {
           "type": "paragraph",
           "content": "En observant cette carte mentale discutez avec vos collèges sur les éléments essentiels du covoiturage comme les avantages, les inconvénients, les solutions et comment faire pour encourager ce pratique dans notre société."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1652,12 +2300,76 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "phase",
           "content": "Phase 4 : Évaluation des produits des étudiants : Durée : 10 minutes"
         },
         {
           "type": "paragraph",
           "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe), comparez avec vos camarades et corrigez le texte si nécessaire."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1688,8 +2400,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Pourquoi certains étudiants ne font-ils pas de covoiturage ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1704,8 +2432,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− Trouvez un (autre) titre qui reflète bien le texte ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",
@@ -1720,8 +2464,24 @@
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "question",
           "content": "− En petit groupe, déterminez avec tes camarades des autres causes qui empêchent le covoiturage ?"
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",

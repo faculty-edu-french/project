@@ -67,7 +67,7 @@ const T: Record<string, Record<string, string>> = {
 };
 
 // ── GitHub helpers ───────────────────────────────────────────
-const GITHUB_OWNER = 'georgeadel678';
+const GITHUB_OWNER = 'faculty-edu-french';
 const GITHUB_REPO = 'project';
 const GITHUB_BRANCH = 'main';
 

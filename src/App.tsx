@@ -8,96 +8,11 @@ import introData from './intro.json';
 import { MCQGroup, MCQBlock, StudentGate, EssaySubmitter } from './MCQ';
 
 // =========================================================
-// Hard-coded MCQ for Leçon 1 (from the book content)
-// Later: these will be auto-parsed from the refined JSON
 // =========================================================
-const LECON1_MCQ = [
-  {
-    id: 'l1q1',
-    question: "1. Les espaces verts améliorent…",
-    lessonId: 'lecon2',
-    lessonTitle: 'Leçon 2 : Les espaces verts',
-    options: [
-      { id: 'a', text: 'la pollution' },
-      { id: 'b', text: 'la qualité de l\'air' },
-      { id: 'c', text: 'la circulation' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'l1q2',
-    question: "2. Dans les espaces verts, les adultes…",
-    lessonId: 'lecon2',
-    lessonTitle: 'Leçon 2 : Les espaces verts',
-    options: [
-      { id: 'a', text: 'jouent au ballon' },
-      { id: 'b', text: 'font des pique-niques' },
-      { id: 'c', text: 'vont à l\'école' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'l1q3',
-    question: "3. Les abeilles et les oiseaux trouvent dans les espaces verts…",
-    lessonId: 'lecon2',
-    lessonTitle: 'Leçon 2 : Les espaces verts',
-    options: [
-      { id: 'a', text: 'des voitures' },
-      { id: 'b', text: 'de la nourriture' },
-      { id: 'c', text: 'des bâtiments' },
-    ],
-    correctAnswer: 'b'
-  },
-];
-
-const LECON3_MCQ = [
-  {
-    id: 'l3q1',
-    question: "1. Le covoiturage permet de…",
-    lessonId: 'lecon3',
-    lessonTitle: 'Leçon 3 : Le covoiturage',
-    options: [
-      { id: 'a', text: 'Voyager plus cher' },
-      { id: 'b', text: 'Économiser de l\'argent' },
-      { id: 'c', text: 'Acheter une voiture' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'l3q2',
-    question: "2. Selon le texte, le covoiturage est…",
-    lessonId: 'lecon3',
-    lessonTitle: 'Leçon 3 : Le covoiturage',
-    options: [
-      { id: 'a', text: 'Un service professionnel de transport' },
-      { id: 'b', text: 'Une solution écologique et solidaire' },
-      { id: 'c', text: 'Une obligation légale' },
-    ],
-    correctAnswer: 'b'
-  },
-  {
-    id: 'l3q3',
-    question: "3. Les passagers apprécient surtout…",
-    lessonId: 'lecon3',
-    lessonTitle: 'Leçon 3 : Le covoiturage',
-    options: [
-      { id: 'a', text: 'Les horaires stricts' },
-      { id: 'b', text: 'Les rencontres et la discussion' },
-      { id: 'c', text: 'Conduire seuls' },
-    ],
-    correctAnswer: 'b'
-  },
-];
-
+// Hard-coded MCQs (moved to inline JSON)
 // =========================================================
-// Module 2 MCQs
-// =========================================================
-// Note: M2_LECON3_MCQ moved to module2_refined.json as inline mcq blocks
 
-const MCQ_BY_LESSON: Record<string, typeof LECON1_MCQ> = {
-  lecon2: LECON1_MCQ,
-  lecon3: LECON3_MCQ,
-};
+const MCQ_BY_LESSON: Record<string, any[]> = {};
 
 // =========================================================
 // PersistentInput — controlled input that saves to localStorage

@@ -665,6 +665,29 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [adminOpen, setAdminOpen] = useState(false);
+
+  // ── Live data: fetched from GitHub raw CDN on every load ──
+  const [liveData, setLiveData] = useState({
+    intro: introData as any,
+    module1: refinedData1 as any,
+    module2: refinedData2 as any,
+    module3: refinedData3 as any,
+    module4: refinedData4 as any,
+  });
+
+  useEffect(() => {
+    const BASE = 'https://raw.githubusercontent.com/faculty-edu-french/project/main/src/';
+    const ts = Date.now();
+    Promise.all([
+      fetch(`${BASE}intro.json?_=${ts}`).then(r => r.json()),
+      fetch(`${BASE}module1_refined.json?_=${ts}`).then(r => r.json()),
+      fetch(`${BASE}module2_refined.json?_=${ts}`).then(r => r.json()),
+      fetch(`${BASE}module3_refined.json?_=${ts}`).then(r => r.json()),
+      fetch(`${BASE}module4_refined.json?_=${ts}`).then(r => r.json()),
+    ]).then(([intro, module1, module2, module3, module4]) => {
+      setLiveData({ intro, module1, module2, module3, module4 });
+    }).catch(() => { /* keep bundled fallback */ });
+  }, []);
   const lessonRef = useRef<HTMLDivElement>(null);
   const [studentName, setStudentName] = useState<string | null>(() =>
     localStorage.getItem('livret_student_name')
@@ -755,10 +778,10 @@ function App() {
 
   const renderContent = () => {
     const allLessons = [
-      ...refinedData1.lessons,
-      ...refinedData2.lessons,
-      ...refinedData3.lessons,
-      ...refinedData4.lessons,
+      ...(liveData.module1.lessons || []),
+      ...(liveData.module2.lessons || []),
+      ...(liveData.module3.lessons || []),
+      ...(liveData.module4.lessons || []),
     ];
 
     if (activeTab === 'intro') {
@@ -770,8 +793,8 @@ function App() {
             👋 Bonjour, <strong>{studentName}</strong> !
           </p>
           <hr style={{ margin: '2rem 0', opacity: 0.1 }} />
-          {introData.blocks.map((block: any, idx: number) => (
-            <BlockRenderer key={idx} block={block} idx={idx} allBlocks={introData.blocks} studentName={studentName} />
+          {(liveData.intro.blocks || []).map((block: any, idx: number) => (
+            <BlockRenderer key={idx} block={block} idx={idx} allBlocks={liveData.intro.blocks} studentName={studentName} />
           ))}
 
           {/* Next Lesson Button for Intro */}
@@ -862,9 +885,9 @@ function App() {
                 onClick={() => {
                   const nextLesson = allLessons[currentIndex + 1];
                   let nextModuleId = 'module1';
-                  if (refinedData4.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module4';
-                  else if (refinedData3.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module3';
-                  else if (refinedData2.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module2';
+                  if ((liveData.module4.lessons||[]).some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module4';
+                  else if ((liveData.module3.lessons||[]).some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module3';
+                  else if ((liveData.module2.lessons||[]).some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module2';
                   
                   handleNavClick(nextModuleId, nextLesson.id);
                   setExpandedModules(prev => ({ ...prev, [nextModuleId]: true }));
@@ -898,9 +921,9 @@ function App() {
                 } else {
                   const prevLesson = allLessons[currentIndex - 1];
                   let prevModId = 'module1';
-                  if (refinedData4.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module4';
-                  else if (refinedData3.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module3';
-                  else if (refinedData2.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module2';
+                  if ((liveData.module4.lessons||[]).some((l: any) => l.id === prevLesson.id)) prevModId = 'module4';
+                  else if ((liveData.module3.lessons||[]).some((l: any) => l.id === prevLesson.id)) prevModId = 'module3';
+                  else if ((liveData.module2.lessons||[]).some((l: any) => l.id === prevLesson.id)) prevModId = 'module2';
                   handleNavClick(prevModId, prevLesson.id);
                   setExpandedModules(prev => ({ ...prev, [prevModId]: true }));
                 }
@@ -987,10 +1010,10 @@ function App() {
             </div>
           </div>
 
-          {renderModuleCard("1", "module1", refinedData1.moduleTitle, refinedData1, ["lecon1", "lecon2", "lecon3"])}
-          {renderModuleCard("2", "module2", refinedData2.moduleTitle, refinedData2, ["m2_lecon1", "m2_lecon2", "m2_lecon3"])}
-          {renderModuleCard("3", "module3", refinedData3.moduleTitle, refinedData3, ["m3_lecon1", "m3_lecon2", "m3_lecon3"])}
-          {renderModuleCard("4", "module4", refinedData4.moduleTitle, refinedData4, ["m4_lecon1", "m4_lecon2", "m4_lecon3"])}
+          {renderModuleCard("1", "module1", liveData.module1.moduleTitle, liveData.module1, ["lecon1", "lecon2", "lecon3"])}
+          {renderModuleCard("2", "module2", liveData.module2.moduleTitle, liveData.module2, ["m2_lecon1", "m2_lecon2", "m2_lecon3"])}
+          {renderModuleCard("3", "module3", liveData.module3.moduleTitle, liveData.module3, ["m3_lecon1", "m3_lecon2", "m3_lecon3"])}
+          {renderModuleCard("4", "module4", liveData.module4.moduleTitle, liveData.module4, ["m4_lecon1", "m4_lecon2", "m4_lecon3"])}
         </div>
 
         {studentName && (
@@ -1096,11 +1119,11 @@ function App() {
         <AdminPanel
           onClose={() => setAdminOpen(false)}
           allData={{
-            intro: introData as any,
-            module1: refinedData1 as any,
-            module2: refinedData2 as any,
-            module3: refinedData3 as any,
-            module4: refinedData4 as any,
+            intro: liveData.intro,
+            module1: liveData.module1,
+            module2: liveData.module2,
+            module3: liveData.module3,
+            module4: liveData.module4,
           }}
         />
       )}

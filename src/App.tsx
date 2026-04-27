@@ -198,6 +198,22 @@ const VraiFauxBlock = ({
 // =========================================================
 // Block Renderer
 // =========================================================
+const renderWithLinks = (text: string) => {
+  if (!text) return null;
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+  return parts.map((part, i) => {
+    if (part.match(urlRegex)) {
+      return (
+        <a key={i} href={part} target="_blank" rel="noopener noreferrer" style={{ color: '#3b82f6', textDecoration: 'underline', wordBreak: 'break-all' }}>
+          {part}
+        </a>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+};
+
 type BlockRendererProps = {
   block: any;
   idx: number;
@@ -235,11 +251,11 @@ const BlockRenderer = ({
       return (
         <div className="instruction-box">
           <span style={{ fontWeight: 600, fontStyle: 'normal', marginRight: '0.4rem' }}>📌</span>
-          {block.content}
+          {renderWithLinks(block.content)}
         </div>
       );
     case 'paragraph':
-      return <p className="article-paragraph">{block.content}</p>;
+      return <p className="article-paragraph">{renderWithLinks(block.content)}</p>;
     case 'fill_blank': {
       const parts = (block.content || '').split('[...]');
       return (
@@ -292,9 +308,15 @@ const BlockRenderer = ({
         <div className="info-box">
           <div className="info-box-header">
             <span>{icon}</span>
-            <span>{title}</span>
+            <span>{block.title || title}</span>
           </div>
-          <div className="info-box-content">{content}</div>
+          <div className="info-box-content">
+            {content.split('\n').map((line: string, i: number) => (
+              <p key={i} style={{ margin: i > 0 ? '0.5rem 0 0 0' : 0 }}>
+                {renderWithLinks(line)}
+              </p>
+            ))}
+          </div>
         </div>
       );
     }

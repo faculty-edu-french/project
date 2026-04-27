@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Covoiturage – Carte Mentale</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    #mindmap-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    #drag-hint {
+      position: absolute;
+      top: 12px; left: 50%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      color: #94a3b8;
+      background: rgba(241, 245, 249, 0.8);
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 4px 12px;
+      z-index: 100;
+      pointer-events: none;
+      white-space: nowrap;
+      transition: opacity 0.6s;
+    }
+
+    #lines-svg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    #center-node {
+      position: absolute;
+      width: 110px; height: 110px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      border-radius: 50%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: #fff;
+      font-size: 12px; font-weight: 700;
+      text-align: center;
+      line-height: 1.2;
+      box-shadow: 0 4px 15px rgba(59,130,246,0.4);
+      z-index: 20;
+      cursor: grab;
+    }
+    #center-node:active { cursor: grabbing; }
+
+    .branch-group {
+      position: absolute;
+      width: 170px;
+      z-index: 10;
+      cursor: grab;
+    }
+    .branch-group:active { cursor: grabbing; }
+
+    .branch-header {
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px; font-weight: 700;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .branch-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 6px 8px;
+      font-size: 11px;
+      margin-bottom: 4px;
+      display: flex; align-items: center; gap: 6px;
+      border: 1px solid #f1f5f9;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .item-label { font-weight: 600; display: block; }
+    .item-sub   { font-size: 10px; color: #64748b; display: block; }
+
+    .item-icon {
+      width: 22px; height: 22px;
+      border-radius: 5px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; flex-shrink: 0;
+    }
+
+    .avantages    .branch-header { background: #10b981; }
+    .avantages    .branch-item   { border-left: 3px solid #10b981; }
+    .inconvenients .branch-header { background: #ef4444; }
+    .inconvenients .branch-item   { border-left: 3px solid #ef4444; }
+    .solutions    .branch-header { background: #3b82f6; }
+    .solutions    .branch-item   { border-left: 3px solid #3b82f6; }
+    .actions      .branch-header { background: #f59e0b; }
+    .actions      .branch-item   { border-left: 3px solid #f59e0b; }
+
+    .idea-input {
+      border: none; background: transparent;
+      font-size: 11px; width: 100%; outline: none;
+    }
+    .add-btn {
+      width: 18px; height: 18px; border-radius: 50%; border: none;
+      background: #f59e0b; color: #fff; cursor: pointer;
+    }
+
+    #reset-btn {
+      position: absolute;
+      bottom: 12px; left: 12px;
+      font-size: 10px; color: #64748b;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 15px;
+      padding: 4px 12px;
+      cursor: pointer;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+<div id="mindmap-wrapper">
+  <div id="drag-hint">✦ اسحب العناصر لتحريكها</div>
+  <svg id="lines-svg"></svg>
+
+  <div id="center-node">Le covoiturage</div>
+
+  <div class="branch-group avantages" id="g-av">
+    <div class="branch-header">Avantages</div>
+    <div class="branch-item"><div class="item-icon">🌿</div><div><span class="item-label">Écologique</span></div></div>
+    <div class="branch-item"><div class="item-icon">💰</div><div><span class="item-label">Économique</span></div></div>
+  </div>
+
+  <div class="branch-group inconvenients" id="g-inc">
+    <div class="branch-header">Inconvénients</div>
+    <div class="branch-item"><div class="item-icon">📋</div><div><span class="item-label">Organisation</span></div></div>
+    <div class="branch-item"><div class="item-icon">🕐</div><div><span class="item-label">Horaires</span></div></div>
+  </div>
+
+  <div class="branch-group solutions" id="g-sol">
+    <div class="branch-header">Solutions</div>
+    <div class="branch-item"><div class="item-icon">📱</div><div><span class="item-label">App Mobile</span></div></div>
+    <div class="branch-item"><div class="item-icon">🛡️</div><div><span class="item-label">Sécurité</span></div></div>
+  </div>
+
+  <div class="branch-group actions" id="g-act">
+    <div class="branch-header">Vos Idées</div>
+    <div class="branch-item">
+      <input class="idea-input" placeholder="Ajouter..."/>
+      <button class="add-btn">+</button>
+    </div>
+  </div>
+
+  <button id="reset-btn" onclick="resetPositions()">↺ Reset</button>
+</div>
+
+<script>
+const CONNECTIONS = [
+  { from: 'center-node', to: 'g-av',  color: '#10b981' },
+  { from: 'center-node', to: 'g-inc', color: '#ef4444' },
+  { from: 'center-node', to: 'g-sol', color: '#3b82f6' },
+  { from: 'center-node', to: 'g-act', color: '#f59e0b' },
+];
+
+const DEFAULTS = {
+  'center-node': { rx: 0.5, ry: 0.5 },
+  'g-av':        { rx: 0.1, ry: 0.1 },
+  'g-inc':       { rx: 0.65, ry: 0.1 },
+  'g-sol':       { rx: 0.1, ry: 0.7 },
+  'g-act':       { rx: 0.65, ry: 0.7 },
+};
+
+const wrap = document.getElementById('mindmap-wrapper');
+function wW() { return wrap.offsetWidth; }
+function wH() { return wrap.offsetHeight; }
+
+function placeEl(id, px, py) {
+  const el = document.getElementById(id);
+  if (id === 'center-node') {
+    el.style.left = (px - el.offsetWidth/2) + 'px';
+    el.style.top = (py - el.offsetHeight/2) + 'px';
+  } else {
+    el.style.left = px + 'px';
+    el.style.top = py + 'px';
+  }
+}
+
+function resetPositions() {
+  Object.entries(DEFAULTS).forEach(([id, d]) => placeEl(id, d.rx * wW(), d.ry * wH()));
+  drawLines();
+}
+
+function drawLines() {
+  const svg = document.getElementById('lines-svg');
+  svg.innerHTML = '';
+  CONNECTIONS.forEach(c => {
+    const elA = document.getElementById(c.from);
+    const elB = document.getElementById(c.to);
+    const a = { x: elA.offsetLeft + elA.offsetWidth/2, y: elA.offsetTop + elA.offsetHeight/2 };
+    const b = { x: elB.offsetLeft + elB.offsetWidth/2, y: elB.offsetTop + elB.offsetHeight/2 };
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', `M${a.x},${a.y} L${b.x},${b.y}`);
+    path.setAttribute('stroke', c.color);
+    path.setAttribute('stroke-width', '2');
+    path.setAttribute('stroke-opacity', '0.4');
+    path.setAttribute('fill', 'none');
+    svg.appendChild(path);
+  });
+}
+
+let dragging = null;
+let offset = { x: 0, y: 0 };
+
+function startDrag(e, el) {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON') return;
+  dragging = el;
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+  offset.x = clientX - el.getBoundingClientRect().left;
+  offset.y = clientY - el.getBoundingClientRect().top;
+}
+
+document.addEventListener('mousemove', e => {
+  if (!dragging) return;
+  const wr = wrap.getBoundingClientRect();
+  let nx = e.clientX - wr.left - offset.x;
+  let ny = e.clientY - wr.top - offset.y;
+  dragging.style.left = nx + 'px';
+  dragging.style.top = ny + 'px';
+  drawLines();
+});
+
+document.addEventListener('mouseup', () => { dragging = null; });
+
+function init() {
+  const nodes = [document.getElementById('center-node'), ...document.querySelectorAll('.branch-group')];
+  nodes.forEach(n => {
+    n.addEventListener('mousedown', e => startDrag(e, n));
+    n.addEventListener('touchstart', e => startDrag(e, n), {passive:false});
+  });
+  resetPositions();
+  setTimeout(() => document.getElementById('drag-hint').style.opacity='0', 3000);
+}
+
+window.onload = init;
+window.onresize = resetPositions;
+</script>
+</body>
+</html>

@@ -1233,7 +1233,8 @@
         },
         {
           "type": "link",
-          "url": "https://www.bien-ecrire.com"
+          "url": "/articles/m1_l3_article.html",
+          "label": "🔗 Source de l'article"
         },
         {
           "type": "header",

@@ -118,11 +118,6 @@
           "content": "Micro tâche 1 : Lisez le texte en entier en silence ou à voix basse et comprenez le sens global. (10 minutes)"
         },
         {
-          "type": "link",
-          "url": "/articles/m1_l1/index.html",
-          "label": "📄 Article interactif : Agir contre le réchauffement climatique"
-        },
-        {
           "type": "instruction",
           "content": "Consigne : Lisez le texte suivant, puis répondez aux questions."
         },
@@ -253,20 +248,7 @@
         },
         {
           "type": "info_box",
-          "content": "Des informations supplémentaires : LE TEXTE ARGUMENTATIF\n\n1️⃣ Définition : Le texte argumentatif cherche à convaincre ou persuader le lecteur d’adopter une idée ou une attitude.\n• Présente un problème ou un sujet.\n• Expose l’opinion de l’auteur.\n• Fournit arguments et exemples concrets.\n• Peut inclure un appel à l’action.\n\n2️⃣ Objectif :\n• Persuader ou convaincre le lecteur.\n• Faire réfléchir sur un sujet.\n• Proposer des solutions ou encourager un comportement."
-        },
-        {
-          "type": "grammar_card",
-          "title": "3️⃣ Caractéristiques principales :",
-          "description": "Exemple dans le texte sur le réchauffement",
-          "structure": "Élément ➡️ Explication ➡️ Exemple",
-          "examples": [
-            "• Problème : Sujet ou question ➡️ Le réchauffement climatique menace la planète.",
-            "• Opinion : Ce que pense l'auteur ➡️ « J'essaie de faire des petites choses à mon échelle »",
-            "• Arguments : Raisons pour convaincre ➡️ Acheter local, éviter les sacs plastiques, utiliser le vélo/transports en commun.",
-            "• Exemples concrets : Actions pour illustrer ➡️ Fruits et légumes de saison, circuits courts, limiter produits importés.",
-            "• Appel à l'action : Invitation à agir ➡️ « Chacun peut agir, nous avons le pouvoir du consommateur »"
-          ]
+          "content": "Des informations supplémentaires : LE TEXTE ARGUMENTATIF\n\n1️⃣ Définition : Le texte argumentatif cherche à convaincre ou persuader le lecteur d’adopter une idée ou une attitude.\n• Présente un problème ou un sujet.\n• Expose l’opinion de l’auteur.\n• Fournit arguments et exemples concrets.\n• Peut inclure un appel à l’action.\n\n2️⃣ Objectif :\n• Persuader ou convaincre le lecteur.\n• Faire réfléchir sur un sujet.\n• Proposer des solutions ou encourager un comportement.\n\n3️⃣ Caractéristiques principales :\n• Problème : Le réchauffement climatique menace la planète.\n• Opinion : « J'essaie de faire des petites choses à mon échelle »\n• Arguments : Acheter local, éviter les sacs plastiques, utiliser le vélo/transports en commun.\n• Exemples concrets : Fruits et légumes de saison, circuits courts, limiter produits importés.\n• Appel à l'action : « Chacun peut agir, nous avons le pouvoir du consommateur »"
         },
         {
           "type": "task",

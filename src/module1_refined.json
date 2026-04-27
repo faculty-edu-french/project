@@ -1080,46 +1080,6 @@
         {
           "type": "input",
           "content": ""
-        },
-        {
-          "type": "question",
-          "content": "− Quels sont les avantages des espaces verts en ville ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "− Que font les adultes dans les espaces verts ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "Pourquoi les espaces verts sont-ils importants pour les animaux ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "Quelles sont les causes de la disparition des espaces verts ?"
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "question",
-          "content": "− Comment peut-on protéger les espaces verts ?"
-        },
-        {
-          "type": "input",
-          "content": ""
         }
       ]
     },

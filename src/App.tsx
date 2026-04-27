@@ -404,7 +404,10 @@ const BlockRenderer = ({
           />
         </div>
       );
-    case 'video':
+    case 'video': {
+      const src = block.content || '';
+      const ytMatch = src.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([A-Za-z0-9_-]{11})/);
+      const embedSrc = ytMatch ? `https://www.youtube-nocookie.com/embed/${ytMatch[1]}` : null;
       return (
         <div style={{ margin: '2rem 0' }}>
           {block.title && (
@@ -423,15 +426,28 @@ const BlockRenderer = ({
             borderRadius: '12px',
             overflow: 'hidden',
             boxShadow: 'var(--shadow-md)',
-            background: '#000'
+            background: '#000',
+            position: 'relative',
+            paddingTop: embedSrc ? '56.25%' : undefined
           }}>
-            <video controls preload="metadata" className="lesson-video" style={{ width: '100%', display: 'block' }}>
-              <source src={import.meta.env.BASE_URL + block.content.replace(/^\//, '')} type="video/mp4" />
-              Votre navigateur ne supporte pas la lecture de vidéos.
-            </video>
+            {embedSrc ? (
+              <iframe
+                src={embedSrc}
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+                title={block.title || 'Vidéo'}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <video controls preload="metadata" className="lesson-video" style={{ width: '100%', display: 'block' }}>
+                <source src={import.meta.env.BASE_URL + src.replace(/^\//, '')} type="video/mp4" />
+                Votre navigateur ne supporte pas la lecture de vidéos.
+              </video>
+            )}
           </div>
         </div>
       );
+    }
     case 'iframe':
       return (
         <div className="iframe-container">

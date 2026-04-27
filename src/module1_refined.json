@@ -862,6 +862,11 @@
           "content": "Micro tâche 8 : (5 minutes) Déduisez les temps verbaux et les prépositions ?"
         },
         {
+          "type": "video",
+          "title": "Vidéo : Les espaces verts",
+          "content": "/videos/m1_lecon2.mp4"
+        },
+        {
           "type": "input",
           "content": ""
         },

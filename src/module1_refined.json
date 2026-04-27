@@ -397,7 +397,7 @@
         },
         {
           "type": "paragraph",
-          "content": "🗣️ Déroulement:\n• Les étudiants travaillent en petits groupes (3 à 4 étudiants).\n• Chaque groupe échange ses idées et note les propositions les plus convenables."
+          "content": "📌👉 Déroulement: Travaillez en petits groupes (3 à 4 étudiants). Discutez autour de la question suivante : 👉"
         },
         {
           "type": "input",
@@ -808,7 +808,7 @@
         {
           "type": "mcq",
           "id": "m1l2q5",
-          "question": "2. Les espaces verts permettent de réduire la pollution.",
+          "question": "2. Les espaces verts permettent aux gens de se détendre.",
           "options": [
             {
               "id": "vrai",
@@ -824,7 +824,7 @@
         {
           "type": "mcq",
           "id": "m1l2q6",
-          "question": "3. Tous les espaces verts sont protégés et ne disparaissent jamais.",
+          "question": "3. Les animaux ne peuvent pas vivre dans les espaces verts.",
           "options": [
             {
               "id": "vrai",
@@ -836,6 +836,22 @@
             }
           ],
           "correctAnswer": "faux"
+        },
+        {
+          "type": "mcq",
+          "id": "m1l2q7",
+          "question": "4. Dans certaines villes, les espaces verts disparaissent.",
+          "options": [
+            {
+              "id": "vrai",
+              "text": "Vrai"
+            },
+            {
+              "id": "faux",
+              "text": "Faux"
+            }
+          ],
+          "correctAnswer": "vrai"
         },
         {
           "type": "task",

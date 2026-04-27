@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-const DEFAULT_GH_TOKEN: string = import.meta.env.VITE_GH_TOKEN || '';
+// Token configured at build time via .env.local (VITE_GH_TOKEN)
+const DEFAULT_GH_TOKEN: string = import.meta.env.VITE_GH_TOKEN ?? '';
 // ── i18n ────────────────────────────────────────────────────
 const T: Record<string, Record<string, string>> = {
   fr: {

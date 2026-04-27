@@ -1,5 +1,5 @@
 {
-  "moduleTitle": "Module 1 : L’environnement",
+  "moduleTitle": "Module « 1 » L’environnement et le développement durable",
   "lessons": [
     {
       "id": "lecon1",
@@ -542,10 +542,6 @@
       "title": "Leçon 2 : Les espaces verts",
       "blocks": [
         {
-          "type": "paragraph",
-          "content": "Leçon « 2 » Les espaces verts"
-        },
-        {
           "type": "objective",
           "content": "Objectif général : À la fin de la leçon « les espaces verts », l’apprenant sera capable de comprendre un texte explicatif et de produire un texte écrit cohérent et structuré pour informer et expliquer."
         },
@@ -602,10 +598,6 @@
           "content": "12. Renforcer l’engagement des apprenants dans les activités proposées de manière amusante."
         },
         {
-          "type": "image",
-          "content": "/images/m1_lecon2.jpg"
-        },
-        {
           "type": "phase",
           "content": "Phase 1 : Pré-action : (Activation des connaissances) 20 minutes"
         },
@@ -618,12 +610,11 @@
           "content": "Consigne : Observez ce que vous voyez et prédisez le thème de la leçon."
         },
         {
-          "type": "image",
-          "content": "/images/img-166.jpg"
-        },
-        {
-          "type": "input",
-          "content": ""
+          "type": "image_group",
+          "images": [
+            "/images/m1_lecon2.jpg",
+            "/images/m1_lecon2_2.png"
+          ]
         },
         {
           "type": "instruction",

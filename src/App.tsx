@@ -970,6 +970,23 @@ function App() {
 
         <div className="content-wrapper">
           {renderContent()}
+          
+          <footer style={{
+            marginTop: '4rem',
+            padding: '2rem 1rem',
+            borderTop: '1px solid var(--border)',
+            textAlign: 'center',
+            color: 'var(--text-muted)',
+            fontSize: '0.9rem',
+            lineHeight: '1.6'
+          }}>
+            <div style={{ fontWeight: 600, marginBottom: '0.4rem' }}>
+              Tous droits réservés © {new Date().getFullYear()} — Université de Minia
+            </div>
+            <div style={{ opacity: 0.8 }}>
+              Conçu et réalisé par l'Ingénieur <strong>George Adel</strong>
+            </div>
+          </footer>
         </div>
       </main>
     </div>

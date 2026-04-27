@@ -859,28 +859,43 @@
         },
         {
           "type": "task",
-          "content": "Micro tâche 9 : (5 minutes) Déduisez les temps verbaux et les prépositions ?"
+          "content": "Micro tâche 8 : (5 minutes) Déduisez les temps verbaux et les prépositions ?"
         },
         {
           "type": "input",
           "content": ""
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "header",
+          "content": "Structures à observer :"
+        },
+        {
           "type": "grammar_card",
-          "title": "Structures à observer :",
+          "title": "1. Prépositions",
           "description": "",
-          "structure": "Prépositions et Temps verbaux",
+          "structure": "Indiquer le lieu ou la cause",
           "examples": [
-            "Prépositions :",
             "• Dans → indique le lieu : « dans les grandes villes »",
-            "• À cause de → indique la cause : « à cause de la construction »",
+            "• À cause de → indique la cause : « à cause de la construction »"
+          ]
+        },
+        {
+          "type": "grammar_card",
+          "title": "2. Temps verbaux",
+          "description": "",
+          "structure": "Présent et Futur",
+          "examples": [
+            "• Présent → utilisé pour décrire, expliquer ou parler de faits généraux :",
+            "« Les espaces verts sont des endroits naturels » → \"Les espaces verts existent et sont naturels\"",
+            "« Ils permettent de se détendre » → \"Ils permettent aux habitants de se relaxer\"",
+            "« Ils améliorent la qualité de l’air » → \"Ils améliorent la qualité de l’air\"",
             "",
-            "Temps verbaux :",
-            "• Présent → utilisé pour décrire, expliquer ou parler de faits permanents :",
-            "  - « Les espaces verts sont des endroits naturels »",
-            "  - « Ils permettent de se détendre »",
-            "• Futur → utilisé pour exprimer une conséquence possible ou une projection :",
-            "  - « Si tout le monde participe, les villes pourront devenir plus vertes »"
+            "• Futur → utilisé pour exprimer une conséquence possible ou un résultat conditionnel :",
+            "« Si tout le monde participe, les villes pourront devenir plus vertes » → \"Si tout le monde participe, les villes pourront devenir plus vertes\""
           ]
         },
         {
@@ -928,12 +943,47 @@
           "content": "Consigne:\nVous êtes membre d’un club écologique à l’université. Rédigez un article (6–8 lignes) pour convaincre vos camarades de protéger les espaces verts dans votre ville."
         },
         {
+          "type": "image_group",
+          "images": [
+            "/images/m1_lecon2_3.png",
+            "/images/m1_lecon2_4.png"
+          ]
+        },
+        {
           "type": "paragraph",
-          "content": "Le texte doit contenir:\n• Définition d’un espace vert.\n• Importance pour les habitants.\n• Problèmes actuels.\n• Solutions proposées.\n• Conclusion motivante."
+          "content": "📌 Le texte doit contenir:"
         },
         {
           "type": "list_item",
-          "content": "Outils interactifs fournis:\n• Banque de connecteurs : d’abord, ensuite, en plus, pourtant, enfin…\n• Aide lexicale : arbres, pollution, protéger, créer, planter…"
+          "content": "• Définition d’un espace vert."
+        },
+        {
+          "type": "list_item",
+          "content": "• Importance pour les habitants."
+        },
+        {
+          "type": "list_item",
+          "content": "• Problèmes actuels."
+        },
+        {
+          "type": "list_item",
+          "content": "• Solutions proposées."
+        },
+        {
+          "type": "list_item",
+          "content": "• Conclusion motivante."
+        },
+        {
+          "type": "paragraph",
+          "content": "📌 Outils interactifs fournis:"
+        },
+        {
+          "type": "list_item",
+          "content": "• Banque de connecteurs : d’abord, ensuite, en plus, pourtant, enfin…"
+        },
+        {
+          "type": "list_item",
+          "content": "• Aide lexicale : arbres, pollution, protéger, créer, planter…"
         },
         {
           "type": "input",

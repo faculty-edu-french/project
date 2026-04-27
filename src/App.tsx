@@ -815,7 +815,7 @@ function App() {
         </div>
 
         <div className="nav-links">
-          {renderModuleCard("1", "module1", refinedData1.moduleTitle, refinedData1, [])}
+          {renderModuleCard("1", "module1", refinedData1.moduleTitle, refinedData1, ["lecon1", "lecon2", "lecon3"])}
           {renderModuleCard("2", "module2", refinedData2.moduleTitle, refinedData2, ["m2_lecon1", "m2_lecon2", "m2_lecon3"])}
           {renderModuleCard("3", "module3", refinedData3.moduleTitle, refinedData3, ["m3_lecon1", "m3_lecon2", "m3_lecon3"])}
           {renderModuleCard("4", "module4", refinedData4.moduleTitle, refinedData4, ["m4_lecon1", "m4_lecon2", "m4_lecon3"])}

@@ -619,7 +619,7 @@ function App() {
     module1: false,
     module2: false,
     module3: false,
-    module4: true,
+    module4: false,
   });
 
   const toggleModule = (modId: string) => {

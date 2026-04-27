@@ -488,6 +488,22 @@
           "content": "https://youtu.be/WsILHnwc4As"
         },
         {
+          "type": "paragraph",
+          "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "grammar_card",
           "title": "Structures à observer :",
           "description": "",
@@ -1209,6 +1225,22 @@
           "type": "video",
           "title": "Vidéo : Les espaces verts",
           "content": "/videos/m1_lecon2.mp4"
+        },
+        {
+          "type": "paragraph",
+          "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
         },
         {
           "type": "input",

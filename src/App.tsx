@@ -760,6 +760,54 @@ function App() {
           />
           {/* Print Button */}
           <PrintButton lessonTitle={lesson.title} />
+
+          {/* Next Lesson Button */}
+          {(() => {
+            const currentIndex = allLessons.findIndex(l => l.id === activeTab);
+            if (currentIndex !== -1 && currentIndex < allLessons.length - 1) {
+              const nextLesson = allLessons[currentIndex + 1];
+              // Find which module this next lesson belongs to
+              let nextModuleId = 'module1';
+              if (refinedData4.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module4';
+              else if (refinedData3.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module3';
+              else if (refinedData2.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module2';
+              
+              return (
+                <button
+                  onClick={() => {
+                    handleNavClick(nextModuleId, nextLesson.id);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    // Also ensure the module is expanded
+                    setExpandedModules(prev => ({ ...prev, [nextModuleId]: true }));
+                  }}
+                  className="next-lesson-btn"
+                  style={{
+                    marginTop: '2rem',
+                    width: '100%',
+                    padding: '1rem',
+                    background: 'var(--primary)',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '12px',
+                    fontSize: '1.1rem',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.5rem',
+                    boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)',
+                    transition: 'transform 0.2s'
+                  }}
+                  onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+                  onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                >
+                  Leçon suivante : {nextLesson.title.split(':').pop()?.trim()} ➜
+                </button>
+              );
+            }
+            return null;
+          })()}
         </div>
       );
     }

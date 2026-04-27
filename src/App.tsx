@@ -740,7 +740,7 @@ function App() {
                 boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)',
               }}
             >
-              Commencer le premier cours : {allLessons[0].title.split(':').pop()?.trim()} ➜
+              ➜ Commencer le premier cours : {allLessons[0].title.split(':').pop()?.trim()}
             </button>
           )}
         </div>
@@ -827,7 +827,7 @@ function App() {
                   boxShadow: '0 4px 15px rgba(59, 130, 246, 0.2)'
                 }}
               >
-                Suivant : {allLessons[currentIndex + 1].title.split(':').pop()?.trim()} ➜
+                ➜ Suivant : {allLessons[currentIndex + 1].title.split(':').pop()?.trim()}
               </button>
             )}
 

@@ -72,11 +72,11 @@ const GITHUB_REPO = 'project';
 const GITHUB_BRANCH = 'main';
 
 const FILE_MAP: Record<string, string> = {
-  intro: 'web-book/src/intro.json',
-  module1: 'web-book/src/module1_refined.json',
-  module2: 'web-book/src/module2_refined.json',
-  module3: 'web-book/src/module3_refined.json',
-  module4: 'web-book/src/module4_refined.json',
+  intro: 'src/intro.json',
+  module1: 'src/module1_refined.json',
+  module2: 'src/module2_refined.json',
+  module3: 'src/module3_refined.json',
+  module4: 'src/module4_refined.json',
 };
 
 async function githubGetFile(path: string, token: string) {

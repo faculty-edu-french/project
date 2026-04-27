@@ -6,6 +6,26 @@ import refinedData3 from './module3_refined.json';
 import refinedData4 from './module4_refined.json';
 import introData from './intro.json';
 import { MCQGroup, MCQBlock, StudentGate, EssaySubmitter } from './MCQ';
+import {
+  Lightbulb, BookOpen, Search, Link2, Clock, FileText,
+  MessageSquare, CheckCircle2, Puzzle, LayoutTemplate,
+  Users, GraduationCap, Sparkles
+} from 'lucide-react';
+
+const OBJ_ICONS = [
+  { icon: BookOpen,       color: '#3b82f6', bg: '#eff6ff' },
+  { icon: Search,         color: '#6366f1', bg: '#eef2ff' },
+  { icon: Link2,          color: '#7c3aed', bg: '#f5f3ff' },
+  { icon: Clock,          color: '#c026d3', bg: '#fdf4ff' },
+  { icon: FileText,       color: '#db2777', bg: '#fdf2f8' },
+  { icon: MessageSquare,  color: '#059669', bg: '#ecfdf5' },
+  { icon: CheckCircle2,   color: '#0d9488', bg: '#f0fdfa' },
+  { icon: Puzzle,         color: '#0891b2', bg: '#ecfeff' },
+  { icon: LayoutTemplate, color: '#0284c7', bg: '#f0f9ff' },
+  { icon: Users,          color: '#d97706', bg: '#fffbeb' },
+  { icon: GraduationCap,  color: '#ea580c', bg: '#fff7ed' },
+  { icon: Sparkles,       color: '#e11d48', bg: '#fff1f2' },
+];
 
 // =========================================================
 // =========================================================
@@ -321,42 +341,64 @@ const BlockRenderer = ({
       );
     }
     case 'objective': {
-      const isGeneral = block.content.includes('Objectif général :');
-      const text = isGeneral ? block.content.replace('Objectif général :', '').trim() : block.content;
+      const objText = block.content
+        .replace('Objectif général :', '')
+        .replace('Objectifs :', '')
+        .trim();
       return (
-        <div style={{
-          background: 'var(--primary-light)',
-          padding: '1.25rem 1.75rem',
-          borderRadius: 'var(--radius-sm)',
-          margin: '1.5rem 0 2rem',
-          borderLeft: '4px solid var(--primary)',
-          fontSize: '1rem',
-          lineHeight: '1.8',
-          color: 'var(--primary-dark)',
-          boxShadow: '0 4px 15px rgba(59, 130, 246, 0.05)'
-        }}>
-          {isGeneral && <strong style={{ display: 'block', marginBottom: '0.5rem', fontSize: '1.05rem', color: 'var(--primary)' }}>💡 Objectif général :</strong>}
-          {!isGeneral && <strong style={{ marginRight: '0.4rem', color: 'var(--primary)' }}>💡</strong>}
-          <span style={{ fontWeight: 500 }}>{text}</span>
+        <div className="obj-header-card">
+          <div className="obj-header-blue-bar" />
+          <div className="obj-header-glow" />
+          <div className="obj-header-inner">
+            <div className="obj-header-icon-wrap">
+              <Lightbulb size={32} color="#f59e0b" />
+            </div>
+            <div>
+              <h2 className="obj-header-title">Objectifs de cette leçon</h2>
+              <p className="obj-header-subtitle">{objText || 'À la fin de la séance, l\'apprenant doit être capable de / d\' :'}</p>
+            </div>
+          </div>
         </div>
       );
     }
-    case 'list_item':
+    case 'list_item': {
+      // First list_item in a consecutive sequence → render ALL as a card grid
+      const prevIsListItem = idx > 0 && allBlocks[idx - 1]?.type === 'list_item';
+      if (prevIsListItem) return null; // already rendered by the first one
+
+      // Collect all consecutive list_items
+      const items: string[] = [];
+      let j = idx;
+      while (j < allBlocks.length && allBlocks[j]?.type === 'list_item') {
+        // Strip leading number like "1. " or "• "
+        const raw: string = allBlocks[j].content || '';
+        const clean = raw.replace(/^\d+\.\s*/, '').replace(/^[•\-–]\s*/, '').trim();
+        items.push(clean);
+        j++;
+      }
+
       return (
-        <div style={{
-          marginLeft: '0.5rem',
-          marginBottom: '0.6rem',
-          color: 'var(--text-main)',
-          display: 'flex',
-          gap: '0.75rem',
-          fontSize: '1rem',
-          lineHeight: '1.75',
-          alignItems: 'flex-start',
-        }}>
-          <span style={{ color: 'var(--primary)', fontWeight: 700, marginTop: '0.15rem', flexShrink: 0 }}>›</span>
-          <span>{block.content}</span>
+        <div className="obj-grid">
+          {items.map((text, i) => {
+            const slot = OBJ_ICONS[i % OBJ_ICONS.length];
+            const IconComp = slot.icon;
+            const num = (i + 1) < 10 ? `0${i + 1}` : `${i + 1}`;
+            return (
+              <div key={i} className="obj-card">
+                <div className="obj-card-top">
+                  <span className="obj-card-num">{num}</span>
+                  <div className="obj-card-icon" style={{ background: slot.bg, color: slot.color }}>
+                    <IconComp size={22} strokeWidth={2.5} />
+                  </div>
+                </div>
+                <p className="obj-card-text">{text}</p>
+                <div className="obj-card-line" />
+              </div>
+            );
+          })}
         </div>
       );
+    }
     case 'text':
       return (
         <div style={{

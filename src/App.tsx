@@ -642,15 +642,6 @@ function App() {
         </div>
         {isExpanded && (
           <div className="module-lessons">
-            {modId === 'module1' && (
-              <div 
-                className={`lesson-item ${activeTab === 'intro' ? 'active' : ''}`} 
-                onClick={() => handleNavClick(modId, 'intro')}
-              >
-                <div className="lesson-bullet"></div>
-                <span>Accueil / Introduction</span>
-              </div>
-            )}
             {data.lessons.map((l: any) => {
               const isUnlocked = unlockedList.includes(l.id);
               const isActive = activeTab === l.id;

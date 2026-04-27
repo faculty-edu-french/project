@@ -1638,6 +1638,22 @@
           "content": "Lisez votre produit écrit et identifiez vos erreurs (vocabulaire, grammaire, orthographe), comparez avec vos camarades et corrigez le texte si nécessaire."
         },
         {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
           "type": "header",
           "content": "É- évaluation : (10 minutes)"
         },

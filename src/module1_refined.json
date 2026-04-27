@@ -1219,7 +1219,27 @@
         },
         {
           "type": "task",
-          "content": "Micro tâche 8 : (5 minutes) Déduisez les temps verbaux et les prépositions ?"
+          "content": "Micro-tâches 8 : Mini-production : (5 minutes)"
+        },
+        {
+          "type": "instruction",
+          "content": "Consigne : Écrivez un court paragraphe de 4 à 5 lignes sur les comportements humains qui menacent les espaces verts."
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "input",
+          "content": ""
+        },
+        {
+          "type": "task",
+          "content": "Micro tâche 9 : (5 minutes) : Déduisez les temps verbaux et les prépositions ?"
         },
         {
           "type": "video",
@@ -1229,30 +1249,6 @@
         {
           "type": "paragraph",
           "content": "Écrivez un court résumé de ce que vous avez compris de cette vidéo."
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
-        },
-        {
-          "type": "input",
-          "content": ""
         },
         {
           "type": "input",

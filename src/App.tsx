@@ -721,6 +721,12 @@ function App() {
     setActiveModule(moduleId);
     setActiveTab(tabId);
     setSidebarOpen(false); // Close sidebar on mobile after clicking
+    
+    // Force scroll to top of the main content area
+    const mainView = document.querySelector('.main-view');
+    if (mainView) {
+      mainView.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
 
@@ -771,7 +777,6 @@ function App() {
             <button
               onClick={() => {
                 handleNavClick('module1', allLessons[0].id);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
                 setExpandedModules(prev => ({ ...prev, module1: true }));
               }}
               className="next-lesson-btn"
@@ -860,7 +865,6 @@ function App() {
                   else if (refinedData2.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module2';
                   
                   handleNavClick(nextModuleId, nextLesson.id);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
                   setExpandedModules(prev => ({ ...prev, [nextModuleId]: true }));
                 }}
                 style={{
@@ -898,7 +902,6 @@ function App() {
                   handleNavClick(prevModId, prevLesson.id);
                   setExpandedModules(prev => ({ ...prev, [prevModId]: true }));
                 }
-                window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               style={{
                 flex: 1,

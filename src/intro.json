@@ -7,31 +7,23 @@
     },
     {
       "type": "paragraph",
-      "content": "Ce programme vise Ce programme vise a developper les competences (Edited)"
+      "content": "Ce programme vise à développer les compétences de la communication écrite et le plaisir d’apprendre chez les étudiants de quatrième année section de français à la faculté de pédagogie de Minia. Pour atteindre cet objectif, la chercheuse va utiliser le livre numérique interactif basé sur l’approche actionnelle."
     },
     {
       "type": "header",
       "content": "Objectifs généraux du programme :"
     },
     {
-      "type": "objective",
-      "content": "Développer les compétences de la communication écrite et le plaisir d’apprendre pour"
-    },
-    {
-      "type": "paragraph",
-      "content": "les étudiants de quatrième année à la section de français à la faculté de Pédagogie de Minia."
+      "type": "task",
+      "content": "➢ Développer les compétences de la communication écrite et le plaisir d’apprendre pour les étudiants de quatrième année à la section de français à la faculté de Pédagogie de Minia."
     },
     {
       "type": "header",
       "content": "Objectifs spécifiques du programme :"
     },
     {
-      "type": "objective",
-      "content": "Le programme actuel vise à développer les compétences de la compréhension écrite"
-    },
-    {
-      "type": "header",
-      "content": "suivantes :"
+      "type": "task",
+      "content": "➢ Le programme actuel vise à développer les compétences de la compréhension écrite suivantes :"
     },
     {
       "type": "list_item",
@@ -119,11 +111,7 @@
     },
     {
       "type": "list_item",
-      "content": "22.    Faire des inférences en établissant des liens entre les éléments d’un texte lu en"
-    },
-    {
-      "type": "paragraph",
-      "content": "justifiant son interprétation."
+      "content": "22. Faire des inférences en établissant des liens entre les éléments d’un texte lu en justifiant son interprétation."
     },
     {
       "type": "list_item",
@@ -131,19 +119,11 @@
     },
     {
       "type": "list_item",
-      "content": "24. Analyser l’organisation d’un texte lu et interpréter son sens en s’appuyant sur des"
+      "content": "24. Analyser l’organisation d’un texte lu et interpréter son sens en s’appuyant sur des indices."
     },
     {
-      "type": "paragraph",
-      "content": "indices."
-    },
-    {
-      "type": "objective",
-      "content": "De même, ce programme vise à développer les compétences de la production écrite"
-    },
-    {
-      "type": "header",
-      "content": "suivantes :"
+      "type": "task",
+      "content": "➢ De même, ce programme vise à développer les compétences de la production écrite suivantes :"
     },
     {
       "type": "list_item",
@@ -255,11 +235,11 @@
     },
     {
       "type": "list_item",
-      "content": "28.  Réviser et améliorer son texte à partir des remarques ou en comparant avec les camarades."
+      "content": "28. Réviser et améliorer son texte à partir des remarques ou en comparant avec les camarades."
     },
     {
-      "type": "header",
-      "content": "De même, ce programme vise à développer les objectifs du plaisir d’apprendre suivants :"
+      "type": "task",
+      "content": "➢ De même, ce programme vise à développer les objectifs du plaisir d’apprendre suivants :"
     },
     {
       "type": "list_item",
@@ -303,7 +283,7 @@
     },
     {
       "type": "list_item",
-      "content": "11. Encourager les apprenants à élargir leurs connaissances et à développer leur curiosité intellectuelle."
+      "content": "11. Encourager les apprenants à élargير leurs connaissances et à développer leur curiosité intellectuelle."
     },
     {
       "type": "list_item",
@@ -366,24 +346,24 @@
       "content": "Contenu du programme :"
     },
     {
-      "type": "header",
+      "type": "paragraph",
       "content": "Ce programme se compose de quatre modules :"
     },
     {
       "type": "list_item",
-      "content": " Module (1) L’environnement et le développement durable."
+      "content": "− Module (1) L’environnement et le développement durable."
     },
     {
       "type": "list_item",
-      "content": " Module (2) La technologie et la société."
+      "content": "− Module (2) La technologie et la société."
     },
     {
       "type": "list_item",
-      "content": " Module (3) Le travail et le bien-être."
+      "content": "− Module (3) Le travail et le bien-être."
     },
     {
       "type": "list_item",
-      "content": " Module (4) Le sport et la vie scolaire."
+      "content": "− Module (4) Le sport et la vie scolaire."
     },
     {
       "type": "paragraph",
@@ -391,23 +371,23 @@
     },
     {
       "type": "list_item",
-      "content": " La première phase : la pré- action (Introduction et motivation et la lecture guidée du texte)."
+      "content": "− La première phase : la pré- action (Introduction et motivation et la lecture guidée du texte)."
     },
     {
       "type": "list_item",
-      "content": " La deuxième phase : L’action (la compréhension approfondie)."
+      "content": "− La deuxième phase : L’action (la compréhension approfondie)."
     },
     {
       "type": "list_item",
-      "content": " La troisième phase : Post action (Tâche finale)."
+      "content": "− La troisième phase : Post action (Tâche finale)."
     },
     {
       "type": "list_item",
-      "content": " La quatrième phase : évaluation des produits des étudiants."
+      "content": "− La quatrième phase : évaluation des produits des étudiants."
     },
     {
       "type": "list_item",
-      "content": " Leçon zéro présente une introduction sur l’approche actionnelle et son utilisation dans la salle de classe."
+      "content": "− Leçon zéro présente une introduction sur l’approche actionnelle et son utilisation dans la salle de classe."
     },
     {
       "type": "header",
@@ -435,7 +415,11 @@
     },
     {
       "type": "paragraph",
-      "content": "À la fin du programme, les post tests visent à mesurer l’efficacité d’utilisation du livre numérique interactif basé sur l’approche actionnelle dans le développement des compétences de la compréhension, de la production écrite et le plaisir d’apprendre chez les étudiants de l’échantillon. Leçon zéro : Premier contact « L’approche actionnelle »"
+      "content": "À la fin du programme, les post tests visent à mesurer l’efficacité d’utilisation du livre numérique interactif basé sur l’approche actionnelle dans le développement des compétences de la compréhension, de la production écrite et le plaisir d’apprendre chez les étudiants de l’échantillon."
+    },
+    {
+      "type": "header",
+      "content": "Leçon zéro : Premier contact « L’approche actionnelle »"
     },
     {
       "type": "header",
@@ -454,60 +438,72 @@
       "content": "L’objectif essentiel de l’approche actionnelle est de mettre l’accent sur les tâches à accomplir par lesquels l’apprenant qui participe à l’intérieur d’un projet global pour des objectifs sociaux, non pour des objectifs langagiers ou pédagogiques seulement."
     },
     {
-      "type": "header",
+      "type": "paragraph",
       "content": "En bref, l’approche actionnelle à une grande importance dans le processus d’apprentissage de l’apprenant, c’est pourquoi, cette approche vise à :"
     },
     {
       "type": "list_item",
-      "content": " Améliorer l’acquisition de connaissances afin de permettre aux apprenants d’utiliser le français de manière compétente et en toute confiance en tant qu’acteurs sociaux pour réaliser des tâches quotidiennes."
+      "content": "− Améliorer l’acquisition de connaissances afin de permettre aux apprenants d’utiliser le français de manière compétente et en toute confiance en tant qu’acteurs sociaux pour réaliser des tâches quotidiennes."
     },
     {
       "type": "list_item",
-      "content": " Fournir des rétroactions spécifiques et ponctuelles et créer des occasions qui permettent aux apprenants d’en tenir compte."
+      "content": "− Fournir des rétroactions spécifiques et ponctuelles et créer des occasions qui permettent aux apprenants d’en tenir compte."
     },
     {
       "type": "list_item",
-      "content": " Présenter des tâches pertinentes et authentiques qui conviennent bien aux apprenants."
+      "content": "− Présenter des tâches pertinentes et authentiques qui conviennent bien aux apprenants."
     },
     {
       "type": "list_item",
-      "content": " Créer un climat d’apprentissage en donnant aux apprenants le désir de communiquer."
+      "content": "− Créer un climat d’apprentissage en donnant aux apprenants le désir de communiquer."
     },
     {
       "type": "header",
       "content": "Les caractéristiques de l’approche actionnelle :"
     },
     {
-      "type": "header",
+      "type": "paragraph",
       "content": "En effet, les caractéristiques de la perspective actionnelle sont en relation avec les théories d’apprentissage dominantes selon la communauté scientifique:"
     },
     {
       "type": "list_item",
-      "content": " À travers des projets/scénarios, les apprenants travaillent sur des tâches verbales et non-verbales, authentiques, qui doivent encourager la réflexion sur la langue en exposant un problème à résoudre."
+      "content": "− À travers des projets/scénarios, les apprenants travaillent sur des tâches verbales et non-verbales, authentiques, qui doivent encourager la réflexion sur la langue en exposant un problème à résoudre."
     },
     {
       "type": "list_item",
-      "content": " L’enseignant guide l’apprenant dans la résolution de problème."
+      "content": "− L’enseignant guide l’apprenant dans la résolution de problème."
     },
     {
       "type": "list_item",
-      "content": " Les étudiants collaborent sur le problème pour le résoudre ensemble."
+      "content": "− Les étudiants collaborent sur le problème pour le résoudre ensemble."
     },
     {
       "type": "list_item",
-      "content": " Les étudiants ont l’occasion de réfléchir sur leurs propres méthodes d’apprentissage."
+      "content": "− Les étudiants ont l’occasion de réfléchir sur leurs propres méthodes d’apprentissage."
     },
     {
       "type": "header",
       "content": "Les principes de l’approche actionnelle :"
     },
     {
-      "type": "header",
+      "type": "paragraph",
       "content": "Dans ce cadre, Cette approche repose sur deux principes essentiels pour atteindre les objectifs de l’enseignement/apprentissage et favorise l’utilisation de la langue ; ces deux principes sont les suivants :"
     },
     {
+      "type": "header",
+      "content": "L’apprenant est un acteur social :"
+    },
+    {
       "type": "paragraph",
-      "content": "L’apprenant est un acteur social : L’apprenant est considéré comme un acteur de ses apprentissages. Il le met en activité et introduit la langue et la culture comme instruments d’action et non seulement de communication. On ne communique plus seulement pour parler avec l’autre mais on communique pour agir avec l’autre. Dans ce cas, l’apprenant entre en action pour communiquer et il sollicite ces trois composantes : la composante linguistique, la composante sociolinguistique et la composante pragmatique. La tâche : Premièrement, la tâche est une interaction entre les apprenants pour arriver à accomplir quelque chose. Deuxièmement, pour accomplir ce quelque chose et pour accomplir cette interaction, il faut que les apprenants mobilisent tous les acquis, tous les apprentissages faites au cours de l’unité que ce soit des apprentissages grammaticaux, lexicaux, phonétiques ou pragmatiques (comment utiliser la langue en situation de communication)."
+      "content": "L’apprenant est considéré comme un acteur de ses apprentissages. Il le met en activité et introduit la langue et la culture comme instruments d’action et non seulement de communication. On ne communique plus seulement pour parler avec l’autre mais on communique pour agir avec l’autre. Dans ce cas, l’apprenant entre en action pour communiquer et il sollicite ces trois composantes : la composante linguistique, la composante sociolinguistique et la composante pragmatique."
+    },
+    {
+      "type": "header",
+      "content": "La tâche :"
+    },
+    {
+      "type": "paragraph",
+      "content": "Premièrement, la tâche est une interaction entre les apprenants pour arriver à accomplir quelque chose. Deuxièmement, pour accomplir ce quelque chose et pour accomplir cette interaction, il faut que les apprenants mobilisent tous les acquis, tous les apprentissages faites au cours de l’unité que ce soit des apprentissages grammaticaux, lexicaux, phonétiques ou pragmatiques (comment utiliser la langue en situation de communication)."
     },
     {
       "type": "header",
@@ -527,11 +523,11 @@
     },
     {
       "type": "list_item",
-      "content": " Tâches cibles (proches de la vie réelle) / tâches pédagogiques : Le CECRL distingue deux types de tâches : La tâche cible est assez proche de la vie réelle et son choix est orienté par les besoins de l’apprenant hors de la classe. Par contre, la tâche pédagogique est loin de la vie réelle, dans le but de développer la compétence communicative."
+      "content": "− Tâches cibles (proches de la vie réelle) / tâches pédagogiques : Le CECRL distingue deux types de tâches : La tâche cible est assez proche de la vie réelle et son choix est orienté par les besoins de l’apprenant hors de la classe. Par contre, la tâche pédagogique est loin de la vie réelle, dans le but de développer la compétence communicative."
     },
     {
-      "type": "header",
-      "content": " Mono-tâche/projet intégrant une ou plusieurs tâches/ suite de tâches scénarisées :"
+      "type": "list_item",
+      "content": "− Mono-tâche/projet intégrant une ou plusieurs tâches/ suite de tâches scénarisées"
     },
     {
       "type": "header",
@@ -546,36 +542,36 @@
       "content": "Rôles de l’apprenant dans l’approche actionnelle :"
     },
     {
-      "type": "header",
+      "type": "paragraph",
       "content": "Afin de mettre en œuvre les tâches à accomplir, les apprenants doivent :"
     },
     {
       "type": "list_item",
-      "content": " Savoir identifier et définir précisément l’information nécessaire pour satisfaire le besoin ou résoudre le problème."
+      "content": "− Savoir identifier et définir précisément l’information nécessaire pour satisfaire le besoin ou résoudre le problème."
     },
     {
       "type": "list_item",
-      "content": " Savoir trouver l’information nécessaire quand on sait qu’elle existe."
+      "content": "− Savoir trouver l’information nécessaire quand on sait qu’elle existe."
     },
     {
       "type": "list_item",
-      "content": " Savoir comprendre l’information trouvée, ou à qui faire appel pour cela, si nécessaire."
+      "content": "− Savoir comprendre l’information trouvée, ou à qui faire appel pour cela, si nécessaire."
     },
     {
       "type": "list_item",
-      "content": " Savoir organiser, analyser, interpréter et évaluer l’information."
+      "content": "− Savoir organiser, analyser, interpréter et évaluer l’information."
     },
     {
       "type": "list_item",
-      "content": " Savoir communiquer et présenter l’information à autrui à l’aide de formats/ supports adaptés / utilisables."
+      "content": "− Savoir communiquer et présenter l’information à autrui à l’aide de formats/ supports adaptés / utilisables."
     },
     {
       "type": "list_item",
-      "content": " Savoir utiliser l’information afin de résoudre un problème, prendre une décision et répondre à un besoin."
+      "content": "− Savoir utiliser l’information afin de résoudre un problème, prendre une décision et répondre à un besoin."
     },
     {
       "type": "list_item",
-      "content": " Savoir à supprimer les informations qui ne sont plus indispensables et à préserver celles qui doivent être protégées."
+      "content": "− Savoir à supprimer les informations qui ne sont plus indispensables et à préserver celles qui doivent être protégées."
     },
     {
       "type": "paragraph",

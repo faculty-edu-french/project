@@ -5,6 +5,7 @@ import refinedData2 from './module2_refined.json';
 import refinedData3 from './module3_refined.json';
 import refinedData4 from './module4_refined.json';
 import introData from './intro.json';
+import AdminPanel from './AdminPanel';
 import { MCQGroup, MCQBlock, StudentGate, EssaySubmitter } from './MCQ';
 import {
   Lightbulb, BookOpen, Search, Link2, Clock, FileText,
@@ -663,6 +664,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('intro');
   const [theme, setTheme] = useState('light');
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [adminOpen, setAdminOpen] = useState(false);
   const lessonRef = useRef<HTMLDivElement>(null);
   const [studentName, setStudentName] = useState<string | null>(() =>
     localStorage.getItem('livret_student_name')
@@ -1042,9 +1044,40 @@ function App() {
             <div style={{ opacity: 0.8 }}>
               Conçu et réalisé par l'Ingénieur <strong>George Adel</strong>
             </div>
+            <div style={{ marginTop: '1.5rem' }}>
+              <button
+                id="admin-access-btn"
+                onClick={() => setAdminOpen(true)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  fontSize: '0.75rem',
+                  cursor: 'pointer',
+                  opacity: 0.4,
+                  letterSpacing: '0.05em',
+                  padding: '0.25rem 0.5rem',
+                }}
+              >
+                Admin
+              </button>
+            </div>
           </footer>
         </div>
       </main>
+
+      {adminOpen && (
+        <AdminPanel
+          onClose={() => setAdminOpen(false)}
+          allData={{
+            intro: introData as any,
+            module1: refinedData1 as any,
+            module2: refinedData2 as any,
+            module3: refinedData3 as any,
+            module4: refinedData4 as any,
+          }}
+        />
+      )}
     </div>
   );
 }

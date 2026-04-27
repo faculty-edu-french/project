@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+const DEFAULT_GH_TOKEN: string = import.meta.env.VITE_GH_TOKEN || '';
 // ── i18n ────────────────────────────────────────────────────
 const T: Record<string, Record<string, string>> = {
   fr: {
@@ -123,7 +124,7 @@ export default function AdminPanel({ onClose, allData }: AdminPanelProps) {
   const [authed, setAuthed] = useState(false);
   const [uInput, setUInput] = useState('');
   const [pInput, setPInput] = useState('');
-  const [tokenInput, setTokenInput] = useState(() => localStorage.getItem('admin_gh_token') || '');
+  const [tokenInput] = useState(() => localStorage.getItem('admin_gh_token') || DEFAULT_GH_TOKEN);
   const [loginErr, setLoginErr] = useState('');
 
   // Navigation
@@ -250,10 +251,7 @@ export default function AdminPanel({ onClose, allData }: AdminPanelProps) {
             <input style={inputStyle} value={uInput} onChange={e => setUInput(e.target.value)} autoComplete="username" />
             <label style={labelStyle}>{t('password')}</label>
             <input style={inputStyle} type="password" value={pInput} onChange={e => setPInput(e.target.value)} autoComplete="current-password" onKeyDown={e => e.key === 'Enter' && handleLogin()} />
-            <label style={labelStyle}>{t('ghToken')}</label>
-            <input style={inputStyle} type="password" value={tokenInput} onChange={e => setTokenInput(e.target.value)} placeholder="ghp_..." />
-            <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.25rem', marginBottom: '1.25rem' }}>{t('ghTokenHelp')}</p>
-            {loginErr && <p style={{ color: '#ef4444', fontWeight: 600, marginBottom: '1rem' }}>{loginErr}</p>}
+            {loginErr && <p style={{ color: '#ef4444', fontWeight: 600, marginBottom: '1rem', marginTop: '1rem' }}>{loginErr}</p>}
             <button style={primaryBtnStyle} onClick={handleLogin}>{t('login')}</button>
           </div>
         </div>

@@ -1013,6 +1013,31 @@ function App() {
             </div>
           </div>
         )}
+
+        {/* Admin Button — always visible in sidebar */}
+        <div style={{ padding: '0.75rem 1rem', borderTop: '1px solid var(--border)' }}>
+          <button
+            id="admin-access-btn"
+            onClick={() => setAdminOpen(true)}
+            style={{
+              width: '100%',
+              background: 'transparent',
+              border: '1px solid var(--border)',
+              color: 'var(--text-muted)',
+              fontSize: '0.82rem',
+              cursor: 'pointer',
+              borderRadius: '8px',
+              padding: '0.45rem 0.75rem',
+              fontWeight: 500,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.4rem',
+            }}
+          >
+            🔒 Admin
+          </button>
+        </div>
       </aside>
 
       <main className="main-view">
@@ -1049,17 +1074,18 @@ function App() {
                 id="admin-access-btn"
                 onClick={() => setAdminOpen(true)}
                 style={{
-                  background: 'none',
-                  border: 'none',
+                  background: 'transparent',
+                  border: '1px solid var(--border)',
                   color: 'var(--text-muted)',
-                  fontSize: '0.75rem',
+                  fontSize: '0.82rem',
                   cursor: 'pointer',
-                  opacity: 0.4,
-                  letterSpacing: '0.05em',
-                  padding: '0.25rem 0.5rem',
+                  borderRadius: '8px',
+                  padding: '0.35rem 0.85rem',
+                  letterSpacing: '0.04em',
+                  fontWeight: 500,
                 }}
               >
-                Admin
+                🔒 Admin
               </button>
             </div>
           </footer>

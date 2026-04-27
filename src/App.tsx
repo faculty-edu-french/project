@@ -693,6 +693,13 @@ function App() {
   }
 
   const renderContent = () => {
+    const allLessons = [
+      ...refinedData1.lessons,
+      ...refinedData2.lessons,
+      ...refinedData3.lessons,
+      ...refinedData4.lessons,
+    ];
+
     if (activeTab === 'intro') {
       return (
         <div className="lesson-card">
@@ -705,20 +712,46 @@ function App() {
           {introData.blocks.map((block: any, idx: number) => (
             <BlockRenderer key={idx} block={block} idx={idx} allBlocks={introData.blocks} studentName={studentName} />
           ))}
+
+          {/* Next Lesson Button for Intro */}
+          {allLessons.length > 0 && (
+            <button
+              onClick={() => {
+                handleNavClick('module1', allLessons[0].id);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setExpandedModules(prev => ({ ...prev, module1: true }));
+              }}
+              className="next-lesson-btn"
+              style={{
+                marginTop: '3rem',
+                width: '100%',
+                padding: '1rem',
+                background: 'var(--primary)',
+                color: 'white',
+                border: 'none',
+                borderRadius: '12px',
+                fontSize: '1.1rem',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)',
+              }}
+            >
+              Commencer le premier cours : {allLessons[0].title.split(':').pop()?.trim()} ➜
+            </button>
+          )}
         </div>
       );
     }
 
-    // Search across ALL modules to avoid stale-state mismatch
-    const allLessons = [
-      ...refinedData1.lessons,
-      ...refinedData2.lessons,
-      ...refinedData3.lessons,
-      ...refinedData4.lessons,
-    ];
     const lesson = allLessons.find((l: any) => l.id === activeTab);
     if (lesson) {
       const mcqs = MCQ_BY_LESSON[activeTab];
+      const currentIndex = allLessons.findIndex(l => l.id === activeTab);
+      
       return (
         <div className="lesson-card" key={activeTab} ref={lessonRef}>
           <h1 style={{
@@ -761,53 +794,78 @@ function App() {
           {/* Print Button */}
           <PrintButton lessonTitle={lesson.title} />
 
-          {/* Next Lesson Button */}
-          {(() => {
-            const currentIndex = allLessons.findIndex(l => l.id === activeTab);
-            if (currentIndex !== -1 && currentIndex < allLessons.length - 1) {
-              const nextLesson = allLessons[currentIndex + 1];
-              // Find which module this next lesson belongs to
-              let nextModuleId = 'module1';
-              if (refinedData4.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module4';
-              else if (refinedData3.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module3';
-              else if (refinedData2.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module2';
-              
-              return (
-                <button
-                  onClick={() => {
-                    handleNavClick(nextModuleId, nextLesson.id);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                    // Also ensure the module is expanded
-                    setExpandedModules(prev => ({ ...prev, [nextModuleId]: true }));
-                  }}
-                  className="next-lesson-btn"
-                  style={{
-                    marginTop: '2rem',
-                    width: '100%',
-                    padding: '1rem',
-                    background: 'var(--primary)',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '12px',
-                    fontSize: '1.1rem',
-                    fontWeight: 'bold',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '0.5rem',
-                    boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)',
-                    transition: 'transform 0.2s'
-                  }}
-                  onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-                  onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                >
-                  Leçon suivante : {nextLesson.title.split(':').pop()?.trim()} ➜
-                </button>
-              );
-            }
-            return null;
-          })()}
+          {/* Navigation Buttons Container */}
+          <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
+            {/* Previous Button */}
+            <button
+              onClick={() => {
+                if (currentIndex === 0) {
+                  handleNavClick('module1', 'intro');
+                } else {
+                  const prevLesson = allLessons[currentIndex - 1];
+                  let prevModId = 'module1';
+                  if (refinedData4.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module4';
+                  else if (refinedData3.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module3';
+                  else if (refinedData2.lessons.some((l: any) => l.id === prevLesson.id)) prevModId = 'module2';
+                  handleNavClick(prevModId, prevLesson.id);
+                  setExpandedModules(prev => ({ ...prev, [prevModId]: true }));
+                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              style={{
+                flex: 1,
+                padding: '1rem',
+                background: '#f1f5f9',
+                color: '#475569',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                fontSize: '1rem',
+                fontWeight: '600',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem'
+              }}
+            >
+              ⬅ Précédent
+            </button>
+
+            {/* Next Lesson Button */}
+            {currentIndex < allLessons.length - 1 && (
+              <button
+                onClick={() => {
+                  const nextLesson = allLessons[currentIndex + 1];
+                  let nextModuleId = 'module1';
+                  if (refinedData4.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module4';
+                  else if (refinedData3.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module3';
+                  else if (refinedData2.lessons.some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module2';
+                  
+                  handleNavClick(nextModuleId, nextLesson.id);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setExpandedModules(prev => ({ ...prev, [nextModuleId]: true }));
+                }}
+                style={{
+                  flex: 2,
+                  padding: '1rem',
+                  background: 'var(--primary)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '12px',
+                  fontSize: '1rem',
+                  fontWeight: 'bold',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.5rem',
+                  boxShadow: '0 4px 15px rgba(59, 130, 246, 0.2)'
+                }}
+              >
+                Suivant : {allLessons[currentIndex + 1].title.split(':').pop()?.trim()} ➜
+              </button>
+            )}
+          </div>
         </div>
       );
     }

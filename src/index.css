@@ -1656,3 +1656,157 @@ body {
   transition: width 0.4s ease;
 }
 .obj-card:hover .obj-card-line { width: 100%; }
+
+/* =========================================================
+   BookViewer — Page Flip Book
+   ========================================================= */
+.bv-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 0 2rem;
+  min-height: 90vh;
+}
+
+.bv-scene {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  filter: drop-shadow(0 25px 50px rgba(0,0,0,0.3));
+}
+
+/* Page base */
+.fp-page {
+  background: #fdfaf6;
+  background-image:
+    linear-gradient(90deg, rgba(0,0,0,0.04) 0px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #e8dfd0;
+}
+
+/* Cover page */
+.fp-cover {
+  background: linear-gradient(145deg, #1e3a8a 0%, #1d4ed8 50%, #3b82f6 100%) !important;
+  background-image: none !important;
+  border: none;
+}
+
+/* Page header (top bar) */
+.fp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.1rem;
+  background: rgba(37,99,235,0.07);
+  border-bottom: 1px solid #e2d9cc;
+  flex-shrink: 0;
+}
+.fp-header-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 70%;
+}
+.fp-header-num {
+  font-size: 0.73rem;
+  color: #94a3b8;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Scrollable body */
+.fp-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem 1.1rem 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+/* Scrollbar styling */
+.fp-body::-webkit-scrollbar { width: 4px; }
+.fp-body::-webkit-scrollbar-track { background: transparent; }
+.fp-body::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+/* Bottom page number */
+.fp-footer-num {
+  text-align: center;
+  padding: 0.4rem 0;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  border-top: 1px solid #f0ebe3;
+  flex-shrink: 0;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+/* Navigation bar */
+.bv-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.bv-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.bv-btn:hover { background: #eff6ff; }
+.bv-btn:disabled { color: #cbd5e1; cursor: not-allowed; }
+.bv-indicator {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #475569;
+  min-width: 5rem;
+  text-align: center;
+}
+
+/* Make the main area full-width when in book mode */
+.content-wrapper.book-mode {
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Make lesson-card inside fp-body look right */
+.fp-body .lesson-card {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Mobile tweaks */
+@media (max-width: 767px) {
+  .bv-scene {
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.25));
+  }
+  .bv-nav {
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

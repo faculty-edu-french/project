@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import './index.css';
 import refinedData1 from './module1_refined.json';
 import refinedData2 from './module2_refined.json';
@@ -7,6 +7,7 @@ import refinedData4 from './module4_refined.json';
 import introData from './intro.json';
 import AdminPanel from './AdminPanel';
 import { MCQGroup, MCQBlock, StudentGate, EssaySubmitter } from './MCQ';
+import { BookViewer, type BookPage } from './BookViewer';
 import {
   Lightbulb, BookOpen, Search, Link2, Clock, FileText,
   MessageSquare, CheckCircle2, Puzzle, LayoutTemplate,
@@ -776,181 +777,71 @@ function App() {
     return <StudentGate onConfirm={handleStudentConfirm} />;
   }
 
-  const renderContent = () => {
+
+
+  // ── Build all pages for the BookViewer ──
+  const bookPages = useMemo<BookPage[]>(() => {
     const allLessons = [
       ...(liveData.module1.lessons || []),
       ...(liveData.module2.lessons || []),
       ...(liveData.module3.lessons || []),
       ...(liveData.module4.lessons || []),
     ];
+    const pages: BookPage[] = [];
 
-    if (activeTab === 'intro') {
-      return (
+    // Cover
+    pages.push({
+      id: 'cover', title: '', isCover: true,
+      content: (
+        <div style={{ height:'100%', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', color:'#fff', padding:'2rem', textAlign:'center' }}>
+          <div style={{ fontSize:'3.5rem', marginBottom:'1rem' }}>📖</div>
+          <div style={{ fontSize:'1.6rem', fontWeight:900, letterSpacing:'-0.02em', marginBottom:'0.5rem', lineHeight:1.2 }}>Livret de l'étudiant</div>
+          <div style={{ fontSize:'1rem', opacity:0.8, marginBottom:'2rem' }}>Livre numérique interactif</div>
+          <div style={{ fontSize:'0.85rem', opacity:0.7, borderTop:'1px solid rgba(255,255,255,0.3)', paddingTop:'1rem', marginTop:'auto' }}>Faculté d'Éducation — Département de Français</div>
+        </div>
+      ),
+    });
+
+    // Intro
+    pages.push({
+      id: 'intro', title: 'Introduction',
+      content: (
         <div className="lesson-card">
-          <h1 className="hero-title" style={{ fontFamily: 'var(--font-serif)', color: 'var(--primary)' }}>Le livret de l'étudiant</h1>
-          <p className="hero-subtitle">Livre numérique interactif basé sur l'approche actionnelle</p>
-          <p style={{ color: 'var(--text-muted)', marginTop: '0.5rem' }}>
-            👋 Bonjour, <strong>{studentName}</strong> !
-          </p>
-          <hr style={{ margin: '2rem 0', opacity: 0.1 }} />
-          {(liveData.intro.blocks || []).map((block: any, idx: number) => (
-            <BlockRenderer key={idx} block={block} idx={idx} allBlocks={liveData.intro.blocks} studentName={studentName} />
+          <h1 style={{ fontFamily:'var(--font-serif)', color:'var(--primary)', marginBottom:'1rem' }}>Le livret de l'étudiant</h1>
+          <p style={{ color:'var(--text-muted)' }}>👋 Bonjour, <strong>{studentName}</strong> !</p>
+          <hr style={{ margin:'1.5rem 0', opacity:0.1 }} />
+          {(liveData.intro.blocks||[]).map((block: any, idx: number) => (
+            <BlockRenderer key={idx} block={block} idx={idx} allBlocks={liveData.intro.blocks} studentName={studentName??''} />
           ))}
-
-          {/* Next Lesson Button for Intro */}
-          {allLessons.length > 0 && (
-            <button
-              onClick={() => {
-                handleNavClick('module1', allLessons[0].id);
-                setExpandedModules(prev => ({ ...prev, module1: true }));
-              }}
-              className="next-lesson-btn"
-              style={{
-                marginTop: '3rem',
-                width: '100%',
-                padding: '1rem',
-                background: 'var(--primary)',
-                color: 'white',
-                border: 'none',
-                borderRadius: '12px',
-                fontSize: '1.1rem',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.5rem',
-                boxShadow: '0 4px 15px rgba(59, 130, 246, 0.3)',
-              }}
-            >
-              ➜ Commencer le premier cours : {allLessons[0].title.split(':').pop()?.trim()}
-            </button>
-          )}
         </div>
-      );
-    }
+      ),
+    });
 
-    const lesson = allLessons.find((l: any) => l.id === activeTab);
-    if (lesson) {
-      const mcqs = MCQ_BY_LESSON[activeTab];
-      const currentIndex = allLessons.findIndex(l => l.id === activeTab);
-      
-      return (
-        <div className="lesson-card" key={activeTab} ref={lessonRef}>
-          <h1 style={{
-            fontFamily: 'var(--font-sans)',
-            fontSize: 'clamp(1.75rem, 3vw, 2.25rem)',
-            fontWeight: 800,
-            marginBottom: '2rem',
-            letterSpacing: '-0.02em',
-            color: 'var(--primary)'
-          }}>
-            {lesson.title}
-          </h1>
-          {lesson.blocks.map((block: any, idx: number) => (
-            <BlockRenderer
-              key={idx}
-              block={block}
-              idx={idx}
-              allBlocks={lesson.blocks}
-              studentName={studentName}
-              lessonId={lesson.id}
-              lessonTitle={lesson.title}
-            />
-          ))}
-          {/* MCQ Section */}
-          {mcqs && mcqs.length > 0 && (
-            <MCQGroup
-              questions={mcqs}
-              studentName={studentName}
-              lessonId={activeTab}
-              lessonTitle={lesson.title}
-            />
-          )}
-          {/* Essay Submitter */}
-          <EssaySubmitter
-            key={activeTab}
-            lessonRef={lessonRef}
-            studentName={studentName!}
-            lessonTitle={lesson.title}
-          />
-          {/* Print Button */}
-          <PrintButton lessonTitle={lesson.title} />
-
-          {/* Navigation Buttons Container */}
-          <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-            {/* Next Lesson Button */}
-            {currentIndex < allLessons.length - 1 && (
-              <button
-                onClick={() => {
-                  const nextLesson = allLessons[currentIndex + 1];
-                  let nextModuleId = 'module1';
-                  if ((liveData.module4.lessons||[]).some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module4';
-                  else if ((liveData.module3.lessons||[]).some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module3';
-                  else if ((liveData.module2.lessons||[]).some((l: any) => l.id === nextLesson.id)) nextModuleId = 'module2';
-                  
-                  handleNavClick(nextModuleId, nextLesson.id);
-                  setExpandedModules(prev => ({ ...prev, [nextModuleId]: true }));
-                }}
-                style={{
-                  flex: 2,
-                  padding: '1rem',
-                  background: 'var(--primary)',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '12px',
-                  fontSize: '1rem',
-                  fontWeight: 'bold',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '0.5rem',
-                  boxShadow: '0 4px 15px rgba(59, 130, 246, 0.2)'
-                }}
-              >
-                ➜ Suivant : {allLessons[currentIndex + 1].title.split(':').pop()?.trim()}
-              </button>
+    // Lessons
+    allLessons.forEach((lesson: any) => {
+      const mcqs = MCQ_BY_LESSON[lesson.id];
+      pages.push({
+        id: lesson.id, title: lesson.title,
+        content: (
+          <div className="lesson-card">
+            <h1 style={{ fontFamily:'var(--font-sans)', fontSize:'clamp(1.3rem,2.5vw,2rem)', fontWeight:800, marginBottom:'1.5rem', letterSpacing:'-0.02em', color:'var(--primary)' }}>
+              {lesson.title}
+            </h1>
+            {lesson.blocks.map((block: any, idx: number) => (
+              <BlockRenderer key={idx} block={block} idx={idx} allBlocks={lesson.blocks} studentName={studentName??''} lessonId={lesson.id} lessonTitle={lesson.title} />
+            ))}
+            {mcqs && mcqs.length > 0 && (
+              <MCQGroup questions={mcqs} studentName={studentName??''} lessonId={lesson.id} lessonTitle={lesson.title} />
             )}
-
-            {/* Previous Button */}
-            <button
-              onClick={() => {
-                if (currentIndex === 0) {
-                  handleNavClick('module1', 'intro');
-                } else {
-                  const prevLesson = allLessons[currentIndex - 1];
-                  let prevModId = 'module1';
-                  if ((liveData.module4.lessons||[]).some((l: any) => l.id === prevLesson.id)) prevModId = 'module4';
-                  else if ((liveData.module3.lessons||[]).some((l: any) => l.id === prevLesson.id)) prevModId = 'module3';
-                  else if ((liveData.module2.lessons||[]).some((l: any) => l.id === prevLesson.id)) prevModId = 'module2';
-                  handleNavClick(prevModId, prevLesson.id);
-                  setExpandedModules(prev => ({ ...prev, [prevModId]: true }));
-                }
-              }}
-              style={{
-                flex: 1,
-                padding: '1rem',
-                background: '#f1f5f9',
-                color: '#475569',
-                border: '1px solid #e2e8f0',
-                borderRadius: '12px',
-                fontSize: '1rem',
-                fontWeight: '600',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.5rem'
-              }}
-            >
-              ⬅ Précédent
-            </button>
+            <EssaySubmitter key={lesson.id} lessonRef={lessonRef} studentName={studentName!} lessonTitle={lesson.title} />
+            <PrintButton lessonTitle={lesson.title} />
           </div>
-        </div>
-      );
-    }
-  };
+        ),
+      });
+    });
+    return pages;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [liveData, studentName]);
 
   return (
     <div className="app-layout">
@@ -1074,8 +965,32 @@ function App() {
           </button>
         </div>
 
-        <div className="content-wrapper">
-          {renderContent()}
+        <div className="content-wrapper book-mode">
+          <BookViewer
+            pages={bookPages}
+            activePageId={activeTab}
+            onPageChange={(id) => {
+              if (id === activeTab) return;
+              // Determine which module the lesson belongs to
+              const allLessons = [
+                ...(liveData.module1.lessons || []),
+                ...(liveData.module2.lessons || []),
+                ...(liveData.module3.lessons || []),
+                ...(liveData.module4.lessons || []),
+              ];
+              const lesson = allLessons.find((l: any) => l.id === id);
+              let modId = 'module1';
+              if (lesson) {
+                if ((liveData.module4.lessons||[]).some((l:any)=>l.id===id)) modId='module4';
+                else if ((liveData.module3.lessons||[]).some((l:any)=>l.id===id)) modId='module3';
+                else if ((liveData.module2.lessons||[]).some((l:any)=>l.id===id)) modId='module2';
+              }
+              setActiveModule(modId);
+              setActiveTab(id);
+              setSidebarOpen(false);
+              setExpandedModules(prev => ({ ...prev, [modId]: true }));
+            }}
+          />
           
           <footer style={{
             marginTop: '4rem',

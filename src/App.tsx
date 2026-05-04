@@ -723,7 +723,7 @@ function App() {
           <div className="module-lessons">
             {data.lessons.map((l: any) => {
               const isUnlocked = unlockedList.includes(l.id);
-              const isActive = activeTab === l.id;
+              const isActive = activeTab === l.id || activeTab.startsWith(l.id + '-');
               return (
                 <div
                   key={l.id}
@@ -820,23 +820,90 @@ function App() {
     // Lessons
     allLessons.forEach((lesson: any) => {
       const mcqs = MCQ_BY_LESSON[lesson.id];
+      
+      // Calculate chunks based on weight
+      const chunks: any[][] = [];
+      let currentChunk: any[] = [];
+      let currentWeight = 0;
+      const MAX_WEIGHT = 110;
+
+      for (let i = 0; i < lesson.blocks.length; i++) {
+        const block = lesson.blocks[i];
+        
+        if (block.type === 'list_item' && i > 0 && lesson.blocks[i - 1].type === 'list_item') {
+           currentChunk.push(block);
+           continue;
+        }
+
+        let weight = 20; 
+        if (block.type === 'video') weight = 80;
+        if (block.type === 'image_group') weight = 60;
+        if (block.type === 'image') weight = 50;
+        if (block.type === 'paragraph') weight = Math.max(20, (block.content?.length || 0) / 12);
+        if (block.type === 'info_box') weight = 45;
+        if (block.type === 'objective') weight = 40;
+        if (block.type === 'list_item') {
+            let listCount = 1;
+            let j = i + 1;
+            while(j < lesson.blocks.length && lesson.blocks[j].type === 'list_item') {
+                listCount++; j++;
+            }
+            weight = Math.max(30, listCount * 15);
+        }
+        if (block.type === 'dialogue') weight = 50;
+        if (block.type === 'grammar_rule') weight = 60;
+        
+        if (currentWeight + weight > MAX_WEIGHT && currentChunk.length > 0) {
+            chunks.push(currentChunk);
+            currentChunk = [block];
+            currentWeight = weight;
+        } else {
+            currentChunk.push(block);
+            currentWeight += weight;
+        }
+      }
+      if (currentChunk.length > 0) chunks.push(currentChunk);
+
+      chunks.forEach((chunk, chunkIdx) => {
+        const pageId = chunkIdx === 0 ? lesson.id : `${lesson.id}-part${chunkIdx + 1}`;
+        pages.push({
+          id: pageId,
+          title: lesson.title,
+          content: (
+            <div className="lesson-card">
+              {chunkIdx === 0 && (
+                <h1 style={{ fontFamily:'var(--font-sans)', fontSize:'clamp(1.3rem,2.5vw,2rem)', fontWeight:800, marginBottom:'1.5rem', letterSpacing:'-0.02em', color:'var(--primary)' }}>
+                  {lesson.title}
+                </h1>
+              )}
+              {chunk.map((block: any) => {
+                const absIdx = lesson.blocks.indexOf(block);
+                return <BlockRenderer key={absIdx} block={block} idx={absIdx} allBlocks={lesson.blocks} studentName={studentName??''} lessonId={lesson.id} lessonTitle={lesson.title} />;
+              })}
+            </div>
+          )
+        });
+      });
+
+      if (mcqs && mcqs.length > 0) {
+        pages.push({
+          id: `${lesson.id}-mcq`, title: `${lesson.title} - Exercices`,
+          content: (
+            <div className="lesson-card">
+              <MCQGroup questions={mcqs} studentName={studentName??''} lessonId={lesson.id} lessonTitle={lesson.title} />
+            </div>
+          )
+        });
+      }
+
       pages.push({
-        id: lesson.id, title: lesson.title,
+        id: `${lesson.id}-essay`, title: `${lesson.title} - Tâche finale`,
         content: (
           <div className="lesson-card">
-            <h1 style={{ fontFamily:'var(--font-sans)', fontSize:'clamp(1.3rem,2.5vw,2rem)', fontWeight:800, marginBottom:'1.5rem', letterSpacing:'-0.02em', color:'var(--primary)' }}>
-              {lesson.title}
-            </h1>
-            {lesson.blocks.map((block: any, idx: number) => (
-              <BlockRenderer key={idx} block={block} idx={idx} allBlocks={lesson.blocks} studentName={studentName??''} lessonId={lesson.id} lessonTitle={lesson.title} />
-            ))}
-            {mcqs && mcqs.length > 0 && (
-              <MCQGroup questions={mcqs} studentName={studentName??''} lessonId={lesson.id} lessonTitle={lesson.title} />
-            )}
             <EssaySubmitter key={lesson.id} lessonRef={lessonRef} studentName={studentName!} lessonTitle={lesson.title} />
             <PrintButton lessonTitle={lesson.title} />
           </div>
-        ),
+        )
       });
     });
     return pages;
@@ -971,19 +1038,21 @@ function App() {
             activePageId={activeTab}
             onPageChange={(id) => {
               if (id === activeTab) return;
-              // Determine which module the lesson belongs to
+              
+              const baseId = id.split('-')[0]; // Extract base lesson id e.g. "m2_lecon1"
+
               const allLessons = [
                 ...(liveData.module1.lessons || []),
                 ...(liveData.module2.lessons || []),
                 ...(liveData.module3.lessons || []),
                 ...(liveData.module4.lessons || []),
               ];
-              const lesson = allLessons.find((l: any) => l.id === id);
+              const lesson = allLessons.find((l: any) => l.id === baseId);
               let modId = 'module1';
               if (lesson) {
-                if ((liveData.module4.lessons||[]).some((l:any)=>l.id===id)) modId='module4';
-                else if ((liveData.module3.lessons||[]).some((l:any)=>l.id===id)) modId='module3';
-                else if ((liveData.module2.lessons||[]).some((l:any)=>l.id===id)) modId='module2';
+                if ((liveData.module4.lessons||[]).some((l:any)=>l.id===baseId)) modId='module4';
+                else if ((liveData.module3.lessons||[]).some((l:any)=>l.id===baseId)) modId='module3';
+                else if ((liveData.module2.lessons||[]).some((l:any)=>l.id===baseId)) modId='module2';
               }
               setActiveModule(modId);
               setActiveTab(id);

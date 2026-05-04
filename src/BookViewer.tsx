@@ -105,7 +105,7 @@ export function BookViewer({ pages, activePageId, onPageChange }: BookViewerProp
           autoSize={false}
           maxShadowOpacity={0.5}
           showPageCorners={true}
-          disableFlipByClick={false}
+          disableFlipByClick={true}
           swipeDistance={30}
         >
           {pages.map((page, i) => (

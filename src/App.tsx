@@ -825,7 +825,7 @@ function App() {
       const chunks: any[][] = [];
       let currentChunk: any[] = [];
       let currentWeight = 0;
-      const MAX_WEIGHT = 110;
+      const MAX_WEIGHT = 75;
 
       for (let i = 0; i < lesson.blocks.length; i++) {
         const block = lesson.blocks[i];
